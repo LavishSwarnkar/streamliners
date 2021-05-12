@@ -211,11 +211,13 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-sea-green.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-default.min.css">
 
       <script>
         document.addEventListener( 'DOMContentLoaded', function () {
-	new Splide( '#card-slider' ).mount();
+	new Splide( '#card-slider' , {
+    padding : 0
+  }).mount();
 } );
       </script>
 
