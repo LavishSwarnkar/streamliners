@@ -9,20 +9,20 @@
     <lastBuildDate>Tue, 11 May 2021 12:49:27 +0600</lastBuildDate><atom:link href="https://lavishswarnkar.github.io/streamliners/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Karobar Easy</title>
-      <link>https://lavishswarnkar.github.io/streamliners/portfolio/byaaz-book.html</link>
+      <link>https://lavishswarnkar.github.io/streamliners/portfolio/karobar-easy.html</link>
       <pubDate>Tue, 11 May 2021 12:49:27 +0600</pubDate>
       
-      <guid>https://lavishswarnkar.github.io/streamliners/portfolio/byaaz-book.html</guid>
-      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+      <guid>https://lavishswarnkar.github.io/streamliners/portfolio/karobar-easy.html</guid>
+      <description>Mark AttendanceOwner can mark attendance, view check-in check-out times of all staffs at one place. Monthly AttendanceOwner can view individual monthly attendance of all staffs. Location TrackingOwner can track location of each staff at once. He can also view location history of the time interval he wants. Location tracking filterWhile location tracking, owner can filter staffs based on their designation.</description>
     </item>
     
     <item>
       <title>Byaaz Book</title>
-      <link>https://lavishswarnkar.github.io/streamliners/portfolio/karobar-easy.html</link>
+      <link>https://lavishswarnkar.github.io/streamliners/portfolio/byaaz-book.html</link>
       <pubDate>Fri, 05 Mar 2021 12:49:27 +0600</pubDate>
       
-      <guid>https://lavishswarnkar.github.io/streamliners/portfolio/karobar-easy.html</guid>
-      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+      <guid>https://lavishswarnkar.github.io/streamliners/portfolio/byaaz-book.html</guid>
+      <description>Major features of the app are : Interest CalculatorYou can calculate the interest in two different ways i.e. Simple Interest and Compound interest, based on your preference. Backup &amp;amp; RestoreYou can backup your whole data of customers and their transactions, with just one click. Byaaj Book gives you the flexibility to restore the whole content of the app. Fully DynamicYou can edit the customers, bills, and transactions, by long tapping on them.</description>
     </item>
     
     <item>
@@ -31,7 +31,9 @@
       <pubDate>Sun, 11 Oct 2020 12:49:27 +0600</pubDate>
       
       <guid>https://lavishswarnkar.github.io/streamliners/portfolio/tc.html</guid>
-      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+      <description>TC is a full fledged e-Shopping app. We challenged ourselves to build an ecom system. The biggest challenge in the ecom system is to keep multiple apps (Admin &amp;amp; User) in sync.
+
+Features Following are the major features of the Tirupati Collection app :</description>
     </item>
     
     <item>
@@ -40,7 +42,10 @@
       <pubDate>Sun, 11 Oct 2020 12:49:27 +0600</pubDate>
       
       <guid>https://lavishswarnkar.github.io/streamliners/portfolio/vfresh.html</guid>
-      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+      <description>Admin app Features of Admin app :
+ User app Features of User app :
+ Agent app Client wanted a system to promote his business. For this, he introduced agents. Agents will simply share their unique promocodes with users. Users while purchasing, will get discount by applying agent&amp;rsquo;s promocodes.
+But the challenge here was : The promocode needs to be expired after 3 days i.e. every Agent will get a new promocode at intervals of 3 days.</description>
     </item>
     
     <item>
