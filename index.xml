@@ -176,7 +176,8 @@ Features Top StoriesView the latest and popular stories on top CategriesBro
       <pubDate>Tue, 05 Sep 2017 18:07:16 +0600</pubDate>
       
       <guid>https://lavishswarnkar.github.io/streamliners/portfolio/ju-eezy.html</guid>
-      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+      <description>Problems solved Following are the features of the JU eezy app :
+Homepage that looks promisingEveryday help available at your fingertips Campus GuideView entire floor map of any building Search across the campusYou can easily search indoor location of any classroom, lab, office etc. Search by Faculty&amp;#39;s nameGet faculty cabin&amp;#39;s location by searching with faculty&amp;#39;s name Room descriptionView alternate names, faculty details etc.</description>
     </item>
     
     <item>
@@ -186,6 +187,17 @@ Features Top StoriesView the latest and popular stories on top CategriesBro
       
       <guid>https://lavishswarnkar.github.io/streamliners/contact.html</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>JU eezy Archive</title>
+      <link>https://lavishswarnkar.github.io/streamliners/ju-eezy-archive.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lavishswarnkar.github.io/streamliners/ju-eezy-archive.html</guid>
+      <description>JUFM (JU eezy v0.1) JU Food Menu
+This version was not released globally. Work on JU eezy started in March 2018. Following build was completed in just 3 days.
+Mess Food MenuThis was the feature to be implemented DrawerBack then, that&amp;#39;s how simple app was! Mess AdminMess Admin used to upload menu from here document.</description>
     </item>
     
     <item>
@@ -222,7 +234,7 @@ Interested? Apply now by filling the form below :</description>
   We developed this app during JU Rhythm Hackathon 2019.
   We WON the Hackathon.
   Along with the powerful backend &amp;amp; APIs, the app stood up because of its UI &amp;amp; animations. Have a look :
-  Download the dummy app here and see the animations yourself.</description>
+     Download the dummy app here and see the animations yourself.</description>
     </item>
     
     <item>
