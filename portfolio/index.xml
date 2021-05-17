@@ -17,12 +17,34 @@
     </item>
     
     <item>
+      <title>LocatIN</title>
+      <link>https://lavishswarnkar.github.io/streamliners/portfolio/locatin.html</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0530</pubDate>
+      
+      <guid>https://lavishswarnkar.github.io/streamliners/portfolio/locatin.html</guid>
+      <description>What we do? We solve the problem of building fast, lightweight and easy to use indoor map solution for large infrastructures.
+We are eagerly looking for customers. If you want your venue to be digitalized, contact us now! We will build a Unique NextGen Indoor map solution for your campus.
+We are an incubated start-up @ JECRC Incubation center, JECRC University.
+Videos  Introductory video      LocatIN for university      Big Picture     Our service To simplify indoor wayfindings at large campuses like hospitals, universities, shopping malls etc.</description>
+    </item>
+    
+    <item>
       <title>Byaaz Book</title>
       <link>https://lavishswarnkar.github.io/streamliners/portfolio/byaaz-book.html</link>
       <pubDate>Fri, 05 Mar 2021 12:49:27 +0600</pubDate>
       
       <guid>https://lavishswarnkar.github.io/streamliners/portfolio/byaaz-book.html</guid>
       <description>Major features of the app are : Interest CalculatorYou can calculate the interest in two different ways i.e. Simple Interest and Compound interest, based on your preference. Backup &amp;amp; RestoreYou can backup your whole data of customers and their transactions, with just one click. Byaaj Book gives you the flexibility to restore the whole content of the app. Fully DynamicYou can edit the customers, bills, and transactions, by long tapping on them.</description>
+    </item>
+    
+    <item>
+      <title>JU eezy</title>
+      <link>https://lavishswarnkar.github.io/streamliners/portfolio/ju-eezy.html</link>
+      <pubDate>Tue, 05 Sep 2017 18:07:16 +0600</pubDate>
+      
+      <guid>https://lavishswarnkar.github.io/streamliners/portfolio/ju-eezy.html</guid>
+      <description>Problems solved Following are the features of the JU eezy app :
+Homepage that looks promisingEveryday help available at your fingertips Campus GuideView entire floor map of any building Search across the campusYou can easily search indoor location of any classroom, lab, office etc. Search by Faculty&amp;#39;s nameGet faculty cabin&amp;#39;s location by searching with faculty&amp;#39;s name Room descriptionView alternate names, faculty details etc.</description>
     </item>
     
     <item>
@@ -47,6 +69,18 @@ PowerfulAdmin app provides all the powers in a single app Manage Categories
     </item>
     
     <item>
+      <title>Smart Gaya</title>
+      <link>https://lavishswarnkar.github.io/streamliners/portfolio/smart-gaya.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lavishswarnkar.github.io/streamliners/portfolio/smart-gaya.html</guid>
+      <description>This video shows how the app functions:
+  
+User app Following are the major features of the user app :
+All service at your fingertipsYou can order any service you want, from salon, carpenter, AC Services, WiFi provider, Painters, Tutor, RO service, Plumber, CCTV, Driver, Accounts and many more Gaya TourIt helps users find cool and chilling Place from temples to bars.</description>
+    </item>
+    
+    <item>
       <title>Food Bazaar</title>
       <link>https://lavishswarnkar.github.io/streamliners/portfolio/food-bazaar.html</link>
       <pubDate>Sat, 19 Sep 2020 12:49:27 +0600</pubDate>
@@ -54,18 +88,6 @@ PowerfulAdmin app provides all the powers in a single app Manage Categories
       <guid>https://lavishswarnkar.github.io/streamliners/portfolio/food-bazaar.html</guid>
       <description>Shopkeeper app Features of Shopkeeper app :
 DynamicShopkeeper can edit menu, working hours, promocodes etc. anytime Order managementShopkeeper can manage orders and filter them by date document.addEventListener( &#39;DOMContentLoaded&#39;, function () {new Splide( &#39;#slider1&#39; , {padding : 0, type : &#34;loop&#34;, rewind : true}).mount();} ); User app Features of User app :</description>
-    </item>
-    
-    <item>
-      <title>LocatIN</title>
-      <link>https://lavishswarnkar.github.io/streamliners/portfolio/locatin.html</link>
-      <pubDate>Wed, 05 Aug 2020 00:00:00 +0530</pubDate>
-      
-      <guid>https://lavishswarnkar.github.io/streamliners/portfolio/locatin.html</guid>
-      <description>What we do? We solve the problem of building fast, lightweight and easy to use indoor map solution for large infrastructures.
-We are eagerly looking for customers. If you want your venue to be digitalized, contact us now! We will build a Unique NextGen Indoor map solution for your campus.
-We are an incubated start-up @ JECRC Incubation center, JECRC University.
-Videos  Introductory video      LocatIN for university      Big Picture     Our service To simplify indoor wayfindings at large campuses like hospitals, universities, shopping malls etc.</description>
     </item>
     
     <item>
@@ -91,16 +113,6 @@ Features Top StoriesView the latest and popular stories on top CategriesBro
     </item>
     
     <item>
-      <title>JU eezy</title>
-      <link>https://lavishswarnkar.github.io/streamliners/portfolio/ju-eezy.html</link>
-      <pubDate>Tue, 05 Sep 2017 18:07:16 +0600</pubDate>
-      
-      <guid>https://lavishswarnkar.github.io/streamliners/portfolio/ju-eezy.html</guid>
-      <description>Problems solved Following are the features of the JU eezy app :
-Homepage that looks promisingEveryday help available at your fingertips Campus GuideView entire floor map of any building Search across the campusYou can easily search indoor location of any classroom, lab, office etc. Search by Faculty&amp;#39;s nameGet faculty cabin&amp;#39;s location by searching with faculty&amp;#39;s name Room descriptionView alternate names, faculty details etc.</description>
-    </item>
-    
-    <item>
       <title>Other Apps</title>
       <link>https://lavishswarnkar.github.io/streamliners/portfolio/other-apps.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -111,18 +123,6 @@ Homepage that looks promisingEveryday help available at your fingertips Camp
   We WON the Hackathon.
   Along with the powerful backend &amp;amp; APIs, the app stood up because of its UI &amp;amp; animations. Have a look :
      Download the dummy app here and see the animations yourself.</description>
-    </item>
-    
-    <item>
-      <title>Smart Gaya</title>
-      <link>https://lavishswarnkar.github.io/streamliners/portfolio/smart-gaya.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lavishswarnkar.github.io/streamliners/portfolio/smart-gaya.html</guid>
-      <description>This video shows how the app functions:
-  
-User app Following are the major features of the user app :
-All service at your fingertipsYou can order any service you want, from salon, carpenter, AC Services, WiFi provider, Painters, Tutor, RO service, Plumber, CCTV, Driver, Accounts and many more Gaya TourIt helps users find cool and chilling Place from temples to bars.</description>
     </item>
     
   </channel>
