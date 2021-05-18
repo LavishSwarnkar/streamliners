@@ -87,7 +87,7 @@ All service at your fingertipsYou can order any service you want, from salon, c
       
       <guid>https://thestreamliners.in/portfolio/food-bazaar.html</guid>
       <description>Shopkeeper app Features of Shopkeeper app :
-DynamicShopkeeper can edit menu, working hours, promocodes etc. anytime Order managementShopkeeper can manage orders and filter them by date document.addEventListener( &#39;DOMContentLoaded&#39;, function () {new Splide( &#39;#slider1&#39; , {padding : 0, type : &#34;loop&#34;, rewind : true}).mount();} ); User app Features of User app :</description>
+DynamicShopkeeper can edit menu, working hours, promocodes etc. anytime Order managementShopkeeper can manage orders and filter them by date document.addEventListener( &#39;DOMContentLoaded&#39;, function () {new Splide( &#39;#slider1&#39; , {padding : 0, type : &#34;loop&#34;, rewind : true, lazyLoad: &#39;nearby&#39;}).mount();} ); User app Features of User app :</description>
     </item>
     
     <item>
