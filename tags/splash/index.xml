@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Splash on The Streamliners</title>
+    <link>https://thestreamliners.in/tags/splash/</link>
+    <description>Recent content in Splash on The Streamliners</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/splash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing the Perfect Splash for Android</title>
+      <link>https://thestreamliners.in/blog/implementing-the-perfect-splash-for-android/</link>
+      <pubDate>Sat, 15 May 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/implementing-the-perfect-splash-for-android/</guid>
+      <description>A Splash Screen is a screen which appears when you open an app on your mobile device. Sometimes it’s referred to as a launch screen or startup screen and shows up when your app is loading after you&amp;rsquo;ve just opened it.
+When the loading is finished, you’ll be taken to a more functional screen where you can complete actions.
+Splash screens appear on your screen for a fleeting moment – look away and you might miss them.</description>
+    </item>
+    
+  </channel>
+</rss>

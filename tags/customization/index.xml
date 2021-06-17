@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Customization on The Streamliners</title>
+    <link>https://thestreamliners.in/tags/customization/</link>
+    <description>Recent content in Customization on The Streamliners</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/customization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Designing Custom Toast in Android</title>
+      <link>https://thestreamliners.in/blog/designing-custom-toast-in-android/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/designing-custom-toast-in-android/</guid>
+      <description>We all love to add toast in places we want to check something, check on click events, give some short messages to user they have endless use. But putting a same toast for different kind of messages such as success, error, alert can be confusing and may not be visually alarming to users.
+So what is the solution? We can design custom views and then inflate them in Toast. Below are some kind of examples we will be implementing, to create our custom Toast which will look cool and visually satisfying to users.</description>
+    </item>
+    
+    <item>
+      <title>Design a Custom Phone Authentication with Firebase for Android</title>
+      <link>https://thestreamliners.in/blog/design-a-custom-phone-authentication-with-firebase/</link>
+      <pubDate>Sun, 16 May 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/design-a-custom-phone-authentication-with-firebase/</guid>
+      <description>Many apps require their users to be authenticated. So for the purpose of authenticating the apps uses phone number authentication inside their apps.
+When you use phone number authentication, you have many benefits like
+ Preventing Fake Users: When you use phone authentication, the user can’t be able to register for multiple accounts, as for each account a unique phone number is needed. Increase User Value: When you have all the users verified by a phone number the value of your user base increases.</description>
+    </item>
+    
+  </channel>
+</rss>

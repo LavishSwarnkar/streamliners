@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent Articles on The Streamliners</title>
-    <link>https://thestreamliners.in/blog/</link>
-    <description>Recent content in Recent Articles on The Streamliners</description>
+    <title>Android on The Streamliners</title>
+    <link>https://thestreamliners.in/categories/android/</link>
+    <description>Recent content in Android on The Streamliners</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/categories/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Designing Custom Toast in Android</title>
       <link>https://thestreamliners.in/blog/designing-custom-toast-in-android/</link>
@@ -82,16 +82,6 @@ Android’s biometric APIs allow for secure authentication on the Android platfo
       <description>A Splash Screen is a screen which appears when you open an app on your mobile device. Sometimes it’s referred to as a launch screen or startup screen and shows up when your app is loading after you&amp;rsquo;ve just opened it.
 When the loading is finished, you’ll be taken to a more functional screen where you can complete actions.
 Splash screens appear on your screen for a fleeting moment – look away and you might miss them.</description>
-    </item>
-    
-    <item>
-      <title>The reality of CSE in Private colleges of India</title>
-      <link>https://thestreamliners.in/blog/the-reality-of-cse-in-private-colleges-of-india/</link>
-      <pubDate>Sun, 12 Apr 2020 00:00:00 +0530</pubDate>
-      
-      <guid>https://thestreamliners.in/blog/the-reality-of-cse-in-private-colleges-of-india/</guid>
-      <description>Introduction The technical education system of CSE in private colleges is very bad. The colleges have opened just to run a business. They are not creating actual Computer Science Engineers. Majority of students end up getting placed in Service based jobs which stops their mental growth. These students do not get jobs CSE students deserve.
-Now this problem has been prevailing since a long time now. Situation may have changed a bit but leaving it as is and hoping for better tomorrow will take a lot of time.</description>
     </item>
     
   </channel>

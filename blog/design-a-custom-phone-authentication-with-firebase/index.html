@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Design a Custom Phone Authentication with Firebase for Android</title>
+
+  
+<meta name="title" content="Design a Custom Phone Authentication with Firebase for Android">
+<meta name="description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thestreamliners.in/blog/design-a-custom-phone-authentication-with-firebase/">
+<meta property="og:title" content="Design a Custom Phone Authentication with Firebase for Android">
+<meta property="og:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="og:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://thestreamliners.in/blog/design-a-custom-phone-authentication-with-firebase/">
+<meta property="twitter:title" content="Design a Custom Phone Authentication with Firebase for Android">
+<meta property="twitter:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="twitter:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+  <!-- mobile responsive meta -->
+  <meta name="theme-color" content="#3c51b2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/font-awesome/css/font-awesome.min.css" />
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/magnafic-popup/magnific-popup.css" />
+
+  <!-- Stylesheets -->
+  
+  <link href="https://thestreamliners.in/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQR6XDLDE5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js',  new Date());
+
+    gtag('config', 'G-ZQR6XDLDE5');
+  </script>
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="https://thestreamliners.in" class="navbar-brand">
+      <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
+    </a>
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#home"
+            class="nav-link text-dark text-sm-center p-2 ">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#service"
+            class="nav-link text-dark text-sm-center p-2 ">Services</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#portfolio"
+            class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/contact"
+            class="nav-link text-dark text-sm-center p-2 ">Contact</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/about-us"
+            class="nav-link text-dark text-sm-center p-2 ">About us</a>
+        </li>
+        
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+  <div id="content">
+    
+
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
+        <h3 class="breadCrumb__title">Design a Custom Phone Authentication with Firebase for Android</h3>
+
+        <div class="row justify-content-center">
+          <p>May 16, 2021 by <a href="../../authors/atul-sharma">Atul Sharma</a></p>
+        </div>
+
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+  <div class="svg-img">
+      <img src=https://thestreamliners.in/images/hero/figure-svg.svg alt="">
+  </div>
+  <div class="animate-shape">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+          <defs>
+              <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#f1f6f9" />
+                  <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+              </linearGradient>
+          </defs>
+          <g data-name="blob-shape (3)">
+              <path class="blob" fill="url(#d)"
+                  d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+          </g>
+      </svg>
+  </div>
+  <div class="animate-pattern">
+      <img src=https://thestreamliners.in/images/service/background-pattern.svg alt="background-shape">
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+            
+          </div>
+      </div>
+      <div class="row mt-5">
+          <div class="col-lg-12">
+              <div class="singleBlog__content">
+                  <p>Many apps require their users to be authenticated. So for the purpose of authenticating the apps uses phone number authentication inside their apps.</p>
+<p>When you use phone number authentication, you have many benefits like</p>
+<ul>
+<li><strong>Preventing Fake Users:</strong> When you use phone authentication, the user can’t be able to register for multiple accounts, as for each account a unique phone number is needed.</li>
+<li><strong>Increase User Value:</strong> When you have all the users verified by a phone number the value of your user base increases.</li>
+<li><strong>Increased Security and User Experience:</strong> Nowadays more people using apps and remembering passwords are a headache for many users, so they end up using <code>weak passwords</code>. Using phone authentication increases security and user experience, as the user does not need to create and remember passwords, they will enter their number and then they can receive a temporary authentication code by SMS.</li>
+</ul>
+<h3 id="why-firebase-phone-authentication">Why Firebase Phone Authentication?</h3>
+<p>For implementing phone authentication you need to pay for SMS service, but with firebase, you can do it for <strong>FREE</strong>, isn’t it awesome? The free plan of firebase has Ten Thousand Verification per month.  That&rsquo;s enough for the starter apps I guess, but yes if you exceed this limit, you need to pay.</p>
+<h3 id="before-we-begin-we-need-to-setup-firebase-for-our-android-project">Before we begin, we need to setup firebase for our android project</h3>
+<ol>
+<li>
+<p>Add Firebase to your Android Project.  If not familiar visit <a href="https://firebase.google.com/docs/android/setup">here</a>.</p>
+</li>
+<li>
+<p>Using the <code>Firebase Android BoM</code>, declare the dependency for the Firebase Authentication Android library in your <strong>module (app-level) Gradle</strong> file (usually <code>app/build.gradle</code>).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sass" data-lang="sass"><span style="color:#f92672">dependencies</span> <span style="color:#960050;background-color:#1e0010">{</span>
+    <span style="color:#f92672">//</span> <span style="color:#f92672">**</span><span style="color:#f92672">Import</span> <span style="color:#f92672">the</span> <span style="color:#f92672">BoM</span> <span style="color:#f92672">for</span> <span style="color:#f92672">the</span> <span style="color:#f92672">Firebase</span> <span style="color:#f92672">platform</span><span style="color:#f92672">**</span>
+<span style="color:#960050;background-color:#1e0010">    </span><span style="color:#a6e22e">implementation</span><span style="color:#960050;background-color:#1e0010"> </span><span style="color:#a6e22e">platform(&#39;com.google.firebase</span><span style="color:#f92672">:</span>firebase-bom<span style="color:#f92672">:</span><span style="color:#ae81ff">28</span><span style="color:#ae81ff">.0.1</span><span style="color:#e6db74">&#39;)</span>
+
+    <span style="color:#f92672">//</span> <span style="color:#f92672">**</span><span style="color:#f92672">Declare</span> <span style="color:#f92672">the</span> <span style="color:#f92672">dependency</span> <span style="color:#f92672">for</span> <span style="color:#f92672">the</span> <span style="color:#f92672">Firebase</span> <span style="color:#f92672">Authentication</span> <span style="color:#f92672">library</span><span style="color:#f92672">**</span>
+    <span style="color:#f92672">implementation</span> <span style="color:#e6db74">&#39;com.google.firebase:firebase-auth&#39;</span>
+<span style="color:#960050;background-color:#1e0010">}</span>
+</code></pre></div><p><strong>When using the BoM, you don&rsquo;t specify versions in Firebase library dependencies</strong></p>
+</li>
+<li>
+<p>Add your <code>SHA-1</code> and <code>SHA-256</code> to your firebase project.</p>
+</li>
+</ol>
+<h3 id="enabling-phone-authentication-for-firebase-project">Enabling Phone Authentication for Firebase Project</h3>
+<ol>
+<li>
+<p>To sign in users by SMS, you must first enable the Phone Number sign-in method for your Firebase project:</p>
+<ul>
+<li>In the <a href="https://console.firebase.google.com/">Firebase console</a>, open the <strong>Authentication</strong> section.</li>
+<li>On the <strong>Sign-in Method</strong> page, enable the <strong>Phone Number</strong> sign-in method.</li>
+</ul>
+</li>
+<li>
+<p>Enable App Verification</p>
+<p>Firebase must be able to verify that phone number sign-in requests are coming from your app, and to verify that enable <strong><code>SafetyNet</code></strong> which automatically verifies the device legitimate if google play services is installed. To enable it visit this <a href="https://console.cloud.google.com/apis/library/androidcheck.googleapis.com">link</a>.</p>
+</li>
+</ol>
+<h2 id="send-verification-code-to-users-phone">Send Verification code to User&rsquo;s Phone</h2>
+<p>To initiate phone number sign-in, present the user an interface that prompts them to type their phone number.</p>
+<h3 id="step-1">Step 1</h3>
+<p>After you have user&rsquo;s phone number, pass their phone number to the <code>PhoneAuthProvider.verifyPhoneNumber</code> method to request that Firebase verify the user&rsquo;s phone number.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sendOtp</span><span style="color:#f92672">(</span>String mobile_no<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      PhoneAuthOptions options <span style="color:#f92672">=</span>
+              PhoneAuthOptions<span style="color:#f92672">.</span><span style="color:#a6e22e">newBuilder</span><span style="color:#f92672">(</span>mAuth<span style="color:#f92672">)</span>
+                      <span style="color:#f92672">.</span><span style="color:#a6e22e">setPhoneNumber</span><span style="color:#f92672">(</span>mobile_no<span style="color:#f92672">)</span><span style="color:#75715e">// Phone number to verify
+</span><span style="color:#75715e"></span>                      <span style="color:#f92672">.</span><span style="color:#a6e22e">setTimeout</span><span style="color:#f92672">(</span>60L<span style="color:#f92672">,</span> TimeUnit<span style="color:#f92672">.</span><span style="color:#a6e22e">SECONDS</span><span style="color:#f92672">)</span> <span style="color:#75715e">// Timeout and unit
+</span><span style="color:#75715e"></span>                      <span style="color:#f92672">.</span><span style="color:#a6e22e">setActivity</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">)</span>          <span style="color:#75715e">// Activity (for callback binding)
+</span><span style="color:#75715e"></span>                      <span style="color:#f92672">.</span><span style="color:#a6e22e">setCallbacks</span><span style="color:#f92672">(</span>mCallbacks<span style="color:#f92672">)</span>   <span style="color:#75715e">// OnVerificationStateChangedCallbacks
+</span><span style="color:#75715e"></span>                      <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+      PhoneAuthProvider<span style="color:#f92672">.</span><span style="color:#a6e22e">verifyPhoneNumber</span><span style="color:#f92672">(</span>options<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h3 id="step-2">Step 2</h3>
+<p>When you call <code>PhoneAuthProvider.verifyPhoneNumber</code>, you must also provide an instance of <code>OnVerificationStateChangedCallbacks</code>, which contains implementations of the callback functions that handle the results of the request.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String mVerificationId<span style="color:#f92672">;</span>
+PhoneAuthProvider<span style="color:#f92672">.</span><span style="color:#a6e22e">ForceResendingToken</span> mResendToken<span style="color:#f92672">;</span>
+<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> PhoneAuthProvider<span style="color:#f92672">.</span><span style="color:#a6e22e">OnVerificationStateChangedCallbacks</span> mCallbacks <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> PhoneAuthProvider<span style="color:#f92672">.</span><span style="color:#a6e22e">OnVerificationStateChangedCallbacks</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#a6e22e">@Override</span>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onVerificationCompleted</span><span style="color:#f92672">(</span>PhoneAuthCredential credential<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#75715e">//Getting the code sent by SMS
+</span><span style="color:#75715e"></span>            String code <span style="color:#f92672">=</span> credential<span style="color:#f92672">.</span><span style="color:#a6e22e">getSmsCode</span><span style="color:#f92672">();</span>
+            <span style="color:#75715e">//sometime the code is not detected automatically
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//in this case the code will be null
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//so user has to manually enter the code
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>code <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                verifyVerificationCode<span style="color:#f92672">(</span>code<span style="color:#f92672">);</span> <span style="color:#75715e">// we shall se this implementation next
+</span><span style="color:#75715e"></span>            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+
+        <span style="color:#a6e22e">@Override</span>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onVerificationFailed</span><span style="color:#f92672">(</span>FirebaseException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#75715e">// This callback is invoked in an invalid request for verification is made,
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// for instance if the the phone number format is not valid.
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>e <span style="color:#66d9ef">instanceof</span> FirebaseAuthInvalidCredentialsException<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                <span style="color:#75715e">// Invalid request
+</span><span style="color:#75715e"></span>                <span style="color:#75715e">// ...
+</span><span style="color:#75715e"></span>            <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>e <span style="color:#66d9ef">instanceof</span> FirebaseTooManyRequestsException<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                <span style="color:#75715e">// The SMS quota for the project has been exceeded
+</span><span style="color:#75715e"></span>                <span style="color:#75715e">// ...
+</span><span style="color:#75715e"></span>            <span style="color:#f92672">}</span>
+            <span style="color:#75715e">// Show a message and update the UI
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// ...
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">}</span>
+
+        <span style="color:#a6e22e">@Override</span>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onCodeSent</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@NonNull</span> String verificationId<span style="color:#f92672">,</span><span style="color:#a6e22e">@NonNull</span> PhoneAuthProvider<span style="color:#f92672">.</span><span style="color:#a6e22e">ForceResendingToken</span> token<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onCodeSent</span><span style="color:#f92672">(</span>verificationId<span style="color:#f92672">,</span> token<span style="color:#f92672">);</span>
+            <span style="color:#75715e">// Save verification ID and resending token so we can use them later
+</span><span style="color:#75715e"></span>            mVerificationId <span style="color:#f92672">=</span> verificationId<span style="color:#f92672">;</span>
+            mResendToken <span style="color:#f92672">=</span> token<span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">};</span>
+</code></pre></div><h3 id="step-3">Step 3</h3>
+<p>To check that OTP entered by user matches the one sent by Firebase, we are creating a <code>PhoneAuthCredential</code> object.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">verifyVerificationCode</span><span style="color:#f92672">(</span>String code<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            <span style="color:#75715e">//creating the credential
+</span><span style="color:#75715e"></span>            PhoneAuthCredential credential <span style="color:#f92672">=</span> PhoneAuthProvider<span style="color:#f92672">.</span><span style="color:#a6e22e">getCredential</span><span style="color:#f92672">(</span>mVerificationId<span style="color:#f92672">,</span> code<span style="color:#f92672">);</span>
+            <span style="color:#75715e">//signing the user
+</span><span style="color:#75715e"></span>            signInWithPhoneAuthCredential<span style="color:#f92672">(</span>credential<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>Exception e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            myApp<span style="color:#f92672">.</span><span style="color:#a6e22e">showSnackBarForErrors</span><span style="color:#f92672">(</span>EmployerOTP<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">,</span>getString<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">string</span><span style="color:#f92672">.</span><span style="color:#a6e22e">if_no_auth</span><span style="color:#f92672">));</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h3 id="step-4">Step 4</h3>
+<p>Sign in the user to your App.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">signInWithPhoneAuthCredential</span><span style="color:#f92672">(</span>PhoneAuthCredential credential<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      mAuth<span style="color:#f92672">.</span><span style="color:#a6e22e">signInWithCredential</span><span style="color:#f92672">(</span>credential<span style="color:#f92672">)</span>
+              <span style="color:#f92672">.</span><span style="color:#a6e22e">addOnCompleteListener</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> OnCompleteListener<span style="color:#f92672">&lt;</span>AuthResult<span style="color:#f92672">&gt;()</span> <span style="color:#f92672">{</span>
+                  <span style="color:#a6e22e">@Override</span>
+                  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onComplete</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@NonNull</span> Task<span style="color:#f92672">&lt;</span>AuthResult<span style="color:#f92672">&gt;</span> task<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                      <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>task<span style="color:#f92672">.</span><span style="color:#a6e22e">isSuccessful</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+                          <span style="color:#75715e">// Sign in success, update UI with the signed-in user&#39;s information
+</span><span style="color:#75715e"></span>                                     FirebaseUser user <span style="color:#f92672">=</span> task<span style="color:#f92672">.</span><span style="color:#a6e22e">getResult</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getUser</span><span style="color:#f92672">();</span>
+                      <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+                          String message <span style="color:#f92672">=</span> getString<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">string</span><span style="color:#f92672">.</span><span style="color:#a6e22e">error_message</span><span style="color:#f92672">);</span>
+                          <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>task<span style="color:#f92672">.</span><span style="color:#a6e22e">getException</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">instanceof</span> FirebaseAuthInvalidCredentialsException<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                              message <span style="color:#f92672">=</span> getString<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">string</span><span style="color:#f92672">.</span><span style="color:#a6e22e">invalid_code</span><span style="color:#f92672">);</span>
+                          <span style="color:#f92672">}</span>
+                          Snackbar snackbar <span style="color:#f92672">=</span> Snackbar<span style="color:#f92672">.</span><span style="color:#a6e22e">make</span><span style="color:#f92672">(</span>findViewById<span style="color:#f92672">(</span>android<span style="color:#f92672">.</span><span style="color:#a6e22e">R</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">content</span><span style="color:#f92672">),</span> message<span style="color:#f92672">,</span> Snackbar<span style="color:#f92672">.</span><span style="color:#a6e22e">LENGTH_LONG</span><span style="color:#f92672">);</span>
+                          snackbar<span style="color:#f92672">.</span><span style="color:#a6e22e">setAction</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">string</span><span style="color:#f92672">.</span><span style="color:#a6e22e">dismiss</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> View<span style="color:#f92672">.</span><span style="color:#a6e22e">OnClickListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+                              <span style="color:#a6e22e">@Override</span>
+                              <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>View v<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                              <span style="color:#f92672">}</span>
+                          <span style="color:#f92672">});</span>
+                          snackbar<span style="color:#f92672">.</span><span style="color:#a6e22e">show</span><span style="color:#f92672">();</span>
+                      <span style="color:#f92672">}</span>
+                  <span style="color:#f92672">}</span>
+              <span style="color:#f92672">});</span>
+  <span style="color:#f92672">}</span>
+</code></pre></div><p>To get User&rsquo;s instance and Log out User</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// get current user signed in
+</span><span style="color:#75715e"></span>FirebaseAuth<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getCurrentUser</span><span style="color:#f92672">();</span>
+<span style="color:#75715e">// log out current user
+</span><span style="color:#75715e"></span>FirebaseAuth<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">signOut</span><span style="color:#f92672">();</span>
+</code></pre></div><h2 id="there-is-a-tip">There is a Tip!</h2>
+<p><strong>Yes, you read it right</strong>. During your development process to do verification of user you might see frequent crashes during the verification process of your app.</p>
+<p>This crash is something like this which says</p>
+<figure class="center-img"><img src="https://raw.githubusercontent.com/Iltwats/CDN/master/2021/06/01-17-56-03-CRASH_AUTH.png"
+         alt="Crash Auth" width="100%"/>
+</figure>
+
+<p>This error or crash (apparently 😅), created problems for users during authentication and and after researching a while, I got to know that this happens due to either low memory on phone or low network connection. When you maintain log with verification id i.e. <code>Log.d(TAG, verificationId)</code> it will show null in <code>verificationId</code> and as per the error it says cannot create <code>PhoneAuthCredential</code> without verification proof and <code>verificationId</code> is our verification proof.</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>
+<p>Clear phone cache and try signing again.</p>
+</li>
+<li>
+<p>Go to app info and clear cache and Restore Instance State like the code programmatically.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> String verificationId<span style="color:#f92672">;</span>
+<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String KEY_VERIFICATION_ID <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;key_verification_id&#34;</span><span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Override</span>
+<span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onCreate</span><span style="color:#f92672">(</span>Bundle savedInstanceState<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onCreate</span><span style="color:#f92672">(</span>savedInstanceState<span style="color:#f92672">);</span>
+    setContentView<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">layout</span><span style="color:#f92672">.</span><span style="color:#a6e22e">activity_otp</span><span style="color:#f92672">);</span>
+
+    <span style="color:#75715e">// Restore instance state
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// put this code after starting phone number verification
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>verificationId <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> savedInstanceState <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        onRestoreInstanceState<span style="color:#f92672">(</span>savedInstanceState<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span><span style="color:#75715e">//end of onCreate
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// over-ride these 2 methods
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">@Override</span>
+<span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onSaveInstanceState</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@NonNull</span> Bundle outState<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onSaveInstanceState</span><span style="color:#f92672">(</span>outState<span style="color:#f92672">);</span>
+    outState<span style="color:#f92672">.</span><span style="color:#a6e22e">putString</span><span style="color:#f92672">(</span>KEY_VERIFICATION_ID<span style="color:#f92672">,</span>verificationId<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#a6e22e">@Override</span>
+<span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onRestoreInstanceState</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@NonNull</span> Bundle savedInstanceState<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onRestoreInstanceState</span><span style="color:#f92672">(</span>savedInstanceState<span style="color:#f92672">);</span>
+    verificationId <span style="color:#f92672">=</span> savedInstanceState<span style="color:#f92672">.</span><span style="color:#a6e22e">getString</span><span style="color:#f92672">(</span>KEY_VERIFICATION_ID<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>What happens is the <code>verificationId</code> is stored locally and it is lost sometimes due to less memory. So to tackle this situation we have to restore Instance State which won&rsquo;t let the <code>verificationId</code> to be lost.</p>
+</li>
+</ol>
+<h2 id="some-helpful-points-to-implement-effective-authentication">Some Helpful points to implement effective authentication</h2>
+<ul>
+<li>
+<p>Use fictional numbers instead of your real ones for testing as Firebase to save your project from abuse blocks that number for a time period from signing in again.</p>
+</li>
+<li>
+<p>Use <code>PinText</code> view for better User Experience to autofill the OTP.</p>
+<p><img src="https://camo.githubusercontent.com/609e136fd2579a1b900053b92b99b16ce521c03ba8bbb380b37e7329c8953805/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f31724c325746597563793641463159344c342f67697068792e676966" alt="https://camo.githubusercontent.com/609e136fd2579a1b900053b92b99b16ce521c03ba8bbb380b37e7329c8953805/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f31724c325746597563793641463159344c342f67697068792e676966"></p>
+</li>
+</ul>
+<p><strong>Hope it helped. Happy Coding</strong> 😀</p>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__cta">
+					<div class="shape-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="shape-2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="text-light footer__cta_content">
+						<span>Contact us</span>
+						<h2 class="mb-0">Let’s make your dream come true</h2>
+					</div>
+					<div class="footer__cta_action">
+						<a class="btn btn-light btn-zoom" href="https://thestreamliners.in/contact">Get in
+							touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__widget">
+			<div class="col-lg-4">
+				<div class="footer__widget_logo mb-5">
+					<img src="https://thestreamliners.in/images/site-navigation/footer-logo.svg" alt="The Streamliners">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_sitemap mb-5">
+					<h4 class="base-font">Links</h4>
+					<ul class="unstyle-list small">
+						
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/locatin">LocatIN</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/ju-eezy">JU eezy</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/cse-simplified">CSE Simplified</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training">Android Training (For JECRCians)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training-ext">Android Training (For Outsiders)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/about-us">About us</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_address mb-5">
+					<h4 class="base-font">Address</h4>
+					
+					<ul class="fa-ul small">
+						
+						<li class="mb-2"><a class="text-light" href="mailto:thestreamliners.tech@gmail.com"><span class="fa-li"><i
+										class="fa fa-envelope"></i></span>thestreamliners.tech@gmail.com</a></li>
+						<li class="mb-2">
+							<span class="fa-li"><i class="fa fa-map-marker"></i></span>JECRC University, Jaipur, Rajasthan, INDIA</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All rights reserved © The Streamliners 2021</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/lavishswarnkar"><i
+									class="fa fa-linkedin-square"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://thestreamliners.in/plugins/jQuery/jquery.min.js"></script>
+<script src="https://thestreamliners.in/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://thestreamliners.in/plugins/slick/slick.min.js"></script>
+<script src="https://thestreamliners.in/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://thestreamliners.in/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://thestreamliners.in/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://thestreamliners.in/plugins/imagesloaded/imagesloaded.min.js"></script>
+<script src="https://thestreamliners.in/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://thestreamliners.in/js/form-handler.min.js"></script>
+
+<script src="https://thestreamliners.in/js/script.min.js"></script>
+
+</body>
+
+</html>

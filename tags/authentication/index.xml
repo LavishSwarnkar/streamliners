@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authentication on The Streamliners</title>
+    <link>https://thestreamliners.in/tags/authentication/</link>
+    <description>Recent content in Authentication on The Streamliners</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Design a Custom Phone Authentication with Firebase for Android</title>
+      <link>https://thestreamliners.in/blog/design-a-custom-phone-authentication-with-firebase/</link>
+      <pubDate>Sun, 16 May 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/design-a-custom-phone-authentication-with-firebase/</guid>
+      <description>Many apps require their users to be authenticated. So for the purpose of authenticating the apps uses phone number authentication inside their apps.
+When you use phone number authentication, you have many benefits like
+ Preventing Fake Users: When you use phone authentication, the user can’t be able to register for multiple accounts, as for each account a unique phone number is needed. Increase User Value: When you have all the users verified by a phone number the value of your user base increases.</description>
+    </item>
+    
+    <item>
+      <title>Implementing Biometric Authentication in Java Android</title>
+      <link>https://thestreamliners.in/blog/implementing-biometric-authentication-in-java-android/</link>
+      <pubDate>Sat, 15 May 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/implementing-biometric-authentication-in-java-android/</guid>
+      <description>Thinking of adding your own app lock to your android app? Adding a biometric app lock 🔒 to protect your user from unauthorized usage, protect their data and information can be really helpful.
+Biometric authentication allows you to quickly unlock your device with your fingerprint or face, confirming it’s really you who’s using the app.
+Android’s biometric APIs allow for secure authentication on the Android platform. They manage a system-provided biometric authentication prompt, and provide a seamless experience by supporting various authentication types, including biometric ones such as fingerprint and face, as well as non-biometric types like PIN, password, and pattern.</description>
+    </item>
+    
+  </channel>
+</rss>
