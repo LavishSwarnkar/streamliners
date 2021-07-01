@@ -6,7 +6,26 @@
     <description>Recent content in Android on The Streamliners</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firebase Push notifications using Admin SDK</title>
+      <link>https://thestreamliners.in/blog/firebase-push-notifications-in-android-using-admin-sdk/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/firebase-push-notifications-in-android-using-admin-sdk/</guid>
+      <description>How to send push notifications through an Android app using firebase?  A notification is a message you can display to the user outside of your application’s normal UI. When you tell the system to issue a notification, it first appears as an icon in the notification area. Notifications are important to give timely updates to your android app users they require minimal UI to notify the user about the event.</description>
+    </item>
+    
+    <item>
+      <title>Background Location Permission in Android 11 and above</title>
+      <link>https://thestreamliners.in/blog/background-location-permission-in-android-11-and-above/</link>
+      <pubDate>Wed, 23 Jun 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/background-location-permission-in-android-11-and-above/</guid>
+      <description>Request background location permission in all android versions using Java With lastest android version Android 11, some security is added for location. Now to access background location, users have to manually “Allow all the time” in settings.
+For using foreground and background location in lower versions of Android 11, we can take permission ACCESS_FINE_LOCATION, this permission will be considered for both foreground and background but with Android 11 and above you have to take one more permission ACCESS_BACKGROUND_LOCATION separately.</description>
+    </item>
+    
     <item>
       <title>Designing Custom Toast in Android</title>
       <link>https://thestreamliners.in/blog/designing-custom-toast-in-android/</link>
