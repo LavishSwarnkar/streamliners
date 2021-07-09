@@ -283,7 +283,15 @@
 </code></pre></div><ul>
 <li>YOUR_ADMIN_SDK_KEY will be replaced by the key given in your firebase project it is located in tab of cloud messaging under project settings see the below screenshot to locate the key</li>
 </ul>
-<p><!-- raw HTML omitted --> <!-- raw HTML omitted --><strong>NOTE</strong>:- Don’t share the key with anyone else otherwise there will be breach in your application someone having this key can send push notifications to your application so beware.</p>
+<figure class="center-img"><img src="https://github.com/swapnil20711/CDN/blob/main/NotificationsBlog/project_settings.png?raw=true"
+         alt="FCM" width="50%"/>
+</figure>
+
+<figure class="center-img"><img src="https://github.com/swapnil20711/CDN/blob/main/NotificationsBlog/project_settings_tab.png?raw=true"
+         alt="FCM" width="100%"/>
+</figure>
+
+<p><strong>NOTE</strong>:- Don’t share the key with anyone else otherwise there will be breach in your application someone having this key can send push notifications to your application so beware.</p>
 <p><strong>TIP</strong>:- If Breach occurs then click on add server key and delete the older key.</p>
 <h4 id="step-6">Step 6:</h4>
 <p>Call the FCMSender.send() method to send notification to the application and you have to give topic to which you wanna send message. If the user is subscribed to the topic then he/she will get notification message. Here we have to pass topic to which we want to send notification. And in “for” we have to send mobile number with country code appended in it, and in “body” you can pass the message you want to send. The message you have to pass while sending notification have format as that of the message string given below 👇👇.</p>
