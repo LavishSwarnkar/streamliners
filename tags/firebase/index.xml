@@ -6,7 +6,19 @@
     <description>Recent content in Firebase on The Streamliners</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firebase Log Events</title>
+      <link>https://thestreamliners.in/blog/firebase-log-events/</link>
+      <pubDate>Sun, 08 Aug 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/firebase-log-events/</guid>
+      <description>Firebase provides very powerful feature which is “Log Events”. The power of this feature is that you can check which feature of your app is used mostly by the users.
+Let’s deep dive into the implementation (note that the complete implementation is in Java)
+Add this library in your build.gradle file:
+implementation &amp;#39;com.google.firebase:firebase-analytics&amp;#39; I had used firebase bom in my project so their is no need to give version to firebase-analytics library</description>
+    </item>
+    
     <item>
       <title>Firebase Push notifications using Admin SDK</title>
       <link>https://thestreamliners.in/blog/firebase-push-notifications-in-android-using-admin-sdk/</link>

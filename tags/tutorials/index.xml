@@ -6,7 +6,29 @@
     <description>Recent content in Tutorials on The Streamliners</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating custom notifications</title>
+      <link>https://thestreamliners.in/blog/creating-custom-notifications/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/creating-custom-notifications/</guid>
+      <description>Notifications alert you to many things on your Android device, including incoming messages, new emails, and calendar events. Notifications work slightly differently for each app, but they&amp;rsquo;re easy to customize.
+Starting in Android 8.0 (API level 26), all notifications must be assigned to a channel. For each channel, you can set the visual and auditory behavior that is applied to all notifications in that channel. Then, users can change these settings and decide which notification channels from your app should be intrusive or visible at all.</description>
+    </item>
+    
+    <item>
+      <title>Firebase Log Events</title>
+      <link>https://thestreamliners.in/blog/firebase-log-events/</link>
+      <pubDate>Sun, 08 Aug 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/firebase-log-events/</guid>
+      <description>Firebase provides very powerful feature which is “Log Events”. The power of this feature is that you can check which feature of your app is used mostly by the users.
+Let’s deep dive into the implementation (note that the complete implementation is in Java)
+Add this library in your build.gradle file:
+implementation &amp;#39;com.google.firebase:firebase-analytics&amp;#39; I had used firebase bom in my project so their is no need to give version to firebase-analytics library</description>
+    </item>
+    
     <item>
       <title>Firebase Push notifications using Admin SDK</title>
       <link>https://thestreamliners.in/blog/firebase-push-notifications-in-android-using-admin-sdk/</link>

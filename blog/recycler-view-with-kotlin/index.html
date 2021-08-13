@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Implement RecyclerView in android with kotlin</title>
+
+  
+<meta name="title" content="Implement RecyclerView in android with kotlin">
+<meta name="description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thestreamliners.in/blog/recycler-view-with-kotlin/">
+<meta property="og:title" content="Implement RecyclerView in android with kotlin">
+<meta property="og:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="og:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://thestreamliners.in/blog/recycler-view-with-kotlin/">
+<meta property="twitter:title" content="Implement RecyclerView in android with kotlin">
+<meta property="twitter:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="twitter:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+  <!-- mobile responsive meta -->
+  <meta name="theme-color" content="#3c51b2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/font-awesome/css/font-awesome.min.css" />
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/magnafic-popup/magnific-popup.css" />
+
+  <!-- Stylesheets -->
+  
+  <link href="https://thestreamliners.in/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQR6XDLDE5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js',  new Date());
+
+    gtag('config', 'G-ZQR6XDLDE5');
+  </script>
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="https://thestreamliners.in" class="navbar-brand">
+      <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
+    </a>
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#home"
+            class="nav-link text-dark text-sm-center p-2 ">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#service"
+            class="nav-link text-dark text-sm-center p-2 ">Services</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#portfolio"
+            class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/contact"
+            class="nav-link text-dark text-sm-center p-2 ">Contact</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/about-us"
+            class="nav-link text-dark text-sm-center p-2 ">About us</a>
+        </li>
+        
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+  <div id="content">
+    
+
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
+        <h3 class="breadCrumb__title">Implement RecyclerView in android with kotlin</h3>
+
+        <div class="row justify-content-center">
+          <p>August 8, 2021 by <a href="../../authors/hrithik-sharma">Hrithik Sharma</a></p>
+        </div>
+
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+  <div class="svg-img">
+      <img src=https://thestreamliners.in/images/hero/figure-svg.svg alt="">
+  </div>
+  <div class="animate-shape">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+          <defs>
+              <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#f1f6f9" />
+                  <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+              </linearGradient>
+          </defs>
+          <g data-name="blob-shape (3)">
+              <path class="blob" fill="url(#d)"
+                  d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+          </g>
+      </svg>
+  </div>
+  <div class="animate-pattern">
+      <img src=https://thestreamliners.in/images/service/background-pattern.svg alt="background-shape">
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+            
+          </div>
+      </div>
+      <div class="row mt-5">
+          <div class="col-lg-12">
+              <div class="singleBlog__content">
+                  <p>Do you have a large list of data to show to the users of your application?</p>
+<p>Want a flexible and developer and user friendly way to show the data?</p>
+<p>Then <code>RecyclerView</code> is the right choice.</p>
+<!-- raw HTML omitted -->
+<p><code>RecyclerView</code> is an advanced version of <code>ListView</code> that is more powerful and flexible.</p>
+<p>It is a ViewGroup which is the successor of <em>ListView</em> and <em>GridView</em> including improvement on both of them.</p>
+<p>As the name suggests, RecyclerView recycle the views which are out of visibility of user. For example, if user scrolled down to the item number 6 or 7 then items at position 1,2 or 3 would be cleared from the memory to reduce memory consumption.</p>
+<hr>
+<h4 id="pre-requisites">Pre-requisites</h4>
+<ul>
+<li>
+<p>Basic knowledge of xml and kotlin</p>
+</li>
+<li>
+<p>Comfortable with classes and objects</p>
+</li>
+<li>
+<p>Should know use of  ViewBinding</p>
+</li>
+</ul>
+<hr>
+<h4 id="components-required-to-setup-recyclerview">Components required to setup RecyclerView</h4>
+<ul>
+<li>
+<p>Model  - The data to be shown to the user</p>
+</li>
+<li>
+<p>XML layout - For how to show data to the user</p>
+</li>
+<li>
+<p>Adapter  - To bind the data to the RecyclerView</p>
+</li>
+<li>
+<p>ViewHolder - Holds the reference of the view that has to be dynamically modified during the execution of the program</p>
+</li>
+</ul>
+<hr>
+<h2 id="now-lets-dive-into-the-code-step-by-step">Now let&rsquo;s dive into the code step by step</h2>
+<h4 id="create-a-new-project">Create a new project:</h4>
+<ul>
+<li>
+<p>Go to <strong>File&gt;New&gt;New Project</strong></p>
+</li>
+<li>
+<p>Select <strong>Empty Activity</strong> and click <strong>Next</strong></p>
+</li>
+<li>
+<p>Give your project a suitable name and enter package name (or leave it as default)</p>
+</li>
+<li>
+<p>Select Kotlin as Language and choose Minimum SDK (you can get help from Help me choose)</p>
+</li>
+<li>
+<p>Click <strong>Finish</strong></p>
+</li>
+<li>
+<p>After some processing time, the Android Studio main window will appear</p>
+</li>
+</ul>
+<h4 id="create-model">Create Model</h4>
+<ul>
+<li>
+<p>Create a new Kotlin class</p>
+<ul>
+<li>
+<p>Right click the package in the Project window</p>
+</li>
+<li>
+<p>Choose <strong>New&gt;Kotlin Class/File</strong></p>
+</li>
+<li>
+<p>Select <strong>Data Class</strong> from class type options</p>
+</li>
+<li>
+<p>Enter name as <strong>FoodItem</strong> and press enter</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Do not worry about the error in the parenthesis of the data class</p>
+</li>
+<li>
+<p>Add fields (name and price) for our model</p>
+</li>
+</ul>
+<p>Code for our model class is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">data</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FoodItem</span>(<span style="color:#66d9ef">val</span> name:String, <span style="color:#66d9ef">val</span> price:Float)
+</code></pre></div><h4 id="create-xml-layout-for-items">Create xml layout for items</h4>
+<ul>
+<li>
+<p>Right click <strong>res/layout</strong> and select <strong>New&gt;Layout Resource File</strong></p>
+</li>
+<li>
+<p>Give name to the file as <strong>food_item_layout</strong> and click <strong>OK</strong></p>
+</li>
+<li>
+<p>Copy paste this code to the file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span style="color:#f92672">&lt;androidx.constraintlayout.widget.ConstraintLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+    <span style="color:#a6e22e">android:background=</span><span style="color:#e6db74">&#34;#0000FF&#34;</span>
+    <span style="color:#a6e22e">android:layout_margin=</span><span style="color:#e6db74">&#34;6dp&#34;</span>
+    <span style="color:#a6e22e">xmlns:app=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res-auto&#34;</span><span style="color:#f92672">&gt;</span>
+
+    <span style="color:#f92672">&lt;TextView</span>
+        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/foodItemNameTV&#34;</span>
+        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+        <span style="color:#a6e22e">android:textSize=</span><span style="color:#e6db74">&#34;18sp&#34;</span>
+        <span style="color:#a6e22e">android:textColor=</span><span style="color:#e6db74">&#34;#FFF&#34;</span>
+        <span style="color:#a6e22e">android:text=</span><span style="color:#e6db74">&#34;Food Item 1&#34;</span>
+        <span style="color:#a6e22e">android:layout_margin=</span><span style="color:#e6db74">&#34;10dp&#34;</span>
+        <span style="color:#a6e22e">app:layout_constraintStart_toStartOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
+        <span style="color:#a6e22e">app:layout_constraintTop_toTopOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
+        <span style="color:#a6e22e">app:layout_constraintBottom_toBottomOf=</span><span style="color:#e6db74">&#34;parent&#34;</span><span style="color:#f92672">/&gt;</span>
+
+    <span style="color:#f92672">&lt;TextView</span>
+        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/foodItemPriceTV&#34;</span>
+        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+        <span style="color:#a6e22e">android:textColor=</span><span style="color:#e6db74">&#34;#FFF&#34;</span>
+        <span style="color:#a6e22e">android:text=</span><span style="color:#e6db74">&#34;Rs. 200&#34;</span>
+        <span style="color:#a6e22e">android:layout_marginEnd=</span><span style="color:#e6db74">&#34;10dp&#34;</span>
+        <span style="color:#a6e22e">app:layout_constraintEnd_toEndOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
+        <span style="color:#a6e22e">app:layout_constraintTop_toTopOf=</span><span style="color:#e6db74">&#34;@id/foodItemNameTV&#34;</span>
+        <span style="color:#a6e22e">app:layout_constraintBottom_toBottomOf=</span><span style="color:#e6db74">&#34;@id/foodItemNameTV&#34;</span><span style="color:#f92672">/&gt;</span>
+
+<span style="color:#f92672">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+</code></pre></div></li>
+<li>
+<p>In <strong>activity_main.xml</strong> add this code:</p>
+<p>Set layout for the recyclerView in main activity</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span style="color:#f92672">&lt;androidx.constraintlayout.widget.ConstraintLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+    <span style="color:#a6e22e">xmlns:app=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res-auto&#34;</span>
+    <span style="color:#a6e22e">xmlns:tools=</span><span style="color:#e6db74">&#34;http://schemas.android.com/tools&#34;</span>
+    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+    <span style="color:#a6e22e">tools:context=</span><span style="color:#e6db74">&#34;.MainActivity&#34;</span><span style="color:#f92672">&gt;</span>
+
+    <span style="color:#f92672">&lt;androidx.recyclerview.widget.RecyclerView</span>
+        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/foodItemsRV&#34;</span>
+        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+        <span style="color:#a6e22e">app:layout_constraintStart_toStartOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
+        <span style="color:#a6e22e">app:layout_constraintEnd_toEndOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
+        <span style="color:#a6e22e">app:layout_constraintTop_toTopOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
+        <span style="color:#a6e22e">app:layout_constraintBottom_toBottomOf=</span><span style="color:#e6db74">&#34;parent&#34;</span><span style="color:#f92672">/&gt;</span>
+
+<span style="color:#f92672">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+</code></pre></div></li>
+</ul>
+<h4 id="initialize-viewbinding">Initialize ViewBinding</h4>
+<ul>
+<li>
+<p>Open app level <code>build.gradle</code> file</p>
+</li>
+<li>
+<p>In <code>android</code> section add this code</p>
+</li>
+</ul>
+<pre><code>buildFeatures{
+    viewBinding true
+}
+</code></pre><ul>
+<li>Now click <strong>Sync Now</strong> and wait to complete the build process</li>
+</ul>
+<h4 id="set-up-adapter-for-recyclerview">Set up adapter for recyclerView</h4>
+<p>Now this is where our data will connect to the views</p>
+<ul>
+<li>
+<p>First create a new kotlin class and named it as <code>FoodItemAdapter</code> with parameters <code>Context</code> and <code>MutableList&lt;FoodItem&gt;</code></p>
+</li>
+<li>
+<p>Now create an inner class <code>FoodItemViewHolder</code> - The ViewHolder for recycler view</p>
+</li>
+<li>
+<p>Code for the inner class:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FoodItemViewHolder</span>(foodItemLayoutBinding: FoodItemLayoutBinding)
+        : RecyclerView.ViewHolder(foodItemLayoutBinding.root){
+
+}
+</code></pre></div></li>
+<li>
+<p>Extend <code>FoodItemAdapter</code> with <code>RecyclerView.Adapter&lt;FoodItemAdapter.FoodItemViewHolder&gt;()</code></p>
+</li>
+<li>
+<p>Move your cursor to the error in the adapter class and press <strong>Alt+Enter</strong> and select <em>Implement members</em> to implement base class members of the adapter</p>
+</li>
+<li>
+<p>A window will be opened, select all the members from the list and click <strong>OK</strong></p>
+<p>These are the member functions</p>
+<ul>
+<li>
+<p>onCreateViewHolder - This method is for creating viewHolder</p>
+</li>
+<li>
+<p>onBindViewHolder - This method is for binding our data to views</p>
+</li>
+<li>
+<p>getItemCount - For how many items we have to display</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Add this code to <code>onCreateViewHolder</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> binding = FoodItemLayoutBinding.inflate(LayoutInflater.from(context),parent,<span style="color:#66d9ef">false</span>)
+<span style="color:#66d9ef">return</span> FoodItemViewHolder(binding)
+</code></pre></div></li>
+<li>
+<p>Create a function <code>bind(foodItem: FoodItem)</code> in the <code>FoodItemViewHolder</code>  and bind data to the views here</p>
+</li>
+<li>
+<p>This is the code:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> binding = foodItemLayoutBinding
+
+<span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">bind</span>(foodItem: FoodItem){
+    binding.foodItemNameTV.text = foodItem.name
+    binding.foodItemPriceTV.text = <span style="color:#e6db74">&#34;Rs. </span><span style="color:#e6db74">${foodItem.price}</span><span style="color:#e6db74">&#34;</span>
+}
+</code></pre></div></li>
+<li>
+<p>Now add this code to the <code>onBindViewHolder</code> member function</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> foodItem = foodItemList[position]
+holder.bind(foodItem)
+</code></pre></div></li>
+<li>
+<p>In <code>getItemCount</code> just add this line - <code>return foodItemList.size</code></p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<h5 id="this-is-the-complete-code-for-our-adapter">This is the complete code for our adapter</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FoodItemAdapter</span>(<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> context: Context, <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> foodItemList:MutableList&lt;FoodItem&gt;)
+    : RecyclerView.Adapter&lt;FoodItemAdapter.FoodItemViewHolder&gt;() {
+
+
+    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onCreateViewHolder</span>(parent: ViewGroup, viewType: Int): FoodItemViewHolder {
+        <span style="color:#66d9ef">val</span> binding = FoodItemLayoutBinding.inflate(LayoutInflater.from(context),parent,<span style="color:#66d9ef">false</span>)
+        <span style="color:#66d9ef">return</span> FoodItemViewHolder(binding)
+    }
+
+    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onBindViewHolder</span>(holder: FoodItemViewHolder, position: Int) {
+        <span style="color:#66d9ef">val</span> foodItem = foodItemList[position]
+        holder.bind(foodItem)
+    }
+
+    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getItemCount</span>(): Int {
+        <span style="color:#66d9ef">return</span> foodItemList.size
+    }
+
+
+    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FoodItemViewHolder</span>(foodItemLayoutBinding: FoodItemLayoutBinding)
+        : RecyclerView.ViewHolder(foodItemLayoutBinding.root){
+
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> binding = foodItemLayoutBinding
+
+        <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">bind</span>(foodItem: FoodItem){
+            binding.foodItemNameTV.text = foodItem.name
+            binding.foodItemPriceTV.text = <span style="color:#e6db74">&#34;Rs. </span><span style="color:#e6db74">${foodItem.price}</span><span style="color:#e6db74">&#34;</span>
+        }
+
+    }
+}
+</code></pre></div><p><strong>All set with the adapter class</strong></p>
+<h4 id="initialize-adapter-in-the-mainactivity-class">Initialize adapter in the MainActivity class</h4>
+<ul>
+<li>
+<p><strong>Populate the list of food items that will be shown in RecyclerView</strong></p>
+<ul>
+<li>
+<p>Create a property <code>foodItemsList</code> as <code>MutableList&lt;FoodItem&gt;</code> and initialize the list</p>
+</li>
+<li>
+<p>Create a function <code>populateList()</code> and call it in <code>onCreate()</code> of activity class after <code>setContentView()</code></p>
+</li>
+<li>
+<p>Add this code in the method:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>.<span style="color:#ae81ff">15</span>){
+     <span style="color:#66d9ef">val</span> name = <span style="color:#e6db74">&#34;Food Item </span><span style="color:#e6db74">$i</span><span style="color:#e6db74">&#34;</span>
+     <span style="color:#66d9ef">val</span> price = (<span style="color:#ae81ff">100</span> * i).toFloat()
+
+     <span style="color:#66d9ef">val</span> foodItem = FoodItem(name = name, price = price)
+
+     foodItemsList.add(foodItem)
+}
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Now initialize adapter and layout manager</strong></p>
+<ul>
+<li>
+<p>Create a property <code>adapter</code> as FoodItemAdapter and make it <code>lateinit</code></p>
+</li>
+<li>
+<p>Create a function <code>setUpAdapter()</code> and call it after <code>populateList()</code></p>
+</li>
+<li>
+<p>Add this code to this function:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">adapter = FoodItemAdapter(<span style="color:#66d9ef">this</span>,foodItemsList)
+b.foodItemsRV.adapter = adapter
+b.foodItemsRV.layoutManager = LinearLayoutManager(<span style="color:#66d9ef">this</span>)
+</code></pre></div></li>
+<li>
+<p>The default orientation of the recyclerView is vertical, to change orientation to horizontal use this :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">b.foodItemsRV.layoutManager = LinearLayoutManager(<span style="color:#66d9ef">this</span>, LinearLayoutManager.HORIZONTAL, <span style="color:#66d9ef">false</span>)
+</code></pre></div></li>
+<li>
+<p>Optional, to add a divider line between the views:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">b<span style="color:#f92672">.</span><span style="color:#a6e22e">foodItemsRV</span><span style="color:#f92672">.</span><span style="color:#a6e22e">addItemDecoration</span><span style="color:#f92672">(</span>DividerItemDecoration<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span>DividerItemDecoration<span style="color:#f92672">.</span><span style="color:#a6e22e">VERTICAL</span><span style="color:#f92672">))</span>
+</code></pre></div></li>
+</ul>
+</li>
+</ul>
+<p><strong>Now done with the setting up adapter in the activity</strong></p>
+<p><em><strong>Tip:</strong></em> If you want to add, delete or edit items from the data</p>
+<ul>
+<li>
+<p>First update the <code>foodItemsList</code> and then notify adapter about the change you made in the list at a specific position</p>
+<ul>
+<li>
+<p>For delete item:</p>
+<ul>
+<li>
+<p>In list - <code>foodItemList.removeAt(position)</code></p>
+</li>
+<li>
+<p>Notify adapter - <code>notifyItemRemoved(position)</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>For add item:</p>
+<ul>
+<li>
+<p>In list - <code>foodItemList.add(position, foodItem)</code></p>
+</li>
+<li>
+<p>Notify adapter - <code>notifyItemInserted(position)</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>For edit item:</p>
+<ul>
+<li>
+<p>In list -  First remove the item <code>foodItemList.removeAt(position)</code> then add new item <code>foodItemList.add(position,newFoodItem)</code></p>
+</li>
+<li>
+<p>Notify adapter - <code>notifyItemChanged(position)</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>To notify adapter outside the adapter class, use instance of the adapter - <code>adapter.notifyItemInserted(position)</code></p>
+</li>
+</ul>
+<hr>
+<p><strong>Now its time to run the application</strong></p>
+<p>Don&rsquo;t know how to run application? See <a href="https://developer.android.com/training/basics/firstapp/running-app">this</a></p>
+<!-- raw HTML omitted -->
+<p>The source code for the application is available at <a href="https://github.com/Coder481/RecyclerView_Kotlin">github</a></p>
+<p>There’s much more to RecyclerView than what is covered in this post, but with this brief overview, you should be able to create your own custom <code>RecyclerView</code>.</p>
+<!-- raw HTML omitted -->
+<p><strong>Thank you for reading</strong> 🙌🏼</p>
+<p><strong>Happy coding😀</strong></p>
+<!-- raw HTML omitted -->
+<p>BTW, I solve real-world problems by <em><strong>building useful apps</strong></em>. Have a <strong>look at our</strong> <a href="https://thestreamliners.in/"><strong>portfolio</strong></a><strong>.</strong></p>
+<p>Connect with me on <a href="https://github.com/Coder481"><strong>Github</strong></a> and <a href="https://www.linkedin.com/in/481hrithik/"><strong>LinkedIn</strong></a></p>
+
+              </div>
+
+              <div style="margin-top: 100px;" id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.title = "Implement RecyclerView in android with kotlin";
+        this.page.url = "https://thestreamliners.in/blog/recycler-view-with-kotlin/";
+        this.page.identifier = "Implement RecyclerView in android with kotlin";
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'https://the-streamliners.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<style>
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 50px;
+}
+
+</style>
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__cta">
+					<div class="shape-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="shape-2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="text-light footer__cta_content">
+						<span>Contact us</span>
+						<h2 class="mb-0">Let’s make your dream come true</h2>
+					</div>
+					<div class="footer__cta_action">
+						<a class="btn btn-light btn-zoom" href="https://thestreamliners.in/contact">Get in
+							touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__widget">
+			<div class="col-lg-4">
+				<div class="footer__widget_logo mb-5">
+					<img src="https://thestreamliners.in/images/site-navigation/footer-logo.svg" alt="The Streamliners">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_sitemap mb-5">
+					<h4 class="base-font">Links</h4>
+					<ul class="unstyle-list small">
+						
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/locatin">LocatIN</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/ju-eezy">JU eezy</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/cse-simplified">CSE Simplified</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training">Android Training (For JECRCians)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training-ext">Android Training (For Outsiders)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/about-us">About us</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_address mb-5">
+					<h4 class="base-font">Address</h4>
+					
+					<ul class="fa-ul small">
+						
+						<li class="mb-2"><a class="text-light" href="mailto:thestreamliners.tech@gmail.com"><span class="fa-li"><i
+										class="fa fa-envelope"></i></span>thestreamliners.tech@gmail.com</a></li>
+						<li class="mb-2">
+							<span class="fa-li"><i class="fa fa-map-marker"></i></span>JECRC University, Jaipur, Rajasthan, INDIA</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All rights reserved © The Streamliners 2021</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/lavishswarnkar"><i
+									class="fa fa-linkedin-square"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://thestreamliners.in/plugins/jQuery/jquery.min.js"></script>
+<script src="https://thestreamliners.in/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://thestreamliners.in/plugins/slick/slick.min.js"></script>
+<script src="https://thestreamliners.in/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://thestreamliners.in/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://thestreamliners.in/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://thestreamliners.in/plugins/imagesloaded/imagesloaded.min.js"></script>
+<script src="https://thestreamliners.in/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://thestreamliners.in/js/form-handler.min.js"></script>
+
+<script src="https://thestreamliners.in/js/script.min.js"></script>
+
+</body>
+
+</html>

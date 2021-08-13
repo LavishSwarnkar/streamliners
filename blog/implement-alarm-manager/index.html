@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Implementing Alarm manager</title>
+
+  
+<meta name="title" content="Implementing Alarm manager">
+<meta name="description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thestreamliners.in/blog/implement-alarm-manager/">
+<meta property="og:title" content="Implementing Alarm manager">
+<meta property="og:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="og:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://thestreamliners.in/blog/implement-alarm-manager/">
+<meta property="twitter:title" content="Implementing Alarm manager">
+<meta property="twitter:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="twitter:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+  <!-- mobile responsive meta -->
+  <meta name="theme-color" content="#3c51b2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/font-awesome/css/font-awesome.min.css" />
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/magnafic-popup/magnific-popup.css" />
+
+  <!-- Stylesheets -->
+  
+  <link href="https://thestreamliners.in/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQR6XDLDE5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js',  new Date());
+
+    gtag('config', 'G-ZQR6XDLDE5');
+  </script>
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="https://thestreamliners.in" class="navbar-brand">
+      <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
+    </a>
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#home"
+            class="nav-link text-dark text-sm-center p-2 ">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#service"
+            class="nav-link text-dark text-sm-center p-2 ">Services</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#portfolio"
+            class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/contact"
+            class="nav-link text-dark text-sm-center p-2 ">Contact</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/about-us"
+            class="nav-link text-dark text-sm-center p-2 ">About us</a>
+        </li>
+        
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+  <div id="content">
+    
+
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
+        <h3 class="breadCrumb__title">Implementing Alarm manager</h3>
+
+        <div class="row justify-content-center">
+          <p>July 3, 2021 by <a href="../../authors/hrithik-sharma">Hrithik Sharma</a></p>
+        </div>
+
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+  <div class="svg-img">
+      <img src=https://thestreamliners.in/images/hero/figure-svg.svg alt="">
+  </div>
+  <div class="animate-shape">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+          <defs>
+              <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#f1f6f9" />
+                  <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+              </linearGradient>
+          </defs>
+          <g data-name="blob-shape (3)">
+              <path class="blob" fill="url(#d)"
+                  d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+          </g>
+      </svg>
+  </div>
+  <div class="animate-pattern">
+      <img src=https://thestreamliners.in/images/service/background-pattern.svg alt="background-shape">
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+            
+          </div>
+      </div>
+      <div class="row mt-5">
+          <div class="col-lg-12">
+              <div class="singleBlog__content">
+                  <h4 id="how-to-implement-an-alarm-in-your-android-application-using-alarmmanager">How to implement an alarm in your android application using AlarmManager?</h4>
+<figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/07/03-11-26-59-android_alarm_img.jpeg"
+         alt="Alarm" width="80%"/>
+</figure>
+
+<p>Android <code>AlarmManager</code> allows you to access system alarm.</p>
+<p>With the help of <code>AlarmManager</code> in android, you can <em>schedule your application to run at a specific time</em> in the future.</p>
+<p><code>AlarmManager</code> is a bridge between application and Android system alarm service. It can send a broadcast to your app (which can be completely terminated by user) at a scheduled time and your app can then perform any task accordingly.</p>
+<p>With the help from <code>PendingIntent</code> and <code>Intent</code>, a bundle of information can also be sent together with the system broadcast to your application when alarm goes off.</p>
+<p>However, since Android KitKat (API 19) and Android MarshMallow (API 23), Google has added different <a href="https://developer.android.com/training/monitoring-device-state/doze-standby.html">restrictions</a> on <code>AlarmManager</code> to reduce the battery usage. Alarm no longer goes off exactly at the assigned time by default. System has the ability to defer any alarm in order to optimise the device performance.</p>
+<p><strong>Note: This should be keep in mind that AlarmManager doesn&rsquo;t keep record of the scheduled alarms after the device is booted. Your application should re-register all the scheduled alarms after the device is booted.</strong></p>
+<p>An alarm notification can be sent to the application, at the scheduled time when the <code>BroadcastReceiver</code> receives the intent, using  <a href="https://developer.android.com/reference/android/app/Notification.Builder"><code>Notification.Builder</code></a></p>
+<hr>
+<h3 id="now-its-time-to-understand-the-code-behind-it-">Now it&rsquo;s time to understand the code behind it :</h3>
+<h4 id="step-1--create-a-broadcastreceiver-"><strong>Step 1.  Create a BroadcastReceiver :</strong></h4>
+<ol>
+<li>
+<p><strong>First create a class that extends <code>BroadcastReceiver</code>  and implement <code>onReceive()</code> method in the class</strong></p>
+<p><a href="https://developer.android.com/reference/android/content/BroadcastReceiver"><code>BroadcastReceiver</code></a> is a class for receiving and handling the broadcast sent to your application. In system alarm case, it receives broadcast from the system alarm service when alarm goes off.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AlarmReceiver</span> <span style="color:#66d9ef">extends</span> BroadcastReceiver <span style="color:#f92672">{</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onReceive</span><span style="color:#f92672">(</span>Context context<span style="color:#f92672">,</span> Intent intent<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span>Intent<span style="color:#f92672">.</span><span style="color:#a6e22e">ACTION_BOOT_COMPLETED</span><span style="color:#f92672">).</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>intent<span style="color:#f92672">.</span><span style="color:#a6e22e">getAction</span><span style="color:#f92672">())){</span>
+            <span style="color:#75715e">// reset all alarms
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
+            <span style="color:#75715e">// perform your scheduled task here (eg. send alarm notification) 
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">}</span>
+
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Whenever your device reboots the <code>BroadcastReceiver</code> is called and with the help of <code>Intent</code> we can re-register all the alarms using action <code>ACTION_BOOT_COMPLETED</code> .</p>
+<p>In the else part you can perform your task (e.g, send alarm notification).</p>
+<p>We will further see how to send notification to your application.</p>
+</li>
+<li>
+<p><strong>Register this receiver in your <code>AndroidManifest.xml</code> file</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">&lt;</span>receiver
+    android<span style="color:#f92672">:</span>name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.AlarmReceiver&#34;</span>
+    android<span style="color:#f92672">:</span>enabled<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>
+    android<span style="color:#f92672">:</span>exported<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;</span>intent<span style="color:#f92672">-</span>filter<span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span>action android<span style="color:#f92672">:</span>name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;android.intent.action.BOOT_COMPLETED&#34;</span> <span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;/</span>intent<span style="color:#f92672">-</span>filter<span style="color:#f92672">&gt;</span>
+<span style="color:#f92672">&lt;/</span>receiver<span style="color:#f92672">&gt;</span>
+</code></pre></div></li>
+</ol>
+<p>        <code>&lt;action android:name=&quot;android.intent.action.BOOT_COMPLETED&quot;/&gt;</code> is added             in <code>&lt;intent-filter&gt;</code> so that we can handle the situation to re-register all the         scheduled alarms when the device will reboot.</p>
+<h4 id="step-2-setup-in-activity-"><strong>Step 2: Setup in activity :</strong></h4>
+<p>        Code in the activity to schedule an alarm at any specific time is explained step by         step below:</p>
+<ol>
+<li>
+<p><strong>Get <code>AlarmManager</code> instance</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> android.app.AlarmManager<span style="color:#f92672">;</span>
+AlarmManager alarmManager <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>AlarmManager<span style="color:#f92672">)</span> getSystemService<span style="color:#f92672">(</span>Context<span style="color:#f92672">.</span><span style="color:#a6e22e">ALARM_SERVICE</span><span style="color:#f92672">);</span>
+</code></pre></div><p><code>AlarmManager</code> is actually a system service and thus can be retrieved from <code>Context.getSystemService()</code> function with parameter <code>Context.ALARM_SERVICE</code>.</p>
+</li>
+<li>
+<p><strong>Prepare for an intent</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> android.content.Intent<span style="color:#f92672">;</span>
+Intent intent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> AlarmReceiver<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+intent<span style="color:#f92672">.</span><span style="color:#a6e22e">putExtra</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;any_data&#34;</span><span style="color:#f92672">,</span>123<span style="color:#f92672">);</span>
+</code></pre></div></li>
+</ol>
+<p>        Android allows a bundle of information to be sent to a target <code>receiver</code> (i.e.             <code>AlarmReceiver</code>, which is defined in step 1) when alarm goes off. The designated         receiver and the corresponding information can be set in <code>Intent</code> by setting its         <code>action</code> and <code>extra</code>. These information can later be retrieved at the <code>onReceive()</code>         callback in the designated <code>BroadcastReceiver</code> and <code>action</code> field is checked to         ensure the correctness of the system broadcast.</p>
+<ol start="3">
+<li>
+<p><strong>Prepare for an PendingIntent</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> android.app.PendingIntent<span style="color:#f92672">;</span>
+PendingIntent pendingIntent <span style="color:#f92672">=</span> PendingIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">getBroadcast</span><span style="color:#f92672">(</span>getApplicationContext<span style="color:#f92672">(),</span> 0<span style="color:#f92672">,</span> intent<span style="color:#f92672">,</span> PendingIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">FLAG_UPDATE_CURRENT</span><span style="color:#f92672">);</span>
+</code></pre></div></li>
+</ol>
+<p>        <code>PendingIntent</code> is a reference pointing to a token maintained by the Android         system. Thus, it will still be valid if the application is killed by user and can be         broadcasted at some moment in the future.</p>
+<p>        2nd parameter of <code>getBroadcast()</code> is <em><strong>requestCode</strong></em> which should be unique for         every pendingIntent  when you want to schedule multiple alarms.</p>
+<p>        <strong>For your information:</strong></p>
+<p>        There are totally 4 functions for initialising a <code>PendingIntent</code> but only 1 of them is         applicable:</p>
+<p>                1.  <code>PendingIntent.getBroadcast()</code> — Applicable to <code>AlarmManager</code></p>
+<p>                2. <code>PendingIntent.getActivity()</code></p>
+<p>                3. <code>PendingIntent.getActivities()</code></p>
+<p>                4. <code>PendingIntent.getService()</code></p>
+<p>        Flags indicates how system should handle the new and existing <code>PendingIntent</code> s         that have the same <code>Intent</code>. <code>0</code> indicates that system will use its default way to         handle the creation of <code>PendingIntent</code>. The following are some examples:</p>
+<p>                1. FLAG_UPDATE_CURRENT</p>
+<p>                2. FLAG_CANCEL_CURRENT</p>
+<p>                3. FLAG_IMMUTABLE</p>
+<ol start="4">
+<li>
+<p><strong>Set the alarm time and sent to system</strong></p>
+<p>The best way to set the time of the alarm is by using a <code>Calendar</code> object</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.util.Calendar<span style="color:#f92672">;</span>
+
+Calendar cal <span style="color:#f92672">=</span> Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+cal<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">HOUR_OF_DAY</span><span style="color:#f92672">,</span> hourOfDay<span style="color:#f92672">);</span>  <span style="color:#75715e">// set hour
+</span><span style="color:#75715e"></span>cal<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">MINUTE</span><span style="color:#f92672">,</span> minute<span style="color:#f92672">);</span>          <span style="color:#75715e">// set minute   
+</span><span style="color:#75715e"></span>cal<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">SECOND</span><span style="color:#f92672">,</span> 0<span style="color:#f92672">);</span>               <span style="color:#75715e">// set seconds
+</span><span style="color:#75715e"></span>
+alarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">setExactAndAllowWhileIdle</span><span style="color:#f92672">(</span>AlarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">RTC_WAKEUP</span><span style="color:#f92672">,</span>cal<span style="color:#f92672">.</span><span style="color:#a6e22e">getTimeInMillis</span><span style="color:#f92672">(),</span>pendingIntent<span style="color:#f92672">);</span>
+</code></pre></div></li>
+</ol>
+<p>        The simplest way to set an alarm is using <code>setExactAndAllowWhileIdle()</code> with         parameter <code>RTC_WAKEUP</code>. This would tell Android fires the alarm exactly at the         assigned time no matter the system is in doze mode (idle mode).</p>
+<p>        If you want to repeat your alarm on a particular <strong>Day of Week</strong> then: </p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">cal<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">DAY_OF_WEEK</span><span style="color:#f92672">,</span> Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">SUNDAY</span><span style="color:#f92672">);</span> 
+
+<span style="color:#66d9ef">long</span> interval <span style="color:#f92672">=</span> 7 <span style="color:#f92672">*</span> 24 <span style="color:#f92672">*</span> 60 <span style="color:#f92672">*</span> 60 <span style="color:#f92672">*</span> 1000<span style="color:#f92672">;</span>   <span style="color:#75715e">// interval of 7 days
+</span><span style="color:#75715e"></span>alarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">setRepeating</span><span style="color:#f92672">(</span>AlarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">RTC_WAKEUP</span><span style="color:#f92672">,</span> cal<span style="color:#f92672">.</span><span style="color:#a6e22e">getTimeInMillis</span><span style="color:#f92672">(),</span> interval <span style="color:#f92672">,</span> pendingIntent<span style="color:#f92672">);</span> 
+</code></pre></div><p>        Set the day of week you want repeat the alarm to <code>Calendar.DAY_OF_WEEK</code> and use         <code>setRepeating()</code> method of alarmManager.</p>
+<p>        <strong>Some more methods of alarmManager :</strong></p>
+<p>                1. <code>alarmManager.set()</code></p>
+<p>                2. <code>alarmManager.setExact()</code></p>
+<p>                3. <code>alarmManager.setAlarmClock()</code></p>
+<p>                4. <code>alarmManager.setInExactRepeating()</code></p>
+<p>                5. <code>alarmManager.setRepeating()</code></p>
+<p>                6. <code>alarmManager.setTime()</code></p>
+<p>                7. <code>alarmManager.setTimeZone()</code>     </p>
+<hr>
+<h4 id="canceling-of-an-alarm">Canceling of an alarm:</h4>
+<p>However, it is tricky to cancel a <code>PendingIntent</code> since it depends on both the <code>Intent</code> and <code>requestCode</code> used.</p>
+<p>The alarm with <code>PendingIntent</code> can be cancelled with the following steps:</p>
+<ul>
+<li>
+<p><strong>Get <code>AlarmManager</code> instance</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">AlarmManager alarmManager <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>AlarmManager<span style="color:#f92672">)</span> getSystemService<span style="color:#f92672">(</span>Context<span style="color:#f92672">.</span><span style="color:#a6e22e">ALARM_SERVICE</span><span style="color:#f92672">);</span>
+</code></pre></div></li>
+<li>
+<p><strong>Prepare for the Intent</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Intent intent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> AlarmReceiver<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+</code></pre></div></li>
+<li>
+<p><strong>Prepare for the PendingIntent</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">PendingIntent pendingIntent <span style="color:#f92672">=</span> PendingIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">getBroadcast</span><span style="color:#f92672">(</span>getApplicationContext<span style="color:#f92672">(),</span> 0 <span style="color:#f92672">,</span> intent<span style="color:#f92672">,</span> PendingIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">FLAG_UPDATE_CURRENT</span><span style="color:#f92672">);</span>
+</code></pre></div></li>
+</ul>
+<p>        <strong>Note :</strong> To cancel a particular scheduled alarm the <code>requestCode</code>  used in                   <code>PendingIntent</code> must be same to that which is used to register that alarm.</p>
+<ul>
+<li>
+<p><strong>Now cancel the alarm using AlarmManager instance</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">alarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">cancel</span><span style="color:#f92672">(</span>pendingIntent<span style="color:#f92672">);</span>
+</code></pre></div></li>
+</ul>
+<hr>
+<h3 id="handling-of-an-alarm-event">Handling of an alarm event:</h3>
+<p><code>AlarmManager</code> provides two ways to listen to an alarm broadcast. They are</p>
+<ol>
+<li>
+<p>Local listener (AlarmManager.OnAlarmListener)</p>
+</li>
+<li>
+<p><code>BroadcastReceiver</code> specified at the <code>Intent</code> wrapped inside a <code>PendingIntent</code>.</p>
+</li>
+</ol>
+<p>The implementation of <code>AlarmManager.OnAlarmListener</code> is similar to the one using <code>PendingIntent</code>, instead it requires a callback and its corresponding <code>Handler</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String tag <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;TAG&#34;</span><span style="color:#f92672">;</span>
+alarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">setExact</span><span style="color:#f92672">(</span>AlarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">RTC_WAKEUP</span><span style="color:#f92672">,</span> cal<span style="color:#f92672">.</span><span style="color:#a6e22e">getTimeInMillis</span><span style="color:#f92672">(),</span> tag<span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> AlarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">OnAlarmListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+     <span style="color:#a6e22e">@Override</span>
+     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onAlarm</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+         Toast<span style="color:#f92672">.</span><span style="color:#a6e22e">makeText</span><span style="color:#f92672">(</span>OwnerSettingsActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;AlarmManager.OnAlarmListener&#34;</span><span style="color:#f92672">,</span> Toast<span style="color:#f92672">.</span><span style="color:#a6e22e">LENGTH_SHORT</span><span style="color:#f92672">).</span><span style="color:#a6e22e">show</span><span style="color:#f92672">();</span>  
+     <span style="color:#f92672">}</span>
+<span style="color:#f92672">},</span><span style="color:#66d9ef">null</span><span style="color:#f92672">);</span>
+</code></pre></div><p>There is a limitation on <code>AlarmManager.OnAlarmListener</code> over <code>PendingIntent</code>. It cannot work when the corresponding <code>Activity</code> or <code>Fragment</code> is destroyed since the callback object is released at the same time. However, because <code>PendingIntent</code> is sent to the system alarm service, it can be fired even when the application is killed by user.</p>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>Android provides an alarm service to notify application at any specific time with the corresponding assigned information stored in <code>Intent</code>.</p>
+<p>Along with the evolution of Android system throughout the years, Android applies more controls of alarm service to optimise the battery consumption.</p>
+<p><code>setExactAndAllowWhileIdle()</code> together with <code>WAKE_UP</code> type should only be used when the alarm time must be as exact as possible.</p>
+<p>App developer should bear in mind to re-register all the alarms again when device is booted since Android does not store any alarms by default.</p>
+<p>Hope this article can bring something to you! 😉 See you next time</p>
+<p><strong>Thank you for reading</strong> 🙌🏼</p>
+
+              </div>
+
+              <div style="margin-top: 100px;" id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.title = "Implementing Alarm manager";
+        this.page.url = "https://thestreamliners.in/blog/implement-alarm-manager/";
+        this.page.identifier = "Implementing Alarm manager";
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'https://the-streamliners.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<style>
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 50px;
+}
+
+</style>
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__cta">
+					<div class="shape-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="shape-2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="text-light footer__cta_content">
+						<span>Contact us</span>
+						<h2 class="mb-0">Let’s make your dream come true</h2>
+					</div>
+					<div class="footer__cta_action">
+						<a class="btn btn-light btn-zoom" href="https://thestreamliners.in/contact">Get in
+							touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__widget">
+			<div class="col-lg-4">
+				<div class="footer__widget_logo mb-5">
+					<img src="https://thestreamliners.in/images/site-navigation/footer-logo.svg" alt="The Streamliners">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_sitemap mb-5">
+					<h4 class="base-font">Links</h4>
+					<ul class="unstyle-list small">
+						
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/locatin">LocatIN</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/ju-eezy">JU eezy</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/cse-simplified">CSE Simplified</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training">Android Training (For JECRCians)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training-ext">Android Training (For Outsiders)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/about-us">About us</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_address mb-5">
+					<h4 class="base-font">Address</h4>
+					
+					<ul class="fa-ul small">
+						
+						<li class="mb-2"><a class="text-light" href="mailto:thestreamliners.tech@gmail.com"><span class="fa-li"><i
+										class="fa fa-envelope"></i></span>thestreamliners.tech@gmail.com</a></li>
+						<li class="mb-2">
+							<span class="fa-li"><i class="fa fa-map-marker"></i></span>JECRC University, Jaipur, Rajasthan, INDIA</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All rights reserved © The Streamliners 2021</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/lavishswarnkar"><i
+									class="fa fa-linkedin-square"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://thestreamliners.in/plugins/jQuery/jquery.min.js"></script>
+<script src="https://thestreamliners.in/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://thestreamliners.in/plugins/slick/slick.min.js"></script>
+<script src="https://thestreamliners.in/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://thestreamliners.in/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://thestreamliners.in/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://thestreamliners.in/plugins/imagesloaded/imagesloaded.min.js"></script>
+<script src="https://thestreamliners.in/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://thestreamliners.in/js/form-handler.min.js"></script>
+
+<script src="https://thestreamliners.in/js/script.min.js"></script>
+
+</body>
+
+</html>

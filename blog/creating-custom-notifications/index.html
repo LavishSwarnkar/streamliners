@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Creating custom notifications</title>
+
+  
+<meta name="title" content="Creating custom notifications">
+<meta name="description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thestreamliners.in/blog/creating-custom-notifications/">
+<meta property="og:title" content="Creating custom notifications">
+<meta property="og:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="og:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://thestreamliners.in/blog/creating-custom-notifications/">
+<meta property="twitter:title" content="Creating custom notifications">
+<meta property="twitter:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="twitter:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+  <!-- mobile responsive meta -->
+  <meta name="theme-color" content="#3c51b2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/font-awesome/css/font-awesome.min.css" />
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/magnafic-popup/magnific-popup.css" />
+
+  <!-- Stylesheets -->
+  
+  <link href="https://thestreamliners.in/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQR6XDLDE5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js',  new Date());
+
+    gtag('config', 'G-ZQR6XDLDE5');
+  </script>
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="https://thestreamliners.in" class="navbar-brand">
+      <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
+    </a>
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#home"
+            class="nav-link text-dark text-sm-center p-2 ">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#service"
+            class="nav-link text-dark text-sm-center p-2 ">Services</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#portfolio"
+            class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/contact"
+            class="nav-link text-dark text-sm-center p-2 ">Contact</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/about-us"
+            class="nav-link text-dark text-sm-center p-2 ">About us</a>
+        </li>
+        
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+  <div id="content">
+    
+
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
+        <h3 class="breadCrumb__title">Creating custom notifications</h3>
+
+        <div class="row justify-content-center">
+          <p>August 9, 2021 by <a href="../../authors/hrithik-sharma">Hrithik Sharma</a></p>
+        </div>
+
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+  <div class="svg-img">
+      <img src=https://thestreamliners.in/images/hero/figure-svg.svg alt="">
+  </div>
+  <div class="animate-shape">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+          <defs>
+              <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#f1f6f9" />
+                  <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+              </linearGradient>
+          </defs>
+          <g data-name="blob-shape (3)">
+              <path class="blob" fill="url(#d)"
+                  d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+          </g>
+      </svg>
+  </div>
+  <div class="animate-pattern">
+      <img src=https://thestreamliners.in/images/service/background-pattern.svg alt="background-shape">
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+            
+          </div>
+      </div>
+      <div class="row mt-5">
+          <div class="col-lg-12">
+              <div class="singleBlog__content">
+                  <figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/07/08-19-27-07-custom_notification_img.png"
+         alt="Notifications" width="80%"/>
+</figure>
+
+<p><strong>Notifications</strong> alert you to many things on your Android device, including incoming messages, new emails, and calendar events. Notifications work slightly differently for each app, but they&rsquo;re easy to customize.</p>
+<p>Starting in Android 8.0 (API level 26), all notifications must be assigned to a channel. For each channel, you can set the visual and auditory behavior that is applied to all notifications in that channel. Then, users can change these settings and decide which notification channels from your app should be intrusive or visible at all.</p>
+<p>You can&rsquo;t change notification behaviour (like channel ID ), after creating a notification channel, but still you can modify channel name and channel description.</p>
+<p>You can customize the notifications as your need through setting up different styles , adding action buttons, showing images, playing different sounds while notification arrives, creating custom layouts for notification.</p>
+<hr>
+<h2 id="create-a-notification-channel">Create a notification channel</h2>
+<p>To create a notification channel, follow these steps:</p>
+<ol>
+<li>Construct a <a href="https://developer.android.com/reference/android/app/NotificationChannel"><code>NotificationChannel</code></a>  object with a unique channel ID, a user-visible name, and an importance level.</li>
+<li>Optionally, specify the description that the user sees in the system settings with <a href="https://developer.android.com/reference/android/app/NotificationChannel#setDescription(java.lang.String)"><code>setDescription()</code></a>.</li>
+<li>Register the notification channel by passing it to <a href="https://developer.android.com/reference/android/app/NotificationManager#createNotificationChannel(android.app.NotificationChannel)"><code>createNotificationChannel()</code></a>.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String channelID <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;channelID&#34;</span><span style="color:#f92672">;</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String channelName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Channel Name&#34;</span><span style="color:#f92672">;</span>
+<span style="color:#66d9ef">private</span> NotificationManager mManager<span style="color:#f92672">;</span>
+<span style="color:#a6e22e">@RequiresApi</span><span style="color:#f92672">(</span>api <span style="color:#f92672">=</span> Build<span style="color:#f92672">.</span><span style="color:#a6e22e">VERSION_CODES</span><span style="color:#f92672">.</span><span style="color:#a6e22e">O</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">createChannel</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        NotificationChannel channel <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationChannel<span style="color:#f92672">(</span>channelID<span style="color:#f92672">,</span> channelName<span style="color:#f92672">,</span> NotificationManager<span style="color:#f92672">.</span><span style="color:#a6e22e">IMPORTANCE_HIGH</span><span style="color:#f92672">);</span>
+        getManager<span style="color:#f92672">().</span><span style="color:#a6e22e">createNotificationChannel</span><span style="color:#f92672">(</span>channel<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p><strong>Get Notification manager</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> NotificationManager <span style="color:#a6e22e">getManager</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>mManager <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            mManager <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>NotificationManager<span style="color:#f92672">)</span> getSystemService<span style="color:#f92672">(</span>Context<span style="color:#f92672">.</span><span style="color:#a6e22e">NOTIFICATION_SERVICE</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">return</span> mManager<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p><em><strong>Note:</strong></em> The <code>CHANNEL_ID</code> should be unique for every notification channel in order to handle this channel in future if we want to modify or delete this channel by using the unique channel_id.</p>
+<p>By default, all notifications posted to this channel use the visual and auditory behaviors defined by the importance level from the <a href="https://developer.android.com/reference/androidx/core/app/NotificationManagerCompat"><code>NotificationManagerCompat</code></a> class, such as <a href="https://developer.android.com/reference/androidx/core/app/NotificationManagerCompat#IMPORTANCE_DEFAULT"><code>IMPORTANCE_DEFAULT</code></a> and <a href="https://developer.android.com/reference/androidx/core/app/NotificationManagerCompat#IMPORTANCE_HIGH"><code>IMPORTANCE_HIGH</code></a>.</p>
+<p>For more information about importance level:</p>
+<table>
+<thead>
+<tr>
+<th>User-visible importance level</th>
+<th>Importance (Android 8.0 and higher)</th>
+<th>Priority (Android 7.1 and lower)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Urgent</strong><!-- raw HTML omitted -->Makes a sound and appears as a heads-up notification</td>
+<td><a href="https://developer.android.com/reference/android/app/NotificationManager#IMPORTANCE_HIGH">IMPORTANCE_HIGH</a></td>
+<td><a href="https://developer.android.com/reference/androidx/core/app/NotificationCompat#PRIORITY_HIGH">PRIORITY_HIGH</a> or <a href="https://developer.android.com/reference/androidx/core/app/NotificationCompat#PRIORITY_MAX">PRIORITY_MAX</a></td>
+</tr>
+<tr>
+<td><strong>High</strong><!-- raw HTML omitted -->Makes a sound</td>
+<td><a href="https://developer.android.com/reference/android/app/NotificationManager#IMPORTANCE_DEFAULT">IMPORTANCE_DEFAULT</a></td>
+<td><a href="https://developer.android.com/reference/androidx/core/app/NotificationCompat#PRIORITY_DEFAULT">PRIORITY_DEFAULT</a></td>
+</tr>
+<tr>
+<td><strong>Medium</strong><!-- raw HTML omitted -->No sound</td>
+<td><a href="https://developer.android.com/reference/android/app/NotificationManager#IMPORTANCE_LOW">IMPORTANCE_LOW</a></td>
+<td><a href="https://developer.android.com/reference/androidx/core/app/NotificationCompat#PRIORITY_LOW">PRIORITY_LOW</a></td>
+</tr>
+<tr>
+<td><strong>Low</strong><!-- raw HTML omitted -->No sound and does not appear in the status bar</td>
+<td><a href="https://developer.android.com/reference/android/app/NotificationManager#IMPORTANCE_MIN">IMPORTANCE_MIN</a></td>
+<td><a href="https://developer.android.com/reference/androidx/core/app/NotificationCompat#PRIORITY_MIN">PRIORITY_MIN</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="set-the-content-of-the-notification">Set the content of the notification</h2>
+<p>To get started, you need to set the notification&rsquo;s content and channel using a <a href="https://developer.android.com/reference/androidx/core/app/NotificationCompat.Builder"><code>NotificationCompat.Builder</code></a> object.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentTitle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Title of the notification&#34;</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Body of the notification&#34;</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_launcher_foreground</span><span style="color:#f92672">);</span>
+</code></pre></div><ul>
+<li>
+<p><code>setContentTitle()</code> - For title of the notification</p>
+</li>
+<li>
+<p><code>setContentText()</code>   - For additional description of the notification</p>
+</li>
+<li>
+<p><code>setSmallIcon()</code>       - For adding an icon when notification drawer is closed</p>
+<p>These are the basic things to show in a notification.</p>
+<p><strong>Note:</strong> You must have to <code>setSmallIcon()</code> otherwise you will get an <code>IllegalArgumentException</code>  when you try to build the <code>NotificationCompat.Builder</code></p>
+<!-- raw HTML omitted -->
+<p><strong>This is the basic layout of the notification</strong></p>
+</li>
+</ul>
+<figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-07-46-20-simple.jpg"
+         alt="Notifications" width="80%"/>
+</figure>
+
+<!-- raw HTML omitted -->
+<p><strong>Some more methods to customize your notification:</strong></p>
+<ul>
+<li>
+<p><code>setAutoCancel(true)</code>     - To remove notification from notifications drawer after clicking it</p>
+</li>
+<li>
+<p><code>setLargeIcon()</code>               -  To add an large icon to notification (visible only in notification drawer)</p>
+</li>
+<li>
+<p><code>setOngoing(true)</code>           -  To make notification uncancelable</p>
+</li>
+<li>
+<p><code>setSound(soundUri)</code>       -  To set a custom sound to the notification</p>
+<!-- raw HTML omitted -->
+<p><strong>Notification with large image</strong></p>
+</li>
+</ul>
+<figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-07-53-21-large_icon.jpg"
+         alt="Notifications" width="80%"/>
+</figure>
+
+<blockquote>
+<p><strong>How to get <code>soundUri</code> ?</strong></p>
+<p>Follow this :</p>
+<ul>
+<li>
+<p>First add a mp3 file to the <code>raw</code> resource folder (say, sound.mp3)</p>
+</li>
+<li>
+<p>Then , use the below code to get soundUri</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Uri soundUri <span style="color:#f92672">=</span> Uri<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>ContentResolver<span style="color:#f92672">.</span><span style="color:#a6e22e">SCHEME_ANDROID_RESOURCE</span><span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;://&#34;</span> <span style="color:#f92672">+</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getPackageName</span><span style="color:#f92672">()+</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">+</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">raw</span><span style="color:#f92672">.</span><span style="color:#a6e22e">sound</span><span style="color:#f92672">);</span>
+</code></pre></div></blockquote>
+<blockquote>
+<p><strong>Note: For API 26+, the sound should be added in <code>NotificationChannel</code> also</strong></p>
+<p>Use below code for this:<!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">AudioAttributes audioAttributes <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> AudioAttributes<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">()</span>
+    <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentType</span><span style="color:#f92672">(</span>AudioAttributes<span style="color:#f92672">.</span><span style="color:#a6e22e">CONTENT_TYPE_MUSIC</span><span style="color:#f92672">)</span>
+    <span style="color:#f92672">.</span><span style="color:#a6e22e">setUsage</span><span style="color:#f92672">(</span>AudioAttributes<span style="color:#f92672">.</span><span style="color:#a6e22e">USAGE_ALARM</span><span style="color:#f92672">)</span>
+    <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+channel<span style="color:#f92672">.</span><span style="color:#a6e22e">setSound</span><span style="color:#f92672">(</span>Uri<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>ContentResolver<span style="color:#f92672">.</span><span style="color:#a6e22e">SCHEME_ANDROID_RESOURCE</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;://&#34;</span><span style="color:#f92672">+</span> getApplicationContext<span style="color:#f92672">().</span><span style="color:#a6e22e">getPackageName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> R<span style="color:#f92672">.</span><span style="color:#a6e22e">raw</span><span style="color:#f92672">.</span><span style="color:#a6e22e">sound</span><span style="color:#f92672">),</span>audioAttributes<span style="color:#f92672">);</span>
+</code></pre></div></blockquote>
+<ul>
+<li>
+<p><code>setContentIntent(pendingIntent)</code> - To open desired activity in the application on clicking of the notification</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Intent resultIntent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent<span style="color:#f92672">(</span>context <span style="color:#f92672">,</span> MainActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// you can also send data with the intent
+</span><span style="color:#75715e"></span>resultIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">putExtra</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;foo&#34;</span><span style="color:#f92672">,</span>fooObj<span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// TaskStackbuilder to create a stack of the activities
+</span><span style="color:#75715e">// and add your activity to the top position
+</span><span style="color:#75715e">// according to the parent activities declared in Manifest file
+</span><span style="color:#75715e"></span>TaskStackBuilder stackBuilder <span style="color:#f92672">=</span> TaskStackBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>context<span style="color:#f92672">);</span>
+stackBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">addNextIntentWithParentStack</span><span style="color:#f92672">(</span>resultIntent<span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// PendingIntent to use in the setContentIntent() method
+</span><span style="color:#75715e"></span>PendingIntent resultPendingIntent <span style="color:#f92672">=</span> stackBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">getPendingIntent</span><span style="color:#f92672">(</span>4<span style="color:#f92672">,</span>PendingIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">FLAG_UPDATE_CURRENT</span><span style="color:#f92672">);</span>
+
+builder<span style="color:#f92672">.</span><span style="color:#a6e22e">setContentIntent</span><span style="color:#f92672">(</span>resultPendingIntent<span style="color:#f92672">);</span>
+</code></pre></div></li>
+<li>
+<p><code>setStyle()</code> - To set your desired style to the notification (e.g., BigPictureStyle , BigTextStyle, MessagingStyle etc. )</p>
+</li>
+</ul>
+<hr>
+<h2 id="create-custom-styles-of-the-notification">Create custom styles of the notification</h2>
+<p>We are going to use <code>setStyle()</code> method of <code>NotificationCompat.Builder</code> to set different styles to the notification.</p>
+<h4 id="add-a-large-block-of-text">Add a large block of text</h4>
+<p>Apply <code>NotificationCompat.BigTextStyle()</code> to display a large block of text in notification,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setStyle</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">BigTextStyle</span><span style="color:#f92672">().</span><span style="color:#a6e22e">bigText</span><span style="color:#f92672">(</span>bigBody<span style="color:#f92672">))</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentTitle</span><span style="color:#f92672">(</span>title<span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Click this notification&#39;s header to see larger text.&#34;</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_launcher_foreground</span><span style="color:#f92672">);</span>
+</code></pre></div><figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-07-59-49-big_text.jpg"
+         alt="Notifications" width="80%"/>
+</figure>
+
+<p><strong>Upper one</strong> - Collapsed</p>
+<p><strong>Lower one</strong> - Expanded</p>
+<h4 id="add-a-large-expandable-image">Add a large expandable image</h4>
+<p>Apply <code>NotificationCompat.BigPictureStyle()</code> to show a large expandable image,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Bitmap bitmap <span style="color:#f92672">=</span> BitmapFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">decodeResource</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getResources</span><span style="color:#f92672">(),</span> R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">android1</span><span style="color:#f92672">);</span>
+
+NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
+          <span style="color:#f92672">.</span><span style="color:#a6e22e">setLargeIcon</span><span style="color:#f92672">(</span>bitmap<span style="color:#f92672">)</span>
+          <span style="color:#f92672">.</span><span style="color:#a6e22e">setStyle</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">BigPictureStyle</span><span style="color:#f92672">()</span>
+                   <span style="color:#f92672">.</span><span style="color:#a6e22e">bigPicture</span><span style="color:#f92672">(</span>bitmap<span style="color:#f92672">)</span>
+                   <span style="color:#f92672">.</span><span style="color:#a6e22e">bigLargeIcon</span><span style="color:#f92672">(</span><span style="color:#66d9ef">null</span><span style="color:#f92672">))</span>
+          <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentTitle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Expandable Image&#34;</span><span style="color:#f92672">)</span>
+          <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Click this notification&#39;s header to see expanded image&#34;</span><span style="color:#f92672">)</span>
+          <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_launcher_foreground</span><span style="color:#f92672">);</span>
+</code></pre></div><p><code>setLargeIcon()</code> sets the image as a thumbnail when the notification is collapsed , that&rsquo;s why set <code>bigLargeIcon(null)</code> so that the largeIcon (thumbnail) goes away when the notification expands.</p>
+<figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-08-02-02-exp_img.jpg"
+         alt="Notifications" width="80%"/>
+</figure>
+
+<h4 id="inbox-styled-notification">Inbox Styled Notification</h4>
+<p>Apply <code>NotificationCompat.InboxStyle()</code> to make your notification inbox styled.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_launcher_foreground</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentTitle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Inbox style&#34;</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;This is the inbox styled notification&#34;</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setStyle</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">InboxStyle</span><span style="color:#f92672">()</span>
+                        <span style="color:#f92672">.</span><span style="color:#a6e22e">addLine</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Inbox Line 1&#34;</span><span style="color:#f92672">)</span>
+                        <span style="color:#f92672">.</span><span style="color:#a6e22e">addLine</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Inbox Line 2&#34;</span><span style="color:#f92672">));</span>
+</code></pre></div><figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-08-07-40-inbox_style.jpg"
+         alt="Notifications" width="80%"/>
+</figure>
+
+<p><img src="" alt="1"></p>
+<p>To add more lines to the notification call <code>addLine()</code>.</p>
+<p>You should call <em>addLine()</em> more than 6  times because more than 6 times will show only first 6 lines.</p>
+<h4 id="conversational-notification">Conversational Notification</h4>
+<p>Apply <code>NotificationCompat.MessagingStyle()</code> to your notification style and you will get notification with sequential messaging layout.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Message</span> message1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Message</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hey buddy, what&#39;s up&#34;</span><span style="color:#f92672">,</span>
+                1627906259<span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;Android&#34;</span><span style="color:#f92672">);</span>
+NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Message</span> message2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Message</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;I am fine, what about you?&#34;</span><span style="color:#f92672">,</span>
+                1627906326<span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;You&#34;</span><span style="color:#f92672">);</span>
+NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Message</span> message3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Message</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Good, \uD83D\uDE42\uD83D\uDE42&#34;</span><span style="color:#f92672">,</span>
+                1627909912<span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;Android&#34;</span><span style="color:#f92672">);</span>
+NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_launcher_foreground</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">setStyle</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;User Dsplay Name&#34;</span><span style="color:#f92672">)</span>
+                        <span style="color:#f92672">.</span><span style="color:#a6e22e">addMessage</span><span style="color:#f92672">(</span>message1<span style="color:#f92672">)</span>
+                        <span style="color:#f92672">.</span><span style="color:#a6e22e">addMessage</span><span style="color:#f92672">(</span>message2<span style="color:#f92672">)</span>
+                        <span style="color:#f92672">.</span><span style="color:#a6e22e">addMessage</span><span style="color:#f92672">(</span>message3<span style="color:#f92672">));</span>
+</code></pre></div><p><code>NotificationCompat.MessagingStyle.Message</code> Parameters:</p>
+<ul>
+<li>
+<p>text (1st parameter) - The message of the sender</p>
+</li>
+<li>
+<p>timestamp (2nd parameter) - Time of the message sent</p>
+</li>
+<li>
+<p>sender (3rd parameter) - Sender of the message</p>
+</li>
+</ul>
+<p><strong>Note:</strong> Messages in the notification will be sorted according to the timestamp of the message</p>
+<figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-08-25-30-messaging_style.jpg"
+         alt="Notifications" width="80%"/>
+</figure>
+
+<p><strong>Upper one</strong> - Collapsed</p>
+<p><strong>Lower one</strong> - Expanded</p>
+<hr>
+<h2 id="create-custom-layout-for-notification">Create custom layout for notification</h2>
+<ol>
+<li>
+<p><strong>First create a layout for the notification</strong></p>
+<p>Remember that , constraint layout is not allowed for custom notification&rsquo;s layout</p>
+<p><code>notification_layout.xml</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span style="color:#f92672">&lt;RelativeLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+    <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/layout&#34;</span>
+    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+    <span style="color:#a6e22e">android:padding=</span><span style="color:#e6db74">&#34;10dp&#34;</span> <span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;TextView</span>
+        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/title&#34;</span>
+        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+        <span style="color:#a6e22e">android:textColor=</span><span style="color:#e6db74">&#34;@color/black&#34;</span><span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;TextView</span>
+        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/text&#34;</span>
+        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+        <span style="color:#a6e22e">android:textSize=</span><span style="color:#e6db74">&#34;12sp&#34;</span>
+        <span style="color:#a6e22e">android:textColor=</span><span style="color:#e6db74">&#34;@color/black&#34;</span>
+        <span style="color:#a6e22e">android:layout_below=</span><span style="color:#e6db74">&#34;@id/title&#34;</span><span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;/RelativeLayout&gt;</span>
+</code></pre></div></li>
+<li>
+<p><strong>Instantiating a RemoteViews object and set it to the notification,</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">RemoteViews remoteViews <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RemoteViews<span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getPackageName</span><span style="color:#f92672">(),</span> R<span style="color:#f92672">.</span><span style="color:#a6e22e">layout</span><span style="color:#f92672">.</span><span style="color:#a6e22e">notification_layout</span><span style="color:#f92672">);</span>
+remoteViews<span style="color:#f92672">.</span><span style="color:#a6e22e">setTextViewText</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">title</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;Custom notification title&#34;</span><span style="color:#f92672">);</span>
+remoteViews<span style="color:#f92672">.</span><span style="color:#a6e22e">setTextViewText</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">text</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;Text for the notification&#34;</span><span style="color:#f92672">);</span>
+
+NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
+         <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_launcher_foreground</span><span style="color:#f92672">)</span>
+         <span style="color:#f92672">.</span><span style="color:#a6e22e">setStyle</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">DecoratedCustomViewStyle</span><span style="color:#f92672">())</span>
+         <span style="color:#f92672">.</span><span style="color:#a6e22e">setCustomContentView</span><span style="color:#f92672">(</span>remoteViews<span style="color:#f92672">);</span>
+</code></pre></div></li>
+</ol>
+<figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-08-31-23-custom_layout.jpg"
+         alt="DebugView" width="80%"/>
+</figure>
+
+<hr>
+<h2 id="show-notification">Show notification</h2>
+<p>To show the notification call <code>mManager.notify()</code> and pass a unique id of the notification and also the <em>Notification</em> which can be get by <code>mBuilder.build()</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">getManager<span style="color:#f92672">().</span><span style="color:#a6e22e">notify</span><span style="color:#f92672">(</span>UNIQUE_NOTIFICATION_ID<span style="color:#f92672">,</span>mBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">());</span>
+</code></pre></div><p>Remember that notificationId should be unique int and will require when you want to <strong>update</strong> or <strong>remove the notification</strong>.</p>
+<blockquote>
+<p><code>getManager()</code> is defined at top of the article</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<p>You can see the source code here - <a href="https://github.com/Coder481/CustomNotification">CustomNotification</a></p>
+<!-- raw HTML omitted -->
+<p>Feedback and suggestions are welcome.</p>
+<p><strong><strong>I hope you find it useful or at least it gives you some fresh ideas.</strong></strong></p>
+<p><strong>Thanks for reading</strong> 🙌🏼</p>
+<p><strong>Happy coding🔥🔥😀😀</strong></p>
+
+              </div>
+
+              <div style="margin-top: 100px;" id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.title = "Creating custom notifications";
+        this.page.url = "https://thestreamliners.in/blog/creating-custom-notifications/";
+        this.page.identifier = "Creating custom notifications";
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'https://the-streamliners.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<style>
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 50px;
+}
+
+</style>
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__cta">
+					<div class="shape-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="shape-2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="text-light footer__cta_content">
+						<span>Contact us</span>
+						<h2 class="mb-0">Let’s make your dream come true</h2>
+					</div>
+					<div class="footer__cta_action">
+						<a class="btn btn-light btn-zoom" href="https://thestreamliners.in/contact">Get in
+							touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__widget">
+			<div class="col-lg-4">
+				<div class="footer__widget_logo mb-5">
+					<img src="https://thestreamliners.in/images/site-navigation/footer-logo.svg" alt="The Streamliners">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_sitemap mb-5">
+					<h4 class="base-font">Links</h4>
+					<ul class="unstyle-list small">
+						
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/locatin">LocatIN</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/ju-eezy">JU eezy</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/cse-simplified">CSE Simplified</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training">Android Training (For JECRCians)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training-ext">Android Training (For Outsiders)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/about-us">About us</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_address mb-5">
+					<h4 class="base-font">Address</h4>
+					
+					<ul class="fa-ul small">
+						
+						<li class="mb-2"><a class="text-light" href="mailto:thestreamliners.tech@gmail.com"><span class="fa-li"><i
+										class="fa fa-envelope"></i></span>thestreamliners.tech@gmail.com</a></li>
+						<li class="mb-2">
+							<span class="fa-li"><i class="fa fa-map-marker"></i></span>JECRC University, Jaipur, Rajasthan, INDIA</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All rights reserved © The Streamliners 2021</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/lavishswarnkar"><i
+									class="fa fa-linkedin-square"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://thestreamliners.in/plugins/jQuery/jquery.min.js"></script>
+<script src="https://thestreamliners.in/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://thestreamliners.in/plugins/slick/slick.min.js"></script>
+<script src="https://thestreamliners.in/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://thestreamliners.in/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://thestreamliners.in/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://thestreamliners.in/plugins/imagesloaded/imagesloaded.min.js"></script>
+<script src="https://thestreamliners.in/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://thestreamliners.in/js/form-handler.min.js"></script>
+
+<script src="https://thestreamliners.in/js/script.min.js"></script>
+
+</body>
+
+</html>

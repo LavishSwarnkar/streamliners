@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Organizing Android Code</title>
+
+  
+<meta name="title" content="Organizing Android Code">
+<meta name="description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thestreamliners.in/blog/organized-code/">
+<meta property="og:title" content="Organizing Android Code">
+<meta property="og:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="og:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://thestreamliners.in/blog/organized-code/">
+<meta property="twitter:title" content="Organizing Android Code">
+<meta property="twitter:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="twitter:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+  <!-- mobile responsive meta -->
+  <meta name="theme-color" content="#3c51b2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/font-awesome/css/font-awesome.min.css" />
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/magnafic-popup/magnific-popup.css" />
+
+  <!-- Stylesheets -->
+  
+  <link href="https://thestreamliners.in/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQR6XDLDE5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js',  new Date());
+
+    gtag('config', 'G-ZQR6XDLDE5');
+  </script>
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="https://thestreamliners.in" class="navbar-brand">
+      <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
+    </a>
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#home"
+            class="nav-link text-dark text-sm-center p-2 ">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#service"
+            class="nav-link text-dark text-sm-center p-2 ">Services</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#portfolio"
+            class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/contact"
+            class="nav-link text-dark text-sm-center p-2 ">Contact</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/about-us"
+            class="nav-link text-dark text-sm-center p-2 ">About us</a>
+        </li>
+        
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+  <div id="content">
+    
+
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
+        <h3 class="breadCrumb__title">Organizing Android Code</h3>
+
+        <div class="row justify-content-center">
+          <p>August 8, 2021 by <a href="../../authors/hrithik-sharma">Hrithik Sharma</a></p>
+        </div>
+
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+  <div class="svg-img">
+      <img src=https://thestreamliners.in/images/hero/figure-svg.svg alt="">
+  </div>
+  <div class="animate-shape">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+          <defs>
+              <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#f1f6f9" />
+                  <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+              </linearGradient>
+          </defs>
+          <g data-name="blob-shape (3)">
+              <path class="blob" fill="url(#d)"
+                  d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+          </g>
+      </svg>
+  </div>
+  <div class="animate-pattern">
+      <img src=https://thestreamliners.in/images/service/background-pattern.svg alt="background-shape">
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+            
+          </div>
+      </div>
+      <div class="row mt-5">
+          <div class="col-lg-12">
+              <div class="singleBlog__content">
+                  <h2 id="tips-to-keep-your-android-project-files-and-code-organized">Tips to keep your android project files and code organized</h2>
+<h3 id="overview">Overview</h3>
+<p>Android applications should always be neatly organized with a clear folder structure that makes your code easy to read. In addition, proper naming conventions for code and classes are important to ensure your code is clean and maintainable.</p>
+<h3 id="the-importance-of-an-organized-code-structure">The importance of an organized code structure</h3>
+<p>It&rsquo;s all about <em>readability</em>. Big projects can be difficult to organize due to the amount of classes, resource files and libraries used.</p>
+<p>Having an organized code structure involves separating classes into different packages according to their purpose and having proper names for your resource files.</p>
+<hr>
+<h2 id="1-project-guidelines">1. Project guidelines</h2>
+<h4 id="11-project-structure">1.1 Project structure</h4>
+<p>        New projects should follow the Android Gradle project structure that is defined on         the <a href="https://developer.android.com/studio/build/index.html">Android Gradle plugin user guide</a>.</p>
+<h4 id="12--file-naming">1.2  File naming</h4>
+<p>        <strong>Java Classes</strong></p>
+<ul>
+<li>
+<p>Class names are written in <a href="http://en.wikipedia.org/wiki/CamelCase">UpperCamelCase</a>.</p>
+</li>
+<li>
+<p>Android classes should be named with a particular convention that makes their         purpose clear in the name. For example all activities should end with <code>Activity</code> as         in <code>MoviesActivity</code>. The following are the most important naming conventions:</p>
+</li>
+</ul>
+<p>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Name</th>
+<th>Convention</th>
+<th>Inherits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Activity</td>
+<td><code>CreateTodoItemActivity</code></td>
+<td><code>AppCompatActivity</code>, <code>Activity</code></td>
+</tr>
+<tr>
+<td>List Adapter</td>
+<td><code>TodoItemsAdapter</code></td>
+<td><code>BaseAdapter</code>, <code>ArrayAdapter</code></td>
+</tr>
+<tr>
+<td>Database Helper</td>
+<td><code>TodoItemsDbHelper</code></td>
+<td><code>SQLiteOpenHelper</code></td>
+</tr>
+<tr>
+<td>Fragment</td>
+<td><code>TodoItemDetailFragment</code></td>
+<td><code>Fragment</code></td>
+</tr>
+<tr>
+<td>Service</td>
+<td><code>FetchTodoItemService</code></td>
+<td><code>Service</code>, <code>IntentService</code></td>
+</tr>
+</tbody>
+</table>
+
+        
+<strong>Resources Files</strong></p>
+<p>        Resources file names are written in <strong>lowercase_underscore</strong>.</p>
+<ul>
+<li>
+<p><em><strong>Drawable files</strong></em></p>
+<p>Naming conventions for drawables:
+
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Asset Type</th>
+<th>Prefix</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Button</td>
+<td><code>btn_</code></td>
+<td><code>btn_send_pressed.png</code></td>
+</tr>
+<tr>
+<td>Dialog</td>
+<td><code>dialog_</code></td>
+<td><code>dialog_top.png</code></td>
+</tr>
+<tr>
+<td>Divider</td>
+<td><code>divider_</code></td>
+<td><code>divider_horizontal.png</code></td>
+</tr>
+<tr>
+<td>Action bar</td>
+<td><code>ab_</code></td>
+<td><code>ab_stacked.png</code></td>
+</tr>
+<tr>
+<td>Icon</td>
+<td><code>ic_</code></td>
+<td><code>ic_star.png</code></td>
+</tr>
+<tr>
+<td>Menu</td>
+<td><code>menu_</code></td>
+<td><code>menu_submenu_bg.png</code></td>
+</tr>
+<tr>
+<td>Notification</td>
+<td><code>notification_</code></td>
+<td><code>notification_bg.png</code></td>
+</tr>
+<tr>
+<td>Tabs</td>
+<td><code>tab_</code></td>
+<td><code>tab_pressed.png</code></td>
+</tr>
+</tbody>
+</table>
+
+Naming conventions for icons (taken from <a href="http://developer.android.com/design/style/iconography.html">Android iconography guidelines</a>):</p>
+</li>
+</ul>
+
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Asset Type</th>
+<th>Prefix</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Icons</td>
+<td><code>ic_</code></td>
+<td><code>ic_star.png</code></td>
+</tr>
+<tr>
+<td>Launcher icons</td>
+<td><code>ic_launcher</code></td>
+<td><code>ic_launcher_calendar.png</code></td>
+</tr>
+<tr>
+<td>Menu icons and Action Bar icons</td>
+<td><code>ic_menu</code></td>
+<td><code>ic_menu_archive.png</code></td>
+</tr>
+<tr>
+<td>Status bar icons</td>
+<td><code>ic_stat_notify</code></td>
+<td><code>ic_stat_notify_msg.png</code></td>
+</tr>
+<tr>
+<td>Tab icons</td>
+<td><code>ic_tab</code></td>
+<td><code>ic_tab_recent.png</code></td>
+</tr>
+<tr>
+<td>Dialog icons</td>
+<td><code>ic_dialog</code></td>
+<td><code>ic_dialog_info.png</code></td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>
+<p><em><strong>Layout files</strong></em></p>
+<p>Layout files should match the name of the Android components that they are intended for but moving the top level component name to the beginning. For example, if we are creating a layout for the <code>SignInActivity</code>, the name of the layout file should be <code>activity_sign_in.xml</code>.</p>
+</li>
+</ul>
+
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Component</th>
+<th>Class Name</th>
+<th>Layout Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Activity</td>
+<td><code>UserProfileActivity</code></td>
+<td><code>activity_user_profile.xml</code></td>
+</tr>
+<tr>
+<td>Fragment</td>
+<td><code>SignUpFragment</code></td>
+<td><code>fragment_sign_up.xml</code></td>
+</tr>
+<tr>
+<td>Dialog</td>
+<td><code>ChangePasswordDialog</code></td>
+<td><code>dialog_change_password.xml</code></td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>
+<p><em><strong>Values files</strong></em></p>
+<p>Resource files in the values folder should be <strong>plural</strong>, e.g. <code>strings.xml</code>, <code>styles.xml</code>, <code>colors.xml</code>, <code>dimens.xml</code>, <code>attrs.xml</code></p>
+</li>
+</ul>
+<h2 id="2-code-guidelines">2. Code guidelines</h2>
+<h4 id="21--java-language-rules">2.1  Java language rules</h4>
+<ul>
+<li><strong>Don&rsquo;t ignore exceptions:</strong></li>
+</ul>
+<p>It can be tempting to write code that ignores an exception, such as:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setServerPort</span><span style="color:#f92672">(</span>String value<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+          serverPort <span style="color:#f92672">=</span> Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">parseInt</span><span style="color:#f92672">(</span>value<span style="color:#f92672">);</span>
+      <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>NumberFormatException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>
+</code></pre></div><p>Don&rsquo;t do this. While you may think your code will never encounter this error condition or that it isn&rsquo;t important to handle it, ignoring this type of exception creates mines in your code for someone else to trigger some day. You must handle every exception in your code in a principled way. (<a href="https://source.android.com/source/code-style.html">Android code style guidelines</a>)</p>
+<ul>
+<li><strong>Don&rsquo;t catch generic exception</strong></li>
+</ul>
+<p>You should not do this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+    someComplicatedIOFunction<span style="color:#f92672">();</span>        <span style="color:#75715e">// may throw IOException
+</span><span style="color:#75715e"></span>    someComplicatedParsingFunction<span style="color:#f92672">();</span>   <span style="color:#75715e">// may throw ParsingException
+</span><span style="color:#75715e"></span>    someComplicatedSecurityFunction<span style="color:#f92672">();</span>  <span style="color:#75715e">// may throw SecurityException
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>Exception e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>                 <span style="color:#75715e">// I&#39;ll just catch all exceptions
+</span><span style="color:#75715e"></span>    handleError<span style="color:#f92672">();</span>                      <span style="color:#75715e">// with one generic handler!
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</code></pre></div><p>In almost all cases, it&rsquo;s inappropriate to catch generic <code>Exception</code> or <code>Throwable</code> (preferably not <code>Throwable</code> because it includes <code>Error</code> exceptions).</p>
+<p>It obscures the failure- handling properties of your code, meaning if someone adds a new type of exception in the code you&rsquo;re calling, the compiler won&rsquo;t point out that you need to handle the error differently. In most cases you shouldn&rsquo;t be handling different types of exceptions in the same way.</p>
+<p>Catch each exception separately as part of a multi-catch block, for example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+    <span style="color:#f92672">...</span>
+<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>ClassNotFoundException <span style="color:#f92672">|</span> NoSuchMethodException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#f92672">...</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li><strong>Fully qualify imports</strong></li>
+</ul>
+<p>This is bad: <code>import foo.*;</code></p>
+<p>This is good: <code>import foo.Bar;</code></p>
+<h4 id="22--java-library-rules">2.2  Java library rules</h4>
+<p>There are conventions for using Android&rsquo;s Java libraries and tools. In some cases, the convention has changed in important ways and older code might use a deprecated pattern or library. When working with such code, it&rsquo;s okay to continue the existing style. When creating new components however, never use deprecated libraries.</p>
+<h4 id="23--java-style-rules">2.3  Java style rules</h4>
+<ul>
+<li><strong>Use Javadoc standard comments</strong></li>
+</ul>
+<p>Every file should have a copyright statement at the top, followed by package and import statements (each block separated by a blank line), and finally the class or interface declaration. In the Javadoc comments, describe what the class or interface does.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">/*
+</span><span style="color:#75715e"> * Copyright 2020 The Android Open Source Project
+</span><span style="color:#75715e"> *
+</span><span style="color:#75715e"> * Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
+</span><span style="color:#75715e"> * you may not use this file except in compliance with the License.
+</span><span style="color:#75715e"> * You may obtain a copy of the License at
+</span><span style="color:#75715e"> *
+</span><span style="color:#75715e"> *      http://www.apache.org/licenses/LICENSE-2.0
+</span><span style="color:#75715e"> *
+</span><span style="color:#75715e"> * Unless required by applicable law or agreed to in writing, software
+</span><span style="color:#75715e"> * distributed under the License is distributed on an &#34;AS IS&#34; BASIS,
+</span><span style="color:#75715e"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+</span><span style="color:#75715e"> * See the License for the specific language governing permissions and
+</span><span style="color:#75715e"> * limitations under the License.
+</span><span style="color:#75715e"> */</span>
+
+<span style="color:#f92672">package</span> com.android.internal.foo<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> android.os.Blah<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> android.view.Yada<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.sql.ResultSet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.sql.SQLException<span style="color:#f92672">;</span>
+
+<span style="color:#75715e">/**
+</span><span style="color:#75715e"> * Does X and Y and provides an abstraction for Z.
+</span><span style="color:#75715e"> */</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span> <span style="color:#f92672">{</span>
+    <span style="color:#f92672">...</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li><strong>Fields definition and naming</strong></li>
+</ul>
+<p>Fields should be defined at the <strong>top of the file</strong> and they should follow the naming rules listed below.</p>
+<ol>
+<li>Private, non-static field names start with <strong>m</strong>.</li>
+<li>Private, static field names start with <strong>s</strong>.</li>
+<li>Other fields start with a lower case letter.</li>
+<li>Static final fields (constants) are ALL_CAPS_WITH_UNDERSCORES.</li>
+</ol>
+<p>Example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> SOME_CONSTANT <span style="color:#f92672">=</span> 42<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> publicField<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> MyClass sSingleton<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">int</span> mPackagePrivate<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> mPrivate<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">int</span> mProtected<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li><strong>String constants, naming, and values</strong></li>
+</ul>
+<p>Many elements of the Android SDK such as <code>SharedPreferences</code>, <code>Bundle</code>, or <code>Intent</code>use a key-value pair approach so it&rsquo;s very likely that even for a small app you end up having to write a lot of String constants.</p>
+<p>When using one of these components, you <strong>must</strong> define the keys as a <code>static final</code> fields and they should be prefixed as indicated below.</p>
+
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Element</th>
+<th>Field Name Prefix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SharedPreferences</td>
+<td><code>PREF_</code></td>
+</tr>
+<tr>
+<td>Bundle</td>
+<td><code>BUNDLE_</code></td>
+</tr>
+<tr>
+<td>Intent Extra</td>
+<td><code>EXTRA_</code></td>
+</tr>
+<tr>
+<td>Intent Action</td>
+<td><code>ACTION_</code></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="24--logging-guidelines">2.4  Logging guidelines</h4>
+<p>Use the logging methods provided by the <code>Log</code> class to print out error messages or other information that may be useful for developers to identify issues:</p>
+<ul>
+<li><code>Log.v(String tag, String msg)</code> (verbose)</li>
+<li><code>Log.d(String tag, String msg)</code> (debug)</li>
+<li><code>Log.i(String tag, String msg)</code> (information)</li>
+<li><code>Log.w(String tag, String msg)</code> (warning)</li>
+<li><code>Log.e(String tag, String msg)</code> (error)</li>
+</ul>
+<p>As a general rule, we use the class name as tag and we define it as a <code>static final</code> field at the top of the file. For example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String TAG <span style="color:#f92672">=</span> MyClass<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getSimpleName</span><span style="color:#f92672">();</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">myMethod</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        Log<span style="color:#f92672">.</span><span style="color:#a6e22e">e</span><span style="color:#f92672">(</span>TAG<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;My error message&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>VERBOSE and DEBUG logs <strong>must</strong> be disabled on release builds. It is also recommended to disable INFORMATION, WARNING and ERROR logs but you may want to keep them enabled if you think they may be useful to identify issues on release builds. If you decide to leave them enabled, you have to make sure that they are not leaking private information such as email addresses, user ids, etc.</p>
+<p>To only show logs on debug builds:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>BuildConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">DEBUG</span><span style="color:#f92672">)</span> Log<span style="color:#f92672">.</span><span style="color:#a6e22e">d</span><span style="color:#f92672">(</span>TAG<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;The value of x is &#34;</span> <span style="color:#f92672">+</span> x<span style="color:#f92672">);</span>
+</code></pre></div><h4 id="25-line-length-limit">2.5 Line length limit</h4>
+<p>Code lines should not exceed <strong>100 characters</strong>. If the line is longer than this limit there are usually two options to reduce its length:</p>
+<ol>
+<li>Extract a local variable or method (preferable).</li>
+<li>Apply line-wrapping to divide a single line into multiple ones.</li>
+</ol>
+<p>There are some methods with the help of which we can organize the lines with much characters:</p>
+<ul>
+<li>
+<p><strong>Method chain case</strong></p>
+<p>When multiple methods are chained in the same line - for example when using Builders - every call to a method should go in its own line, breaking the line before the <code>.</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Picasso<span style="color:#f92672">.</span><span style="color:#a6e22e">with</span><span style="color:#f92672">(</span>context<span style="color:#f92672">).</span><span style="color:#a6e22e">load</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;foo.jpg&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">into</span><span style="color:#f92672">(</span>imageView<span style="color:#f92672">);</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Picasso<span style="color:#f92672">.</span><span style="color:#a6e22e">with</span><span style="color:#f92672">(</span>context<span style="color:#f92672">)</span>
+        <span style="color:#f92672">.</span><span style="color:#a6e22e">load</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;foo.jpg&#34;</span><span style="color:#f92672">)</span>
+        <span style="color:#f92672">.</span><span style="color:#a6e22e">into</span><span style="color:#f92672">(</span>imageView<span style="color:#f92672">);</span>
+</code></pre></div></li>
+<li>
+<p><strong>Long parameters case</strong></p>
+<p>When a method has many parameters or its parameters are very long, we should break the line after every comma <code>,</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">loadPicture<span style="color:#f92672">(</span>context<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;foo.jpg&#34;</span><span style="color:#f92672">,</span> mImageViewProfilePicture<span style="color:#f92672">,</span> clickListener<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Title of the picture&#34;</span><span style="color:#f92672">);</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">loadPicture<span style="color:#f92672">(</span>context<span style="color:#f92672">,</span>
+        <span style="color:#e6db74">&#34;foo.jpg&#34;</span><span style="color:#f92672">,</span>
+        mImageViewProfilePicture<span style="color:#f92672">,</span>
+        clickListener<span style="color:#f92672">,</span>
+        <span style="color:#e6db74">&#34;Title of the picture&#34;</span><span style="color:#f92672">);</span>
+</code></pre></div></li>
+</ul>
+<h4 id="26-methods-and-classes-limits">2.6 Methods and Classes limits</h4>
+<ul>
+<li>
+<p>Any method should not contain more than 30 lines of code (not counting line spaces and comments). If your method goes above the limit then it is highly recommended to devide your task into sub-tasks and create new methods to handle them.</p>
+</li>
+<li>
+<p>Any class should not contain more than 20 methods (resulting in up to 600  lines of code in a class). If your code breaks the limit then create a new class.</p>
+</li>
+<li>
+<p>Any package should not contain more than 30 classes, thus comprising 18,000 lines of code.</p>
+</li>
+<li>
+<p>Also, packages should be created according to the tasks. Like, a seperate package for making queries upon data on the cloud, a package that handle all the activity classes, a package for model classes, and-so-on.</p>
+</li>
+</ul>
+<hr>
+<h1 id="final-words">Final Words</h1>
+<p>Each project is unique, and each case is a case but believe that keeping classes single-purpose and organized in a clean and easy to understand way, makes development easier and more enjoyable.</p>
+<p>The important thing is that in the end you’ll be able to look at your code and feel that sweet light-weighted sensation of a well done job.</p>
+<p><strong><strong>I hope you find it useful or at least it gives you some fresh ideas.</strong></strong></p>
+<p><strong>Thanks for reading</strong> 🙌🏼</p>
+<p><strong>Happy coding!</strong>  😇</p>
+<!-- raw HTML omitted -->
+<p>BTW, I, am an Android Developer, solve real-world problems by <em><strong>building useful apps</strong></em>. Have a <strong>look at our</strong> <a href="https://thestreamliners.in/"><strong>portfolio</strong></a><strong>.</strong></p>
+<p>Connect with me on <a href="https://github.com/Coder481"><strong>Github</strong></a> and <a href="https://www.linkedin.com/in/481hrithik/"><strong>LinkedIn</strong></a></p>
+
+              </div>
+
+              <div style="margin-top: 100px;" id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.title = "Organizing Android Code";
+        this.page.url = "https://thestreamliners.in/blog/organized-code/";
+        this.page.identifier = "Organizing Android Code";
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'https://the-streamliners.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<style>
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 50px;
+}
+
+</style>
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__cta">
+					<div class="shape-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="shape-2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="text-light footer__cta_content">
+						<span>Contact us</span>
+						<h2 class="mb-0">Let’s make your dream come true</h2>
+					</div>
+					<div class="footer__cta_action">
+						<a class="btn btn-light btn-zoom" href="https://thestreamliners.in/contact">Get in
+							touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__widget">
+			<div class="col-lg-4">
+				<div class="footer__widget_logo mb-5">
+					<img src="https://thestreamliners.in/images/site-navigation/footer-logo.svg" alt="The Streamliners">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_sitemap mb-5">
+					<h4 class="base-font">Links</h4>
+					<ul class="unstyle-list small">
+						
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/locatin">LocatIN</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/ju-eezy">JU eezy</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/cse-simplified">CSE Simplified</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training">Android Training (For JECRCians)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training-ext">Android Training (For Outsiders)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/about-us">About us</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_address mb-5">
+					<h4 class="base-font">Address</h4>
+					
+					<ul class="fa-ul small">
+						
+						<li class="mb-2"><a class="text-light" href="mailto:thestreamliners.tech@gmail.com"><span class="fa-li"><i
+										class="fa fa-envelope"></i></span>thestreamliners.tech@gmail.com</a></li>
+						<li class="mb-2">
+							<span class="fa-li"><i class="fa fa-map-marker"></i></span>JECRC University, Jaipur, Rajasthan, INDIA</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All rights reserved © The Streamliners 2021</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/lavishswarnkar"><i
+									class="fa fa-linkedin-square"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://thestreamliners.in/plugins/jQuery/jquery.min.js"></script>
+<script src="https://thestreamliners.in/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://thestreamliners.in/plugins/slick/slick.min.js"></script>
+<script src="https://thestreamliners.in/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://thestreamliners.in/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://thestreamliners.in/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://thestreamliners.in/plugins/imagesloaded/imagesloaded.min.js"></script>
+<script src="https://thestreamliners.in/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://thestreamliners.in/js/form-handler.min.js"></script>
+
+<script src="https://thestreamliners.in/js/script.min.js"></script>
+
+</body>
+
+</html>

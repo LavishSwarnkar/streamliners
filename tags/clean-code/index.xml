@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clean code on The Streamliners</title>
+    <link>https://thestreamliners.in/tags/clean-code/</link>
+    <description>Recent content in Clean code on The Streamliners</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/clean-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Organizing Android Code</title>
+      <link>https://thestreamliners.in/blog/organized-code/</link>
+      <pubDate>Sun, 08 Aug 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/organized-code/</guid>
+      <description>Tips to keep your android project files and code organized Overview Android applications should always be neatly organized with a clear folder structure that makes your code easy to read. In addition, proper naming conventions for code and classes are important to ensure your code is clean and maintainable.
+The importance of an organized code structure It&amp;rsquo;s all about readability. Big projects can be difficult to organize due to the amount of classes, resource files and libraries used.</description>
+    </item>
+    
+  </channel>
+</rss>
