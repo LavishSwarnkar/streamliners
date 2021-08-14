@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security Rules on The Streamliners</title>
+    <link>https://thestreamliners.in/tags/security-rules/</link>
+    <description>Recent content in Security Rules on The Streamliners</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/security-rules/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Revoke role access using Firestore Security rules</title>
+      <link>https://thestreamliners.in/blog/revoke-role-access-using-firestore-security-rules/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/revoke-role-access-using-firestore-security-rules/</guid>
+      <description>Namaskaram,
+Many applications require Role Based access. For example : in an e-commerce project, roles like Admin, Shopkeeper, Agent etc. may exist. Granting and revoking the access manually can be hard &amp;amp; inefficient.
+In this blog, I am sharing an easy &amp;amp; efficient way to grant &amp;amp; revoke role based access in a Firebase app.
+Naive approach   Let&amp;rsquo;s say : you have an Admin app where only authorised Admins should be able to login &amp;amp; access the app.</description>
+    </item>
+    
+  </channel>
+</rss>

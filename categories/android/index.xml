@@ -20,6 +20,18 @@ This app was JU eezy, which I developed for our University. I had to send notifi
     </item>
     
     <item>
+      <title>Revoke role access using Firestore Security rules</title>
+      <link>https://thestreamliners.in/blog/revoke-role-access-using-firestore-security-rules/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/revoke-role-access-using-firestore-security-rules/</guid>
+      <description>Namaskaram,
+Many applications require Role Based access. For example : in an e-commerce project, roles like Admin, Shopkeeper, Agent etc. may exist. Granting and revoking the access manually can be hard &amp;amp; inefficient.
+In this blog, I am sharing an easy &amp;amp; efficient way to grant &amp;amp; revoke role based access in a Firebase app.
+Naive approach   Let&amp;rsquo;s say : you have an Admin app where only authorised Admins should be able to login &amp;amp; access the app.</description>
+    </item>
+    
+    <item>
       <title>Creating custom notifications</title>
       <link>https://thestreamliners.in/blog/creating-custom-notifications/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0530</pubDate>
