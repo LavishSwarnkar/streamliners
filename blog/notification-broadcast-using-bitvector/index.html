@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Notification Broadcast using BitVector</title>
+
+  
+<meta name="title" content="Notification Broadcast using BitVector">
+<meta name="description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thestreamliners.in/blog/notification-broadcast-using-bitvector/">
+<meta property="og:title" content="Notification Broadcast using BitVector">
+<meta property="og:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="og:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://thestreamliners.in/blog/notification-broadcast-using-bitvector/">
+<meta property="twitter:title" content="Notification Broadcast using BitVector">
+<meta property="twitter:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="twitter:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+  <!-- mobile responsive meta -->
+  <meta name="theme-color" content="#3c51b2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/font-awesome/css/font-awesome.min.css" />
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/magnafic-popup/magnific-popup.css" />
+
+  <!-- Stylesheets -->
+  
+  <link href="https://thestreamliners.in/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQR6XDLDE5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js',  new Date());
+
+    gtag('config', 'G-ZQR6XDLDE5');
+  </script>
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="https://thestreamliners.in" class="navbar-brand">
+      <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
+    </a>
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#home"
+            class="nav-link text-dark text-sm-center p-2 ">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#service"
+            class="nav-link text-dark text-sm-center p-2 ">Services</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#portfolio"
+            class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/contact"
+            class="nav-link text-dark text-sm-center p-2 ">Contact</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/about-us"
+            class="nav-link text-dark text-sm-center p-2 ">About us</a>
+        </li>
+        
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+  <div id="content">
+    
+
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
+        <h3 class="breadCrumb__title">Notification Broadcast using BitVector</h3>
+
+        <div class="row justify-content-center">
+          <p>August 14, 2021 by <a href="../../authors/lavish-swarnkar">Lavish Swarnkar</a></p>
+        </div>
+
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+  <div class="svg-img">
+      <img src=https://thestreamliners.in/images/hero/figure-svg.svg alt="">
+  </div>
+  <div class="animate-shape">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+          <defs>
+              <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#f1f6f9" />
+                  <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+              </linearGradient>
+          </defs>
+          <g data-name="blob-shape (3)">
+              <path class="blob" fill="url(#d)"
+                  d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+          </g>
+      </svg>
+  </div>
+  <div class="animate-pattern">
+      <img src=https://thestreamliners.in/images/service/background-pattern.svg alt="background-shape">
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+            
+          </div>
+      </div>
+      <div class="row mt-5">
+          <div class="col-lg-12">
+              <div class="singleBlog__content">
+                  <p>Namaskaram,</p>
+<p>In this blog, I will be sharing an amazing story where I used BitVector &amp; Bitwise operators to save myself from writing complex code &amp; also using up a lot of Server Bandwidth.</p>
+<h3 id="the-problem">The problem</h3>
+<p>During my journey as an Android Developer, I came across a use case where I needed to send personalized notifications to my users.</p>
+<p>This app was JU eezy, which I developed for our University. I had to send notifications to users based on their profile. In the user profile, there are fields such as gender, year, hostel, section and course.</p>
+<p>Now suppose I want to send notifications to a User segment based only on the following criteria:-</p>
+<ul>
+<li>
+<p>Gender - Male</p>
+</li>
+<li>
+<p>Year - 1st &amp; 2nd</p>
+</li>
+<li>
+<p>Hostel - Hostel 3 &amp; 4 (out of 5 hostels)</p>
+</li>
+<li>
+<p>Section - A, B, C &amp; D (out of range A&hellip;E)</p>
+</li>
+<li>
+<p>Course - B. Tech CSE &amp; ME (out of several courses)</p>
+</li>
+</ul>
+<h3 id="easy-solution">Easy solution</h3>
+<p>I use Firebase FCM for notifications. It provides 2 ways to send notifications :</p>
+<ol>
+<li>
+<p>By token - each user is given a unique token which can be used to send notification to a specific user only.</p>
+</li>
+<li>
+<p>By Topic - we can create groups of people by subscribing them to a particular topic. The notification will be delivered to all subscribers of that topic.</p>
+</li>
+</ol>
+<p>Topic seemed to be the right choice here. Firebase provides the feature of subscribing a user to a maximum of 2000 topics. So, I could create a topic for each user segment like &ldquo;CSE&rdquo;, &ldquo;MCA&rdquo;, &ldquo;Male&rdquo;, &ldquo;Female&rdquo;, etc. and then send the notification to topics using a condition.</p>
+<p>For the previous example, condition will be &ldquo;MALE &amp;&amp; (1stYr || 2ndYr) &amp;&amp; (H3 || H4) &amp;&amp; (A || B || C || D) &amp;&amp; (CSE || ME)&rdquo;. And I could easily send the message to the above topics condition. Simple!</p>
+<h3 id="my-mistake">My mistake</h3>
+<p>But at the time of implementing this feature, I hadn&rsquo;t read the documentation properly and had mistaken the limit of maximum 20 topics for the 2000 topics limit. So, in my case 20 topics won&rsquo;t be enough as there are more than 20 courses only. Then, I had to think differently to solve this problem. The above solution using topics would work fine. But if there was a limit of 20 topics instead of 2000, other solutions had to be invented.</p>
+<h3 id="actual-implementation">Actual implementation</h3>
+<p>Following is the approach I actually implemented.</p>
+<p>FCM is free and you can send unlimited messages. I leveraged this to broadcast the message to all users. And then the message will be shown as notification to only those for whom it&rsquo;s intended.</p>
+<p>The user profile is already saved in the User app. So, when the message is received, we can check whether it&rsquo;s for the user or not. The only thing is - the recipient&rsquo;s condition needs to be sent with the message. For our previous example, the condition &ldquo;MALE &amp;&amp; (1stYr || 2ndYr) &amp;&amp; (H3 || H4) &amp;&amp; (A || B || C || D) &amp;&amp; (CSE || ME)&rdquo; will be sent along with the message for condition checking.</p>
+<p>The challenge here was how to send the condition and then how to check the condition on the user&rsquo;s device.</p>
+<h3 id="taking-inspiration-from-cn">Taking inspiration from CN</h3>
+<p>Then I remembered what I had learnt in Computer Networks class. When computer A needs to send a packet to computer B, it has to be identified whether computer B belongs to A&rsquo;s network. For that purpose, we have subnet masks. When B&rsquo;s IP address is Bitwise ANDed with subnet mask of B&rsquo;s network, then if the result (B&rsquo;s network ID)</p>
+<ul>
+<li>
+<p>is the A&rsquo;s network ID then B also belongs to the same network.</p>
+</li>
+<li>
+<p>is not A&rsquo;s network ID then B belongs to some other network and the packet needs to be sent to the router.</p>
+</li>
+</ul>
+<p>Here, the concept I found useful in my case was Bitwise AND. Subnet mask somehow saved the information of which bits denote network IP. And these bits are extracted from the computer&rsquo;s IP address using Bitwise AND. The result is then compared to the network ID.</p>
+<h3 id="the-selection-hash">The Selection Hash</h3>
+<p>For my case, I also created something like a Subnet mask which would tell for whom the message is intended. And for this, I created the following format of 32 bits :</p>
+<figure class="center-img"><img src="../../images/blog/bitvector%20format.PNG"
+         alt="FCM BitVector" width="100%"/>
+</figure>
+
+<p>So, the selection hash for our example &ldquo;MALE &amp;&amp; (1stYr || 2ndYr) &amp;&amp; (H3 || H4) &amp;&amp; (A || B || C || D) &amp;&amp; (CSE || ME)&rdquo; is</p>
+<p>10 11000 00110 11110 101000000000000.</p>
+<p>(Assuming 18th bit for CSE and 20th for ME)</p>
+<p>Now this can be interpreted as a binary number and corresponds to 2960084992 in the Decimal number system.</p>
+<p>Cool, so we have encrypted our condition in just a single number.</p>
+<h3 id="profile-hash">Profile Hash</h3>
+<p>The way we have selection hash, we can also create a profile hash for each user. For example, consider a user who is :</p>
+<ul>
+<li>
+<p>Male</p>
+</li>
+<li>
+<p>from 3rd year</p>
+</li>
+<li>
+<p>Hostel 5</p>
+</li>
+<li>
+<p>Section C</p>
+</li>
+<li>
+<p>Course CSE</p>
+</li>
+</ul>
+<p>So, the Profile Hash would be : 10 00100 00001 00100 100000000000000 or 2282897408 in Decimal.</p>
+<h3 id="checking-membership">Checking membership</h3>
+<p>Now whenever a message is sent, it will have a Selection Hash as Recipient information and will be broadcasted to all users. On arriving on the User&rsquo;s device, it will be Bitwise ANDed with their respective Profile Hash. If the result = selectionHash &amp; profileHash =</p>
+<ul>
+<li>
+<p>= 0, then none of the conditions is met and the message is not for the user.</p>
+</li>
+<li>
+<p>greaterThan 0, then at least one of the conditions is met but not necessarily all.</p>
+</li>
+<li>
+<p>= ProfileHash, then all conditions are met</p>
+</li>
+</ul>
+<p>Example :</p>
+<figure class="center-img"><img src="../../images/blog/bitvector%20example.PNG"
+         alt="FCM BitVector" width="100%"/>
+</figure>
+
+<h3 id="conclusion">Conclusion</h3>
+<ul>
+<li>
+<p>Going the hard way, I got to implement a Computer Networks concept in real life. I was able to look through the problem using CN&rsquo;s lens.</p>
+</li>
+<li>
+<p>Using bits, you can save more information in less space</p>
+</li>
+<li>
+<p>Using Bitwise operators you can avoid writing a clutter of if-else statements</p>
+</li>
+</ul>
+
+              </div>
+
+              <div style="margin-top: 100px;" id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.title = "Notification Broadcast using BitVector";
+        this.page.url = "https://thestreamliners.in/blog/notification-broadcast-using-bitvector/";
+        this.page.identifier = "Notification Broadcast using BitVector";
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'https://the-streamliners.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<style>
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 50px;
+}
+
+</style>
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__cta">
+					<div class="shape-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="shape-2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="text-light footer__cta_content">
+						<span>Contact us</span>
+						<h2 class="mb-0">Let’s make your dream come true</h2>
+					</div>
+					<div class="footer__cta_action">
+						<a class="btn btn-light btn-zoom" href="https://thestreamliners.in/contact">Get in
+							touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__widget">
+			<div class="col-lg-4">
+				<div class="footer__widget_logo mb-5">
+					<img src="https://thestreamliners.in/images/site-navigation/footer-logo.svg" alt="The Streamliners">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_sitemap mb-5">
+					<h4 class="base-font">Links</h4>
+					<ul class="unstyle-list small">
+						
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/locatin">LocatIN</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/ju-eezy">JU eezy</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/cse-simplified">CSE Simplified</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training">Android Training (For JECRCians)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training-ext">Android Training (For Outsiders)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/about-us">About us</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_address mb-5">
+					<h4 class="base-font">Address</h4>
+					
+					<ul class="fa-ul small">
+						
+						<li class="mb-2"><a class="text-light" href="mailto:thestreamliners.tech@gmail.com"><span class="fa-li"><i
+										class="fa fa-envelope"></i></span>thestreamliners.tech@gmail.com</a></li>
+						<li class="mb-2">
+							<span class="fa-li"><i class="fa fa-map-marker"></i></span>JECRC University, Jaipur, Rajasthan, INDIA</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All rights reserved © The Streamliners 2021</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/lavishswarnkar"><i
+									class="fa fa-linkedin-square"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://thestreamliners.in/plugins/jQuery/jquery.min.js"></script>
+<script src="https://thestreamliners.in/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://thestreamliners.in/plugins/slick/slick.min.js"></script>
+<script src="https://thestreamliners.in/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://thestreamliners.in/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://thestreamliners.in/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://thestreamliners.in/plugins/imagesloaded/imagesloaded.min.js"></script>
+<script src="https://thestreamliners.in/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://thestreamliners.in/js/form-handler.min.js"></script>
+
+<script src="https://thestreamliners.in/js/script.min.js"></script>
+
+</body>
+
+</html>

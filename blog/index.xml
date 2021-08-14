@@ -6,7 +6,19 @@
     <description>Recent content in Recent Articles on The Streamliners</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notification Broadcast using BitVector</title>
+      <link>https://thestreamliners.in/blog/notification-broadcast-using-bitvector/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/notification-broadcast-using-bitvector/</guid>
+      <description>Namaskaram,
+In this blog, I will be sharing an amazing story where I used BitVector &amp;amp; Bitwise operators to save myself from writing complex code &amp;amp; also using up a lot of Server Bandwidth.
+The problem During my journey as an Android Developer, I came across a use case where I needed to send personalized notifications to my users.
+This app was JU eezy, which I developed for our University. I had to send notifications to users based on their profile.</description>
+    </item>
+    
     <item>
       <title>Creating custom notifications</title>
       <link>https://thestreamliners.in/blog/creating-custom-notifications/</link>

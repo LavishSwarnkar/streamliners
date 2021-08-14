@@ -192,7 +192,13 @@
 </code></pre></div><p><em><strong>Note:</strong></em> The <code>CHANNEL_ID</code> should be unique for every notification channel in order to handle this channel in future if we want to modify or delete this channel by using the unique channel_id.</p>
 <p>By default, all notifications posted to this channel use the visual and auditory behaviors defined by the importance level from the <a href="https://developer.android.com/reference/androidx/core/app/NotificationManagerCompat"><code>NotificationManagerCompat</code></a> class, such as <a href="https://developer.android.com/reference/androidx/core/app/NotificationManagerCompat#IMPORTANCE_DEFAULT"><code>IMPORTANCE_DEFAULT</code></a> and <a href="https://developer.android.com/reference/androidx/core/app/NotificationManagerCompat#IMPORTANCE_HIGH"><code>IMPORTANCE_HIGH</code></a>.</p>
 <p>For more information about importance level:</p>
-<table>
+<h2 id="hahahugoshortcode-s1-hbhb">
+
+
+
+
+
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
 <th>User-visible importance level</th>
@@ -203,8 +209,13 @@
 <tbody>
 <tr>
 <td><strong>Urgent</strong><!-- raw HTML omitted -->Makes a sound and appears as a heads-up notification</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="https://developer.android.com/reference/android/app/NotificationManager#IMPORTANCE_HIGH">IMPORTANCE_HIGH</a></td>
 <td><a href="https://developer.android.com/reference/androidx/core/app/NotificationCompat#PRIORITY_HIGH">PRIORITY_HIGH</a> or <a href="https://developer.android.com/reference/androidx/core/app/NotificationCompat#PRIORITY_MAX">PRIORITY_MAX</a></td>
+<td></td>
 </tr>
 <tr>
 <td><strong>High</strong><!-- raw HTML omitted -->Makes a sound</td>
@@ -223,7 +234,7 @@
 </tr>
 </tbody>
 </table>
-<hr>
+</h2>
 <h2 id="set-the-content-of-the-notification">Set the content of the notification</h2>
 <p>To get started, you need to set the notification&rsquo;s content and channel using a <a href="https://developer.android.com/reference/androidx/core/app/NotificationCompat.Builder"><code>NotificationCompat.Builder</code></a> object.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
