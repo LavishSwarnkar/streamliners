@@ -36,7 +36,7 @@ Videos  Introductory video      LocatIN for university      Big Picture</descrip
       <pubDate>Tue, 11 May 2021 12:49:27 +0600</pubDate>
       
       <guid>https://thestreamliners.in/portfolio/karobar-easy/</guid>
-      <description>  Major features of the app       document.addEventListener( &#39;DOMContentLoaded&#39;, function () {new Splide( &#39;#slider3&#39; , {padding : 0, type : &#34;loop&#34;, rewind : true, lazyLoad: &#39;nearby&#39;}).mount();} );  </description>
+      <description>  Major features of the app         document.addEventListener( &#39;DOMContentLoaded&#39;, function () {new Splide( &#39;#slider3&#39; , {padding : 0, type : &#34;loop&#34;, rewind : true, lazyLoad: &#39;nearby&#39;}).mount();} );  </description>
     </item>
     
     <item>
