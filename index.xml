@@ -6,7 +6,7 @@
     <description>Recent content on The Streamliners</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JU eezy</title>
       <link>https://thestreamliners.in/portfolio/ju-eezy/</link>
@@ -99,6 +99,17 @@ DynamicShopkeeper can edit menu, working hours, promocodes etc. anytime Orde
       <guid>https://thestreamliners.in/portfolio/blushed/</guid>
       <description>This was a project we developed from scratch during an internship. The app UI has evolved after that. But still the core logic is written by us. The new app looks as follows.
 Features Top StoriesView the latest and popular stories on top CategriesBrowse through various categories Dark ModeRead in bed without hurting your eyes FilterFilter stories based on language you prefer AutoplayMessages can be shown in an hands-free autoplay mode Unique options panelFrom options, one can toggle sound effects, read description of story or delete progress Likes &amp;amp; BookmarksLike &amp;amp; bookmark your favourite stories GuideThe app helps you understand the UI/UX Track progressEasily see how much you&amp;#39;ve read Shimmer effectBeautiful Shimmer animation for loading data Swipe to removeEasily remove stories from Bookmarks, Likes by swiping document.</description>
+    </item>
+    
+    <item>
+      <title>Scalability Challenge in Karobar Easy</title>
+      <link>https://thestreamliners.in/blog/scalability-challenge-in-karobar-easy/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/scalability-challenge-in-karobar-easy/</guid>
+      <description>Namaskaram,
+The recent growth in Karobar Easy users made the attendanceUpdater Cloud Function fail! This failure caused inconsistency in the database several times. It took 2 rewrites of the entire cloud function to finally fix the issue. This has been a challenging yet interesting journey for me. So, here I am sharing the incident with you all.
+The attendanceUpdater Cloud Function (ClFn) runs at midnight everyday. It has the following responsibilities :</description>
     </item>
     
     <item>

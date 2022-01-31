@@ -6,7 +6,18 @@
     <description>Recent content in Lavish Swarnkar on The Streamliners</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/authors/lavish-swarnkar/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/authors/lavish-swarnkar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scalability Challenge in Karobar Easy</title>
+      <link>https://thestreamliners.in/blog/scalability-challenge-in-karobar-easy/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/scalability-challenge-in-karobar-easy/</guid>
+      <description>Namaskaram,
+The recent growth in Karobar Easy users made the attendanceUpdater Cloud Function fail! This failure caused inconsistency in the database several times. It took 2 rewrites of the entire cloud function to finally fix the issue. This has been a challenging yet interesting journey for me. So, here I am sharing the incident with you all.
+The attendanceUpdater Cloud Function (ClFn) runs at midnight everyday. It has the following responsibilities :</description>
+    </item>
+    
     <item>
       <title>Notification Broadcast using BitVector</title>
       <link>https://thestreamliners.in/blog/notification-broadcast-using-bitvector/</link>
