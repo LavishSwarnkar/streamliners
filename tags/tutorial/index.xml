@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on The Streamliners</title>
+    <link>https://thestreamliners.in/tags/tutorial/</link>
+    <description>Recent content in Tutorial on The Streamliners</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using startActivityForResult Intent Launchers in Compose</title>
+      <link>https://thestreamliners.in/blog/using-intentlaunchers-in-compose/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/using-intentlaunchers-in-compose/</guid>
+      <description>Namaskaram!
+Problem Android provides the following intent launcher APIs:
+  Legacy, Deprecated : startActivityForResult() &amp;amp; onActivityResult()
+  New: registerForActivityResult()
+  Both APIs are tightly coupled with Activity as they are functions of Activity.
+Launching such intents from composables is tricky because of 2 reasons:
+  Passing launcher instance to Composable : registerForActivityResult() returns an instance of ActivityResultLauncher. To launch, this instance is required ( like launcher.launch(intent) ).</description>
+    </item>
+    
+  </channel>
+</rss>

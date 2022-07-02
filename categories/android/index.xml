@@ -6,7 +6,22 @@
     <description>Recent content in Android on The Streamliners</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using startActivityForResult Intent Launchers in Compose</title>
+      <link>https://thestreamliners.in/blog/using-intentlaunchers-in-compose/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/using-intentlaunchers-in-compose/</guid>
+      <description>Namaskaram!
+Problem Android provides the following intent launcher APIs:
+  Legacy, Deprecated : startActivityForResult() &amp;amp; onActivityResult()
+  New: registerForActivityResult()
+  Both APIs are tightly coupled with Activity as they are functions of Activity.
+Launching such intents from composables is tricky because of 2 reasons:
+  Passing launcher instance to Composable : registerForActivityResult() returns an instance of ActivityResultLauncher. To launch, this instance is required ( like launcher.launch(intent) ).</description>
+    </item>
+    
     <item>
       <title>Notification Broadcast using BitVector</title>
       <link>https://thestreamliners.in/blog/notification-broadcast-using-bitvector/</link>

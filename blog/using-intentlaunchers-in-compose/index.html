@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Using startActivityForResult Intent Launchers in Compose</title>
+
+  
+<meta name="title" content="Using startActivityForResult Intent Launchers in Compose">
+<meta name="description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thestreamliners.in/blog/using-intentlaunchers-in-compose/">
+<meta property="og:title" content="Using startActivityForResult Intent Launchers in Compose">
+<meta property="og:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="og:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://thestreamliners.in/blog/using-intentlaunchers-in-compose/">
+<meta property="twitter:title" content="Using startActivityForResult Intent Launchers in Compose">
+<meta property="twitter:description" content="The Streamliners is a community of Problem Solvers. We solve Real-World problems. We encourage, guide, help &amp; mentor how to solve.">
+<meta property="twitter:image" content="https://thestreamliners.in/images/meta-image3.png">
+
+  <!-- mobile responsive meta -->
+  <meta name="theme-color" content="#3c51b2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/font-awesome/css/font-awesome.min.css" />
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://thestreamliners.in/plugins/magnafic-popup/magnific-popup.css" />
+
+  <!-- Stylesheets -->
+  
+  <link href="https://thestreamliners.in/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="https://thestreamliners.in/images/favicon.png" type="image/x-icon" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQR6XDLDE5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js',  new Date());
+
+    gtag('config', 'G-ZQR6XDLDE5');
+  </script>
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="https://thestreamliners.in" class="navbar-brand">
+      <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
+    </a>
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#home"
+            class="nav-link text-dark text-sm-center p-2 ">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#service"
+            class="nav-link text-dark text-sm-center p-2 ">Services</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#portfolio"
+            class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in#blog"
+            class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/contact"
+            class="nav-link text-dark text-sm-center p-2 ">Contact</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://thestreamliners.in/about-us"
+            class="nav-link text-dark text-sm-center p-2 ">About us</a>
+        </li>
+        
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+  <div id="content">
+    
+
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
+        <h3 class="breadCrumb__title">Using startActivityForResult Intent Launchers in Compose</h3>
+
+        <div class="row justify-content-center">
+          <p>July 2, 2022 by <a href="../../authors/lavish-swarnkar">Lavish Swarnkar</a></p>
+        </div>
+
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+  <div class="svg-img">
+      <img src=https://thestreamliners.in/images/hero/figure-svg.svg alt="">
+  </div>
+  <div class="animate-shape">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+          <defs>
+              <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#f1f6f9" />
+                  <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+              </linearGradient>
+          </defs>
+          <g data-name="blob-shape (3)">
+              <path class="blob" fill="url(#d)"
+                  d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+          </g>
+      </svg>
+  </div>
+  <div class="animate-pattern">
+      <img src=https://thestreamliners.in/images/service/background-pattern.svg alt="background-shape">
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+            
+          </div>
+      </div>
+      <div class="row mt-5">
+          <div class="col-lg-12">
+              <div class="singleBlog__content">
+                  <p>Namaskaram!</p>
+<h3 id="problem">Problem</h3>
+<p>Android provides the following intent launcher APIs:</p>
+<ul>
+<li>
+<p>Legacy, Deprecated : startActivityForResult() &amp; onActivityResult()</p>
+</li>
+<li>
+<p>New: registerForActivityResult()</p>
+</li>
+</ul>
+<p>Both APIs are tightly coupled with Activity as they are functions of Activity.</p>
+<p>Launching such intents from composables is tricky because of 2 reasons:</p>
+<ol>
+<li>
+<p><strong>Passing launcher instance to Composable</strong> : registerForActivityResult() returns an instance of ActivityResultLauncher. To launch, this instance is required ( like launcher.launch(intent) ). For Composable to be able to launch, launcher needs to passed to it.</p>
+</li>
+<li>
+<p><strong>Returning result from callback to Composable</strong> : registerForActivityResult() takes a parameter ActivityResultCallback in which we receive the result from intent. If Composable fires the intent, then probably it is the one that needs the result. But the problem here is that we need to pass the callback while registering (and intent registration needs to be done in Activity&rsquo;s onCreate() lifecycle function). So, returning this result from callback to composable is also difficult.</p>
+</li>
+</ol>
+<p>So with the help of this article, I would like to show a way to bridge this gap using lambdas. Let&rsquo;s dive right in!</p>
+<hr>
+<h3 id="solution">Solution</h3>
+<p>Let&rsquo;s take an example of launching imagePicker.</p>
+<p>We can divide the startActivityForResult flow into 3 steps:</p>
+<ol>
+<li>
+<p>Registration</p>
+</li>
+<li>
+<p>Launcher</p>
+</li>
+<li>
+<p>ResultHandler</p>
+</li>
+</ol>
+<h4 id="s1-registration">S1. Registration</h4>
+<p>Registration can only be done in Activity&rsquo;s onCreate() function, which is straight forward :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MainActivity</span> : ComponentActivity() {
+
+    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onCreate</span>(savedInstanceState: Bundle?) {
+        <span style="color:#66d9ef">super</span>.onCreate(savedInstanceState)
+
+        setContent { <span style="color:#75715e">/* ... */</span> }
+
+        registerIntentLaunchers()
+    }
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">lateinit</span> <span style="color:#66d9ef">var</span> imagePickerLauncher: ActivityResultLauncher&lt;Intent&gt;
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">registerIntentLaunchers</span>() {
+        imagePickerLauncher =
+            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult <span style="color:#f92672">-&gt;</span>
+                <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>            }
+    }
+}
+</code></pre></div><h4 id="s2-launcher">S2. Launcher</h4>
+<p>Coming to Launcher, this need not be done directly in Activity. Suppose we have a <em>@Composable ImagePickerScreen()</em> in which <em>onClick()</em> of a button, we need to launch this intent. To achieve this, firstly we create a launcher function in Activity:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">launchImagePicker</span>() {
+    ImagePicker.with(<span style="color:#66d9ef">this</span>)
+        .cropSquare()
+        .compress(<span style="color:#ae81ff">1024</span>)
+        .createIntent { intent <span style="color:#f92672">-&gt;</span>
+            imagePickerLauncher.launch(intent)
+        }
+}
+</code></pre></div><p>Now <em>launchImagePicker()</em> needs to be passed as lambda to the composable, and this lambda can be easily invoked inside <em>onClick</em> of the button.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#a6e22e">@Composable</span>
+<span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">ImagePickerScreen</span>(
+    launchImagePicker: () <span style="color:#f92672">-&gt;</span> Unit
+) {
+
+    Column(
+        Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+
+        <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>
+        Button(
+            onClick = {
+                launchImagePicker()
+            },
+            modifier = Modifier.padding(<span style="color:#ae81ff">16.</span>dp)
+        ) {
+            Text(text = <span style="color:#e6db74">&#34;Pick Image&#34;</span>)
+        }
+    }
+}
+</code></pre></div><h4 id="s3-resulthandler">S3. ResultHandler</h4>
+<p>Finally coming to ResultHandler (S3). We want the result of intent in the onClick itself. But it is not as simple as:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> uri = launchImagePicker()
+</code></pre></div><p>The reason being we receive the result in ActivityResultCallback which is passed while registration and returning from there is not possible.</p>
+<p>So, here is a solution - we can have another lambda i.e. resultHandler. This lambda is to be provided while invoking launcher function - <em>launchImagePicker()</em>. This resultHandler will then be invoked in the ActivityResultCallback when we receive the result. Here is the Activity code :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">lateinit</span> <span style="color:#66d9ef">var</span> imagePickerLauncher: ActivityResultLauncher&lt;Intent&gt;
+<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">var</span> imagePickerResultHandler: ((Uri) <span style="color:#f92672">-&gt;</span> Unit)? = <span style="color:#66d9ef">null</span>
+
+<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">registerIntentLaunchers</span>() {
+    imagePickerLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult <span style="color:#f92672">-&gt;</span>
+        <span style="color:#66d9ef">val</span> resultCode = result.resultCode
+        <span style="color:#66d9ef">val</span> data = result.<span style="color:#66d9ef">data</span>
+
+        <span style="color:#66d9ef">when</span> (resultCode) {
+            Activity.RESULT_OK <span style="color:#f92672">-&gt;</span> {
+                <span style="color:#75715e">//Image Uri will not be null for RESULT_OK
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">val</span> fileUri = <span style="color:#66d9ef">data</span><span style="color:#f92672">?.</span><span style="color:#66d9ef">data</span><span style="color:#f92672">!!</span>
+
+                imagePickerResultHandler<span style="color:#f92672">?.</span>invoke(fileUri)
+
+            }
+            ImagePicker.RESULT_ERROR <span style="color:#f92672">-&gt;</span> {
+                Toast.makeText(<span style="color:#66d9ef">this</span>, ImagePicker.getError(<span style="color:#66d9ef">data</span>), Toast.LENGTH_SHORT).show()
+            }
+            <span style="color:#66d9ef">else</span> <span style="color:#f92672">-&gt;</span> {
+                Toast.makeText(<span style="color:#66d9ef">this</span>, <span style="color:#e6db74">&#34;Task Cancelled&#34;</span>, Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+}
+
+<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">launchImagePicker</span>(
+    resultHandler: (Uri) <span style="color:#f92672">-&gt;</span> Unit
+) {
+    imagePickerResultHandler = resultHandler
+
+    ImagePicker.with(<span style="color:#66d9ef">this</span>)
+        .cropSquare()
+        .compress(<span style="color:#ae81ff">1024</span>)
+        .createIntent { intent <span style="color:#f92672">-&gt;</span>
+            imagePickerLauncher.launch(intent)
+        }
+}
+</code></pre></div><p>Observe:</p>
+<ul>
+<li>
+<p>The <em>launchImagePicker(resultHandler: (Uri) -&gt; Unit)</em> function now takes resultHandler as input.</p>
+</li>
+<li>
+<p>It then sets it to local property of activity - <em>imagePickerResultHandler</em> so that ActivityResultCallback can access it.</p>
+</li>
+<li>
+<p>Finally, in ActivityResultCallback, we invoke this lambda when the result is received.</p>
+</li>
+</ul>
+<h4 id="final-code">Final code</h4>
+<p>View the final source code <a href="https://github.com/LavishSwarnkar/ImagePickerDemo/tree/imagePickerDemo">here</a>.</p>
+<hr>
+<h3 id="conclusion">Conclusion</h3>
+<p>To understand the complete solution in simple words : Composable couldn&rsquo;t launch activity for result directly, so we asked Activity to provide the code (i.e. the launcher lamdba) to do so. And in return the activity asks for code (i.e. the resultHandler lambda) that needs to be executed when result is received in Activity.</p>
+<p>You can tweak the launcher &amp; resultHandler according to your needs. Not only that, this approach can be used for any other ActivityForResult flows eg.- Login flow.</p>
+<p>Any positive or negative feedback, improvements, issues on the approach are welcomed.</p>
+<p>Thank you for your time.</p>
+
+              </div>
+
+              <div style="margin-top: 100px;" id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.title = "Using startActivityForResult Intent Launchers in Compose";
+        this.page.url = "https://thestreamliners.in/blog/using-intentlaunchers-in-compose/";
+        this.page.identifier = "Using startActivityForResult Intent Launchers in Compose";
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'https://the-streamliners.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<style>
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 50px;
+}
+
+</style>
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__cta">
+					<div class="shape-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="shape-2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="text-light footer__cta_content">
+						<span>Contact us</span>
+						<h2 class="mb-0">Let’s make your dream come true</h2>
+					</div>
+					<div class="footer__cta_action">
+						<a class="btn btn-light btn-zoom" href="https://thestreamliners.in/contact">Get in
+							touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__widget">
+			<div class="col-lg-4">
+				<div class="footer__widget_logo mb-5">
+					<img src="https://thestreamliners.in/images/site-navigation/footer-logo.svg" alt="The Streamliners">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_sitemap mb-5">
+					<h4 class="base-font">Links</h4>
+					<ul class="unstyle-list small">
+						
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/locatin">LocatIN</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/portfolio/ju-eezy">JU eezy</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/cse-simplified">CSE Simplified</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training">Android Training (For JECRCians)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/android-training-ext">Android Training (For Outsiders)</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://thestreamliners.in/about-us">About us</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_address mb-5">
+					<h4 class="base-font">Address</h4>
+					
+					<ul class="fa-ul small">
+						<li class="mb-2"><a class="text-light" href="tel:8005601797"><span class="fa-li"><i
+										class="fa fa-phone"></i></span>8005601797</a></li>
+						<li class="mb-2"><a class="text-light" href="mailto:thestreamliners.tech@gmail.com"><span class="fa-li"><i
+										class="fa fa-envelope"></i></span>thestreamliners.tech@gmail.com</a></li>
+						<li class="mb-2">
+							<span class="fa-li"><i class="fa fa-map-marker"></i></span>Jaipur, Rajasthan</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All rights reserved © The Streamliners 2021</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/lavishswarnkar"><i
+									class="fa fa-linkedin-square"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://thestreamliners.in/plugins/jQuery/jquery.min.js"></script>
+<script src="https://thestreamliners.in/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://thestreamliners.in/plugins/slick/slick.min.js"></script>
+<script src="https://thestreamliners.in/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://thestreamliners.in/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://thestreamliners.in/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://thestreamliners.in/plugins/imagesloaded/imagesloaded.min.js"></script>
+<script src="https://thestreamliners.in/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://thestreamliners.in/js/form-handler.min.js"></script>
+
+<script src="https://thestreamliners.in/js/script.min.js"></script>
+
+</body>
+
+</html>
