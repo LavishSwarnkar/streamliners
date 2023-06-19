@@ -6,7 +6,16 @@
     <description>Recent content in Android on The Streamliners</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jun 2023 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Differences between CompileSDK,MinSDK and TargetSDK Version</title>
+      <link>https://thestreamliners.in/blog/differences-between-compilesdk-minsdk-and-targetsdk/</link>
+      <pubDate>Wed, 14 Jun 2023 00:00:00 +0530</pubDate>
+      
+      <guid>https://thestreamliners.in/blog/differences-between-compilesdk-minsdk-and-targetsdk/</guid>
+      <description>Differences between CompileSDK,MinSDK and TargetSDK Version  When developing Android applications, developers come across various terminologies and concepts related to the Android SDK (Software Development Kit). Three important terms that often cause confusion are CompileSDK, MinSDK, and TargetSDK versions. Each of these versions plays a crucial role in the development and compatibility of an Android application. In this article, we will explore the differences between CompileSDK, MinSDK, and TargetSDK versions and understand their significance.</description>
+    </item>
+    
     <item>
       <title>Using startActivityForResult Intent Launchers in Compose</title>
       <link>https://thestreamliners.in/blog/using-intentlaunchers-in-compose/</link>
