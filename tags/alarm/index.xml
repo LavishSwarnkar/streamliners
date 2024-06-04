@@ -4,19 +4,16 @@
     <title>Alarm on The Streamliners</title>
     <link>https://thestreamliners.in/tags/alarm/</link>
     <description>Recent content in Alarm on The Streamliners</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/alarm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://thestreamliners.in/tags/alarm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implementing Alarm manager</title>
       <link>https://thestreamliners.in/blog/implement-alarm-manager/</link>
       <pubDate>Sat, 03 Jul 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/implement-alarm-manager/</guid>
-      <description>How to implement an alarm in your android application using AlarmManager?  Android AlarmManager allows you to access system alarm.
-With the help of AlarmManager in android, you can schedule your application to run at a specific time in the future.
-AlarmManager is a bridge between application and Android system alarm service. It can send a broadcast to your app (which can be completely terminated by user) at a scheduled time and your app can then perform any task accordingly.</description>
+      <description>How to implement an alarm in your android application using AlarmManager? Android AlarmManager allows you to access system alarm.&#xA;With the help of AlarmManager in android, you can schedule your application to run at a specific time in the future.&#xA;AlarmManager is a bridge between application and Android system alarm service. It can send a broadcast to your app (which can be completely terminated by user) at a scheduled time and your app can then perform any task accordingly.</description>
     </item>
-    
   </channel>
 </rss>

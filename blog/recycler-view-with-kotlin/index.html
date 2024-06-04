@@ -59,7 +59,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a href="https://thestreamliners.in" class="navbar-brand">
+    <a href="https://thestreamliners.in/" class="navbar-brand">
       <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
     </a>
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
@@ -73,32 +73,32 @@
         
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#home"
+          <a href="https://thestreamliners.in/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#service"
+          <a href="https://thestreamliners.in/#service"
             class="nav-link text-dark text-sm-center p-2 ">Services</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#portfolio"
+          <a href="https://thestreamliners.in/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#blog"
+          <a href="https://thestreamliners.in/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/contact"
+          <a href="https://thestreamliners.in//contact"
             class="nav-link text-dark text-sm-center p-2 ">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/about-us"
+          <a href="https://thestreamliners.in//about-us"
             class="nav-link text-dark text-sm-center p-2 ">About us</a>
         </li>
         
@@ -123,7 +123,7 @@
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/>Home</a></li>
             <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
           </ol>
         </nav>
@@ -249,8 +249,8 @@
 </li>
 </ul>
 <p>Code for our model class is:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">data</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FoodItem</span>(<span style="color:#66d9ef">val</span> name:String, <span style="color:#66d9ef">val</span> price:Float)
-</code></pre></div><h4 id="create-xml-layout-for-items">Create xml layout for items</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">data</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FoodItem</span>(<span style="color:#66d9ef">val</span> name:String, <span style="color:#66d9ef">val</span> price:Float)
+</span></span></code></pre></div><h4 id="create-xml-layout-for-items">Create xml layout for items</h4>
 <ul>
 <li>
 <p>Right click <strong>res/layout</strong> and select <strong>New&gt;Layout Resource File</strong></p>
@@ -260,61 +260,61 @@
 </li>
 <li>
 <p>Copy paste this code to the file:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#f92672">&lt;androidx.constraintlayout.widget.ConstraintLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
-    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
-    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-    <span style="color:#a6e22e">android:background=</span><span style="color:#e6db74">&#34;#0000FF&#34;</span>
-    <span style="color:#a6e22e">android:layout_margin=</span><span style="color:#e6db74">&#34;6dp&#34;</span>
-    <span style="color:#a6e22e">xmlns:app=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res-auto&#34;</span><span style="color:#f92672">&gt;</span>
-
-    <span style="color:#f92672">&lt;TextView</span>
-        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/foodItemNameTV&#34;</span>
-        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-        <span style="color:#a6e22e">android:textSize=</span><span style="color:#e6db74">&#34;18sp&#34;</span>
-        <span style="color:#a6e22e">android:textColor=</span><span style="color:#e6db74">&#34;#FFF&#34;</span>
-        <span style="color:#a6e22e">android:text=</span><span style="color:#e6db74">&#34;Food Item 1&#34;</span>
-        <span style="color:#a6e22e">android:layout_margin=</span><span style="color:#e6db74">&#34;10dp&#34;</span>
-        <span style="color:#a6e22e">app:layout_constraintStart_toStartOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
-        <span style="color:#a6e22e">app:layout_constraintTop_toTopOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
-        <span style="color:#a6e22e">app:layout_constraintBottom_toBottomOf=</span><span style="color:#e6db74">&#34;parent&#34;</span><span style="color:#f92672">/&gt;</span>
-
-    <span style="color:#f92672">&lt;TextView</span>
-        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/foodItemPriceTV&#34;</span>
-        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-        <span style="color:#a6e22e">android:textColor=</span><span style="color:#e6db74">&#34;#FFF&#34;</span>
-        <span style="color:#a6e22e">android:text=</span><span style="color:#e6db74">&#34;Rs. 200&#34;</span>
-        <span style="color:#a6e22e">android:layout_marginEnd=</span><span style="color:#e6db74">&#34;10dp&#34;</span>
-        <span style="color:#a6e22e">app:layout_constraintEnd_toEndOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
-        <span style="color:#a6e22e">app:layout_constraintTop_toTopOf=</span><span style="color:#e6db74">&#34;@id/foodItemNameTV&#34;</span>
-        <span style="color:#a6e22e">app:layout_constraintBottom_toBottomOf=</span><span style="color:#e6db74">&#34;@id/foodItemNameTV&#34;</span><span style="color:#f92672">/&gt;</span>
-
-<span style="color:#f92672">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;androidx.constraintlayout.widget.ConstraintLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:background=</span><span style="color:#e6db74">&#34;#0000FF&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:layout_margin=</span><span style="color:#e6db74">&#34;6dp&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xmlns:app=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res-auto&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;TextView</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/foodItemNameTV&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:textSize=</span><span style="color:#e6db74">&#34;18sp&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:textColor=</span><span style="color:#e6db74">&#34;#FFF&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:text=</span><span style="color:#e6db74">&#34;Food Item 1&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_margin=</span><span style="color:#e6db74">&#34;10dp&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:layout_constraintStart_toStartOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:layout_constraintTop_toTopOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:layout_constraintBottom_toBottomOf=</span><span style="color:#e6db74">&#34;parent&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;TextView</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/foodItemPriceTV&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:textColor=</span><span style="color:#e6db74">&#34;#FFF&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:text=</span><span style="color:#e6db74">&#34;Rs. 200&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_marginEnd=</span><span style="color:#e6db74">&#34;10dp&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:layout_constraintEnd_toEndOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:layout_constraintTop_toTopOf=</span><span style="color:#e6db74">&#34;@id/foodItemNameTV&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:layout_constraintBottom_toBottomOf=</span><span style="color:#e6db74">&#34;@id/foodItemNameTV&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+</span></span></code></pre></div></li>
 <li>
 <p>In <strong>activity_main.xml</strong> add this code:</p>
 <p>Set layout for the recyclerView in main activity</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#f92672">&lt;androidx.constraintlayout.widget.ConstraintLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
-    <span style="color:#a6e22e">xmlns:app=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res-auto&#34;</span>
-    <span style="color:#a6e22e">xmlns:tools=</span><span style="color:#e6db74">&#34;http://schemas.android.com/tools&#34;</span>
-    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
-    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
-    <span style="color:#a6e22e">tools:context=</span><span style="color:#e6db74">&#34;.MainActivity&#34;</span><span style="color:#f92672">&gt;</span>
-
-    <span style="color:#f92672">&lt;androidx.recyclerview.widget.RecyclerView</span>
-        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/foodItemsRV&#34;</span>
-        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
-        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
-        <span style="color:#a6e22e">app:layout_constraintStart_toStartOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
-        <span style="color:#a6e22e">app:layout_constraintEnd_toEndOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
-        <span style="color:#a6e22e">app:layout_constraintTop_toTopOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
-        <span style="color:#a6e22e">app:layout_constraintBottom_toBottomOf=</span><span style="color:#e6db74">&#34;parent&#34;</span><span style="color:#f92672">/&gt;</span>
-
-<span style="color:#f92672">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;androidx.constraintlayout.widget.ConstraintLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xmlns:app=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res-auto&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xmlns:tools=</span><span style="color:#e6db74">&#34;http://schemas.android.com/tools&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">tools:context=</span><span style="color:#e6db74">&#34;.MainActivity&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;androidx.recyclerview.widget.RecyclerView</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/foodItemsRV&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:layout_constraintStart_toStartOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:layout_constraintEnd_toEndOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:layout_constraintTop_toTopOf=</span><span style="color:#e6db74">&#34;parent&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:layout_constraintBottom_toBottomOf=</span><span style="color:#e6db74">&#34;parent&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+</span></span></code></pre></div></li>
 </ul>
 <h4 id="initialize-viewbinding">Initialize ViewBinding</h4>
 <ul>
@@ -325,7 +325,7 @@
 <p>In <code>android</code> section add this code</p>
 </li>
 </ul>
-<pre><code>buildFeatures{
+<pre tabindex="0"><code>buildFeatures{
     viewBinding true
 }
 </code></pre><ul>
@@ -342,11 +342,11 @@
 </li>
 <li>
 <p>Code for the inner class:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FoodItemViewHolder</span>(foodItemLayoutBinding: FoodItemLayoutBinding)
-        : RecyclerView.ViewHolder(foodItemLayoutBinding.root){
-
-}
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FoodItemViewHolder</span>(foodItemLayoutBinding: FoodItemLayoutBinding)
+</span></span><span style="display:flex;"><span>        : <span style="color:#a6e22e">RecyclerView</span>.ViewHolder(foodItemLayoutBinding.root){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
 <li>
 <p>Extend <code>FoodItemAdapter</code> with <code>RecyclerView.Adapter&lt;FoodItemAdapter.FoodItemViewHolder&gt;()</code></p>
 </li>
@@ -370,64 +370,64 @@
 </li>
 <li>
 <p>Add this code to <code>onCreateViewHolder</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> binding = FoodItemLayoutBinding.inflate(LayoutInflater.from(context),parent,<span style="color:#66d9ef">false</span>)
-<span style="color:#66d9ef">return</span> FoodItemViewHolder(binding)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> binding = <span style="color:#a6e22e">FoodItemLayoutBinding</span>.inflate(<span style="color:#a6e22e">LayoutInflater</span>.from(context),parent,<span style="color:#66d9ef">false</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> FoodItemViewHolder(binding)
+</span></span></code></pre></div></li>
 <li>
 <p>Create a function <code>bind(foodItem: FoodItem)</code> in the <code>FoodItemViewHolder</code>  and bind data to the views here</p>
 </li>
 <li>
 <p>This is the code:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> binding = foodItemLayoutBinding
-
-<span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">bind</span>(foodItem: FoodItem){
-    binding.foodItemNameTV.text = foodItem.name
-    binding.foodItemPriceTV.text = <span style="color:#e6db74">&#34;Rs. </span><span style="color:#e6db74">${foodItem.price}</span><span style="color:#e6db74">&#34;</span>
-}
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> binding = foodItemLayoutBinding
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">bind</span>(foodItem: FoodItem){
+</span></span><span style="display:flex;"><span>    binding.foodItemNameTV.text = foodItem.name
+</span></span><span style="display:flex;"><span>    binding.foodItemPriceTV.text = <span style="color:#e6db74">&#34;Rs. </span><span style="color:#e6db74">${foodItem.price}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
 <li>
 <p>Now add this code to the <code>onBindViewHolder</code> member function</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> foodItem = foodItemList[position]
-holder.bind(foodItem)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> foodItem = foodItemList[position]
+</span></span><span style="display:flex;"><span>holder.bind(foodItem)
+</span></span></code></pre></div></li>
 <li>
 <p>In <code>getItemCount</code> just add this line - <code>return foodItemList.size</code></p>
 </li>
 </ul>
 <!-- raw HTML omitted -->
 <h5 id="this-is-the-complete-code-for-our-adapter">This is the complete code for our adapter</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FoodItemAdapter</span>(<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> context: Context, <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> foodItemList:MutableList&lt;FoodItem&gt;)
-    : RecyclerView.Adapter&lt;FoodItemAdapter.FoodItemViewHolder&gt;() {
-
-
-    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onCreateViewHolder</span>(parent: ViewGroup, viewType: Int): FoodItemViewHolder {
-        <span style="color:#66d9ef">val</span> binding = FoodItemLayoutBinding.inflate(LayoutInflater.from(context),parent,<span style="color:#66d9ef">false</span>)
-        <span style="color:#66d9ef">return</span> FoodItemViewHolder(binding)
-    }
-
-    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onBindViewHolder</span>(holder: FoodItemViewHolder, position: Int) {
-        <span style="color:#66d9ef">val</span> foodItem = foodItemList[position]
-        holder.bind(foodItem)
-    }
-
-    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getItemCount</span>(): Int {
-        <span style="color:#66d9ef">return</span> foodItemList.size
-    }
-
-
-    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FoodItemViewHolder</span>(foodItemLayoutBinding: FoodItemLayoutBinding)
-        : RecyclerView.ViewHolder(foodItemLayoutBinding.root){
-
-        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> binding = foodItemLayoutBinding
-
-        <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">bind</span>(foodItem: FoodItem){
-            binding.foodItemNameTV.text = foodItem.name
-            binding.foodItemPriceTV.text = <span style="color:#e6db74">&#34;Rs. </span><span style="color:#e6db74">${foodItem.price}</span><span style="color:#e6db74">&#34;</span>
-        }
-
-    }
-}
-</code></pre></div><p><strong>All set with the adapter class</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FoodItemAdapter</span>(<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> context: Context, <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> foodItemList:MutableList&lt;FoodItem&gt;)
+</span></span><span style="display:flex;"><span>    : <span style="color:#a6e22e">RecyclerView</span>.Adapter&lt;<span style="color:#a6e22e">FoodItemAdapter</span>.FoodItemViewHolder&gt;() {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onCreateViewHolder</span>(parent: ViewGroup, viewType: Int): FoodItemViewHolder {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">val</span> binding = <span style="color:#a6e22e">FoodItemLayoutBinding</span>.inflate(<span style="color:#a6e22e">LayoutInflater</span>.from(context),parent,<span style="color:#66d9ef">false</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> FoodItemViewHolder(binding)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onBindViewHolder</span>(holder: FoodItemViewHolder, position: Int) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">val</span> foodItem = foodItemList[position]
+</span></span><span style="display:flex;"><span>        holder.bind(foodItem)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getItemCount</span>(): Int {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> foodItemList.size
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FoodItemViewHolder</span>(foodItemLayoutBinding: FoodItemLayoutBinding)
+</span></span><span style="display:flex;"><span>        : <span style="color:#a6e22e">RecyclerView</span>.ViewHolder(foodItemLayoutBinding.root){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> binding = foodItemLayoutBinding
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">bind</span>(foodItem: FoodItem){
+</span></span><span style="display:flex;"><span>            binding.foodItemNameTV.text = foodItem.name
+</span></span><span style="display:flex;"><span>            binding.foodItemPriceTV.text = <span style="color:#e6db74">&#34;Rs. </span><span style="color:#e6db74">${foodItem.price}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>All set with the adapter class</strong></p>
 <h4 id="initialize-adapter-in-the-mainactivity-class">Initialize adapter in the MainActivity class</h4>
 <ul>
 <li>
@@ -441,15 +441,15 @@ holder.bind(foodItem)
 </li>
 <li>
 <p>Add this code in the method:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>.<span style="color:#ae81ff">15</span>){
-     <span style="color:#66d9ef">val</span> name = <span style="color:#e6db74">&#34;Food Item </span><span style="color:#e6db74">$i</span><span style="color:#e6db74">&#34;</span>
-     <span style="color:#66d9ef">val</span> price = (<span style="color:#ae81ff">100</span> * i).toFloat()
-
-     <span style="color:#66d9ef">val</span> foodItem = FoodItem(name = name, price = price)
-
-     foodItemsList.add(foodItem)
-}
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>.<span style="color:#ae81ff">15</span>){
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">val</span> name = <span style="color:#e6db74">&#34;Food Item </span><span style="color:#e6db74">$i</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">val</span> price = (<span style="color:#ae81ff">100</span> * i).toFloat()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">val</span> foodItem = FoodItem(name = name, price = price)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     foodItemsList.add(foodItem)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
 </ul>
 </li>
 <li>
@@ -463,18 +463,18 @@ holder.bind(foodItem)
 </li>
 <li>
 <p>Add this code to this function:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">adapter = FoodItemAdapter(<span style="color:#66d9ef">this</span>,foodItemsList)
-b.foodItemsRV.adapter = adapter
-b.foodItemsRV.layoutManager = LinearLayoutManager(<span style="color:#66d9ef">this</span>)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>adapter = FoodItemAdapter(<span style="color:#66d9ef">this</span>,foodItemsList)
+</span></span><span style="display:flex;"><span>b.foodItemsRV.adapter = adapter
+</span></span><span style="display:flex;"><span>b.foodItemsRV.layoutManager = LinearLayoutManager(<span style="color:#66d9ef">this</span>)
+</span></span></code></pre></div></li>
 <li>
 <p>The default orientation of the recyclerView is vertical, to change orientation to horizontal use this :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">b.foodItemsRV.layoutManager = LinearLayoutManager(<span style="color:#66d9ef">this</span>, LinearLayoutManager.HORIZONTAL, <span style="color:#66d9ef">false</span>)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>b.foodItemsRV.layoutManager = LinearLayoutManager(<span style="color:#66d9ef">this</span>, <span style="color:#a6e22e">LinearLayoutManager</span>.HORIZONTAL, <span style="color:#66d9ef">false</span>)
+</span></span></code></pre></div></li>
 <li>
 <p>Optional, to add a divider line between the views:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">b<span style="color:#f92672">.</span><span style="color:#a6e22e">foodItemsRV</span><span style="color:#f92672">.</span><span style="color:#a6e22e">addItemDecoration</span><span style="color:#f92672">(</span>DividerItemDecoration<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span>DividerItemDecoration<span style="color:#f92672">.</span><span style="color:#a6e22e">VERTICAL</span><span style="color:#f92672">))</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>b.<span style="color:#a6e22e">foodItemsRV</span>.<span style="color:#a6e22e">addItemDecoration</span>(DividerItemDecoration(<span style="color:#66d9ef">this</span>,DividerItemDecoration.<span style="color:#a6e22e">VERTICAL</span>))
+</span></span></code></pre></div></li>
 </ul>
 </li>
 </ul>

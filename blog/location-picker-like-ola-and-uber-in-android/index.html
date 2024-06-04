@@ -59,7 +59,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a href="https://thestreamliners.in" class="navbar-brand">
+    <a href="https://thestreamliners.in/" class="navbar-brand">
       <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
     </a>
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
@@ -73,32 +73,32 @@
         
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#home"
+          <a href="https://thestreamliners.in/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#service"
+          <a href="https://thestreamliners.in/#service"
             class="nav-link text-dark text-sm-center p-2 ">Services</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#portfolio"
+          <a href="https://thestreamliners.in/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#blog"
+          <a href="https://thestreamliners.in/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/contact"
+          <a href="https://thestreamliners.in//contact"
             class="nav-link text-dark text-sm-center p-2 ">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/about-us"
+          <a href="https://thestreamliners.in//about-us"
             class="nav-link text-dark text-sm-center p-2 ">About us</a>
         </li>
         
@@ -123,7 +123,7 @@
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/>Home</a></li>
             <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
           </ol>
         </nav>
@@ -164,7 +164,7 @@
           <div class="col-lg-12">
               <div class="singleBlog__content">
                   <figure class="center-img"><img src="https://cdn-images-1.medium.com/max/1500/1*MFkAs99HSSelVnb3eCq39w.gif"
-         alt="Location Picker" width="80%"/>
+    alt="Location Picker" width="80%">
 </figure>
 
 <p>We all come across applications or ideas where we may want users to pick or select their location from maps. From a UX perspective, it is <strong>more convenient to pick a location than to manually enter the fields given</strong>.</p>
@@ -176,30 +176,30 @@
 <p>Although some of the permissions part may look longer, but whenever we are dealing with location, we must consider all the corner cases, that can happen or occur and satisfy every permission as <em>Location is considered one of the sensitive permissions</em> (<strong>so you must bear with it ☹</strong>).</p>
 <h3 id="step-1">Step 1:</h3>
 <p><strong>Add the API key</strong> to your Manifest file. Here I have stored my key as a string resource, you can choose your own method of storing the API key.</p>
-<script type="application/javascript" src="https://gist.github.com/Iltwats/8a9d3364554f6192a8612d4ac90c6fd0.js?file=manifest_location.xml"></script>
+<script src="https://gist.github.com/Iltwats/8a9d3364554f6192a8612d4ac90c6fd0.js?file=manifest_location.xml"></script>
 
 <p>Then add the following dependency to your <strong>App-level Gradle file</strong>.</p>
-<script type="application/javascript" src="https://gist.github.com/Iltwats/9aa227c8c2751a6df371bcc264fdf1ff.js?file=manifest_location1.xml"></script>
+<script src="https://gist.github.com/Iltwats/9aa227c8c2751a6df371bcc264fdf1ff.js?file=manifest_location1.xml"></script>
 
 <h3 id="step-2">Step 2:</h3>
 <p>Let’s <strong>create our UI</strong> to show our Location Picker.</p>
-<script type="application/javascript" src="https://gist.github.com/Iltwats/0ba27be402c55a4d971de8ed1abc7aa5.js?file=picker_layout.xml"></script>
+<script src="https://gist.github.com/Iltwats/0ba27be402c55a4d971de8ed1abc7aa5.js?file=picker_layout.xml"></script>
 
 <blockquote>
 <p>We will inflate this layout in a dialog, so we don’t have to take the user to a different activity or fragment.</p>
 </blockquote>
 <h3 id="step-3">Step 3:</h3>
 <p>Let&rsquo;s start by calling this function from the <strong>onClick event of the button</strong> to pick the location.</p>
-<script type="application/javascript" src="https://gist.github.com/Iltwats/d9c6fc837bff6f3d7644dca5e762df8b.js?file=permissionPt1.java"></script>
+<script src="https://gist.github.com/Iltwats/d9c6fc837bff6f3d7644dca5e762df8b.js?file=permissionPt1.java"></script>
 
 <p>In the upcoming steps, we will implement all the functions we called above to bring everything coordinated.</p>
 <h3 id="step-4-setting-up-permissions">Step 4: Setting Up permissions</h3>
 <p>We will implement this step in <strong>three parts</strong>, for the ease of readers.</p>
 <h4 id="41">4.1</h4>
-<script type="application/javascript" src="https://gist.github.com/Iltwats/6f597b69bcf2396a83a484d2e2460ae5.js?file=permissionPt2.java"></script>
+<script src="https://gist.github.com/Iltwats/6f597b69bcf2396a83a484d2e2460ae5.js?file=permissionPt2.java"></script>
 
 <figure class="center-img"><img src="https://cdn-images-1.medium.com/max/750/1*GNY6PjHxShlRFO44z1LPQg.png"
-         alt="Location Picker" width="80%"/>
+    alt="Location Picker" width="80%">
 </figure>
 
 <p>To fetch location of the user device, check if GPS is enabled and if not <strong>show a prompt message to enable GPS.</strong></p>
@@ -207,23 +207,23 @@
 <p>Let&rsquo;s implement this for our app.</p>
 <h4 id="42">4.2</h4>
 <p>Now, that we have location access <strong>we will check if device already has any previous location stored</strong> and if not, we will fetch this beforehand to show it in our picker.</p>
-<script type="application/javascript" src="https://gist.github.com/Iltwats/1b7e1a4c750dbc20762f521e5a087a79.js?file=permissionPt3.java"></script>
+<script src="https://gist.github.com/Iltwats/1b7e1a4c750dbc20762f521e5a087a79.js?file=permissionPt3.java"></script>
 
 <h4 id="43">4.3</h4>
 <p>Here, we check about every other location permission is enabled or not i.e. manifest or device before proceeding ahead.</p>
-<script type="application/javascript" src="https://gist.github.com/Iltwats/5398f210a78d8e5e383ce03e8adf6bd4.js?file=permissionPt4.java"></script>
+<script src="https://gist.github.com/Iltwats/5398f210a78d8e5e383ce03e8adf6bd4.js?file=permissionPt4.java"></script>
 
 <h3 id="step-5">Step 5:</h3>
 <p>We shall override two methods to get the callback of permissions.</p>
-<script type="application/javascript" src="https://gist.github.com/Iltwats/18b40f7e27eecc6d5db8fac5a07ba1d7.js?file=permissionPt5.java"></script>
+<script src="https://gist.github.com/Iltwats/18b40f7e27eecc6d5db8fac5a07ba1d7.js?file=permissionPt5.java"></script>
 
 <h3 id="step-6">Step 6</h3>
 <p>Let&rsquo;s set up our dialog to show Picker and save location.</p>
-<script type="application/javascript" src="https://gist.github.com/Iltwats/4a9909cf14413be50e4180a0617dcfd3.js?file=locationPicker.java"></script>
+<script src="https://gist.github.com/Iltwats/4a9909cf14413be50e4180a0617dcfd3.js?file=locationPicker.java"></script>
 
 <p>The preview would look like this.</p>
 <figure class="center-img"><img src="https://cdn-images-1.medium.com/max/750/1*n4DC4Cr4vdy-1OLIJZlPKA.gif"
-         alt="Location Picker" width="40%"/>
+    alt="Location Picker" width="40%">
 </figure>
 
 <p>Here you get the latitude and longitude of the user location, and you can do whatever operation you want to perform with it.</p>
@@ -241,7 +241,7 @@
 <p><strong>How to accommodate both developers and users, without having data redundancy?</strong></p>
 <p>Fortunately, Google help us solve this problem with its GeoCoding API, which gives us the location or address from Geo points, which can be stored in a string and shown to the user.</p>
 <h3 id="below-is-the-implementation">Below is the implementation:</h3>
-<script type="application/javascript" src="https://gist.github.com/Iltwats/1ec6a713690247df3db08e2ec446f518.js?file=address.java"></script>
+<script src="https://gist.github.com/Iltwats/1ec6a713690247df3db08e2ec446f518.js?file=address.java"></script>
 
 <p>There are many methods for GeoCoder class to get road, city, country, zip code, etc. You can read more about its method <a href="https://developers.google.com/maps/documentation/geocoding/overview"><strong>here</strong></a><strong>.</strong></p>
 <blockquote>

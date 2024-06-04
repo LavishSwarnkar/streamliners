@@ -4,135 +4,86 @@
     <title>Lavish Swarnkar on The Streamliners</title>
     <link>https://thestreamliners.in/authors/lavish-swarnkar/</link>
     <description>Recent content in Lavish Swarnkar on The Streamliners</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/authors/lavish-swarnkar/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://thestreamliners.in/authors/lavish-swarnkar/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using startActivityForResult Intent Launchers in Compose</title>
       <link>https://thestreamliners.in/blog/using-intentlaunchers-in-compose/</link>
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/using-intentlaunchers-in-compose/</guid>
-      <description>Namaskaram!
-Problem Android provides the following intent launcher APIs:
-  Legacy, Deprecated : startActivityForResult() &amp;amp; onActivityResult()
-  New: registerForActivityResult()
-  Both APIs are tightly coupled with Activity as they are functions of Activity.
-Launching such intents from composables is tricky because of 2 reasons:
-  Passing launcher instance to Composable : registerForActivityResult() returns an instance of ActivityResultLauncher. To launch, this instance is required ( like launcher.launch(intent) ).</description>
+      <description>Namaskaram!&#xA;Problem Android provides the following intent launcher APIs:&#xA;Legacy, Deprecated : startActivityForResult() &amp;amp; onActivityResult()&#xA;New: registerForActivityResult()&#xA;Both APIs are tightly coupled with Activity as they are functions of Activity.&#xA;Launching such intents from composables is tricky because of 2 reasons:&#xA;Passing launcher instance to Composable : registerForActivityResult() returns an instance of ActivityResultLauncher. To launch, this instance is required ( like launcher.launch(intent) ). For Composable to be able to launch, launcher needs to passed to it.</description>
     </item>
-    
     <item>
       <title>Scalability Challenge in Karobar Easy</title>
       <link>https://thestreamliners.in/blog/scalability-challenge-in-karobar-easy/</link>
       <pubDate>Mon, 31 Jan 2022 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/scalability-challenge-in-karobar-easy/</guid>
-      <description>Namaskaram,
-The recent growth in Karobar Easy users made the attendanceUpdater Cloud Function fail! This failure caused inconsistency in the database several times. It took 2 rewrites of the entire cloud function to finally fix the issue. This has been a challenging yet interesting journey for me. So, here I am sharing the incident with you all.
-The attendanceUpdater Cloud Function (ClFn) runs at midnight everyday. It has the following responsibilities :</description>
+      <description>Namaskaram,&#xA;The recent growth in Karobar Easy users made the attendanceUpdater Cloud Function fail! This failure caused inconsistency in the database several times. It took 2 rewrites of the entire cloud function to finally fix the issue. This has been a challenging yet interesting journey for me. So, here I am sharing the incident with you all.&#xA;The attendanceUpdater Cloud Function (ClFn) runs at midnight everyday. It has the following responsibilities :</description>
     </item>
-    
     <item>
       <title>Notification Broadcast using BitVector</title>
       <link>https://thestreamliners.in/blog/notification-broadcast-using-bitvector/</link>
       <pubDate>Sat, 14 Aug 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/notification-broadcast-using-bitvector/</guid>
-      <description>Namaskaram,
-In this blog, I will be sharing an amazing story where I used BitVector &amp;amp; Bitwise operators to save myself from writing complex code &amp;amp; also using up a lot of Server Bandwidth.
-The problem During my journey as an Android Developer, I came across a use case where I needed to send personalized notifications to my users.
-This app was JU eezy, which I developed for our University. I had to send notifications to users based on their profile.</description>
+      <description>Namaskaram,&#xA;In this blog, I will be sharing an amazing story where I used BitVector &amp;amp; Bitwise operators to save myself from writing complex code &amp;amp; also using up a lot of Server Bandwidth.&#xA;The problem During my journey as an Android Developer, I came across a use case where I needed to send personalized notifications to my users.&#xA;This app was JU eezy, which I developed for our University. I had to send notifications to users based on their profile.</description>
     </item>
-    
     <item>
       <title>Revoke role access using Firestore Security rules</title>
       <link>https://thestreamliners.in/blog/revoke-role-access-using-firestore-security-rules/</link>
       <pubDate>Sat, 14 Aug 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/revoke-role-access-using-firestore-security-rules/</guid>
-      <description>Namaskaram,
-Many applications require Role Based access. For example : in an e-commerce project, roles like Admin, Shopkeeper, Agent etc. may exist. Granting and revoking the access manually can be hard &amp;amp; inefficient.
-In this blog, I am sharing an easy &amp;amp; efficient way to grant &amp;amp; revoke role based access in a Firebase app.
-Naive approach   Let&amp;rsquo;s say : you have an Admin app where only authorised Admins should be able to login &amp;amp; access the app.</description>
+      <description>Namaskaram,&#xA;Many applications require Role Based access. For example : in an e-commerce project, roles like Admin, Shopkeeper, Agent etc. may exist. Granting and revoking the access manually can be hard &amp;amp; inefficient.&#xA;In this blog, I am sharing an easy &amp;amp; efficient way to grant &amp;amp; revoke role based access in a Firebase app.&#xA;Naive approach Let&amp;rsquo;s say : you have an Admin app where only authorised Admins should be able to login &amp;amp; access the app.</description>
     </item>
-    
     <item>
       <title>CSE Simplified EP5 - Overcoming FOMO</title>
       <link>https://thestreamliners.in/blog/cse-simplified-ep5/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/cse-simplified-ep5/</guid>
-      <description>We have already released 4 episodes of CSE Simplified to help you understand what CSE is all about and how to approach it. Many more episodes are yet to come. We hope they will help you get the most out of your B.Tech.
-In this 5th episode, we want to talk about one of the most dangerous problem several students fall into. It&amp;rsquo;s the &amp;ldquo;FOMO - Fear Of Missing Out&amp;rdquo;. Our aim is to clear out some points so that you can happily go through the journey of becoming a successful person.</description>
+      <description>We have already released 4 episodes of CSE Simplified to help you understand what CSE is all about and how to approach it. Many more episodes are yet to come. We hope they will help you get the most out of your B.Tech.&#xA;In this 5th episode, we want to talk about one of the most dangerous problem several students fall into. It&amp;rsquo;s the &amp;ldquo;FOMO - Fear Of Missing Out&amp;rdquo;. Our aim is to clear out some points so that you can happily go through the journey of becoming a successful person.</description>
     </item>
-    
     <item>
       <title>CSE Simplified EP4 - Choosing your laptop</title>
       <link>https://thestreamliners.in/blog/cse-simplified-ep4/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/cse-simplified-ep4/</guid>
       <description>Laptop plays a very crucial role in a CSE student&amp;rsquo;s life. Just after taking admission in the B.Tech CSE program, students are often in a hurry to buy a laptop. We have seen juniors making mistakes while buying a new laptop. They ask for help and people would just send a link for the sake of formality, without doing any research based on the requirements. Please beware of such things because you may regret such a decision in the near future.</description>
     </item>
-    
     <item>
       <title>CSE Simplified EP3 - CSE Subject Hierarchy</title>
       <link>https://thestreamliners.in/blog/cse-simplified-ep3/</link>
       <pubDate>Fri, 24 Jul 2020 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/cse-simplified-ep3/</guid>
-      <description>Namaskaram and welcome to the 3rd episode of the series CSE Simplified. The topic is - &amp;ldquo;B.Tech journey and Subject Hierarchy&amp;rdquo;. We will discuss the subjects that matter the most, the way you should approach them and how to avoid some common mistakes. We will show the subject hierarchy and the links between different subjects which might help you take the right decisions.
-We have a lot of advice to give.</description>
+      <description>Namaskaram and welcome to the 3rd episode of the series CSE Simplified. The topic is - &amp;ldquo;B.Tech journey and Subject Hierarchy&amp;rdquo;. We will discuss the subjects that matter the most, the way you should approach them and how to avoid some common mistakes. We will show the subject hierarchy and the links between different subjects which might help you take the right decisions.&#xA;We have a lot of advice to give.</description>
     </item>
-    
     <item>
       <title>CSE Simplified EP2 - Which language should I learn? | Why learn C&#43;&#43; and Java?</title>
       <link>https://thestreamliners.in/blog/cse-simplified-ep2/</link>
       <pubDate>Fri, 10 Jul 2020 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/cse-simplified-ep2/</guid>
-      <description>Namaskaram friends!
-There are a lot of programming languages to pick from. A CSE student often gets confused where to start. It is no smaller than a mystery when it comes to taking this decision.
-So, here we are with yet another episode of our series CSE Simplified.
-Following is the transcript of the episode. You may like to watch the video :
-   
-The purpose is to give you a big and clear perspective as to which language you should pick and why.</description>
+      <description>Namaskaram friends!&#xA;There are a lot of programming languages to pick from. A CSE student often gets confused where to start. It is no smaller than a mystery when it comes to taking this decision.&#xA;So, here we are with yet another episode of our series CSE Simplified.&#xA;Following is the transcript of the episode. You may like to watch the video :&#xA;The purpose is to give you a big and clear perspective as to which language you should pick and why.</description>
     </item>
-    
     <item>
       <title>CSE Simplified EP1 - The true CSE path</title>
       <link>https://thestreamliners.in/blog/cse-simplified-ep1/</link>
       <pubDate>Thu, 09 Jul 2020 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/cse-simplified-ep1/</guid>
-      <description>Namaskaram friends!
-Welcome to the first episode of the series - CSE Simplified. In this episode, we will give you a brief overview of the true CSE path students should follow.
-Following is the transcript of the episode. You may like to watch the video :
-   
-In this video series - CSE Simplified, we will be sharing our ideas and suggestions as to how a B.Tech CSE student should be.</description>
+      <description>Namaskaram friends!&#xA;Welcome to the first episode of the series - CSE Simplified. In this episode, we will give you a brief overview of the true CSE path students should follow.&#xA;Following is the transcript of the episode. You may like to watch the video :&#xA;In this video series - CSE Simplified, we will be sharing our ideas and suggestions as to how a B.Tech CSE student should be. This series is primarily for the 1st and 2nd year undergraduate students.</description>
     </item>
-    
     <item>
       <title>CSE Simplified Trailer</title>
       <link>https://thestreamliners.in/blog/cse-simplified-trailer/</link>
       <pubDate>Wed, 08 Jul 2020 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/cse-simplified-trailer/</guid>
-      <description>Namaskaram friends!
-We hope you and your loved ones are safe in this unprecedented time we all are going through. Meanwhile, we are really excited to announce a new video series which you might find helpful.
-This new video series is all about streamlining your B.Tech CSE journey. There are a lot of impactful decisions you need to take during these 4 years. It&amp;rsquo;s very important that you take such decisions free of greed or under bad influence.</description>
+      <description>Namaskaram friends!&#xA;We hope you and your loved ones are safe in this unprecedented time we all are going through. Meanwhile, we are really excited to announce a new video series which you might find helpful.&#xA;This new video series is all about streamlining your B.Tech CSE journey. There are a lot of impactful decisions you need to take during these 4 years. It&amp;rsquo;s very important that you take such decisions free of greed or under bad influence.</description>
     </item>
-    
     <item>
       <title>The reality of CSE in Private colleges of India</title>
       <link>https://thestreamliners.in/blog/the-reality-of-cse-in-private-colleges-of-india/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/the-reality-of-cse-in-private-colleges-of-india/</guid>
-      <description>Introduction The technical education system of CSE in private colleges is very bad. The colleges have opened just to run a business. They are not creating actual Computer Science Engineers. Majority of students end up getting placed in Service based jobs which stops their mental growth. These students do not get jobs CSE students deserve.
-Now this problem has been prevailing since a long time now. Situation may have changed a bit but leaving it as is and hoping for better tomorrow will take a lot of time.</description>
+      <description>Introduction The technical education system of CSE in private colleges is very bad. The colleges have opened just to run a business. They are not creating actual Computer Science Engineers. Majority of students end up getting placed in Service based jobs which stops their mental growth. These students do not get jobs CSE students deserve.&#xA;Now this problem has been prevailing since a long time now. Situation may have changed a bit but leaving it as is and hoping for better tomorrow will take a lot of time.</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,17 +4,16 @@
     <title>Swapnil Bhojwani on The Streamliners</title>
     <link>https://thestreamliners.in/authors/swapnil-bhojwani/</link>
     <description>Recent content in Swapnil Bhojwani on The Streamliners</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/authors/swapnil-bhojwani/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://thestreamliners.in/authors/swapnil-bhojwani/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Firebase Push notifications using Admin SDK</title>
       <link>https://thestreamliners.in/blog/firebase-push-notifications-in-android-using-admin-sdk/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/firebase-push-notifications-in-android-using-admin-sdk/</guid>
-      <description>How to send push notifications through an Android app using firebase?  A notification is a message you can display to the user outside of your application’s normal UI. When you tell the system to issue a notification, it first appears as an icon in the notification area. Notifications are important to give timely updates to your android app users they require minimal UI to notify the user about the event.</description>
+      <description>How to send push notifications through an Android app using firebase? A notification is a message you can display to the user outside of your application’s normal UI. When you tell the system to issue a notification, it first appears as an icon in the notification area. Notifications are important to give timely updates to your android app users they require minimal UI to notify the user about the event.</description>
     </item>
-    
   </channel>
 </rss>

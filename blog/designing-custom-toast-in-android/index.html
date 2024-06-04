@@ -59,7 +59,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a href="https://thestreamliners.in" class="navbar-brand">
+    <a href="https://thestreamliners.in/" class="navbar-brand">
       <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
     </a>
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
@@ -73,32 +73,32 @@
         
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#home"
+          <a href="https://thestreamliners.in/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#service"
+          <a href="https://thestreamliners.in/#service"
             class="nav-link text-dark text-sm-center p-2 ">Services</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#portfolio"
+          <a href="https://thestreamliners.in/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#blog"
+          <a href="https://thestreamliners.in/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/contact"
+          <a href="https://thestreamliners.in//contact"
             class="nav-link text-dark text-sm-center p-2 ">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/about-us"
+          <a href="https://thestreamliners.in//about-us"
             class="nav-link text-dark text-sm-center p-2 ">About us</a>
         </li>
         
@@ -123,7 +123,7 @@
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/>Home</a></li>
             <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
           </ol>
         </nav>
@@ -167,7 +167,7 @@
 <p><strong>So what is the solution?</strong>
 We can design custom views and then inflate them in Toast. Below are some kind of examples we will be implementing, to create our custom Toast which will look <strong>cool and visually satisfying</strong> to users.</p>
 <figure class="center-img"><img src="https://raw.githubusercontent.com/Iltwats/CDN/master/2021/06/01-18-02-48-toast.png"
-         alt="Custom Toast" width="100%"/>
+    alt="Custom Toast" width="100%">
 </figure>
 
 <p>To implement above 3  Custom toasts i.e.</p>
@@ -180,22 +180,22 @@ We can design custom views and then inflate them in Toast. Below are some kind o
 <p>These names are not default we will just be using it to proceed ahead to implement them.</p>
 <h2 id="step-1">Step 1</h2>
 <p>Let&rsquo;s create the layout for it as <code>res/layout/custom_toast.xml</code>.</p>
-<script type="application/javascript" src="https://gist.github.com/Iltwats/708b94a30972ca6d7770452e0060ab43.js?file=toastlayout.xml"></script>
+<script src="https://gist.github.com/Iltwats/708b94a30972ca6d7770452e0060ab43.js?file=toastlayout.xml"></script>
 
 <h2 id="step-2">Step 2</h2>
 <p>Now lets call it from our <code>Application Class</code>, so that it can be called from any activity without writing extra code.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">showToast</span><span style="color:#f92672">(</span>Context context<span style="color:#f92672">,</span>String message<span style="color:#f92672">){</span>
-    <span style="color:#75715e">// setup toast layout
-</span><span style="color:#75715e"></span>    SuccessToastLayoutBinding binding <span style="color:#f92672">=</span> SuccessToastLayoutBinding<span style="color:#f92672">.</span><span style="color:#a6e22e">inflate</span><span style="color:#f92672">(</span>LayoutInflater<span style="color:#f92672">.</span><span style="color:#a6e22e">from</span><span style="color:#f92672">(</span>context<span style="color:#f92672">));</span>
-    binding<span style="color:#f92672">.</span><span style="color:#a6e22e">message</span><span style="color:#f92672">.</span><span style="color:#a6e22e">setText</span><span style="color:#f92672">(</span>msg<span style="color:#f92672">);</span>
-
-    <span style="color:#75715e">// setup toast
-</span><span style="color:#75715e"></span>    Toast toast <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Toast<span style="color:#f92672">(</span>context<span style="color:#f92672">);</span>
-    toast<span style="color:#f92672">.</span><span style="color:#a6e22e">setDuration</span><span style="color:#f92672">(</span>Toast<span style="color:#f92672">.</span><span style="color:#a6e22e">LENGTH_SHORT</span><span style="color:#f92672">);</span>
-    toast<span style="color:#f92672">.</span><span style="color:#a6e22e">setView</span><span style="color:#f92672">(</span>binding<span style="color:#f92672">.</span><span style="color:#a6e22e">getRoot</span><span style="color:#f92672">());</span>
-    toast<span style="color:#f92672">.</span><span style="color:#a6e22e">show</span><span style="color:#f92672">();</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>We have inflated the layout using <code>viewBinding</code>(<strong>A Jetpack Library</strong>) above.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">showToast</span>(Context context,String message){
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// setup toast layout</span>
+</span></span><span style="display:flex;"><span>    SuccessToastLayoutBinding binding <span style="color:#f92672">=</span> SuccessToastLayoutBinding.<span style="color:#a6e22e">inflate</span>(LayoutInflater.<span style="color:#a6e22e">from</span>(context));
+</span></span><span style="display:flex;"><span>    binding.<span style="color:#a6e22e">message</span>.<span style="color:#a6e22e">setText</span>(msg);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// setup toast</span>
+</span></span><span style="display:flex;"><span>    Toast toast <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Toast(context);
+</span></span><span style="display:flex;"><span>    toast.<span style="color:#a6e22e">setDuration</span>(Toast.<span style="color:#a6e22e">LENGTH_SHORT</span>);
+</span></span><span style="display:flex;"><span>    toast.<span style="color:#a6e22e">setView</span>(binding.<span style="color:#a6e22e">getRoot</span>());
+</span></span><span style="display:flex;"><span>    toast.<span style="color:#a6e22e">show</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We have inflated the layout using <code>viewBinding</code>(<strong>A Jetpack Library</strong>) above.</p>
 <p>Just now make changes to your xml file to create different and new visually cool layouts 😎.</p>
 <p><strong>Hope it helped. Happy Coding</strong> 😀</p>
 

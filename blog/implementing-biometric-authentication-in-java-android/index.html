@@ -59,7 +59,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a href="https://thestreamliners.in" class="navbar-brand">
+    <a href="https://thestreamliners.in/" class="navbar-brand">
       <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
     </a>
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
@@ -73,32 +73,32 @@
         
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#home"
+          <a href="https://thestreamliners.in/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#service"
+          <a href="https://thestreamliners.in/#service"
             class="nav-link text-dark text-sm-center p-2 ">Services</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#portfolio"
+          <a href="https://thestreamliners.in/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#blog"
+          <a href="https://thestreamliners.in/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/contact"
+          <a href="https://thestreamliners.in//contact"
             class="nav-link text-dark text-sm-center p-2 ">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/about-us"
+          <a href="https://thestreamliners.in//about-us"
             class="nav-link text-dark text-sm-center p-2 ">About us</a>
         </li>
         
@@ -123,7 +123,7 @@
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/>Home</a></li>
             <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
           </ol>
         </nav>
@@ -169,14 +169,14 @@
 <p>Android’s biometric APIs allow for secure authentication on the Android platform. They manage a system-provided biometric authentication prompt, and provide a seamless experience by supporting various authentication types, including biometric ones such as fingerprint and face, as well as non-biometric types like PIN, password, and pattern.</p>
 <p>Flow of Biometric authentication :</p>
 <figure class="center-img"><img src="https://miro.medium.com/max/4992/1*9MEkP9WE2d1xU38QwJQLWw.png"
-         alt="Biometric Auth" width="100%"/>
+    alt="Biometric Auth" width="100%">
 </figure>
 
 <p>To use the Biometric API in your app, do the following step by step process :</p>
 <h2 id="1-add-the-gradle-dependency-to-your-app-module">1. Add the Gradle dependency to your app module</h2>
 <p>Check here for the <a href="https://developer.android.com/jetpack/androidx/releases/biometric">latest release</a> of the library.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scheme" data-lang="scheme">implementation <span style="color:#e6db74">&#34;androidx.biometric:biometric:1.1.0&#34;</span>
-</code></pre></div><h2 id="2-declare-the-types-of-authentication-that-your-app-supports">2. Declare the types of authentication that your app supports</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span>implementation <span style="color:#e6db74">&#34;androidx.biometric:biometric:1.1.0&#34;</span>
+</span></span></code></pre></div><h2 id="2-declare-the-types-of-authentication-that-your-app-supports">2. Declare the types of authentication that your app supports</h2>
 <p>To define the types of authentication that your app supports, use the <strong><code>[BiometricManager.Authenticators]</code></strong> interface. The system allows you to declare the following types of authentication:</p>
 <ul>
 <li><strong><code>[BIOMETRIC_STRONG]</code></strong> Authentication allows fingerprint sensor only.</li>
@@ -185,27 +185,27 @@
 </ul>
 <p>In order to enroll an authenticator, the user needs to create a PIN, pattern, or password. If the user doesn&rsquo;t already have one, the biometric enrollment flow prompts them to create one.</p>
 <h2 id="3-check-whether-the-device-supports-biometric-authentication">3. Check whether the device supports biometric authentication</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">BiometricManager biometricManager <span style="color:#f92672">=</span> BiometricManager<span style="color:#f92672">.</span><span style="color:#a6e22e">from</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">);</span>
-        <span style="color:#66d9ef">switch</span> <span style="color:#f92672">(</span>biometricManager<span style="color:#f92672">.</span><span style="color:#a6e22e">canAuthenticate</span><span style="color:#f92672">(</span>BiometricManager<span style="color:#f92672">.</span><span style="color:#a6e22e">Authenticators</span><span style="color:#f92672">.</span><span style="color:#a6e22e">BIOMETRIC_WEAK</span> <span style="color:#f92672">|</span> BiometricManager<span style="color:#f92672">.</span><span style="color:#a6e22e">Authenticators</span><span style="color:#f92672">.</span><span style="color:#a6e22e">DEVICE_CREDENTIAL</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">case</span> BiometricManager<span style="color:#f92672">.</span><span style="color:#a6e22e">BIOMETRIC_SUCCESS</span><span style="color:#f92672">:</span>
-                Log<span style="color:#f92672">.</span><span style="color:#a6e22e">d</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;MY_APP_TAG&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;App can authenticate using biometrics.&#34;</span><span style="color:#f92672">);</span>
-                                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
-            <span style="color:#66d9ef">case</span> BiometricManager<span style="color:#f92672">.</span><span style="color:#a6e22e">BIOMETRIC_ERROR_NO_HARDWARE</span><span style="color:#f92672">:</span>
-                Log<span style="color:#f92672">.</span><span style="color:#a6e22e">e</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;MY_APP_TAG&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;No biometric features available on this device.&#34;</span><span style="color:#f92672">);</span>
-                <span style="color:#75715e">// You can disable the buttons to use biometric
-</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
-            <span style="color:#66d9ef">case</span> BiometricManager<span style="color:#f92672">.</span><span style="color:#a6e22e">BIOMETRIC_ERROR_HW_UNAVAILABLE</span><span style="color:#f92672">:</span>
-                Log<span style="color:#f92672">.</span><span style="color:#a6e22e">e</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;MY_APP_TAG&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Biometric features are currently unavailable.&#34;</span><span style="color:#f92672">);</span>
-                <span style="color:#75715e">// You can disable the buttons to use biometric
-</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
-            <span style="color:#66d9ef">case</span> BiometricManager<span style="color:#f92672">.</span><span style="color:#a6e22e">BIOMETRIC_ERROR_NONE_ENROLLED</span><span style="color:#f92672">:</span>
-                <span style="color:#75715e">// Prompts the user to create credentials that your app accepts.
-</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">final</span> Intent enrollIntent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent<span style="color:#f92672">(</span>Settings<span style="color:#f92672">.</span><span style="color:#a6e22e">ACTION_BIOMETRIC_ENROLL</span><span style="color:#f92672">);</span>
-                enrollIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">putExtra</span><span style="color:#f92672">(</span>Settings<span style="color:#f92672">.</span><span style="color:#a6e22e">EXTRA_BIOMETRIC_AUTHENTICATORS_ALLOWED</span><span style="color:#f92672">,</span>BiometricManager<span style="color:#f92672">.</span><span style="color:#a6e22e">Authenticators</span><span style="color:#f92672">.</span><span style="color:#a6e22e">BIOMETRIC_WEAK</span> <span style="color:#f92672">|</span> BiometricManager<span style="color:#f92672">.</span><span style="color:#a6e22e">Authenticators</span><span style="color:#f92672">.</span><span style="color:#a6e22e">DEVICE_CREDENTIAL</span><span style="color:#f92672">);</span>
-                startActivityForResult<span style="color:#f92672">(</span>enrollIntent<span style="color:#f92672">,</span> IntentIntegrator<span style="color:#f92672">.</span><span style="color:#a6e22e">REQUEST_CODE</span><span style="color:#f92672">);</span>
-                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
-        <span style="color:#f92672">}</span>
-</code></pre></div><h2 id="4-create-an-instance-of-biometricprompt">4. Create an instance of BiometricPrompt</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>BiometricManager biometricManager <span style="color:#f92672">=</span> BiometricManager.<span style="color:#a6e22e">from</span>(<span style="color:#66d9ef">this</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">switch</span> (biometricManager.<span style="color:#a6e22e">canAuthenticate</span>(BiometricManager.<span style="color:#a6e22e">Authenticators</span>.<span style="color:#a6e22e">BIOMETRIC_WEAK</span> <span style="color:#f92672">|</span> BiometricManager.<span style="color:#a6e22e">Authenticators</span>.<span style="color:#a6e22e">DEVICE_CREDENTIAL</span>)) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> BiometricManager.<span style="color:#a6e22e">BIOMETRIC_SUCCESS</span>:
+</span></span><span style="display:flex;"><span>                Log.<span style="color:#a6e22e">d</span>(<span style="color:#e6db74">&#34;MY_APP_TAG&#34;</span>, <span style="color:#e6db74">&#34;App can authenticate using biometrics.&#34;</span>);
+</span></span><span style="display:flex;"><span>                                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> BiometricManager.<span style="color:#a6e22e">BIOMETRIC_ERROR_NO_HARDWARE</span>:
+</span></span><span style="display:flex;"><span>                Log.<span style="color:#a6e22e">e</span>(<span style="color:#e6db74">&#34;MY_APP_TAG&#34;</span>, <span style="color:#e6db74">&#34;No biometric features available on this device.&#34;</span>);
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// You can disable the buttons to use biometric</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> BiometricManager.<span style="color:#a6e22e">BIOMETRIC_ERROR_HW_UNAVAILABLE</span>:
+</span></span><span style="display:flex;"><span>                Log.<span style="color:#a6e22e">e</span>(<span style="color:#e6db74">&#34;MY_APP_TAG&#34;</span>, <span style="color:#e6db74">&#34;Biometric features are currently unavailable.&#34;</span>);
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// You can disable the buttons to use biometric</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> BiometricManager.<span style="color:#a6e22e">BIOMETRIC_ERROR_NONE_ENROLLED</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// Prompts the user to create credentials that your app accepts.</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">final</span> Intent enrollIntent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent(Settings.<span style="color:#a6e22e">ACTION_BIOMETRIC_ENROLL</span>);
+</span></span><span style="display:flex;"><span>                enrollIntent.<span style="color:#a6e22e">putExtra</span>(Settings.<span style="color:#a6e22e">EXTRA_BIOMETRIC_AUTHENTICATORS_ALLOWED</span>,BiometricManager.<span style="color:#a6e22e">Authenticators</span>.<span style="color:#a6e22e">BIOMETRIC_WEAK</span> <span style="color:#f92672">|</span> BiometricManager.<span style="color:#a6e22e">Authenticators</span>.<span style="color:#a6e22e">DEVICE_CREDENTIAL</span>);
+</span></span><span style="display:flex;"><span>                startActivityForResult(enrollIntent, IntentIntegrator.<span style="color:#a6e22e">REQUEST_CODE</span>);
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span></code></pre></div><h2 id="4-create-an-instance-of-biometricprompt">4. Create an instance of BiometricPrompt</h2>
 <p>The <code>BiometricPrompt</code> constructor requires both an <code>Executor</code> and an <code>AuthenticationCallback</code> object. The <code>Executor</code> allows you to specify a thread on which your callbacks should be run.</p>
 <p>The <code>AuthenticationCallback</code> has three methods:</p>
 <ol>
@@ -213,45 +213,45 @@
 <li><code>onAuthenticationError()</code> is called when an <a href="https://developer.android.com/reference/androidx/biometric/BiometricPrompt.html#constants_2">unrecoverable error</a> occurs.</li>
 <li><code>onAuthenticationFailed()</code> is called when the user is rejected, for example when a non-enrolled fingerprint is placed on the sensor, but unlike with <code>onAuthenticationError()</code>, the user can continue trying to authenticate.</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Executor executor <span style="color:#f92672">=</span> ContextCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">getMainExecutor</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">);</span>
-BiometricPrompt biometricPrompt <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BiometricPrompt<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> executor<span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> BiometricPrompt<span style="color:#f92672">.</span><span style="color:#a6e22e">AuthenticationCallback</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        <span style="color:#a6e22e">@Override</span>
-        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onAuthenticationError</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> errorCode<span style="color:#f92672">,</span> <span style="color:#a6e22e">@NonNull</span> CharSequence errString<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#75715e">// if you pressed back button or some error occured you will get result here
-</span><span style="color:#75715e"></span>                        <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onAuthenticationError</span><span style="color:#f92672">(</span>errorCode<span style="color:#f92672">,</span> errString<span style="color:#f92672">)</span>
-        <span style="color:#f92672">}</span>
-
-        <span style="color:#a6e22e">@Override</span>
-        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onAuthenticationSucceeded</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@NonNull</span> BiometricPrompt<span style="color:#f92672">.</span><span style="color:#a6e22e">AuthenticationResult</span> result<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#75715e">// Do whatever you wish to do after successful authentication
-</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onAuthenticationSucceeded</span><span style="color:#f92672">(</span>result<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-
-        <span style="color:#a6e22e">@Override</span>
-        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onAuthenticationFailed</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-                        <span style="color:#75715e">// on failed authentication of biometric you will find result here
-</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onAuthenticationFailed</span><span style="color:#f92672">();</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#f92672">});</span>
-</code></pre></div><p><strong>Instantiating the <code>BiometricPrompt</code> should be done early in the lifecycle of your activity (e.g., in <code>onCreate</code> ). This ensures that the current instance will always properly receive authentication callbacks.</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Executor executor <span style="color:#f92672">=</span> ContextCompat.<span style="color:#a6e22e">getMainExecutor</span>(<span style="color:#66d9ef">this</span>);
+</span></span><span style="display:flex;"><span>BiometricPrompt biometricPrompt <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BiometricPrompt(<span style="color:#66d9ef">this</span>, executor, <span style="color:#66d9ef">new</span> BiometricPrompt.<span style="color:#a6e22e">AuthenticationCallback</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onAuthenticationError</span>(<span style="color:#66d9ef">int</span> errorCode, <span style="color:#a6e22e">@NonNull</span> CharSequence errString) {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// if you pressed back button or some error occured you will get result here</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">super</span>.<span style="color:#a6e22e">onAuthenticationError</span>(errorCode, errString)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onAuthenticationSucceeded</span>(<span style="color:#a6e22e">@NonNull</span> BiometricPrompt.<span style="color:#a6e22e">AuthenticationResult</span> result) {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Do whatever you wish to do after successful authentication</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">super</span>.<span style="color:#a6e22e">onAuthenticationSucceeded</span>(result);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onAuthenticationFailed</span>() {
+</span></span><span style="display:flex;"><span>                        <span style="color:#75715e">// on failed authentication of biometric you will find result here</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">super</span>.<span style="color:#a6e22e">onAuthenticationFailed</span>();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        });
+</span></span></code></pre></div><p><strong>Instantiating the <code>BiometricPrompt</code> should be done early in the lifecycle of your activity (e.g., in <code>onCreate</code> ). This ensures that the current instance will always properly receive authentication callbacks.</strong></p>
 <h2 id="5-build-a-promptinfo-object">5. Build a PromptInfo object</h2>
 <p>Once you have a <code>BiometricPrompt</code> object, you ask the user to authenticate by calling <code>biometricPrompt.authenticate(promptInfo)</code>.</p>
 <p>This call will show the user the appropriate UI, based on the type of biometric credential being used for authentication – such as fingerprint, face, or iris. As a developer you don’t need to know which type of credential is being used for authentication; the API handles all of that for you.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">BiometricPrompt<span style="color:#f92672">.</span><span style="color:#a6e22e">PromptInfo</span> promptInfo <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BiometricPrompt<span style="color:#f92672">.</span><span style="color:#a6e22e">PromptInfo</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">()</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setTitle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Biometric Demo&#34;</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setSubtitle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Authorization Required&#34;</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setDescription</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;It prevents app from unauthorized data access.&#34;</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setAllowedAuthenticators</span><span style="color:#f92672">(</span>BiometricManager<span style="color:#f92672">.</span><span style="color:#a6e22e">Authenticators</span><span style="color:#f92672">.</span><span style="color:#a6e22e">BIOMETRIC_WEAK</span> <span style="color:#f92672">|</span> BiometricManager<span style="color:#f92672">.</span><span style="color:#a6e22e">Authenticators</span><span style="color:#f92672">.</span><span style="color:#a6e22e">DEVICE_CREDENTIAL</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setConfirmationRequired</span><span style="color:#f92672">(</span><span style="color:#66d9ef">false</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
-</code></pre></div><p><strong>Caution before setting <code>setConfirmationRequired</code> to false, By default, the system requires users to perform a specific action, such as pressing a button, after their biometric credentials are accepted. This configuration is preferable if your app is showing the dialog to confirm a sensitive or high-risk action, such as making a purchase.</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>BiometricPrompt.<span style="color:#a6e22e">PromptInfo</span> promptInfo <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BiometricPrompt.<span style="color:#a6e22e">PromptInfo</span>.<span style="color:#a6e22e">Builder</span>()
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setTitle</span>(<span style="color:#e6db74">&#34;Biometric Demo&#34;</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setSubtitle</span>(<span style="color:#e6db74">&#34;Authorization Required&#34;</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setDescription</span>(<span style="color:#e6db74">&#34;It prevents app from unauthorized data access.&#34;</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setAllowedAuthenticators</span>(BiometricManager.<span style="color:#a6e22e">Authenticators</span>.<span style="color:#a6e22e">BIOMETRIC_WEAK</span> <span style="color:#f92672">|</span> BiometricManager.<span style="color:#a6e22e">Authenticators</span>.<span style="color:#a6e22e">DEVICE_CREDENTIAL</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setConfirmationRequired</span>(<span style="color:#66d9ef">false</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">build</span>();
+</span></span></code></pre></div><p><strong>Caution before setting <code>setConfirmationRequired</code> to false, By default, the system requires users to perform a specific action, such as pressing a button, after their biometric credentials are accepted. This configuration is preferable if your app is showing the dialog to confirm a sensitive or high-risk action, such as making a purchase.</strong></p>
 <h2 id="6-ask-the-user-to-authenticate">6. Ask the user to authenticate</h2>
 <p>Now that you have all the required pieces, you can ask the user to authenticate. Just call this single line to use biometric authentication whenever required.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">biometricPrompt<span style="color:#f92672">.</span><span style="color:#a6e22e">authenticate</span><span style="color:#f92672">(</span>promptInfo<span style="color:#f92672">);</span>
-</code></pre></div><p>And that’s it! 😀 You should now be able to perform authentication, using biometric credentials, on any device that runs Android 6.0 (API level 23) or higher.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>biometricPrompt.<span style="color:#a6e22e">authenticate</span>(promptInfo);
+</span></span></code></pre></div><p>And that’s it! 😀 You should now be able to perform authentication, using biometric credentials, on any device that runs Android 6.0 (API level 23) or higher.</p>
 <p><strong>Your app should show something like this:</strong></p>
 <figure class="center-img"><img src="https://koenig-media.raywenderlich.com/uploads/2020/01/securepass_biometric_authentication.png"
-         alt="Biometric Auth" width="100%"/>
+    alt="Biometric Auth" width="100%">
 </figure>
 
 <p>Check out the entire <a href="https://gist.github.com/Iltwats/3eb04f75f21b0c244025eab4cd23a27b">code</a>  here.</p>

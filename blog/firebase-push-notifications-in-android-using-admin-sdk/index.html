@@ -59,7 +59,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a href="https://thestreamliners.in" class="navbar-brand">
+    <a href="https://thestreamliners.in/" class="navbar-brand">
       <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
     </a>
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
@@ -73,32 +73,32 @@
         
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#home"
+          <a href="https://thestreamliners.in/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#service"
+          <a href="https://thestreamliners.in/#service"
             class="nav-link text-dark text-sm-center p-2 ">Services</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#portfolio"
+          <a href="https://thestreamliners.in/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#blog"
+          <a href="https://thestreamliners.in/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/contact"
+          <a href="https://thestreamliners.in//contact"
             class="nav-link text-dark text-sm-center p-2 ">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/about-us"
+          <a href="https://thestreamliners.in//about-us"
             class="nav-link text-dark text-sm-center p-2 ">About us</a>
         </li>
         
@@ -123,7 +123,7 @@
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/>Home</a></li>
             <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
           </ol>
         </nav>
@@ -165,7 +165,7 @@
               <div class="singleBlog__content">
                   <h3 id="how-to-send-push-notifications-through-an-android-app-using-firebase">How to send push notifications through an Android app using firebase?</h3>
 <figure class="center-img"><img src="https://miro.medium.com/max/700/1*rMGumKz0r1UOGC_fApQYKQ.png"
-         alt="FCM" width="100%"/>
+    alt="FCM" width="100%">
 </figure>
 
 <p>A <strong>notification</strong> is a message you can display to the user outside of your application’s normal UI. When you tell the system to issue a notification, it first appears as an icon in the notification area. Notifications are important to give timely updates to your android app users they require minimal <strong>UI</strong> to notify the user about the event.</p>
@@ -176,158 +176,158 @@
 <p>Connect your android app to firebase.</p>
 <h4 id="step-2">Step 2:</h4>
 <p>Now add dependencies as given in app level build.gradle file 👇👇.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">dependencies <span style="color:#f92672">{</span>
-    <span style="color:#75715e">//Firebase BOM
-</span><span style="color:#75715e"></span>    implementation <span style="color:#a6e22e">platform</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">&#39;</span>com<span style="color:#f92672">.</span><span style="color:#a6e22e">google</span><span style="color:#f92672">.</span><span style="color:#a6e22e">firebase</span><span style="color:#f92672">:</span>firebase<span style="color:#f92672">-</span>bom<span style="color:#f92672">:</span>28<span style="color:#f92672">.</span><span style="color:#a6e22e">2</span><span style="color:#f92672">.</span><span style="color:#a6e22e">0</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">)</span>
-    <span style="color:#75715e">//Messaging dependency
-</span><span style="color:#75715e"></span>    implementation <span style="color:#960050;background-color:#1e0010">&#39;</span>com<span style="color:#f92672">.</span><span style="color:#a6e22e">google</span><span style="color:#f92672">.</span><span style="color:#a6e22e">firebase</span><span style="color:#f92672">:</span>firebase<span style="color:#f92672">-</span>messaging<span style="color:#960050;background-color:#1e0010">&#39;</span>
-    <span style="color:#75715e">// define a BOM and its version
-</span><span style="color:#75715e"></span>    implementation<span style="color:#f92672">(</span>platform<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;com.squareup.okhttp3:okhttp-bom:4.9.1&#34;</span><span style="color:#f92672">))</span>
-    <span style="color:#75715e">// define any required OkHttp artifacts without version
-</span><span style="color:#75715e"></span>    implementation<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;com.squareup.okhttp3:okhttp&#34;</span><span style="color:#f92672">)</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><h4 id="step-3">Step 3:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>dependencies {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Firebase BOM</span>
+</span></span><span style="display:flex;"><span>    implementation <span style="color:#a6e22e">platform</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>com.<span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">firebase</span>:firebase<span style="color:#f92672">-</span>bom:28.<span style="color:#a6e22e">2</span>.<span style="color:#a6e22e">0</span><span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Messaging dependency</span>
+</span></span><span style="display:flex;"><span>    implementation <span style="color:#960050;background-color:#1e0010">&#39;</span>com.<span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">firebase</span>:firebase<span style="color:#f92672">-</span>messaging<span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// define a BOM and its version</span>
+</span></span><span style="display:flex;"><span>    implementation(platform(<span style="color:#e6db74">&#34;com.squareup.okhttp3:okhttp-bom:4.9.1&#34;</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// define any required OkHttp artifacts without version</span>
+</span></span><span style="display:flex;"><span>    implementation(<span style="color:#e6db74">&#34;com.squareup.okhttp3:okhttp&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="step-3">Step 3:</h4>
 <p>Now make a java class named as <strong>FCMReceiver.java</strong> this class extends FirebaseMessagingService and it’s overriden method onMessageRecieved is called automatically called when a message comes into the app when the app is whether foreground or background. Here is the FCMReceiver code 👇👇.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FCMReceiver</span> <span style="color:#66d9ef">extends</span> FirebaseMessagingService <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String CHANNEL_ID <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Notification_channel&#34;</span><span style="color:#f92672">;</span>
-    Random random <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Random<span style="color:#f92672">();</span>
-
-    <span style="color:#75715e">/*
-</span><span style="color:#75715e">    * This is automatically called when notification is being received
-</span><span style="color:#75715e">    * */</span>
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onMessageReceived</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@NonNull</span> <span style="color:#a6e22e">@NotNull</span> RemoteMessage remoteMessage<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onMessageReceived</span><span style="color:#f92672">(</span>remoteMessage<span style="color:#f92672">);</span>
-        createNotificationChannel<span style="color:#f92672">();</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>remoteMessage<span style="color:#f92672">.</span><span style="color:#a6e22e">getData</span><span style="color:#f92672">().</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;for&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>remoteMessage<span style="color:#f92672">.</span><span style="color:#a6e22e">getData</span><span style="color:#f92672">().</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;for&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>FirebaseAuth<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getCurrentUser</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getPhoneNumber</span><span style="color:#f92672">()))</span> <span style="color:#f92672">{</span>
-                showNotification<span style="color:#f92672">(</span>remoteMessage<span style="color:#f92672">);</span>
-            <span style="color:#f92672">}</span>
-        <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span>
-    <span style="color:#75715e">/*
-</span><span style="color:#75715e">    * Method to show notification when received 
-</span><span style="color:#75715e">    * */</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">showNotification</span><span style="color:#f92672">(</span>RemoteMessage remoteMessage<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> builder <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> CHANNEL_ID<span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentTitle</span><span style="color:#f92672">(</span>getString<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">string</span><span style="color:#f92672">.</span><span style="color:#a6e22e">app_name</span><span style="color:#f92672">))</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_notification_icon</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentText</span><span style="color:#f92672">(</span>remoteMessage<span style="color:#f92672">.</span><span style="color:#a6e22e">getData</span><span style="color:#f92672">().</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;body&#34;</span><span style="color:#f92672">))</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>ContextCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">getColor</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">color</span><span style="color:#f92672">.</span><span style="color:#a6e22e">notification_red</span><span style="color:#f92672">));</span>
-        NotificationManagerCompat notificationManager <span style="color:#f92672">=</span> NotificationManagerCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">from</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">);</span>
-
-        <span style="color:#75715e">// notificationId is a unique int for each notification that you must define
-</span><span style="color:#75715e"></span>        notificationManager<span style="color:#f92672">.</span><span style="color:#a6e22e">notify</span><span style="color:#f92672">(</span>random<span style="color:#f92672">.</span><span style="color:#a6e22e">nextInt</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> 1000<span style="color:#f92672">,</span> builder<span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">());</span>
-    <span style="color:#f92672">}</span>
-
-    <span style="color:#75715e">/*
-</span><span style="color:#75715e">    * Method to create notification channel
-</span><span style="color:#75715e">    * */</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">createNotificationChannel</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        <span style="color:#75715e">// Create the NotificationChannel, but only on API 26+ because
-</span><span style="color:#75715e"></span>        <span style="color:#75715e">// the NotificationChannel class is new and not in the support library
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Build<span style="color:#f92672">.</span><span style="color:#a6e22e">VERSION</span><span style="color:#f92672">.</span><span style="color:#a6e22e">SDK_INT</span> <span style="color:#f92672">&gt;=</span> Build<span style="color:#f92672">.</span><span style="color:#a6e22e">VERSION_CODES</span><span style="color:#f92672">.</span><span style="color:#a6e22e">O</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            CharSequence name <span style="color:#f92672">=</span> getString<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">string</span><span style="color:#f92672">.</span><span style="color:#a6e22e">channel_name</span><span style="color:#f92672">);</span>
-            String description <span style="color:#f92672">=</span> getString<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">string</span><span style="color:#f92672">.</span><span style="color:#a6e22e">channel_description</span><span style="color:#f92672">);</span>
-            <span style="color:#66d9ef">int</span> importance <span style="color:#f92672">=</span> NotificationManager<span style="color:#f92672">.</span><span style="color:#a6e22e">IMPORTANCE_DEFAULT</span><span style="color:#f92672">;</span>
-            NotificationChannel channel <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationChannel<span style="color:#f92672">(</span>CHANNEL_ID<span style="color:#f92672">,</span> name<span style="color:#f92672">,</span> importance<span style="color:#f92672">);</span>
-            channel<span style="color:#f92672">.</span><span style="color:#a6e22e">setDescription</span><span style="color:#f92672">(</span>description<span style="color:#f92672">);</span>
-            NotificationManager notificationManager <span style="color:#f92672">=</span> getSystemService<span style="color:#f92672">(</span>NotificationManager<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
-            notificationManager<span style="color:#f92672">.</span><span style="color:#a6e22e">createNotificationChannel</span><span style="color:#f92672">(</span>channel<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><h4 id="step-4">Step 4:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FCMReceiver</span> <span style="color:#66d9ef">extends</span> FirebaseMessagingService {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String CHANNEL_ID <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Notification_channel&#34;</span>;
+</span></span><span style="display:flex;"><span>    Random random <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Random();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    * This is automatically called when notification is being received
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    * */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onMessageReceived</span>(<span style="color:#a6e22e">@NonNull</span> <span style="color:#a6e22e">@NotNull</span> RemoteMessage remoteMessage) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span>.<span style="color:#a6e22e">onMessageReceived</span>(remoteMessage);
+</span></span><span style="display:flex;"><span>        createNotificationChannel();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (remoteMessage.<span style="color:#a6e22e">getData</span>().<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;for&#34;</span>) <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (remoteMessage.<span style="color:#a6e22e">getData</span>().<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;for&#34;</span>).<span style="color:#a6e22e">equals</span>(FirebaseAuth.<span style="color:#a6e22e">getInstance</span>().<span style="color:#a6e22e">getCurrentUser</span>().<span style="color:#a6e22e">getPhoneNumber</span>())) {
+</span></span><span style="display:flex;"><span>                showNotification(remoteMessage);
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    * Method to show notification when received 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    * */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">showNotification</span>(RemoteMessage remoteMessage) {
+</span></span><span style="display:flex;"><span>        NotificationCompat.<span style="color:#a6e22e">Builder</span> builder <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">Builder</span>(<span style="color:#66d9ef">this</span>, CHANNEL_ID)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setContentTitle</span>(getString(R.<span style="color:#a6e22e">string</span>.<span style="color:#a6e22e">app_name</span>))
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setSmallIcon</span>(R.<span style="color:#a6e22e">drawable</span>.<span style="color:#a6e22e">ic_notification_icon</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setContentText</span>(remoteMessage.<span style="color:#a6e22e">getData</span>().<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;body&#34;</span>))
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setColor</span>(ContextCompat.<span style="color:#a6e22e">getColor</span>(<span style="color:#66d9ef">this</span>,R.<span style="color:#a6e22e">color</span>.<span style="color:#a6e22e">notification_red</span>));
+</span></span><span style="display:flex;"><span>        NotificationManagerCompat notificationManager <span style="color:#f92672">=</span> NotificationManagerCompat.<span style="color:#a6e22e">from</span>(<span style="color:#66d9ef">this</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// notificationId is a unique int for each notification that you must define</span>
+</span></span><span style="display:flex;"><span>        notificationManager.<span style="color:#a6e22e">notify</span>(random.<span style="color:#a6e22e">nextInt</span>() <span style="color:#f92672">+</span> 1000, builder.<span style="color:#a6e22e">build</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    * Method to create notification channel
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    * */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">createNotificationChannel</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Create the NotificationChannel, but only on API 26+ because</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// the NotificationChannel class is new and not in the support library</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (Build.<span style="color:#a6e22e">VERSION</span>.<span style="color:#a6e22e">SDK_INT</span> <span style="color:#f92672">&gt;=</span> Build.<span style="color:#a6e22e">VERSION_CODES</span>.<span style="color:#a6e22e">O</span>) {
+</span></span><span style="display:flex;"><span>            CharSequence name <span style="color:#f92672">=</span> getString(R.<span style="color:#a6e22e">string</span>.<span style="color:#a6e22e">channel_name</span>);
+</span></span><span style="display:flex;"><span>            String description <span style="color:#f92672">=</span> getString(R.<span style="color:#a6e22e">string</span>.<span style="color:#a6e22e">channel_description</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> importance <span style="color:#f92672">=</span> NotificationManager.<span style="color:#a6e22e">IMPORTANCE_DEFAULT</span>;
+</span></span><span style="display:flex;"><span>            NotificationChannel channel <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationChannel(CHANNEL_ID, name, importance);
+</span></span><span style="display:flex;"><span>            channel.<span style="color:#a6e22e">setDescription</span>(description);
+</span></span><span style="display:flex;"><span>            NotificationManager notificationManager <span style="color:#f92672">=</span> getSystemService(NotificationManager.<span style="color:#a6e22e">class</span>);
+</span></span><span style="display:flex;"><span>            notificationManager.<span style="color:#a6e22e">createNotificationChannel</span>(channel);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="step-4">Step 4:</h4>
 <p>Now declare this code into <strong>AndroidManifest.xml</strong> as given in the code snippet👇👇.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">        <span style="color:#f92672">&lt;</span>service
-            android<span style="color:#f92672">:</span>name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.notifications.FCMReceiver&#34;</span>
-            android<span style="color:#f92672">:</span>exported<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span><span style="color:#f92672">&gt;</span>
-            <span style="color:#f92672">&lt;</span>intent<span style="color:#f92672">-</span>filter<span style="color:#f92672">&gt;</span>
-                <span style="color:#f92672">&lt;</span>action android<span style="color:#f92672">:</span>name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;com.google.firebase.MESSAGING_EVENT&#34;</span> <span style="color:#f92672">/&gt;</span>
-            <span style="color:#f92672">&lt;/</span>intent<span style="color:#f92672">-</span>filter<span style="color:#f92672">&gt;</span>
-        <span style="color:#f92672">&lt;/</span>service<span style="color:#f92672">&gt;</span>
-</code></pre></div><h4 id="step-5">Step 5:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>        <span style="color:#f92672">&lt;</span>service
+</span></span><span style="display:flex;"><span>            android:name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.notifications.FCMReceiver&#34;</span>
+</span></span><span style="display:flex;"><span>            android:exported<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;</span>intent<span style="color:#f92672">-</span>filter<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&lt;</span>action android:name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;com.google.firebase.MESSAGING_EVENT&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;/</span>intent<span style="color:#f92672">-</span>filter<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;/</span>service<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><h4 id="step-5">Step 5:</h4>
 <ul>
 <li>Now our FCMReceiver.java is ready now we will move forward to see <strong>FCMSender</strong> code will we send notification by using the following code 👇👇.</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.swapnil.helloworld.notifications<span style="color:#f92672">;</span>
-
-<span style="color:#f92672">import</span> okhttp3.Call<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> okhttp3.Callback<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> okhttp3.MediaType<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> okhttp3.OkHttpClient<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> okhttp3.Request<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> okhttp3.RequestBody<span style="color:#f92672">;</span>
-
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FCMSender</span> <span style="color:#f92672">{</span>
-    <span style="color:#75715e">/*
-</span><span style="color:#75715e">     * URL where we request to send notification and the key to send notification using admin sdk
-</span><span style="color:#75715e">     * */</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String FCM_URL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://fcm.googleapis.com/fcm/send&#34;</span><span style="color:#f92672">,</span> KEY_STRING <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;key=YOUR_ADMIN_SDK_KEY&#34;</span><span style="color:#f92672">;</span>
-
-    OkHttpClient client <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> OkHttpClient<span style="color:#f92672">();</span>
-
-    <span style="color:#75715e">/*
-</span><span style="color:#75715e">     * Method to send notification to the application
-</span><span style="color:#75715e">     * */</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">send</span><span style="color:#f92672">(</span>String message<span style="color:#f92672">,</span> Callback callback<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        RequestBody reqBody <span style="color:#f92672">=</span> RequestBody<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>message
-                <span style="color:#f92672">,</span> MediaType<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;application/json&#34;</span><span style="color:#f92672">));</span>
-
-        Request request <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Request<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">()</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">url</span><span style="color:#f92672">(</span>FCM_URL<span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">addHeader</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Content-Type&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;application/json&#34;</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">addHeader</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Authorization&#34;</span><span style="color:#f92672">,</span> KEY_STRING<span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">post</span><span style="color:#f92672">(</span>reqBody<span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
-
-        Call call <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span><span style="color:#a6e22e">newCall</span><span style="color:#f92672">(</span>request<span style="color:#f92672">);</span>
-        call<span style="color:#f92672">.</span><span style="color:#a6e22e">enqueue</span><span style="color:#f92672">(</span>callback<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> com.swapnil.helloworld.notifications;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> okhttp3.Call;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> okhttp3.Callback;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> okhttp3.MediaType;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> okhttp3.OkHttpClient;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> okhttp3.Request;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> okhttp3.RequestBody;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FCMSender</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * URL where we request to send notification and the key to send notification using admin sdk
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String FCM_URL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://fcm.googleapis.com/fcm/send&#34;</span>, KEY_STRING <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;key=YOUR_ADMIN_SDK_KEY&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    OkHttpClient client <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> OkHttpClient();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * Method to send notification to the application
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">send</span>(String message, Callback callback) {
+</span></span><span style="display:flex;"><span>        RequestBody reqBody <span style="color:#f92672">=</span> RequestBody.<span style="color:#a6e22e">create</span>(message
+</span></span><span style="display:flex;"><span>                , MediaType.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;application/json&#34;</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        Request request <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Request.<span style="color:#a6e22e">Builder</span>()
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">url</span>(FCM_URL)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">addHeader</span>(<span style="color:#e6db74">&#34;Content-Type&#34;</span>, <span style="color:#e6db74">&#34;application/json&#34;</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">addHeader</span>(<span style="color:#e6db74">&#34;Authorization&#34;</span>, KEY_STRING)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">post</span>(reqBody)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">build</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        Call call <span style="color:#f92672">=</span> client.<span style="color:#a6e22e">newCall</span>(request);
+</span></span><span style="display:flex;"><span>        call.<span style="color:#a6e22e">enqueue</span>(callback);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
 <li>YOUR_ADMIN_SDK_KEY will be replaced by the key given in your firebase project it is located in tab of cloud messaging under project settings see the below screenshot to locate the key</li>
 </ul>
 <figure class="center-img"><img src="https://github.com/swapnil20711/CDN/blob/main/NotificationsBlog/project_settings.png?raw=true"
-         alt="FCM" width="50%"/>
+    alt="FCM" width="50%">
 </figure>
 
 <figure class="center-img"><img src="https://github.com/swapnil20711/CDN/blob/main/NotificationsBlog/project_settings_tab.png?raw=true"
-         alt="FCM" width="100%"/>
+    alt="FCM" width="100%">
 </figure>
 
 <p><strong>NOTE</strong>:- Don’t share the key with anyone else otherwise there will be breach in your application someone having this key can send push notifications to your application so beware.</p>
 <p><strong>TIP</strong>:- If Breach occurs then click on add server key and delete the older key.</p>
 <h4 id="step-6">Step 6:</h4>
 <p>Call the FCMSender.send() method to send notification to the application and you have to give topic to which you wanna send message. If the user is subscribed to the topic then he/she will get notification message. Here we have to pass topic to which we want to send notification. And in “for” we have to send mobile number with country code appended in it, and in “body” you can pass the message you want to send. The message you have to pass while sending notification have format as that of the message string given below 👇👇.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.swapnil.helloworld.notifications<span style="color:#f92672">;</span>
-
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NotificationMessage</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> String message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{&#34;</span> <span style="color:#f92672">+</span>
-            <span style="color:#e6db74">&#34;  \&#34;to\&#34;: \&#34;/topics/%s\&#34;,&#34;</span> <span style="color:#f92672">+</span>
-            <span style="color:#e6db74">&#34;  \&#34;data\&#34;: {&#34;</span> <span style="color:#f92672">+</span>
-            <span style="color:#e6db74">&#34;       \&#34;body\&#34;:\&#34;%s\&#34;,&#34;</span> <span style="color:#f92672">+</span>
-            <span style="color:#e6db74">&#34;       \&#34;for\&#34;:\&#34;%s\&#34;&#34;</span><span style="color:#f92672">+</span>
-            <span style="color:#e6db74">&#34;   }&#34;</span> <span style="color:#f92672">+</span>
-            <span style="color:#e6db74">&#34;}&#34;</span><span style="color:#f92672">;</span>
-
-<span style="color:#f92672">}</span>
-</code></pre></div><h3 id="data-vs-notification">Data vs Notification</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> com.swapnil.helloworld.notifications;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NotificationMessage</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> String message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{&#34;</span> <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;  \&#34;to\&#34;: \&#34;/topics/%s\&#34;,&#34;</span> <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;  \&#34;data\&#34;: {&#34;</span> <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;       \&#34;body\&#34;:\&#34;%s\&#34;,&#34;</span> <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;       \&#34;for\&#34;:\&#34;%s\&#34;&#34;</span><span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;   }&#34;</span> <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;}&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="data-vs-notification">Data vs Notification</h3>
 <p>We have used data in the message because there is reason behind it we also want to show notifications when the application is in background so we have used data but if you have sent notification instead it does not execute the code written in <strong>onMessageRecieved</strong> so we cannot customize it and it also has one disadvantage it is shown by system so it is shown only when the app is in background i.e app must be in recents otherwise notification will be killed.</p>
 <p>Code sample for using Notification as message 👇👇.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.swapnil.helloworld.notifications<span style="color:#f92672">;</span>
-
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NotificationMessage</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> String message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{&#34;</span> <span style="color:#f92672">+</span>
-            <span style="color:#e6db74">&#34;  \&#34;to\&#34;: \&#34;/topics/%s\&#34;,&#34;</span> <span style="color:#f92672">+</span>
-            <span style="color:#e6db74">&#34;  \&#34;notification\&#34;: {&#34;</span> <span style="color:#f92672">+</span>
-            <span style="color:#e6db74">&#34;       \&#34;body\&#34;:\&#34;%s\&#34;,&#34;</span> <span style="color:#f92672">+</span>
-            <span style="color:#e6db74">&#34;       \&#34;title\&#34;:\&#34;%s\&#34;&#34;</span><span style="color:#f92672">+</span>
-            <span style="color:#e6db74">&#34;   }&#34;</span> <span style="color:#f92672">+</span>
-            <span style="color:#e6db74">&#34;}&#34;</span><span style="color:#f92672">;</span>
-
-<span style="color:#f92672">}</span>
-</code></pre></div><p>[Here is the youtube video of the application that i have made for the blog](<a href="https://www.youtube.com/watch?v=-oQeSEUoJFs">Android app to send notification using FCM and Admin SDK Firebase - YouTube</a>)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> com.swapnil.helloworld.notifications;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NotificationMessage</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> String message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{&#34;</span> <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;  \&#34;to\&#34;: \&#34;/topics/%s\&#34;,&#34;</span> <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;  \&#34;notification\&#34;: {&#34;</span> <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;       \&#34;body\&#34;:\&#34;%s\&#34;,&#34;</span> <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;       \&#34;title\&#34;:\&#34;%s\&#34;&#34;</span><span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;   }&#34;</span> <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;}&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>[Here is the youtube video of the application that i have made for the blog](<a href="https://www.youtube.com/watch?v=-oQeSEUoJFs">Android app to send notification using FCM and Admin SDK Firebase - YouTube</a>)</p>
 <p>For more stuff related to programming follow me.
 Here is the source code to this application <a href="https://github.com/swapnil20711/NotificationsAdminSDK">GitHub - swapnil20711/NotificationsAdminSDK</a></p>
 <p><strong>Happy coding🔥🔥😀😀.</strong></p>

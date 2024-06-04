@@ -59,7 +59,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a href="https://thestreamliners.in" class="navbar-brand">
+    <a href="https://thestreamliners.in/" class="navbar-brand">
       <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
     </a>
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
@@ -73,32 +73,32 @@
         
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#home"
+          <a href="https://thestreamliners.in/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#service"
+          <a href="https://thestreamliners.in/#service"
             class="nav-link text-dark text-sm-center p-2 ">Services</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#portfolio"
+          <a href="https://thestreamliners.in/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#blog"
+          <a href="https://thestreamliners.in/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/contact"
+          <a href="https://thestreamliners.in//contact"
             class="nav-link text-dark text-sm-center p-2 ">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/about-us"
+          <a href="https://thestreamliners.in//about-us"
             class="nav-link text-dark text-sm-center p-2 ">About us</a>
         </li>
         
@@ -123,7 +123,7 @@
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/>Home</a></li>
             <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
           </ol>
         </nav>
@@ -169,108 +169,108 @@
 <p>Ok now we will see how we can achieve background location permission for Android 11.</p>
 <h4 id="step-1-">Step-1 :</h4>
 <p>Add these permissions in your mainfest file:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.ACCESS_FINE_LOCATION&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.ACCESS_COARSE_LOCATION&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.ACCESS_BACKGROUND_LOCATION&#34;</span> <span style="color:#f92672">/&gt;</span>
-</code></pre></div><h4 id="step-2-">Step-2 :</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.ACCESS_FINE_LOCATION&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.ACCESS_COARSE_LOCATION&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.ACCESS_BACKGROUND_LOCATION&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span></code></pre></div><h4 id="step-2-">Step-2 :</h4>
 <p>I added a simple button in activity_main.xml with id “location_permission”, on click of the button call <strong>checkPermission()</strong> function:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">checkPermission</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>ContextCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">checkSelfPermission</span><span style="color:#f92672">(</span>MainActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">,</span> Manifest<span style="color:#f92672">.</span><span style="color:#a6e22e">permission</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ACCESS_FINE_LOCATION</span><span style="color:#f92672">)</span> <span style="color:#f92672">==</span> PackageManager<span style="color:#f92672">.</span><span style="color:#a6e22e">PERMISSION_GRANTED</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#75715e">// Fine Location permission is granted
-</span><span style="color:#75715e"></span>            <span style="color:#75715e">// Check if current android version &gt;= 11, if &gt;= 11 check for Background Location permission
-</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Build<span style="color:#f92672">.</span><span style="color:#a6e22e">VERSION</span><span style="color:#f92672">.</span><span style="color:#a6e22e">SDK_INT</span> <span style="color:#f92672">&gt;=</span> Build<span style="color:#f92672">.</span><span style="color:#a6e22e">VERSION_CODES</span><span style="color:#f92672">.</span><span style="color:#a6e22e">R</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>ContextCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">checkSelfPermission</span><span style="color:#f92672">(</span>MainActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">,</span> Manifest<span style="color:#f92672">.</span><span style="color:#a6e22e">permission</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ACCESS_BACKGROUND_LOCATION</span><span style="color:#f92672">)</span> <span style="color:#f92672">==</span> PackageManager<span style="color:#f92672">.</span><span style="color:#a6e22e">PERMISSION_GRANTED</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                    <span style="color:#75715e">// Background Location Permission is granted so do your work here
-</span><span style="color:#75715e"></span>                <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-                    <span style="color:#75715e">// Ask for Background Location Permission
-</span><span style="color:#75715e"></span>                    askPermissionForBackgroundUsage<span style="color:#f92672">();</span>
-                <span style="color:#f92672">}</span>
-            <span style="color:#f92672">}</span>
-        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-            <span style="color:#75715e">// Fine Location Permission is not granted so ask for permission
-</span><span style="color:#75715e"></span>            askForLocationPermission<span style="color:#f92672">();</span>
-        <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span>
-
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">askForLocationPermission</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>ActivityCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">shouldShowRequestPermissionRationale</span><span style="color:#f92672">(</span>MainActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">,</span> Manifest<span style="color:#f92672">.</span><span style="color:#a6e22e">permission</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ACCESS_FINE_LOCATION</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">new</span> AlertDialog<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">)</span>
-                    <span style="color:#f92672">.</span><span style="color:#a6e22e">setTitle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Permission Needed!&#34;</span><span style="color:#f92672">)</span>
-                    <span style="color:#f92672">.</span><span style="color:#a6e22e">setMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Location Permission Needed!&#34;</span><span style="color:#f92672">)</span>
-                    <span style="color:#f92672">.</span><span style="color:#a6e22e">setPositiveButton</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;OK&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> DialogInterface<span style="color:#f92672">.</span><span style="color:#a6e22e">OnClickListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-                        <span style="color:#a6e22e">@Override</span>
-                        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>DialogInterface dialog<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> which<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                            ActivityCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">requestPermissions</span><span style="color:#f92672">(</span>MainActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">,</span>
-                                    <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]{</span>Manifest<span style="color:#f92672">.</span><span style="color:#a6e22e">permission</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ACCESS_FINE_LOCATION</span><span style="color:#f92672">},</span> LOCATION_PERMISSION_CODE<span style="color:#f92672">);</span>
-                        <span style="color:#f92672">}</span>
-                    <span style="color:#f92672">})</span>
-                    <span style="color:#f92672">.</span><span style="color:#a6e22e">setNegativeButton</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;CANCEL&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> DialogInterface<span style="color:#f92672">.</span><span style="color:#a6e22e">OnClickListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-                        <span style="color:#a6e22e">@Override</span>
-                        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>DialogInterface dialog<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> which<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                            <span style="color:#75715e">// Permission is denied by the user
-</span><span style="color:#75715e"></span>                        <span style="color:#f92672">}</span>
-                    <span style="color:#f92672">})</span>
-                    <span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">().</span><span style="color:#a6e22e">show</span><span style="color:#f92672">();</span>
-        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-            ActivityCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">requestPermissions</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span>
-                    <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]{</span>Manifest<span style="color:#f92672">.</span><span style="color:#a6e22e">permission</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ACCESS_FINE_LOCATION</span><span style="color:#f92672">},</span> LOCATION_PERMISSION_CODE<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span>
-
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">askPermissionForBackgroundUsage</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>ActivityCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">shouldShowRequestPermissionRationale</span><span style="color:#f92672">(</span>MainActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">,</span> Manifest<span style="color:#f92672">.</span><span style="color:#a6e22e">permission</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ACCESS_BACKGROUND_LOCATION</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">new</span> AlertDialog<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">)</span>
-                    <span style="color:#f92672">.</span><span style="color:#a6e22e">setTitle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Permission Needed!&#34;</span><span style="color:#f92672">)</span>
-                    <span style="color:#f92672">.</span><span style="color:#a6e22e">setMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Background Location Permission Needed!, tap \&#34;Allow all time in the next screen\&#34;&#34;</span><span style="color:#f92672">)</span>
-                    <span style="color:#f92672">.</span><span style="color:#a6e22e">setPositiveButton</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;OK&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> DialogInterface<span style="color:#f92672">.</span><span style="color:#a6e22e">OnClickListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-                        <span style="color:#a6e22e">@Override</span>
-                        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>DialogInterface dialog<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> which<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                            ActivityCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">requestPermissions</span><span style="color:#f92672">(</span>MainActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">,</span>
-                                    <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]{</span>Manifest<span style="color:#f92672">.</span><span style="color:#a6e22e">permission</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ACCESS_BACKGROUND_LOCATION</span><span style="color:#f92672">},</span> BACKGROUND_LOCATION_PERMISSION_CODE<span style="color:#f92672">);</span>
-                        <span style="color:#f92672">}</span>
-                    <span style="color:#f92672">})</span>
-                    <span style="color:#f92672">.</span><span style="color:#a6e22e">setNegativeButton</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;CANCEL&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> DialogInterface<span style="color:#f92672">.</span><span style="color:#a6e22e">OnClickListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-                        <span style="color:#a6e22e">@Override</span>
-                        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>DialogInterface dialog<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> which<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                            <span style="color:#75715e">// User declined for Background Location Permission.
-</span><span style="color:#75715e"></span>                        <span style="color:#f92672">}</span>
-                    <span style="color:#f92672">})</span>
-                    <span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">().</span><span style="color:#a6e22e">show</span><span style="color:#f92672">();</span>
-        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-            ActivityCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">requestPermissions</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span>
-                    <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]{</span>Manifest<span style="color:#f92672">.</span><span style="color:#a6e22e">permission</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ACCESS_BACKGROUND_LOCATION</span><span style="color:#f92672">},</span> BACKGROUND_LOCATION_PERMISSION_CODE<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span>
-
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onRequestPermissionsResult</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> requestCode<span style="color:#f92672">,</span> <span style="color:#a6e22e">@NonNull</span> String<span style="color:#f92672">[]</span> permissions<span style="color:#f92672">,</span> <span style="color:#a6e22e">@NonNull</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> grantResults<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onRequestPermissionsResult</span><span style="color:#f92672">(</span>requestCode<span style="color:#f92672">,</span> permissions<span style="color:#f92672">,</span> grantResults<span style="color:#f92672">);</span>
-
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>requestCode <span style="color:#f92672">==</span> LOCATION_PERMISSION_CODE<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>grantResults<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> PackageManager<span style="color:#f92672">.</span><span style="color:#a6e22e">PERMISSION_GRANTED</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                <span style="color:#75715e">// User granted location permission
-</span><span style="color:#75715e"></span>                <span style="color:#75715e">// Now check if android version &gt;= 11, if &gt;= 11 check for Background Location Permission
-</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Build<span style="color:#f92672">.</span><span style="color:#a6e22e">VERSION</span><span style="color:#f92672">.</span><span style="color:#a6e22e">SDK_INT</span> <span style="color:#f92672">&gt;=</span> Build<span style="color:#f92672">.</span><span style="color:#a6e22e">VERSION_CODES</span><span style="color:#f92672">.</span><span style="color:#a6e22e">R</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>ContextCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">checkSelfPermission</span><span style="color:#f92672">(</span>MainActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">,</span> Manifest<span style="color:#f92672">.</span><span style="color:#a6e22e">permission</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ACCESS_BACKGROUND_LOCATION</span><span style="color:#f92672">)</span> <span style="color:#f92672">==</span> PackageManager<span style="color:#f92672">.</span><span style="color:#a6e22e">PERMISSION_GRANTED</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                        <span style="color:#75715e">// Background Location Permission is granted so do your work here
-</span><span style="color:#75715e"></span>                    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-                        <span style="color:#75715e">// Ask for Background Location Permission
-</span><span style="color:#75715e"></span>                        askPermissionForBackgroundUsage<span style="color:#f92672">();</span>
-                    <span style="color:#f92672">}</span>
-                <span style="color:#f92672">}</span>
-            <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-                <span style="color:#75715e">// User denied location permission
-</span><span style="color:#75715e"></span>            <span style="color:#f92672">}</span>
-        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>requestCode <span style="color:#f92672">==</span> BACKGROUND_LOCATION_PERMISSION_CODE<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>grantResults<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> PackageManager<span style="color:#f92672">.</span><span style="color:#a6e22e">PERMISSION_GRANTED</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                <span style="color:#75715e">// User granted for Background Location Permission.
-</span><span style="color:#75715e"></span>            <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-                <span style="color:#75715e">// User declined for Background Location Permission.
-</span><span style="color:#75715e"></span>            <span style="color:#f92672">}</span>
-        <span style="color:#f92672">}</span>
-
-    <span style="color:#f92672">}</span>
-</code></pre></div><p>How we take permissions is explained in the above code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">checkPermission</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (ContextCompat.<span style="color:#a6e22e">checkSelfPermission</span>(MainActivity.<span style="color:#a6e22e">this</span>, Manifest.<span style="color:#a6e22e">permission</span>.<span style="color:#a6e22e">ACCESS_FINE_LOCATION</span>) <span style="color:#f92672">==</span> PackageManager.<span style="color:#a6e22e">PERMISSION_GRANTED</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Fine Location permission is granted</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Check if current android version &gt;= 11, if &gt;= 11 check for Background Location permission</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (Build.<span style="color:#a6e22e">VERSION</span>.<span style="color:#a6e22e">SDK_INT</span> <span style="color:#f92672">&gt;=</span> Build.<span style="color:#a6e22e">VERSION_CODES</span>.<span style="color:#a6e22e">R</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> (ContextCompat.<span style="color:#a6e22e">checkSelfPermission</span>(MainActivity.<span style="color:#a6e22e">this</span>, Manifest.<span style="color:#a6e22e">permission</span>.<span style="color:#a6e22e">ACCESS_BACKGROUND_LOCATION</span>) <span style="color:#f92672">==</span> PackageManager.<span style="color:#a6e22e">PERMISSION_GRANTED</span>) {
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e">// Background Location Permission is granted so do your work here</span>
+</span></span><span style="display:flex;"><span>                } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e">// Ask for Background Location Permission</span>
+</span></span><span style="display:flex;"><span>                    askPermissionForBackgroundUsage();
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Fine Location Permission is not granted so ask for permission</span>
+</span></span><span style="display:flex;"><span>            askForLocationPermission();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">askForLocationPermission</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (ActivityCompat.<span style="color:#a6e22e">shouldShowRequestPermissionRationale</span>(MainActivity.<span style="color:#a6e22e">this</span>, Manifest.<span style="color:#a6e22e">permission</span>.<span style="color:#a6e22e">ACCESS_FINE_LOCATION</span>)) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">new</span> AlertDialog.<span style="color:#a6e22e">Builder</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>                    .<span style="color:#a6e22e">setTitle</span>(<span style="color:#e6db74">&#34;Permission Needed!&#34;</span>)
+</span></span><span style="display:flex;"><span>                    .<span style="color:#a6e22e">setMessage</span>(<span style="color:#e6db74">&#34;Location Permission Needed!&#34;</span>)
+</span></span><span style="display:flex;"><span>                    .<span style="color:#a6e22e">setPositiveButton</span>(<span style="color:#e6db74">&#34;OK&#34;</span>, <span style="color:#66d9ef">new</span> DialogInterface.<span style="color:#a6e22e">OnClickListener</span>() {
+</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span>(DialogInterface dialog, <span style="color:#66d9ef">int</span> which) {
+</span></span><span style="display:flex;"><span>                            ActivityCompat.<span style="color:#a6e22e">requestPermissions</span>(MainActivity.<span style="color:#a6e22e">this</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]</span>{Manifest.<span style="color:#a6e22e">permission</span>.<span style="color:#a6e22e">ACCESS_FINE_LOCATION</span>}, LOCATION_PERMISSION_CODE);
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    })
+</span></span><span style="display:flex;"><span>                    .<span style="color:#a6e22e">setNegativeButton</span>(<span style="color:#e6db74">&#34;CANCEL&#34;</span>, <span style="color:#66d9ef">new</span> DialogInterface.<span style="color:#a6e22e">OnClickListener</span>() {
+</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span>(DialogInterface dialog, <span style="color:#66d9ef">int</span> which) {
+</span></span><span style="display:flex;"><span>                            <span style="color:#75715e">// Permission is denied by the user</span>
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    })
+</span></span><span style="display:flex;"><span>                    .<span style="color:#a6e22e">create</span>().<span style="color:#a6e22e">show</span>();
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            ActivityCompat.<span style="color:#a6e22e">requestPermissions</span>(<span style="color:#66d9ef">this</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]</span>{Manifest.<span style="color:#a6e22e">permission</span>.<span style="color:#a6e22e">ACCESS_FINE_LOCATION</span>}, LOCATION_PERMISSION_CODE);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">askPermissionForBackgroundUsage</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (ActivityCompat.<span style="color:#a6e22e">shouldShowRequestPermissionRationale</span>(MainActivity.<span style="color:#a6e22e">this</span>, Manifest.<span style="color:#a6e22e">permission</span>.<span style="color:#a6e22e">ACCESS_BACKGROUND_LOCATION</span>)) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">new</span> AlertDialog.<span style="color:#a6e22e">Builder</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>                    .<span style="color:#a6e22e">setTitle</span>(<span style="color:#e6db74">&#34;Permission Needed!&#34;</span>)
+</span></span><span style="display:flex;"><span>                    .<span style="color:#a6e22e">setMessage</span>(<span style="color:#e6db74">&#34;Background Location Permission Needed!, tap \&#34;Allow all time in the next screen\&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>                    .<span style="color:#a6e22e">setPositiveButton</span>(<span style="color:#e6db74">&#34;OK&#34;</span>, <span style="color:#66d9ef">new</span> DialogInterface.<span style="color:#a6e22e">OnClickListener</span>() {
+</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span>(DialogInterface dialog, <span style="color:#66d9ef">int</span> which) {
+</span></span><span style="display:flex;"><span>                            ActivityCompat.<span style="color:#a6e22e">requestPermissions</span>(MainActivity.<span style="color:#a6e22e">this</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]</span>{Manifest.<span style="color:#a6e22e">permission</span>.<span style="color:#a6e22e">ACCESS_BACKGROUND_LOCATION</span>}, BACKGROUND_LOCATION_PERMISSION_CODE);
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    })
+</span></span><span style="display:flex;"><span>                    .<span style="color:#a6e22e">setNegativeButton</span>(<span style="color:#e6db74">&#34;CANCEL&#34;</span>, <span style="color:#66d9ef">new</span> DialogInterface.<span style="color:#a6e22e">OnClickListener</span>() {
+</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span>(DialogInterface dialog, <span style="color:#66d9ef">int</span> which) {
+</span></span><span style="display:flex;"><span>                            <span style="color:#75715e">// User declined for Background Location Permission.</span>
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    })
+</span></span><span style="display:flex;"><span>                    .<span style="color:#a6e22e">create</span>().<span style="color:#a6e22e">show</span>();
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            ActivityCompat.<span style="color:#a6e22e">requestPermissions</span>(<span style="color:#66d9ef">this</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]</span>{Manifest.<span style="color:#a6e22e">permission</span>.<span style="color:#a6e22e">ACCESS_BACKGROUND_LOCATION</span>}, BACKGROUND_LOCATION_PERMISSION_CODE);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onRequestPermissionsResult</span>(<span style="color:#66d9ef">int</span> requestCode, <span style="color:#a6e22e">@NonNull</span> String<span style="color:#f92672">[]</span> permissions, <span style="color:#a6e22e">@NonNull</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> grantResults) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span>.<span style="color:#a6e22e">onRequestPermissionsResult</span>(requestCode, permissions, grantResults);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (requestCode <span style="color:#f92672">==</span> LOCATION_PERMISSION_CODE) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (grantResults<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> PackageManager.<span style="color:#a6e22e">PERMISSION_GRANTED</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// User granted location permission</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// Now check if android version &gt;= 11, if &gt;= 11 check for Background Location Permission</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> (Build.<span style="color:#a6e22e">VERSION</span>.<span style="color:#a6e22e">SDK_INT</span> <span style="color:#f92672">&gt;=</span> Build.<span style="color:#a6e22e">VERSION_CODES</span>.<span style="color:#a6e22e">R</span>) {
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> (ContextCompat.<span style="color:#a6e22e">checkSelfPermission</span>(MainActivity.<span style="color:#a6e22e">this</span>, Manifest.<span style="color:#a6e22e">permission</span>.<span style="color:#a6e22e">ACCESS_BACKGROUND_LOCATION</span>) <span style="color:#f92672">==</span> PackageManager.<span style="color:#a6e22e">PERMISSION_GRANTED</span>) {
+</span></span><span style="display:flex;"><span>                        <span style="color:#75715e">// Background Location Permission is granted so do your work here</span>
+</span></span><span style="display:flex;"><span>                    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>                        <span style="color:#75715e">// Ask for Background Location Permission</span>
+</span></span><span style="display:flex;"><span>                        askPermissionForBackgroundUsage();
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// User denied location permission</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (requestCode <span style="color:#f92672">==</span> BACKGROUND_LOCATION_PERMISSION_CODE) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (grantResults<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> PackageManager.<span style="color:#a6e22e">PERMISSION_GRANTED</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// User granted for Background Location Permission.</span>
+</span></span><span style="display:flex;"><span>            } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// User declined for Background Location Permission.</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>How we take permissions is explained in the above code.</p>
 <p>After doing above steps, location permission is set to <strong>“Allow all the time”</strong>.</p>
 <p><strong><em>Points to note:</em></strong></p>
 <ol>
@@ -278,12 +278,12 @@
 <li>In Android Version lower than 11, ACCESS_BACKGROUND_LOCATION shows a dialog like this:</li>
 </ol>
 <figure class="center-img"><img src="https://cdn-images-1.medium.com/max/800/1*gkQDmEKx8BsUo-A8mbiIDw.jpeg"
-         alt="Location" width="50%"/>
+    alt="Location" width="50%">
 </figure>
 
 <p>and in Android 11 and above, it looks like this:</p>
 <figure class="center-img"><img src="https://cdn-images-1.medium.com/max/800/1*iHahx80O0Fy5tNTKt9OnfQ.png"
-         alt="Location" width="50%"/>
+    alt="Location" width="50%">
 </figure>
 
 <p><img src="" alt=""></p>

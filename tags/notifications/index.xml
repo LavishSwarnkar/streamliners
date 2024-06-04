@@ -4,39 +4,30 @@
     <title>Notifications on The Streamliners</title>
     <link>https://thestreamliners.in/tags/notifications/</link>
     <description>Recent content in Notifications on The Streamliners</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/notifications/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://thestreamliners.in/tags/notifications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notification Broadcast using BitVector</title>
       <link>https://thestreamliners.in/blog/notification-broadcast-using-bitvector/</link>
       <pubDate>Sat, 14 Aug 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/notification-broadcast-using-bitvector/</guid>
-      <description>Namaskaram,
-In this blog, I will be sharing an amazing story where I used BitVector &amp;amp; Bitwise operators to save myself from writing complex code &amp;amp; also using up a lot of Server Bandwidth.
-The problem During my journey as an Android Developer, I came across a use case where I needed to send personalized notifications to my users.
-This app was JU eezy, which I developed for our University. I had to send notifications to users based on their profile.</description>
+      <description>Namaskaram,&#xA;In this blog, I will be sharing an amazing story where I used BitVector &amp;amp; Bitwise operators to save myself from writing complex code &amp;amp; also using up a lot of Server Bandwidth.&#xA;The problem During my journey as an Android Developer, I came across a use case where I needed to send personalized notifications to my users.&#xA;This app was JU eezy, which I developed for our University. I had to send notifications to users based on their profile.</description>
     </item>
-    
     <item>
       <title>Creating custom notifications</title>
       <link>https://thestreamliners.in/blog/creating-custom-notifications/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/creating-custom-notifications/</guid>
-      <description>Notifications alert you to many things on your Android device, including incoming messages, new emails, and calendar events. Notifications work slightly differently for each app, but they&amp;rsquo;re easy to customize.
-Starting in Android 8.0 (API level 26), all notifications must be assigned to a channel. For each channel, you can set the visual and auditory behavior that is applied to all notifications in that channel. Then, users can change these settings and decide which notification channels from your app should be intrusive or visible at all.</description>
+      <description>Notifications alert you to many things on your Android device, including incoming messages, new emails, and calendar events. Notifications work slightly differently for each app, but they&amp;rsquo;re easy to customize.&#xA;Starting in Android 8.0 (API level 26), all notifications must be assigned to a channel. For each channel, you can set the visual and auditory behavior that is applied to all notifications in that channel. Then, users can change these settings and decide which notification channels from your app should be intrusive or visible at all.</description>
     </item>
-    
     <item>
       <title>Firebase Push notifications using Admin SDK</title>
       <link>https://thestreamliners.in/blog/firebase-push-notifications-in-android-using-admin-sdk/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/firebase-push-notifications-in-android-using-admin-sdk/</guid>
-      <description>How to send push notifications through an Android app using firebase?  A notification is a message you can display to the user outside of your application’s normal UI. When you tell the system to issue a notification, it first appears as an icon in the notification area. Notifications are important to give timely updates to your android app users they require minimal UI to notify the user about the event.</description>
+      <description>How to send push notifications through an Android app using firebase? A notification is a message you can display to the user outside of your application’s normal UI. When you tell the system to issue a notification, it first appears as an icon in the notification area. Notifications are important to give timely updates to your android app users they require minimal UI to notify the user about the event.</description>
     </item>
-    
   </channel>
 </rss>

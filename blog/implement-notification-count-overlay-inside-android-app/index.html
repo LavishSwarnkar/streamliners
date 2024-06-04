@@ -59,7 +59,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a href="https://thestreamliners.in" class="navbar-brand">
+    <a href="https://thestreamliners.in/" class="navbar-brand">
       <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
     </a>
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
@@ -73,32 +73,32 @@
         
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#home"
+          <a href="https://thestreamliners.in/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#service"
+          <a href="https://thestreamliners.in/#service"
             class="nav-link text-dark text-sm-center p-2 ">Services</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#portfolio"
+          <a href="https://thestreamliners.in/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#blog"
+          <a href="https://thestreamliners.in/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/contact"
+          <a href="https://thestreamliners.in//contact"
             class="nav-link text-dark text-sm-center p-2 ">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/about-us"
+          <a href="https://thestreamliners.in//about-us"
             class="nav-link text-dark text-sm-center p-2 ">About us</a>
         </li>
         
@@ -123,7 +123,7 @@
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/>Home</a></li>
             <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
           </ol>
         </nav>
@@ -164,88 +164,88 @@
           <div class="col-lg-12">
               <div class="singleBlog__content">
                   <figure class="center-img"><img src="https://i.stack.imgur.com/a0DYs.png"
-         alt="Notification count" width="100%"/>
+    alt="Notification count" width="100%">
 </figure>
 
 <p>Do you want to add <strong>notification count or badge</strong> like this to your app? Well everyone developer wants to add it  as it <strong><!-- raw HTML omitted -->improves User Experience<!-- raw HTML omitted --></strong> significantly.</p>
 <p>Its always handy to know how many notification I have when I open my app.</p>
 <p>For the demo purpose we shall be creating this layout.</p>
 <figure class="center-img"><img src="https://raw.githubusercontent.com/Iltwats/CDN/master/2021/06/01-17-59-56-demo.png"
-         alt="Notification count" width="100%"/>
+    alt="Notification count" width="100%">
 </figure>
 
 <h2 id="step-1">Step 1</h2>
 <p>Add this custom UI implementation to <code>app-level gradle</code> file. We will be using this <a href="https://github.com/nex3z/NotificationBadge">library</a>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scheme" data-lang="scheme">implementation <span style="color:#e6db74">&#39;com</span><span style="color:#f92672">.</span>nex3z:notification-badge:1<span style="color:#f92672">.</span><span style="color:#ae81ff">0.4</span><span style="color:#f92672">&#39;</span>
-</code></pre></div><h2 id="step-2">Step 2</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span>implementation <span style="color:#e6db74">&#39;com</span><span style="color:#f92672">.</span>nex3z:notification-badge:1<span style="color:#f92672">.</span><span style="color:#ae81ff">0.4</span><span style="color:#f92672">&#39;</span>
+</span></span></code></pre></div><h2 id="step-2">Step 2</h2>
 <p>Create a layout for the icon <code>res/layout/notification_icon_overlay.xml</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#f92672">&lt;RelativeLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
-    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
-    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
-    <span style="color:#a6e22e">xmlns:app=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res-auto&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;ImageView</span>
-        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/image&#34;</span>
-        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
-        <span style="color:#a6e22e">android:src=</span><span style="color:#e6db74">&#34;@drawable/ic_baseline_notifications_24&#34;</span> <span style="color:#f92672">/&gt;</span> // icon for image
-    <span style="color:#f92672">&lt;com.nex3z.notificationbadge.NotificationBadge</span>
-        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/badge_count&#34;</span>
-        <span style="color:#a6e22e">android:layout_toEndOf=</span><span style="color:#e6db74">&#34;@id/image&#34;</span>
-        <span style="color:#a6e22e">android:layout_alignTop=</span><span style="color:#e6db74">&#34;@id/image&#34;</span>
-        <span style="color:#a6e22e">android:layout_marginStart=</span><span style="color:#e6db74">&#34;-18dp&#34;</span>
-        <span style="color:#a6e22e">app:nbAnimationEnabled=</span><span style="color:#e6db74">&#34;true&#34;</span>
-        <span style="color:#a6e22e">app:nbAnimationDuration=</span><span style="color:#e6db74">&#34;1000&#34;</span>
-        <span style="color:#a6e22e">android:layout_marginTop=</span><span style="color:#e6db74">&#34;4dp&#34;</span>
-        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-        <span style="color:#a6e22e">app:nbBackground=</span><span style="color:#e6db74">&#34;@drawable/notification_badge&#34;</span>
-        <span style="color:#a6e22e">app:nbMaxTextLength=</span><span style="color:#e6db74">&#34;3&#34;</span><span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/RelativeLayout&gt;</span>
-</code></pre></div><h2 id="step-3">Step 3</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;RelativeLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xmlns:app=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res-auto&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;ImageView</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/image&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:src=</span><span style="color:#e6db74">&#34;@drawable/ic_baseline_notifications_24&#34;</span> <span style="color:#f92672">/&gt;</span> // icon for image
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;com.nex3z.notificationbadge.NotificationBadge</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/badge_count&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_toEndOf=</span><span style="color:#e6db74">&#34;@id/image&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_alignTop=</span><span style="color:#e6db74">&#34;@id/image&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_marginStart=</span><span style="color:#e6db74">&#34;-18dp&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:nbAnimationEnabled=</span><span style="color:#e6db74">&#34;true&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:nbAnimationDuration=</span><span style="color:#e6db74">&#34;1000&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_marginTop=</span><span style="color:#e6db74">&#34;4dp&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:nbBackground=</span><span style="color:#e6db74">&#34;@drawable/notification_badge&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:nbMaxTextLength=</span><span style="color:#e6db74">&#34;3&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/RelativeLayout&gt;</span>
+</span></span></code></pre></div><h2 id="step-3">Step 3</h2>
 <p>Create a <strong>menu item</strong> to show that layout in app bar <code>res/menu/notification_menu.xml</code>. Add the above layout inside this item under <code>actionLayout</code> attribute.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#f92672">&lt;menu</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
-    <span style="color:#a6e22e">xmlns:app=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res-auto&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;item</span>
-        <span style="color:#a6e22e">android:title=</span><span style="color:#e6db74">&#34;@string/notification&#34;</span>
-        <span style="color:#a6e22e">android:icon=</span><span style="color:#e6db74">&#34;@drawable/ic_baseline_notifications_24&#34;</span>
-        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/notification_bell&#34;</span>
-        <span style="color:#a6e22e">android:actionLayout=</span><span style="color:#e6db74">&#34;@layout/notification_icon_overlay&#34;</span>
-        <span style="color:#a6e22e">app:showAsAction=</span><span style="color:#e6db74">&#34;ifRoom&#34;</span><span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/menu&gt;</span>
-</code></pre></div><p>Now you should be able to see its preview in Studio.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;menu</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xmlns:app=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res-auto&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;item</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:title=</span><span style="color:#e6db74">&#34;@string/notification&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:icon=</span><span style="color:#e6db74">&#34;@drawable/ic_baseline_notifications_24&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/notification_bell&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:actionLayout=</span><span style="color:#e6db74">&#34;@layout/notification_icon_overlay&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">app:showAsAction=</span><span style="color:#e6db74">&#34;ifRoom&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/menu&gt;</span>
+</span></span></code></pre></div><p>Now you should be able to see its preview in Studio.</p>
 <h2 id="step-4">Step 4</h2>
 <p>Inflate this menu item in our <strong>MainActivity</strong> by overriding the <code>onCreateOptionsMenu</code> method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">static</span> NotificationBadge mBadge<span style="color:#f92672">;</span>
-<span style="color:#a6e22e">@Override</span>
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCreateOptionsMenu</span><span style="color:#f92672">(</span>Menu menu<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    MenuInflater inflater <span style="color:#f92672">=</span> getMenuInflater<span style="color:#f92672">();</span>
-    inflater<span style="color:#f92672">.</span><span style="color:#a6e22e">inflate</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">menu</span><span style="color:#f92672">.</span><span style="color:#a6e22e">notifications_menu</span><span style="color:#f92672">,</span> menu<span style="color:#f92672">);</span>
-        <span style="color:#75715e">// getting item id to get its layout
-</span><span style="color:#75715e"></span>    MenuItem item <span style="color:#f92672">=</span> menu<span style="color:#f92672">.</span><span style="color:#a6e22e">findItem</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">notification_bell</span><span style="color:#f92672">);</span>
-    MenuItemCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">setActionView</span><span style="color:#f92672">(</span>item<span style="color:#f92672">,</span> R<span style="color:#f92672">.</span><span style="color:#a6e22e">layout</span><span style="color:#f92672">.</span><span style="color:#a6e22e">notification_icon_overlay</span><span style="color:#f92672">);</span>
-        <span style="color:#75715e">// getting the layout from menu option to set badge actions
-</span><span style="color:#75715e"></span>    RelativeLayout notifCount <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>RelativeLayout<span style="color:#f92672">)</span> MenuItemCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">getActionView</span><span style="color:#f92672">(</span>item<span style="color:#f92672">);</span>
-    notifCount<span style="color:#f92672">.</span><span style="color:#a6e22e">setOnClickListener</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> View<span style="color:#f92672">.</span><span style="color:#a6e22e">OnClickListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        <span style="color:#a6e22e">@Override</span>
-        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>View v<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            openNotificationActivity<span style="color:#f92672">();</span> <span style="color:#75715e">// what happens when icon is clicked
-</span><span style="color:#75715e"></span>        <span style="color:#f92672">}</span>
-    <span style="color:#f92672">});</span>
-    mBadge <span style="color:#f92672">=</span> notifCount<span style="color:#f92672">.</span><span style="color:#a6e22e">findViewById</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">badge_count</span><span style="color:#f92672">);</span>
-    mBadge<span style="color:#f92672">.</span><span style="color:#a6e22e">setNumber</span><span style="color:#f92672">(</span>getNotificationsCount<span style="color:#f92672">());</span>
-    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>Here <code>getNotificationCount()</code> method returns the integer about how many notification your app may have. If you set 0 (zero) on <code>setNumber</code> method the overlay will not display.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">static</span> NotificationBadge mBadge;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCreateOptionsMenu</span>(Menu menu) {
+</span></span><span style="display:flex;"><span>    MenuInflater inflater <span style="color:#f92672">=</span> getMenuInflater();
+</span></span><span style="display:flex;"><span>    inflater.<span style="color:#a6e22e">inflate</span>(R.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">notifications_menu</span>, menu);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// getting item id to get its layout</span>
+</span></span><span style="display:flex;"><span>    MenuItem item <span style="color:#f92672">=</span> menu.<span style="color:#a6e22e">findItem</span>(R.<span style="color:#a6e22e">id</span>.<span style="color:#a6e22e">notification_bell</span>);
+</span></span><span style="display:flex;"><span>    MenuItemCompat.<span style="color:#a6e22e">setActionView</span>(item, R.<span style="color:#a6e22e">layout</span>.<span style="color:#a6e22e">notification_icon_overlay</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// getting the layout from menu option to set badge actions</span>
+</span></span><span style="display:flex;"><span>    RelativeLayout notifCount <span style="color:#f92672">=</span> (RelativeLayout) MenuItemCompat.<span style="color:#a6e22e">getActionView</span>(item);
+</span></span><span style="display:flex;"><span>    notifCount.<span style="color:#a6e22e">setOnClickListener</span>(<span style="color:#66d9ef">new</span> View.<span style="color:#a6e22e">OnClickListener</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span>(View v) {
+</span></span><span style="display:flex;"><span>            openNotificationActivity(); <span style="color:#75715e">// what happens when icon is clicked</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    mBadge <span style="color:#f92672">=</span> notifCount.<span style="color:#a6e22e">findViewById</span>(R.<span style="color:#a6e22e">id</span>.<span style="color:#a6e22e">badge_count</span>);
+</span></span><span style="display:flex;"><span>    mBadge.<span style="color:#a6e22e">setNumber</span>(getNotificationsCount());
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Here <code>getNotificationCount()</code> method returns the integer about how many notification your app may have. If you set 0 (zero) on <code>setNumber</code> method the overlay will not display.</p>
 <h2 id="step-5">Step 5</h2>
 <p>If you wish to update notification counter after the activity is created or after opening the notifications activity call this method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onResume</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onResume</span><span style="color:#f92672">();</span>
-        invalidateOptionsMenu<span style="color:#f92672">();</span> <span style="color:#75715e">// it will make all the menu items to be redrawn.
-</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
-</code></pre></div><p><code>invalidateOptionsMenu()</code> can be called only from activities life cycle methods. Placing it somewhere else won&rsquo;t work.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onResume</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span>.<span style="color:#a6e22e">onResume</span>();
+</span></span><span style="display:flex;"><span>        invalidateOptionsMenu(); <span style="color:#75715e">// it will make all the menu items to be redrawn.</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p><code>invalidateOptionsMenu()</code> can be called only from activities life cycle methods. Placing it somewhere else won&rsquo;t work.</p>
 <p>That&rsquo;s It 🙌. In just 5 steps you created a notification badge overlay.</p>
 <p><strong>Hope it helped. Happy Coding</strong> 😀</p>
 

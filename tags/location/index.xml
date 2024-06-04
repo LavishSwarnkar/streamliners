@@ -4,19 +4,16 @@
     <title>Location on The Streamliners</title>
     <link>https://thestreamliners.in/tags/location/</link>
     <description>Recent content in Location on The Streamliners</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/location/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://thestreamliners.in/tags/location/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implement Location Picker like Ola and Uber in Android Effortlessly</title>
       <link>https://thestreamliners.in/blog/location-picker-like-ola-and-uber-in-android/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/location-picker-like-ola-and-uber-in-android/</guid>
-      <description>We all come across applications or ideas where we may want users to pick or select their location from maps. From a UX perspective, it is more convenient to pick a location than to manually enter the fields given.
-Also, from the developer&amp;rsquo;s perspective getting user location with pinpoint accuracy helps in getting the job done as required concerning location more precisely.
-So, how to implement it? Well, it&amp;rsquo;s quite easy, you just have to call a few Google Maps APIs, set up location permissions precisely, and create your layout for location picker and that’s all!</description>
+      <description>We all come across applications or ideas where we may want users to pick or select their location from maps. From a UX perspective, it is more convenient to pick a location than to manually enter the fields given.&#xA;Also, from the developer&amp;rsquo;s perspective getting user location with pinpoint accuracy helps in getting the job done as required concerning location more precisely.&#xA;So, how to implement it? Well, it&amp;rsquo;s quite easy, you just have to call a few Google Maps APIs, set up location permissions precisely, and create your layout for location picker and that’s all!</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,30 +4,23 @@
     <title>Mohit Singh on The Streamliners</title>
     <link>https://thestreamliners.in/authors/mohit-singh/</link>
     <description>Recent content in Mohit Singh on The Streamliners</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/authors/mohit-singh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://thestreamliners.in/authors/mohit-singh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Firebase Log Events</title>
       <link>https://thestreamliners.in/blog/firebase-log-events/</link>
       <pubDate>Sun, 08 Aug 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/firebase-log-events/</guid>
-      <description>Firebase provides very powerful feature which is “Log Events”. The power of this feature is that you can check which feature of your app is used mostly by the users.
-Let’s deep dive into the implementation (note that the complete implementation is in Java)
-Add this library in your build.gradle file:
-implementation &amp;#39;com.google.firebase:firebase-analytics&amp;#39; I had used firebase bom in my project so their is no need to give version to firebase-analytics library</description>
+      <description>Firebase provides very powerful feature which is “Log Events”. The power of this feature is that you can check which feature of your app is used mostly by the users.&#xA;Let’s deep dive into the implementation (note that the complete implementation is in Java)&#xA;Add this library in your build.gradle file:&#xA;implementation &amp;#39;com.google.firebase:firebase-analytics&amp;#39; I had used firebase bom in my project so their is no need to give version to firebase-analytics library</description>
     </item>
-    
     <item>
       <title>Background Location Permission in Android 11 and above</title>
       <link>https://thestreamliners.in/blog/background-location-permission-in-android-11-and-above/</link>
       <pubDate>Wed, 23 Jun 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/background-location-permission-in-android-11-and-above/</guid>
-      <description>Request background location permission in all android versions using Java With lastest android version Android 11, some security is added for location. Now to access background location, users have to manually “Allow all the time” in settings.
-For using foreground and background location in lower versions of Android 11, we can take permission ACCESS_FINE_LOCATION, this permission will be considered for both foreground and background but with Android 11 and above you have to take one more permission ACCESS_BACKGROUND_LOCATION separately.</description>
+      <description>Request background location permission in all android versions using Java With lastest android version Android 11, some security is added for location. Now to access background location, users have to manually “Allow all the time” in settings.&#xA;For using foreground and background location in lower versions of Android 11, we can take permission ACCESS_FINE_LOCATION, this permission will be considered for both foreground and background but with Android 11 and above you have to take one more permission ACCESS_BACKGROUND_LOCATION separately.</description>
     </item>
-    
   </channel>
 </rss>

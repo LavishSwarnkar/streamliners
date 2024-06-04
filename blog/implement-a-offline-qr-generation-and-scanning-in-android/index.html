@@ -59,7 +59,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a href="https://thestreamliners.in" class="navbar-brand">
+    <a href="https://thestreamliners.in/" class="navbar-brand">
       <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
     </a>
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
@@ -73,32 +73,32 @@
         
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#home"
+          <a href="https://thestreamliners.in/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#service"
+          <a href="https://thestreamliners.in/#service"
             class="nav-link text-dark text-sm-center p-2 ">Services</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#portfolio"
+          <a href="https://thestreamliners.in/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#blog"
+          <a href="https://thestreamliners.in/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/contact"
+          <a href="https://thestreamliners.in//contact"
             class="nav-link text-dark text-sm-center p-2 ">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/about-us"
+          <a href="https://thestreamliners.in//about-us"
             class="nav-link text-dark text-sm-center p-2 ">About us</a>
         </li>
         
@@ -123,7 +123,7 @@
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/>Home</a></li>
             <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
           </ol>
         </nav>
@@ -170,73 +170,73 @@
 <p>We shall follow the following steps to implement QR code system in our application:</p>
 <h2 id="step-1">Step 1</h2>
 <p>Add following gradle dependencies to your <code>app-level gradle</code> file.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">implementation <span style="color:#960050;background-color:#1e0010">&#39;</span>com<span style="color:#f92672">.</span><span style="color:#a6e22e">google</span><span style="color:#f92672">.</span><span style="color:#a6e22e">android</span><span style="color:#f92672">.</span><span style="color:#a6e22e">gms</span><span style="color:#f92672">:</span>play<span style="color:#f92672">-</span>services<span style="color:#f92672">-</span>vision<span style="color:#f92672">:</span>20<span style="color:#f92672">.</span><span style="color:#a6e22e">1</span><span style="color:#f92672">.</span><span style="color:#a6e22e">3</span><span style="color:#960050;background-color:#1e0010">&#39;</span>
-implementation <span style="color:#960050;background-color:#1e0010">&#39;</span>com<span style="color:#f92672">.</span><span style="color:#a6e22e">google</span><span style="color:#f92672">.</span><span style="color:#a6e22e">zxing</span><span style="color:#f92672">:</span>core<span style="color:#f92672">:</span>3<span style="color:#f92672">.</span><span style="color:#a6e22e">2</span><span style="color:#f92672">.</span><span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">&#39;</span>
-implementation <span style="color:#960050;background-color:#1e0010">&#39;</span>com<span style="color:#f92672">.</span><span style="color:#a6e22e">journeyapps</span><span style="color:#f92672">:</span>zxing<span style="color:#f92672">-</span>android<span style="color:#f92672">-</span>embedded<span style="color:#f92672">:</span>3<span style="color:#f92672">.</span><span style="color:#a6e22e">2</span><span style="color:#f92672">.</span><span style="color:#a6e22e">0</span><span style="color:#a6e22e">@aar</span><span style="color:#960050;background-color:#1e0010">&#39;</span>
-</code></pre></div><h2 id="step-2">Step 2</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>implementation <span style="color:#960050;background-color:#1e0010">&#39;</span>com.<span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">android</span>.<span style="color:#a6e22e">gms</span>:play<span style="color:#f92672">-</span>services<span style="color:#f92672">-</span>vision:20.<span style="color:#a6e22e">1</span>.<span style="color:#a6e22e">3</span><span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>implementation <span style="color:#960050;background-color:#1e0010">&#39;</span>com.<span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">zxing</span>:core:3.<span style="color:#a6e22e">2</span>.<span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>implementation <span style="color:#960050;background-color:#1e0010">&#39;</span>com.<span style="color:#a6e22e">journeyapps</span>:zxing<span style="color:#f92672">-</span>android<span style="color:#f92672">-</span>embedded:3.<span style="color:#a6e22e">2</span>.<span style="color:#a6e22e">0</span><span style="color:#a6e22e">@aar</span><span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span></code></pre></div><h2 id="step-2">Step 2</h2>
 <p>Add the following <code>permission</code> to your manifest to <strong>access camera</strong> to scan QR code that we will generate.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.CAMERA&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;uses-feature</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.hardware.camera&#34;</span> <span style="color:#f92672">/&gt;</span>
-</code></pre></div><h2 id="step-3">Step 3</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.CAMERA&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;uses-feature</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.hardware.camera&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span></code></pre></div><h2 id="step-3">Step 3</h2>
 <p>Add this following into your manifest file too, as when you open your QR scanner to <code>capture QR</code> code this activity will open.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;activity</span>
-    <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;com.journeyapps.barcodescanner.CaptureActivity&#34;</span>
-    <span style="color:#a6e22e">android:screenOrientation=</span><span style="color:#e6db74">&#34;portrait&#34;</span>
-    <span style="color:#a6e22e">android:stateNotNeeded=</span><span style="color:#e6db74">&#34;true&#34;</span>
-    <span style="color:#a6e22e">tools:replace=</span><span style="color:#e6db74">&#34;android:screenOrientation&#34;</span> <span style="color:#f92672">/&gt;</span>
-</code></pre></div><h2 id="step-4-generation">Step 4 (Generation)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;activity</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;com.journeyapps.barcodescanner.CaptureActivity&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:screenOrientation=</span><span style="color:#e6db74">&#34;portrait&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:stateNotNeeded=</span><span style="color:#e6db74">&#34;true&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">tools:replace=</span><span style="color:#e6db74">&#34;android:screenOrientation&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span></code></pre></div><h2 id="step-4-generation">Step 4 (Generation)</h2>
 <p>To generate QR just call this function along with the String you want to put into it.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">qrGeneration</span><span style="color:#f92672">(</span>String qrText<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        QRCodeWriter writer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> QRCodeWriter<span style="color:#f92672">();</span>
-        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
-            BitMatrix bitMatrix <span style="color:#f92672">=</span> writer<span style="color:#f92672">.</span><span style="color:#a6e22e">encode</span><span style="color:#f92672">(</span>qrText<span style="color:#f92672">,</span> BarcodeFormat<span style="color:#f92672">.</span><span style="color:#a6e22e">QR_CODE</span><span style="color:#f92672">,</span> 564<span style="color:#f92672">,</span> 564<span style="color:#f92672">);</span>
-            <span style="color:#66d9ef">int</span> width <span style="color:#f92672">=</span> bitMatrix<span style="color:#f92672">.</span><span style="color:#a6e22e">getWidth</span><span style="color:#f92672">();</span>
-            <span style="color:#66d9ef">int</span> height <span style="color:#f92672">=</span> bitMatrix<span style="color:#f92672">.</span><span style="color:#a6e22e">getHeight</span><span style="color:#f92672">();</span>
-            Bitmap bmp <span style="color:#f92672">=</span> Bitmap<span style="color:#f92672">.</span><span style="color:#a6e22e">createBitmap</span><span style="color:#f92672">(</span>width<span style="color:#f92672">,</span> height<span style="color:#f92672">,</span> Bitmap<span style="color:#f92672">.</span><span style="color:#a6e22e">Config</span><span style="color:#f92672">.</span><span style="color:#a6e22e">RGB_565</span><span style="color:#f92672">);</span>
-            <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> x <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> x <span style="color:#f92672">&lt;</span> width<span style="color:#f92672">;</span> x<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
-                <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> y <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> y <span style="color:#f92672">&lt;</span> height<span style="color:#f92672">;</span> y<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
-                    bmp<span style="color:#f92672">.</span><span style="color:#a6e22e">setPixel</span><span style="color:#f92672">(</span>x<span style="color:#f92672">,</span> y<span style="color:#f92672">,</span> bitMatrix<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>x<span style="color:#f92672">,</span> y<span style="color:#f92672">)</span> <span style="color:#f92672">?</span> Color<span style="color:#f92672">.</span><span style="color:#a6e22e">BLACK</span> <span style="color:#f92672">:</span> Color<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">);</span>
-                <span style="color:#f92672">}</span>
-            <span style="color:#f92672">}</span>
-            bitmap <span style="color:#f92672">=</span> bmp<span style="color:#f92672">;</span>
-            <span style="color:#f92672">((</span>ImageView<span style="color:#f92672">)</span> findViewById<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">qrImage</span><span style="color:#f92672">)).</span><span style="color:#a6e22e">setImageBitmap</span><span style="color:#f92672">(</span>bmp<span style="color:#f92672">);</span>
-
-        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>WriterException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
-        <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#75715e">// Just set the bitmap to any imageView you want it to show.
-</span></code></pre></div><h2 id="step-5-scanning">Step 5 (Scanning)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">qrGeneration</span>(String qrText) {
+</span></span><span style="display:flex;"><span>        QRCodeWriter writer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> QRCodeWriter();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>            BitMatrix bitMatrix <span style="color:#f92672">=</span> writer.<span style="color:#a6e22e">encode</span>(qrText, BarcodeFormat.<span style="color:#a6e22e">QR_CODE</span>, 564, 564);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> width <span style="color:#f92672">=</span> bitMatrix.<span style="color:#a6e22e">getWidth</span>();
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> height <span style="color:#f92672">=</span> bitMatrix.<span style="color:#a6e22e">getHeight</span>();
+</span></span><span style="display:flex;"><span>            Bitmap bmp <span style="color:#f92672">=</span> Bitmap.<span style="color:#a6e22e">createBitmap</span>(width, height, Bitmap.<span style="color:#a6e22e">Config</span>.<span style="color:#a6e22e">RGB_565</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> x <span style="color:#f92672">=</span> 0; x <span style="color:#f92672">&lt;</span> width; x<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> y <span style="color:#f92672">=</span> 0; y <span style="color:#f92672">&lt;</span> height; y<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>                    bmp.<span style="color:#a6e22e">setPixel</span>(x, y, bitMatrix.<span style="color:#a6e22e">get</span>(x, y) <span style="color:#f92672">?</span> Color.<span style="color:#a6e22e">BLACK</span> : Color.<span style="color:#a6e22e">WHITE</span>);
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            bitmap <span style="color:#f92672">=</span> bmp;
+</span></span><span style="display:flex;"><span>            ((ImageView) findViewById(R.<span style="color:#a6e22e">id</span>.<span style="color:#a6e22e">qrImage</span>)).<span style="color:#a6e22e">setImageBitmap</span>(bmp);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">catch</span> (WriterException e) {
+</span></span><span style="display:flex;"><span>            e.<span style="color:#a6e22e">printStackTrace</span>();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Just set the bitmap to any imageView you want it to show.</span>
+</span></span></code></pre></div><h2 id="step-5-scanning">Step 5 (Scanning)</h2>
 <p>Now we have generated the QR code we need to scan it. We will create an <code>IntentIntegrator</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Call it inside your on click method of scan
-</span><span style="color:#75715e"></span>IntentIntegrator integrator <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> IntentIntegrator<span style="color:#f92672">(</span>QrCodeActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">);</span>
-integrator<span style="color:#f92672">.</span><span style="color:#a6e22e">setDesiredBarcodeFormats</span><span style="color:#f92672">(</span>IntentIntegrator<span style="color:#f92672">.</span><span style="color:#a6e22e">ALL_CODE_TYPES</span><span style="color:#f92672">);</span>
-integrator<span style="color:#f92672">.</span><span style="color:#a6e22e">setPrompt</span><span style="color:#f92672">(</span>getString<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">string</span><span style="color:#f92672">.</span><span style="color:#a6e22e">scan_qr_mssg</span><span style="color:#f92672">));</span>
-integrator<span style="color:#f92672">.</span><span style="color:#a6e22e">setCameraId</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
-integrator<span style="color:#f92672">.</span><span style="color:#a6e22e">setOrientationLocked</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
-integrator<span style="color:#f92672">.</span><span style="color:#a6e22e">setBeepEnabled</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
-integrator<span style="color:#f92672">.</span><span style="color:#a6e22e">setBarcodeImageEnabled</span><span style="color:#f92672">(</span><span style="color:#66d9ef">false</span><span style="color:#f92672">);</span>
-integrator<span style="color:#f92672">.</span><span style="color:#a6e22e">setBarcodeImageEnabled</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
-integrator<span style="color:#f92672">.</span><span style="color:#a6e22e">initiateScan</span><span style="color:#f92672">();</span>
-</code></pre></div><h2 id="step-6">Step 6</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Call it inside your on click method of scan</span>
+</span></span><span style="display:flex;"><span>IntentIntegrator integrator <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> IntentIntegrator(QrCodeActivity.<span style="color:#a6e22e">this</span>);
+</span></span><span style="display:flex;"><span>integrator.<span style="color:#a6e22e">setDesiredBarcodeFormats</span>(IntentIntegrator.<span style="color:#a6e22e">ALL_CODE_TYPES</span>);
+</span></span><span style="display:flex;"><span>integrator.<span style="color:#a6e22e">setPrompt</span>(getString(R.<span style="color:#a6e22e">string</span>.<span style="color:#a6e22e">scan_qr_mssg</span>));
+</span></span><span style="display:flex;"><span>integrator.<span style="color:#a6e22e">setCameraId</span>(0);
+</span></span><span style="display:flex;"><span>integrator.<span style="color:#a6e22e">setOrientationLocked</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>integrator.<span style="color:#a6e22e">setBeepEnabled</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>integrator.<span style="color:#a6e22e">setBarcodeImageEnabled</span>(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>integrator.<span style="color:#a6e22e">setBarcodeImageEnabled</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>integrator.<span style="color:#a6e22e">initiateScan</span>();
+</span></span></code></pre></div><h2 id="step-6">Step 6</h2>
 <p>Now that we have scanned our QR code we need to extract the contents of QR for <strong>further use</strong> for our application for that  we will override the <code>onActivtyResult</code> method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Override</span>
-<span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onActivityResult</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> requestCode<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> resultCode<span style="color:#f92672">,</span> <span style="color:#a6e22e">@Nullable</span> Intent data<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    IntentResult result <span style="color:#f92672">=</span> IntentIntegrator<span style="color:#f92672">.</span><span style="color:#a6e22e">parseActivityResult</span><span style="color:#f92672">(</span>requestCode<span style="color:#f92672">,</span> resultCode<span style="color:#f92672">,</span> data<span style="color:#f92672">);</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>result <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>result<span style="color:#f92672">.</span><span style="color:#a6e22e">getContents</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            Log<span style="color:#f92672">.</span><span style="color:#a6e22e">e</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Scan*******&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Cancelled scan&#34;</span><span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-            Log<span style="color:#f92672">.</span><span style="color:#a6e22e">e</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Scan&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Scanned&#34;</span><span style="color:#f92672">);</span>
-            String scanContents <span style="color:#f92672">=</span> result<span style="color:#f92672">.</span><span style="color:#a6e22e">getContents</span><span style="color:#f92672">();</span>
-                        useThisResult<span style="color:#f92672">(</span>scanContent<span style="color:#f92672">);</span>   
-        <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-        <span style="color:#75715e">// This is important, otherwise the result will not be passed to the fragment or activiy
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onActivityResult</span><span style="color:#f92672">(</span>requestCode<span style="color:#f92672">,</span> resultCode<span style="color:#f92672">,</span> data<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>Congrats. 🥳You have implemented simple and efficient solution to implement QR code for your android application.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onActivityResult</span>(<span style="color:#66d9ef">int</span> requestCode, <span style="color:#66d9ef">int</span> resultCode, <span style="color:#a6e22e">@Nullable</span> Intent data) {
+</span></span><span style="display:flex;"><span>    IntentResult result <span style="color:#f92672">=</span> IntentIntegrator.<span style="color:#a6e22e">parseActivityResult</span>(requestCode, resultCode, data);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (result <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (result.<span style="color:#a6e22e">getContents</span>() <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>            Log.<span style="color:#a6e22e">e</span>(<span style="color:#e6db74">&#34;Scan*******&#34;</span>, <span style="color:#e6db74">&#34;Cancelled scan&#34;</span>);
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            Log.<span style="color:#a6e22e">e</span>(<span style="color:#e6db74">&#34;Scan&#34;</span>, <span style="color:#e6db74">&#34;Scanned&#34;</span>);
+</span></span><span style="display:flex;"><span>            String scanContents <span style="color:#f92672">=</span> result.<span style="color:#a6e22e">getContents</span>();
+</span></span><span style="display:flex;"><span>                        useThisResult(scanContent);   
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// This is important, otherwise the result will not be passed to the fragment or activiy</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span>.<span style="color:#a6e22e">onActivityResult</span>(requestCode, resultCode, data);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Congrats. 🥳You have implemented simple and efficient solution to implement QR code for your android application.</p>
 <p><strong>Hope it helped. Happy Coding</strong> 😀</p>
 
               </div>

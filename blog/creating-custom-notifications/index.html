@@ -59,7 +59,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a href="https://thestreamliners.in" class="navbar-brand">
+    <a href="https://thestreamliners.in/" class="navbar-brand">
       <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
     </a>
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
@@ -73,32 +73,32 @@
         
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#home"
+          <a href="https://thestreamliners.in/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#service"
+          <a href="https://thestreamliners.in/#service"
             class="nav-link text-dark text-sm-center p-2 ">Services</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#portfolio"
+          <a href="https://thestreamliners.in/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#blog"
+          <a href="https://thestreamliners.in/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/contact"
+          <a href="https://thestreamliners.in//contact"
             class="nav-link text-dark text-sm-center p-2 ">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/about-us"
+          <a href="https://thestreamliners.in//about-us"
             class="nav-link text-dark text-sm-center p-2 ">About us</a>
         </li>
         
@@ -123,7 +123,7 @@
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/>Home</a></li>
             <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
           </ol>
         </nav>
@@ -164,7 +164,7 @@
           <div class="col-lg-12">
               <div class="singleBlog__content">
                   <figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/07/08-19-27-07-custom_notification_img.png"
-         alt="Notifications" width="80%"/>
+    alt="Notifications" width="80%">
 </figure>
 
 <p><strong>Notifications</strong> alert you to many things on your Android device, including incoming messages, new emails, and calendar events. Notifications work slightly differently for each app, but they&rsquo;re easy to customize.</p>
@@ -179,25 +179,25 @@
 <li>Optionally, specify the description that the user sees in the system settings with <a href="https://developer.android.com/reference/android/app/NotificationChannel#setDescription(java.lang.String)"><code>setDescription()</code></a>.</li>
 <li>Register the notification channel by passing it to <a href="https://developer.android.com/reference/android/app/NotificationManager#createNotificationChannel(android.app.NotificationChannel)"><code>createNotificationChannel()</code></a>.</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String channelID <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;channelID&#34;</span><span style="color:#f92672">;</span>
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String channelName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Channel Name&#34;</span><span style="color:#f92672">;</span>
-<span style="color:#66d9ef">private</span> NotificationManager mManager<span style="color:#f92672">;</span>
-<span style="color:#a6e22e">@RequiresApi</span><span style="color:#f92672">(</span>api <span style="color:#f92672">=</span> Build<span style="color:#f92672">.</span><span style="color:#a6e22e">VERSION_CODES</span><span style="color:#f92672">.</span><span style="color:#a6e22e">O</span><span style="color:#f92672">)</span>
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">createChannel</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        NotificationChannel channel <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationChannel<span style="color:#f92672">(</span>channelID<span style="color:#f92672">,</span> channelName<span style="color:#f92672">,</span> NotificationManager<span style="color:#f92672">.</span><span style="color:#a6e22e">IMPORTANCE_HIGH</span><span style="color:#f92672">);</span>
-        getManager<span style="color:#f92672">().</span><span style="color:#a6e22e">createNotificationChannel</span><span style="color:#f92672">(</span>channel<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-</code></pre></div><p><strong>Get Notification manager</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> NotificationManager <span style="color:#a6e22e">getManager</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>mManager <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            mManager <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>NotificationManager<span style="color:#f92672">)</span> getSystemService<span style="color:#f92672">(</span>Context<span style="color:#f92672">.</span><span style="color:#a6e22e">NOTIFICATION_SERVICE</span><span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">return</span> mManager<span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
-</code></pre></div><p><em><strong>Note:</strong></em> The <code>CHANNEL_ID</code> should be unique for every notification channel in order to handle this channel in future if we want to modify or delete this channel by using the unique channel_id.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String channelID <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;channelID&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String channelName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Channel Name&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span> NotificationManager mManager;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@RequiresApi</span>(api <span style="color:#f92672">=</span> Build.<span style="color:#a6e22e">VERSION_CODES</span>.<span style="color:#a6e22e">O</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">createChannel</span>() {
+</span></span><span style="display:flex;"><span>        NotificationChannel channel <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationChannel(channelID, channelName, NotificationManager.<span style="color:#a6e22e">IMPORTANCE_HIGH</span>);
+</span></span><span style="display:flex;"><span>        getManager().<span style="color:#a6e22e">createNotificationChannel</span>(channel);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p><strong>Get Notification manager</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> NotificationManager <span style="color:#a6e22e">getManager</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (mManager <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>            mManager <span style="color:#f92672">=</span> (NotificationManager) getSystemService(Context.<span style="color:#a6e22e">NOTIFICATION_SERVICE</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> mManager;
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p><em><strong>Note:</strong></em> The <code>CHANNEL_ID</code> should be unique for every notification channel in order to handle this channel in future if we want to modify or delete this channel by using the unique channel_id.</p>
 <p>By default, all notifications posted to this channel use the visual and auditory behaviors defined by the importance level from the <a href="https://developer.android.com/reference/androidx/core/app/NotificationManagerCompat"><code>NotificationManagerCompat</code></a> class, such as <a href="https://developer.android.com/reference/androidx/core/app/NotificationManagerCompat#IMPORTANCE_DEFAULT"><code>IMPORTANCE_DEFAULT</code></a> and <a href="https://developer.android.com/reference/androidx/core/app/NotificationManagerCompat#IMPORTANCE_HIGH"><code>IMPORTANCE_HIGH</code></a>.</p>
 <p>For more information about importance level:</p>
-<h2 id="hahahugoshortcode-s1-hbhb">
+<h2 id="hahahugoshortcode17s1hbhb">
 
 
 
@@ -242,11 +242,11 @@
 </h2>
 <h2 id="set-the-content-of-the-notification">Set the content of the notification</h2>
 <p>To get started, you need to set the notification&rsquo;s content and channel using a <a href="https://developer.android.com/reference/androidx/core/app/NotificationCompat.Builder"><code>NotificationCompat.Builder</code></a> object.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentTitle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Title of the notification&#34;</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Body of the notification&#34;</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_launcher_foreground</span><span style="color:#f92672">);</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>NotificationCompat.<span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">Builder</span>(context.<span style="color:#a6e22e">getApplicationContext</span>(), channelID)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setContentTitle</span>(<span style="color:#e6db74">&#34;Title of the notification&#34;</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setContentText</span>(<span style="color:#e6db74">&#34;Body of the notification&#34;</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setSmallIcon</span>(R.<span style="color:#a6e22e">drawable</span>.<span style="color:#a6e22e">ic_launcher_foreground</span>);
+</span></span></code></pre></div><ul>
 <li>
 <p><code>setContentTitle()</code> - For title of the notification</p>
 </li>
@@ -262,7 +262,7 @@
 </li>
 </ul>
 <figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-07-46-20-simple.jpg"
-         alt="Notifications" width="80%"/>
+    alt="Notifications" width="80%">
 </figure>
 
 <!-- raw HTML omitted -->
@@ -284,7 +284,7 @@
 </li>
 </ul>
 <figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-07-53-21-large_icon.jpg"
-         alt="Notifications" width="80%"/>
+    alt="Notifications" width="80%">
 </figure>
 
 <blockquote>
@@ -298,36 +298,36 @@
 <p>Then , use the below code to get soundUri</p>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Uri soundUri <span style="color:#f92672">=</span> Uri<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>ContentResolver<span style="color:#f92672">.</span><span style="color:#a6e22e">SCHEME_ANDROID_RESOURCE</span><span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;://&#34;</span> <span style="color:#f92672">+</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getPackageName</span><span style="color:#f92672">()+</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">+</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">raw</span><span style="color:#f92672">.</span><span style="color:#a6e22e">sound</span><span style="color:#f92672">);</span>
-</code></pre></div></blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Uri soundUri <span style="color:#f92672">=</span> Uri.<span style="color:#a6e22e">parse</span>(ContentResolver.<span style="color:#a6e22e">SCHEME_ANDROID_RESOURCE</span><span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;://&#34;</span> <span style="color:#f92672">+</span>context.<span style="color:#a6e22e">getPackageName</span>()<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">+</span>R.<span style="color:#a6e22e">raw</span>.<span style="color:#a6e22e">sound</span>);
+</span></span></code></pre></div></blockquote>
 <blockquote>
 <p><strong>Note: For API 26+, the sound should be added in <code>NotificationChannel</code> also</strong></p>
 <p>Use below code for this:<!-- raw HTML omitted --></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">AudioAttributes audioAttributes <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> AudioAttributes<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">()</span>
-    <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentType</span><span style="color:#f92672">(</span>AudioAttributes<span style="color:#f92672">.</span><span style="color:#a6e22e">CONTENT_TYPE_MUSIC</span><span style="color:#f92672">)</span>
-    <span style="color:#f92672">.</span><span style="color:#a6e22e">setUsage</span><span style="color:#f92672">(</span>AudioAttributes<span style="color:#f92672">.</span><span style="color:#a6e22e">USAGE_ALARM</span><span style="color:#f92672">)</span>
-    <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
-channel<span style="color:#f92672">.</span><span style="color:#a6e22e">setSound</span><span style="color:#f92672">(</span>Uri<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>ContentResolver<span style="color:#f92672">.</span><span style="color:#a6e22e">SCHEME_ANDROID_RESOURCE</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;://&#34;</span><span style="color:#f92672">+</span> getApplicationContext<span style="color:#f92672">().</span><span style="color:#a6e22e">getPackageName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> R<span style="color:#f92672">.</span><span style="color:#a6e22e">raw</span><span style="color:#f92672">.</span><span style="color:#a6e22e">sound</span><span style="color:#f92672">),</span>audioAttributes<span style="color:#f92672">);</span>
-</code></pre></div></blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>AudioAttributes audioAttributes <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> AudioAttributes.<span style="color:#a6e22e">Builder</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">setContentType</span>(AudioAttributes.<span style="color:#a6e22e">CONTENT_TYPE_MUSIC</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">setUsage</span>(AudioAttributes.<span style="color:#a6e22e">USAGE_ALARM</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">build</span>();
+</span></span><span style="display:flex;"><span>channel.<span style="color:#a6e22e">setSound</span>(Uri.<span style="color:#a6e22e">parse</span>(ContentResolver.<span style="color:#a6e22e">SCHEME_ANDROID_RESOURCE</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;://&#34;</span><span style="color:#f92672">+</span> getApplicationContext().<span style="color:#a6e22e">getPackageName</span>() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> R.<span style="color:#a6e22e">raw</span>.<span style="color:#a6e22e">sound</span>),audioAttributes);
+</span></span></code></pre></div></blockquote>
 <ul>
 <li>
 <p><code>setContentIntent(pendingIntent)</code> - To open desired activity in the application on clicking of the notification</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Intent resultIntent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent<span style="color:#f92672">(</span>context <span style="color:#f92672">,</span> MainActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
-
-<span style="color:#75715e">// you can also send data with the intent
-</span><span style="color:#75715e"></span>resultIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">putExtra</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;foo&#34;</span><span style="color:#f92672">,</span>fooObj<span style="color:#f92672">);</span>
-
-<span style="color:#75715e">// TaskStackbuilder to create a stack of the activities
-</span><span style="color:#75715e">// and add your activity to the top position
-</span><span style="color:#75715e">// according to the parent activities declared in Manifest file
-</span><span style="color:#75715e"></span>TaskStackBuilder stackBuilder <span style="color:#f92672">=</span> TaskStackBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>context<span style="color:#f92672">);</span>
-stackBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">addNextIntentWithParentStack</span><span style="color:#f92672">(</span>resultIntent<span style="color:#f92672">);</span>
-
-<span style="color:#75715e">// PendingIntent to use in the setContentIntent() method
-</span><span style="color:#75715e"></span>PendingIntent resultPendingIntent <span style="color:#f92672">=</span> stackBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">getPendingIntent</span><span style="color:#f92672">(</span>4<span style="color:#f92672">,</span>PendingIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">FLAG_UPDATE_CURRENT</span><span style="color:#f92672">);</span>
-
-builder<span style="color:#f92672">.</span><span style="color:#a6e22e">setContentIntent</span><span style="color:#f92672">(</span>resultPendingIntent<span style="color:#f92672">);</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Intent resultIntent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent(context , MainActivity.<span style="color:#a6e22e">class</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// you can also send data with the intent</span>
+</span></span><span style="display:flex;"><span>resultIntent.<span style="color:#a6e22e">putExtra</span>(<span style="color:#e6db74">&#34;foo&#34;</span>,fooObj);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// TaskStackbuilder to create a stack of the activities</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// and add your activity to the top position</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// according to the parent activities declared in Manifest file</span>
+</span></span><span style="display:flex;"><span>TaskStackBuilder stackBuilder <span style="color:#f92672">=</span> TaskStackBuilder.<span style="color:#a6e22e">create</span>(context);
+</span></span><span style="display:flex;"><span>stackBuilder.<span style="color:#a6e22e">addNextIntentWithParentStack</span>(resultIntent);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// PendingIntent to use in the setContentIntent() method</span>
+</span></span><span style="display:flex;"><span>PendingIntent resultPendingIntent <span style="color:#f92672">=</span> stackBuilder.<span style="color:#a6e22e">getPendingIntent</span>(4,PendingIntent.<span style="color:#a6e22e">FLAG_UPDATE_CURRENT</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>builder.<span style="color:#a6e22e">setContentIntent</span>(resultPendingIntent);
+</span></span></code></pre></div></li>
 <li>
 <p><code>setStyle()</code> - To set your desired style to the notification (e.g., BigPictureStyle , BigTextStyle, MessagingStyle etc. )</p>
 </li>
@@ -337,45 +337,45 @@ builder<span style="color:#f92672">.</span><span style="color:#a6e22e">setConten
 <p>We are going to use <code>setStyle()</code> method of <code>NotificationCompat.Builder</code> to set different styles to the notification.</p>
 <h4 id="add-a-large-block-of-text">Add a large block of text</h4>
 <p>Apply <code>NotificationCompat.BigTextStyle()</code> to display a large block of text in notification,</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setStyle</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">BigTextStyle</span><span style="color:#f92672">().</span><span style="color:#a6e22e">bigText</span><span style="color:#f92672">(</span>bigBody<span style="color:#f92672">))</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentTitle</span><span style="color:#f92672">(</span>title<span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Click this notification&#39;s header to see larger text.&#34;</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_launcher_foreground</span><span style="color:#f92672">);</span>
-</code></pre></div><figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-07-59-49-big_text.jpg"
-         alt="Notifications" width="80%"/>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>NotificationCompat.<span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">Builder</span>(context.<span style="color:#a6e22e">getApplicationContext</span>(), channelID)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setStyle</span>(<span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">BigTextStyle</span>().<span style="color:#a6e22e">bigText</span>(bigBody))
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setContentTitle</span>(title)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setContentText</span>(<span style="color:#e6db74">&#34;Click this notification&#39;s header to see larger text.&#34;</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setSmallIcon</span>(R.<span style="color:#a6e22e">drawable</span>.<span style="color:#a6e22e">ic_launcher_foreground</span>);
+</span></span></code></pre></div><figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-07-59-49-big_text.jpg"
+    alt="Notifications" width="80%">
 </figure>
 
 <p><strong>Upper one</strong> - Collapsed</p>
 <p><strong>Lower one</strong> - Expanded</p>
 <h4 id="add-a-large-expandable-image">Add a large expandable image</h4>
 <p>Apply <code>NotificationCompat.BigPictureStyle()</code> to show a large expandable image,</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Bitmap bitmap <span style="color:#f92672">=</span> BitmapFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">decodeResource</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getResources</span><span style="color:#f92672">(),</span> R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">android1</span><span style="color:#f92672">);</span>
-
-NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
-          <span style="color:#f92672">.</span><span style="color:#a6e22e">setLargeIcon</span><span style="color:#f92672">(</span>bitmap<span style="color:#f92672">)</span>
-          <span style="color:#f92672">.</span><span style="color:#a6e22e">setStyle</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">BigPictureStyle</span><span style="color:#f92672">()</span>
-                   <span style="color:#f92672">.</span><span style="color:#a6e22e">bigPicture</span><span style="color:#f92672">(</span>bitmap<span style="color:#f92672">)</span>
-                   <span style="color:#f92672">.</span><span style="color:#a6e22e">bigLargeIcon</span><span style="color:#f92672">(</span><span style="color:#66d9ef">null</span><span style="color:#f92672">))</span>
-          <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentTitle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Expandable Image&#34;</span><span style="color:#f92672">)</span>
-          <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Click this notification&#39;s header to see expanded image&#34;</span><span style="color:#f92672">)</span>
-          <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_launcher_foreground</span><span style="color:#f92672">);</span>
-</code></pre></div><p><code>setLargeIcon()</code> sets the image as a thumbnail when the notification is collapsed , that&rsquo;s why set <code>bigLargeIcon(null)</code> so that the largeIcon (thumbnail) goes away when the notification expands.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Bitmap bitmap <span style="color:#f92672">=</span> BitmapFactory.<span style="color:#a6e22e">decodeResource</span>(context.<span style="color:#a6e22e">getResources</span>(), R.<span style="color:#a6e22e">drawable</span>.<span style="color:#a6e22e">android1</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>NotificationCompat.<span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">Builder</span>(context.<span style="color:#a6e22e">getApplicationContext</span>(), channelID)
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">setLargeIcon</span>(bitmap)
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">setStyle</span>(<span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">BigPictureStyle</span>()
+</span></span><span style="display:flex;"><span>                   .<span style="color:#a6e22e">bigPicture</span>(bitmap)
+</span></span><span style="display:flex;"><span>                   .<span style="color:#a6e22e">bigLargeIcon</span>(<span style="color:#66d9ef">null</span>))
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">setContentTitle</span>(<span style="color:#e6db74">&#34;Expandable Image&#34;</span>)
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">setContentText</span>(<span style="color:#e6db74">&#34;Click this notification&#39;s header to see expanded image&#34;</span>)
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">setSmallIcon</span>(R.<span style="color:#a6e22e">drawable</span>.<span style="color:#a6e22e">ic_launcher_foreground</span>);
+</span></span></code></pre></div><p><code>setLargeIcon()</code> sets the image as a thumbnail when the notification is collapsed , that&rsquo;s why set <code>bigLargeIcon(null)</code> so that the largeIcon (thumbnail) goes away when the notification expands.</p>
 <figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-08-02-02-exp_img.jpg"
-         alt="Notifications" width="80%"/>
+    alt="Notifications" width="80%">
 </figure>
 
 <h4 id="inbox-styled-notification">Inbox Styled Notification</h4>
 <p>Apply <code>NotificationCompat.InboxStyle()</code> to make your notification inbox styled.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_launcher_foreground</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentTitle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Inbox style&#34;</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setContentText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;This is the inbox styled notification&#34;</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setStyle</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">InboxStyle</span><span style="color:#f92672">()</span>
-                        <span style="color:#f92672">.</span><span style="color:#a6e22e">addLine</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Inbox Line 1&#34;</span><span style="color:#f92672">)</span>
-                        <span style="color:#f92672">.</span><span style="color:#a6e22e">addLine</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Inbox Line 2&#34;</span><span style="color:#f92672">));</span>
-</code></pre></div><figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-08-07-40-inbox_style.jpg"
-         alt="Notifications" width="80%"/>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>NotificationCompat.<span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">Builder</span>(context.<span style="color:#a6e22e">getApplicationContext</span>(), channelID)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setSmallIcon</span>(R.<span style="color:#a6e22e">drawable</span>.<span style="color:#a6e22e">ic_launcher_foreground</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setContentTitle</span>(<span style="color:#e6db74">&#34;Inbox style&#34;</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setContentText</span>(<span style="color:#e6db74">&#34;This is the inbox styled notification&#34;</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setStyle</span>(<span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">InboxStyle</span>()
+</span></span><span style="display:flex;"><span>                        .<span style="color:#a6e22e">addLine</span>(<span style="color:#e6db74">&#34;Inbox Line 1&#34;</span>)
+</span></span><span style="display:flex;"><span>                        .<span style="color:#a6e22e">addLine</span>(<span style="color:#e6db74">&#34;Inbox Line 2&#34;</span>));
+</span></span></code></pre></div><figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-08-07-40-inbox_style.jpg"
+    alt="Notifications" width="80%">
 </figure>
 
 <p><img src="" alt="1"></p>
@@ -383,22 +383,22 @@ NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e
 <p>You should call <em>addLine()</em> more than 6  times because more than 6 times will show only first 6 lines.</p>
 <h4 id="conversational-notification">Conversational Notification</h4>
 <p>Apply <code>NotificationCompat.MessagingStyle()</code> to your notification style and you will get notification with sequential messaging layout.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Message</span> message1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Message</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hey buddy, what&#39;s up&#34;</span><span style="color:#f92672">,</span>
-                1627906259<span style="color:#f92672">,</span>
-                <span style="color:#e6db74">&#34;Android&#34;</span><span style="color:#f92672">);</span>
-NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Message</span> message2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Message</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;I am fine, what about you?&#34;</span><span style="color:#f92672">,</span>
-                1627906326<span style="color:#f92672">,</span>
-                <span style="color:#e6db74">&#34;You&#34;</span><span style="color:#f92672">);</span>
-NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Message</span> message3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Message</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Good, \uD83D\uDE42\uD83D\uDE42&#34;</span><span style="color:#f92672">,</span>
-                1627909912<span style="color:#f92672">,</span>
-                <span style="color:#e6db74">&#34;Android&#34;</span><span style="color:#f92672">);</span>
-NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_launcher_foreground</span><span style="color:#f92672">)</span>
-                <span style="color:#f92672">.</span><span style="color:#a6e22e">setStyle</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">MessagingStyle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;User Dsplay Name&#34;</span><span style="color:#f92672">)</span>
-                        <span style="color:#f92672">.</span><span style="color:#a6e22e">addMessage</span><span style="color:#f92672">(</span>message1<span style="color:#f92672">)</span>
-                        <span style="color:#f92672">.</span><span style="color:#a6e22e">addMessage</span><span style="color:#f92672">(</span>message2<span style="color:#f92672">)</span>
-                        <span style="color:#f92672">.</span><span style="color:#a6e22e">addMessage</span><span style="color:#f92672">(</span>message3<span style="color:#f92672">));</span>
-</code></pre></div><p><code>NotificationCompat.MessagingStyle.Message</code> Parameters:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>NotificationCompat.<span style="color:#a6e22e">MessagingStyle</span>.<span style="color:#a6e22e">Message</span> message1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">MessagingStyle</span>.<span style="color:#a6e22e">Message</span>(<span style="color:#e6db74">&#34;Hey buddy, what&#39;s up&#34;</span>,
+</span></span><span style="display:flex;"><span>                1627906259,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;Android&#34;</span>);
+</span></span><span style="display:flex;"><span>NotificationCompat.<span style="color:#a6e22e">MessagingStyle</span>.<span style="color:#a6e22e">Message</span> message2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">MessagingStyle</span>.<span style="color:#a6e22e">Message</span>(<span style="color:#e6db74">&#34;I am fine, what about you?&#34;</span>,
+</span></span><span style="display:flex;"><span>                1627906326,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;You&#34;</span>);
+</span></span><span style="display:flex;"><span>NotificationCompat.<span style="color:#a6e22e">MessagingStyle</span>.<span style="color:#a6e22e">Message</span> message3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">MessagingStyle</span>.<span style="color:#a6e22e">Message</span>(<span style="color:#e6db74">&#34;Good, \uD83D\uDE42\uD83D\uDE42&#34;</span>,
+</span></span><span style="display:flex;"><span>                1627909912,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;Android&#34;</span>);
+</span></span><span style="display:flex;"><span>NotificationCompat.<span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">Builder</span>(context.<span style="color:#a6e22e">getApplicationContext</span>(), channelID)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setSmallIcon</span>(R.<span style="color:#a6e22e">drawable</span>.<span style="color:#a6e22e">ic_launcher_foreground</span>)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">setStyle</span>(<span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">MessagingStyle</span>(<span style="color:#e6db74">&#34;User Dsplay Name&#34;</span>)
+</span></span><span style="display:flex;"><span>                        .<span style="color:#a6e22e">addMessage</span>(message1)
+</span></span><span style="display:flex;"><span>                        .<span style="color:#a6e22e">addMessage</span>(message2)
+</span></span><span style="display:flex;"><span>                        .<span style="color:#a6e22e">addMessage</span>(message3));
+</span></span></code></pre></div><p><code>NotificationCompat.MessagingStyle.Message</code> Parameters:</p>
 <ul>
 <li>
 <p>text (1st parameter) - The message of the sender</p>
@@ -412,7 +412,7 @@ NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e
 </ul>
 <p><strong>Note:</strong> Messages in the notification will be sorted according to the timestamp of the message</p>
 <figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-08-25-30-messaging_style.jpg"
-         alt="Notifications" width="80%"/>
+    alt="Notifications" width="80%">
 </figure>
 
 <p><strong>Upper one</strong> - Collapsed</p>
@@ -424,47 +424,47 @@ NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e
 <p><strong>First create a layout for the notification</strong></p>
 <p>Remember that , constraint layout is not allowed for custom notification&rsquo;s layout</p>
 <p><code>notification_layout.xml</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#f92672">&lt;RelativeLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
-    <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/layout&#34;</span>
-    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
-    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-    <span style="color:#a6e22e">android:padding=</span><span style="color:#e6db74">&#34;10dp&#34;</span> <span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;TextView</span>
-        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/title&#34;</span>
-        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-        <span style="color:#a6e22e">android:textColor=</span><span style="color:#e6db74">&#34;@color/black&#34;</span><span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;TextView</span>
-        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/text&#34;</span>
-        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
-        <span style="color:#a6e22e">android:textSize=</span><span style="color:#e6db74">&#34;12sp&#34;</span>
-        <span style="color:#a6e22e">android:textColor=</span><span style="color:#e6db74">&#34;@color/black&#34;</span>
-        <span style="color:#a6e22e">android:layout_below=</span><span style="color:#e6db74">&#34;@id/title&#34;</span><span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/RelativeLayout&gt;</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;RelativeLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/layout&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:padding=</span><span style="color:#e6db74">&#34;10dp&#34;</span> <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;TextView</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/title&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:textColor=</span><span style="color:#e6db74">&#34;@color/black&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;TextView</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/text&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:textSize=</span><span style="color:#e6db74">&#34;12sp&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:textColor=</span><span style="color:#e6db74">&#34;@color/black&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:layout_below=</span><span style="color:#e6db74">&#34;@id/title&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/RelativeLayout&gt;</span>
+</span></span></code></pre></div></li>
 <li>
 <p><strong>Instantiating a RemoteViews object and set it to the notification,</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">RemoteViews remoteViews <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RemoteViews<span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getPackageName</span><span style="color:#f92672">(),</span> R<span style="color:#f92672">.</span><span style="color:#a6e22e">layout</span><span style="color:#f92672">.</span><span style="color:#a6e22e">notification_layout</span><span style="color:#f92672">);</span>
-remoteViews<span style="color:#f92672">.</span><span style="color:#a6e22e">setTextViewText</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">title</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;Custom notification title&#34;</span><span style="color:#f92672">);</span>
-remoteViews<span style="color:#f92672">.</span><span style="color:#a6e22e">setTextViewText</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">text</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;Text for the notification&#34;</span><span style="color:#f92672">);</span>
-
-NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">.</span><span style="color:#a6e22e">getApplicationContext</span><span style="color:#f92672">(),</span> channelID<span style="color:#f92672">)</span>
-         <span style="color:#f92672">.</span><span style="color:#a6e22e">setSmallIcon</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">drawable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ic_launcher_foreground</span><span style="color:#f92672">)</span>
-         <span style="color:#f92672">.</span><span style="color:#a6e22e">setStyle</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> NotificationCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">DecoratedCustomViewStyle</span><span style="color:#f92672">())</span>
-         <span style="color:#f92672">.</span><span style="color:#a6e22e">setCustomContentView</span><span style="color:#f92672">(</span>remoteViews<span style="color:#f92672">);</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>RemoteViews remoteViews <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RemoteViews(context.<span style="color:#a6e22e">getPackageName</span>(), R.<span style="color:#a6e22e">layout</span>.<span style="color:#a6e22e">notification_layout</span>);
+</span></span><span style="display:flex;"><span>remoteViews.<span style="color:#a6e22e">setTextViewText</span>(R.<span style="color:#a6e22e">id</span>.<span style="color:#a6e22e">title</span>,<span style="color:#e6db74">&#34;Custom notification title&#34;</span>);
+</span></span><span style="display:flex;"><span>remoteViews.<span style="color:#a6e22e">setTextViewText</span>(R.<span style="color:#a6e22e">id</span>.<span style="color:#a6e22e">text</span>,<span style="color:#e6db74">&#34;Text for the notification&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>NotificationCompat.<span style="color:#a6e22e">Builder</span> mBuilder<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">Builder</span>(context.<span style="color:#a6e22e">getApplicationContext</span>(), channelID)
+</span></span><span style="display:flex;"><span>         .<span style="color:#a6e22e">setSmallIcon</span>(R.<span style="color:#a6e22e">drawable</span>.<span style="color:#a6e22e">ic_launcher_foreground</span>)
+</span></span><span style="display:flex;"><span>         .<span style="color:#a6e22e">setStyle</span>(<span style="color:#66d9ef">new</span> NotificationCompat.<span style="color:#a6e22e">DecoratedCustomViewStyle</span>())
+</span></span><span style="display:flex;"><span>         .<span style="color:#a6e22e">setCustomContentView</span>(remoteViews);
+</span></span></code></pre></div></li>
 </ol>
 <figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/08/03-08-31-23-custom_layout.jpg"
-         alt="DebugView" width="80%"/>
+    alt="DebugView" width="80%">
 </figure>
 
 <hr>
 <h2 id="show-notification">Show notification</h2>
 <p>To show the notification call <code>mManager.notify()</code> and pass a unique id of the notification and also the <em>Notification</em> which can be get by <code>mBuilder.build()</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">getManager<span style="color:#f92672">().</span><span style="color:#a6e22e">notify</span><span style="color:#f92672">(</span>UNIQUE_NOTIFICATION_ID<span style="color:#f92672">,</span>mBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">());</span>
-</code></pre></div><p>Remember that notificationId should be unique int and will require when you want to <strong>update</strong> or <strong>remove the notification</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>getManager().<span style="color:#a6e22e">notify</span>(UNIQUE_NOTIFICATION_ID,mBuilder.<span style="color:#a6e22e">build</span>());
+</span></span></code></pre></div><p>Remember that notificationId should be unique int and will require when you want to <strong>update</strong> or <strong>remove the notification</strong>.</p>
 <blockquote>
 <p><code>getManager()</code> is defined at top of the article</p>
 </blockquote>

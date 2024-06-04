@@ -4,146 +4,100 @@
     <title>Tutorials on The Streamliners</title>
     <link>https://thestreamliners.in/tags/tutorials/</link>
     <description>Recent content in Tutorials on The Streamliners</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Jun 2023 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jun 2023 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://thestreamliners.in/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Differences between CompileSDK,MinSDK and TargetSDK Version</title>
       <link>https://thestreamliners.in/blog/differences-between-compilesdk-minsdk-and-targetsdk/</link>
       <pubDate>Wed, 14 Jun 2023 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/differences-between-compilesdk-minsdk-and-targetsdk/</guid>
-      <description>Differences between CompileSDK,MinSDK and TargetSDK Version  When developing Android applications, developers come across various terminologies and concepts related to the Android SDK (Software Development Kit). Three important terms that often cause confusion are CompileSDK, MinSDK, and TargetSDK versions. Each of these versions plays a crucial role in the development and compatibility of an Android application. In this article, we will explore the differences between CompileSDK, MinSDK, and TargetSDK versions and understand their significance.</description>
+      <description>Differences between CompileSDK,MinSDK and TargetSDK Version When developing Android applications, developers come across various terminologies and concepts related to the Android SDK (Software Development Kit). Three important terms that often cause confusion are CompileSDK, MinSDK, and TargetSDK versions. Each of these versions plays a crucial role in the development and compatibility of an Android application. In this article, we will explore the differences between CompileSDK, MinSDK, and TargetSDK versions and understand their significance.</description>
     </item>
-    
     <item>
       <title>Creating custom notifications</title>
       <link>https://thestreamliners.in/blog/creating-custom-notifications/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/creating-custom-notifications/</guid>
-      <description>Notifications alert you to many things on your Android device, including incoming messages, new emails, and calendar events. Notifications work slightly differently for each app, but they&amp;rsquo;re easy to customize.
-Starting in Android 8.0 (API level 26), all notifications must be assigned to a channel. For each channel, you can set the visual and auditory behavior that is applied to all notifications in that channel. Then, users can change these settings and decide which notification channels from your app should be intrusive or visible at all.</description>
+      <description>Notifications alert you to many things on your Android device, including incoming messages, new emails, and calendar events. Notifications work slightly differently for each app, but they&amp;rsquo;re easy to customize.&#xA;Starting in Android 8.0 (API level 26), all notifications must be assigned to a channel. For each channel, you can set the visual and auditory behavior that is applied to all notifications in that channel. Then, users can change these settings and decide which notification channels from your app should be intrusive or visible at all.</description>
     </item>
-    
     <item>
       <title>Firebase Log Events</title>
       <link>https://thestreamliners.in/blog/firebase-log-events/</link>
       <pubDate>Sun, 08 Aug 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/firebase-log-events/</guid>
-      <description>Firebase provides very powerful feature which is “Log Events”. The power of this feature is that you can check which feature of your app is used mostly by the users.
-Let’s deep dive into the implementation (note that the complete implementation is in Java)
-Add this library in your build.gradle file:
-implementation &amp;#39;com.google.firebase:firebase-analytics&amp;#39; I had used firebase bom in my project so their is no need to give version to firebase-analytics library</description>
+      <description>Firebase provides very powerful feature which is “Log Events”. The power of this feature is that you can check which feature of your app is used mostly by the users.&#xA;Let’s deep dive into the implementation (note that the complete implementation is in Java)&#xA;Add this library in your build.gradle file:&#xA;implementation &amp;#39;com.google.firebase:firebase-analytics&amp;#39; I had used firebase bom in my project so their is no need to give version to firebase-analytics library</description>
     </item>
-    
     <item>
       <title>Firebase Push notifications using Admin SDK</title>
       <link>https://thestreamliners.in/blog/firebase-push-notifications-in-android-using-admin-sdk/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/firebase-push-notifications-in-android-using-admin-sdk/</guid>
-      <description>How to send push notifications through an Android app using firebase?  A notification is a message you can display to the user outside of your application’s normal UI. When you tell the system to issue a notification, it first appears as an icon in the notification area. Notifications are important to give timely updates to your android app users they require minimal UI to notify the user about the event.</description>
+      <description>How to send push notifications through an Android app using firebase? A notification is a message you can display to the user outside of your application’s normal UI. When you tell the system to issue a notification, it first appears as an icon in the notification area. Notifications are important to give timely updates to your android app users they require minimal UI to notify the user about the event.</description>
     </item>
-    
     <item>
       <title>Mastering Markdown Essentials</title>
       <link>https://thestreamliners.in/blog/mastering-markdown-essentials/</link>
       <pubDate>Thu, 24 Jun 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/mastering-markdown-essentials/</guid>
-      <description>A language to write across web platforms.  It is a lightweight markup language for creating formatted text using a plain text editor, and also allows HTML components for styling texts.
-It is easy-to-use syntax for styling all forms of writing and widely used in blogging, instant messaging, online forums, collaborative software, documentation pages and readme files on Github and various other platforms.
-We can control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do in markdown.</description>
+      <description>A language to write across web platforms. It is a lightweight markup language for creating formatted text using a plain text editor, and also allows HTML components for styling texts.&#xA;It is easy-to-use syntax for styling all forms of writing and widely used in blogging, instant messaging, online forums, collaborative software, documentation pages and readme files on Github and various other platforms.&#xA;We can control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do in markdown.</description>
     </item>
-    
     <item>
       <title>Background Location Permission in Android 11 and above</title>
       <link>https://thestreamliners.in/blog/background-location-permission-in-android-11-and-above/</link>
       <pubDate>Wed, 23 Jun 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/background-location-permission-in-android-11-and-above/</guid>
-      <description>Request background location permission in all android versions using Java With lastest android version Android 11, some security is added for location. Now to access background location, users have to manually “Allow all the time” in settings.
-For using foreground and background location in lower versions of Android 11, we can take permission ACCESS_FINE_LOCATION, this permission will be considered for both foreground and background but with Android 11 and above you have to take one more permission ACCESS_BACKGROUND_LOCATION separately.</description>
+      <description>Request background location permission in all android versions using Java With lastest android version Android 11, some security is added for location. Now to access background location, users have to manually “Allow all the time” in settings.&#xA;For using foreground and background location in lower versions of Android 11, we can take permission ACCESS_FINE_LOCATION, this permission will be considered for both foreground and background but with Android 11 and above you have to take one more permission ACCESS_BACKGROUND_LOCATION separately.</description>
     </item>
-    
     <item>
       <title>Designing Custom Toast in Android</title>
       <link>https://thestreamliners.in/blog/designing-custom-toast-in-android/</link>
       <pubDate>Thu, 20 May 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/designing-custom-toast-in-android/</guid>
-      <description>We all love to add toast in places we want to check something, check on click events, give some short messages to user they have endless use. But putting a same toast for different kind of messages such as success, error, alert can be confusing and may not be visually alarming to users.
-So what is the solution? We can design custom views and then inflate them in Toast. Below are some kind of examples we will be implementing, to create our custom Toast which will look cool and visually satisfying to users.</description>
+      <description>We all love to add toast in places we want to check something, check on click events, give some short messages to user they have endless use. But putting a same toast for different kind of messages such as success, error, alert can be confusing and may not be visually alarming to users.&#xA;So what is the solution? We can design custom views and then inflate them in Toast. Below are some kind of examples we will be implementing, to create our custom Toast which will look cool and visually satisfying to users.</description>
     </item>
-    
     <item>
       <title>Implement Notification Count overlay inside Android App</title>
       <link>https://thestreamliners.in/blog/implement-notification-count-overlay-inside-android-app/</link>
       <pubDate>Thu, 20 May 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/implement-notification-count-overlay-inside-android-app/</guid>
-      <description>Do you want to add notification count or badge like this to your app? Well everyone developer wants to add it as it improves User Experience significantly.
-Its always handy to know how many notification I have when I open my app.
-For the demo purpose we shall be creating this layout.
- Step 1 Add this custom UI implementation to app-level gradle file. We will be using this library.</description>
+      <description>Do you want to add notification count or badge like this to your app? Well everyone developer wants to add it as it improves User Experience significantly.&#xA;Its always handy to know how many notification I have when I open my app.&#xA;For the demo purpose we shall be creating this layout.&#xA;Step 1 Add this custom UI implementation to app-level gradle file. We will be using this library.</description>
     </item>
-    
     <item>
       <title>Implement a Offline QR Generation and Scanning in Android</title>
       <link>https://thestreamliners.in/blog/implement-a-offline-qr-generation-and-scanning-in-android/</link>
       <pubDate>Mon, 17 May 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/implement-a-offline-qr-generation-and-scanning-in-android/</guid>
-      <description>QR Code scanner or Barcode scanner for android features are present in many apps to read some useful data.
-Barcodes can scan things ranging from URL, Contact info to Geolocation, WIFI, Driver license IDs.
-QR Code is the more popular format and is commonly seen in many applications from digital payments, automating production, enabling attendance for employees for a business and many more.
-Below, we’ll be developing an application that scans the QR Code value from a bitmap image as well as detects QR Code through a camera and perform the relevant actions, without need of a internet connection.</description>
+      <description>QR Code scanner or Barcode scanner for android features are present in many apps to read some useful data.&#xA;Barcodes can scan things ranging from URL, Contact info to Geolocation, WIFI, Driver license IDs.&#xA;QR Code is the more popular format and is commonly seen in many applications from digital payments, automating production, enabling attendance for employees for a business and many more.&#xA;Below, we’ll be developing an application that scans the QR Code value from a bitmap image as well as detects QR Code through a camera and perform the relevant actions, without need of a internet connection.</description>
     </item>
-    
     <item>
       <title>Design a Custom Phone Authentication with Firebase for Android</title>
       <link>https://thestreamliners.in/blog/design-a-custom-phone-authentication-with-firebase/</link>
       <pubDate>Sun, 16 May 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/design-a-custom-phone-authentication-with-firebase/</guid>
-      <description>Many apps require their users to be authenticated. So for the purpose of authenticating the apps uses phone number authentication inside their apps.
-When you use phone number authentication, you have many benefits like
- Preventing Fake Users: When you use phone authentication, the user can’t be able to register for multiple accounts, as for each account a unique phone number is needed. Increase User Value: When you have all the users verified by a phone number the value of your user base increases.</description>
+      <description>Many apps require their users to be authenticated. So for the purpose of authenticating the apps uses phone number authentication inside their apps.&#xA;When you use phone number authentication, you have many benefits like&#xA;Preventing Fake Users: When you use phone authentication, the user can’t be able to register for multiple accounts, as for each account a unique phone number is needed. Increase User Value: When you have all the users verified by a phone number the value of your user base increases.</description>
     </item>
-    
     <item>
       <title>Localize your Android App with multiple language options</title>
       <link>https://thestreamliners.in/blog/localize-your-android-app-with-multiple-language-options/</link>
       <pubDate>Sun, 16 May 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/localize-your-android-app-with-multiple-language-options/</guid>
-      <description>Android runs on many devices in many regions. To reach the most users, your app should handle text, audio files, numbers, currency, and graphics in ways appropriate to the locales where your app is used.
-It is not enough to use only one languageoption while developing applications. When we publish our applications, there may be users who want to use it in different languages or who do not know the languagewe have developed.</description>
+      <description>Android runs on many devices in many regions. To reach the most users, your app should handle text, audio files, numbers, currency, and graphics in ways appropriate to the locales where your app is used.&#xA;It is not enough to use only one language option while developing applications. When we publish our applications, there may be users who want to use it in different languages or who do not know the language we have developed.</description>
     </item>
-    
     <item>
       <title>Implementing Biometric Authentication in Java Android</title>
       <link>https://thestreamliners.in/blog/implementing-biometric-authentication-in-java-android/</link>
       <pubDate>Sat, 15 May 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/implementing-biometric-authentication-in-java-android/</guid>
-      <description>Thinking of adding your own app lock to your android app? Adding a biometric app lock 🔒 to protect your user from unauthorized usage, protect their data and information can be really helpful.
-Biometric authentication allows you to quickly unlock your device with your fingerprint or face, confirming it’s really you who’s using the app.
-Android’s biometric APIs allow for secure authentication on the Android platform. They manage a system-provided biometric authentication prompt, and provide a seamless experience by supporting various authentication types, including biometric ones such as fingerprint and face, as well as non-biometric types like PIN, password, and pattern.</description>
+      <description>Thinking of adding your own app lock to your android app? Adding a biometric app lock 🔒 to protect your user from unauthorized usage, protect their data and information can be really helpful.&#xA;Biometric authentication allows you to quickly unlock your device with your fingerprint or face, confirming it’s really you who’s using the app.&#xA;Android’s biometric APIs allow for secure authentication on the Android platform. They manage a system-provided biometric authentication prompt, and provide a seamless experience by supporting various authentication types, including biometric ones such as fingerprint and face, as well as non-biometric types like PIN, password, and pattern.</description>
     </item>
-    
     <item>
       <title>Implementing the Perfect Splash for Android</title>
       <link>https://thestreamliners.in/blog/implementing-the-perfect-splash-for-android/</link>
       <pubDate>Sat, 15 May 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/implementing-the-perfect-splash-for-android/</guid>
-      <description>A Splash Screen is a screen which appears when you open an app on your mobile device. Sometimes it’s referred to as a launch screen or startup screen and shows up when your app is loading after you&amp;rsquo;ve just opened it.
-When the loading is finished, you’ll be taken to a more functional screen where you can complete actions.
-Splash screens appear on your screen for a fleeting moment – look away and you might miss them.</description>
+      <description>A Splash Screen is a screen which appears when you open an app on your mobile device. Sometimes it’s referred to as a launch screen or startup screen and shows up when your app is loading after you&amp;rsquo;ve just opened it.&#xA;When the loading is finished, you’ll be taken to a more functional screen where you can complete actions.&#xA;Splash screens appear on your screen for a fleeting moment – look away and you might miss them.</description>
     </item>
-    
   </channel>
 </rss>

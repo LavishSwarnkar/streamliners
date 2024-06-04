@@ -59,7 +59,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a href="https://thestreamliners.in" class="navbar-brand">
+    <a href="https://thestreamliners.in/" class="navbar-brand">
       <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
     </a>
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
@@ -73,32 +73,32 @@
         
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#home"
+          <a href="https://thestreamliners.in/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#service"
+          <a href="https://thestreamliners.in/#service"
             class="nav-link text-dark text-sm-center p-2 ">Services</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#portfolio"
+          <a href="https://thestreamliners.in/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#blog"
+          <a href="https://thestreamliners.in/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/contact"
+          <a href="https://thestreamliners.in//contact"
             class="nav-link text-dark text-sm-center p-2 ">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/about-us"
+          <a href="https://thestreamliners.in//about-us"
             class="nav-link text-dark text-sm-center p-2 ">About us</a>
         </li>
         
@@ -123,7 +123,7 @@
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/>Home</a></li>
             <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
           </ol>
         </nav>
@@ -165,7 +165,7 @@
               <div class="singleBlog__content">
                   <h4 id="how-to-implement-an-alarm-in-your-android-application-using-alarmmanager">How to implement an alarm in your android application using AlarmManager?</h4>
 <figure class="center-img"><img src="https://raw.githubusercontent.com/Coder481/CDN/main/2021/07/03-11-26-59-android_alarm_img.jpeg"
-         alt="Alarm" width="80%"/>
+    alt="Alarm" width="80%">
 </figure>
 
 <p>Android <code>AlarmManager</code> allows you to access system alarm.</p>
@@ -182,34 +182,34 @@
 <li>
 <p><strong>First create a class that extends <code>BroadcastReceiver</code>  and implement <code>onReceive()</code> method in the class</strong></p>
 <p><a href="https://developer.android.com/reference/android/content/BroadcastReceiver"><code>BroadcastReceiver</code></a> is a class for receiving and handling the broadcast sent to your application. In system alarm case, it receives broadcast from the system alarm service when alarm goes off.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AlarmReceiver</span> <span style="color:#66d9ef">extends</span> BroadcastReceiver <span style="color:#f92672">{</span>
-
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onReceive</span><span style="color:#f92672">(</span>Context context<span style="color:#f92672">,</span> Intent intent<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span>Intent<span style="color:#f92672">.</span><span style="color:#a6e22e">ACTION_BOOT_COMPLETED</span><span style="color:#f92672">).</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>intent<span style="color:#f92672">.</span><span style="color:#a6e22e">getAction</span><span style="color:#f92672">())){</span>
-            <span style="color:#75715e">// reset all alarms
-</span><span style="color:#75715e"></span>        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">else</span><span style="color:#f92672">{</span>
-            <span style="color:#75715e">// perform your scheduled task here (eg. send alarm notification) 
-</span><span style="color:#75715e"></span>        <span style="color:#f92672">}</span>
-
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>Whenever your device reboots the <code>BroadcastReceiver</code> is called and with the help of <code>Intent</code> we can re-register all the alarms using action <code>ACTION_BOOT_COMPLETED</code> .</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AlarmReceiver</span> <span style="color:#66d9ef">extends</span> BroadcastReceiver {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onReceive</span>(Context context, Intent intent) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> ((Intent.<span style="color:#a6e22e">ACTION_BOOT_COMPLETED</span>).<span style="color:#a6e22e">equals</span>(intent.<span style="color:#a6e22e">getAction</span>())){
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// reset all alarms</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// perform your scheduled task here (eg. send alarm notification) </span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Whenever your device reboots the <code>BroadcastReceiver</code> is called and with the help of <code>Intent</code> we can re-register all the alarms using action <code>ACTION_BOOT_COMPLETED</code> .</p>
 <p>In the else part you can perform your task (e.g, send alarm notification).</p>
 <p>We will further see how to send notification to your application.</p>
 </li>
 <li>
 <p><strong>Register this receiver in your <code>AndroidManifest.xml</code> file</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">&lt;</span>receiver
-    android<span style="color:#f92672">:</span>name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.AlarmReceiver&#34;</span>
-    android<span style="color:#f92672">:</span>enabled<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>
-    android<span style="color:#f92672">:</span>exported<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span>intent<span style="color:#f92672">-</span>filter<span style="color:#f92672">&gt;</span>
-        <span style="color:#f92672">&lt;</span>action android<span style="color:#f92672">:</span>name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;android.intent.action.BOOT_COMPLETED&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;/</span>intent<span style="color:#f92672">-</span>filter<span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;/</span>receiver<span style="color:#f92672">&gt;</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>receiver
+</span></span><span style="display:flex;"><span>    android:name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.AlarmReceiver&#34;</span>
+</span></span><span style="display:flex;"><span>    android:enabled<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>
+</span></span><span style="display:flex;"><span>    android:exported<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span>intent<span style="color:#f92672">-</span>filter<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;</span>action android:name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;android.intent.action.BOOT_COMPLETED&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/</span>intent<span style="color:#f92672">-</span>filter<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span>receiver<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div></li>
 </ol>
 <p>        <code>&lt;action android:name=&quot;android.intent.action.BOOT_COMPLETED&quot;/&gt;</code> is added             in <code>&lt;intent-filter&gt;</code> so that we can handle the situation to re-register all the         scheduled alarms when the device will reboot.</p>
 <h4 id="step-2-setup-in-activity-"><strong>Step 2: Setup in activity :</strong></h4>
@@ -217,24 +217,24 @@
 <ol>
 <li>
 <p><strong>Get <code>AlarmManager</code> instance</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> android.app.AlarmManager<span style="color:#f92672">;</span>
-AlarmManager alarmManager <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>AlarmManager<span style="color:#f92672">)</span> getSystemService<span style="color:#f92672">(</span>Context<span style="color:#f92672">.</span><span style="color:#a6e22e">ALARM_SERVICE</span><span style="color:#f92672">);</span>
-</code></pre></div><p><code>AlarmManager</code> is actually a system service and thus can be retrieved from <code>Context.getSystemService()</code> function with parameter <code>Context.ALARM_SERVICE</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> android.app.AlarmManager;
+</span></span><span style="display:flex;"><span>AlarmManager alarmManager <span style="color:#f92672">=</span> (AlarmManager) getSystemService(Context.<span style="color:#a6e22e">ALARM_SERVICE</span>);
+</span></span></code></pre></div><p><code>AlarmManager</code> is actually a system service and thus can be retrieved from <code>Context.getSystemService()</code> function with parameter <code>Context.ALARM_SERVICE</code>.</p>
 </li>
 <li>
 <p><strong>Prepare for an intent</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> android.content.Intent<span style="color:#f92672">;</span>
-Intent intent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> AlarmReceiver<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
-intent<span style="color:#f92672">.</span><span style="color:#a6e22e">putExtra</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;any_data&#34;</span><span style="color:#f92672">,</span>123<span style="color:#f92672">);</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> android.content.Intent;
+</span></span><span style="display:flex;"><span>Intent intent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent(<span style="color:#66d9ef">this</span>, AlarmReceiver.<span style="color:#a6e22e">class</span>);
+</span></span><span style="display:flex;"><span>intent.<span style="color:#a6e22e">putExtra</span>(<span style="color:#e6db74">&#34;any_data&#34;</span>,123);
+</span></span></code></pre></div></li>
 </ol>
 <p>        Android allows a bundle of information to be sent to a target <code>receiver</code> (i.e.             <code>AlarmReceiver</code>, which is defined in step 1) when alarm goes off. The designated         receiver and the corresponding information can be set in <code>Intent</code> by setting its         <code>action</code> and <code>extra</code>. These information can later be retrieved at the <code>onReceive()</code>         callback in the designated <code>BroadcastReceiver</code> and <code>action</code> field is checked to         ensure the correctness of the system broadcast.</p>
 <ol start="3">
 <li>
 <p><strong>Prepare for an PendingIntent</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> android.app.PendingIntent<span style="color:#f92672">;</span>
-PendingIntent pendingIntent <span style="color:#f92672">=</span> PendingIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">getBroadcast</span><span style="color:#f92672">(</span>getApplicationContext<span style="color:#f92672">(),</span> 0<span style="color:#f92672">,</span> intent<span style="color:#f92672">,</span> PendingIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">FLAG_UPDATE_CURRENT</span><span style="color:#f92672">);</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> android.app.PendingIntent;
+</span></span><span style="display:flex;"><span>PendingIntent pendingIntent <span style="color:#f92672">=</span> PendingIntent.<span style="color:#a6e22e">getBroadcast</span>(getApplicationContext(), 0, intent, PendingIntent.<span style="color:#a6e22e">FLAG_UPDATE_CURRENT</span>);
+</span></span></code></pre></div></li>
 </ol>
 <p>        <code>PendingIntent</code> is a reference pointing to a token maintained by the Android         system. Thus, it will still be valid if the application is killed by user and can be         broadcasted at some moment in the future.</p>
 <p>        2nd parameter of <code>getBroadcast()</code> is <em><strong>requestCode</strong></em> which should be unique for         every pendingIntent  when you want to schedule multiple alarms.</p>
@@ -252,23 +252,23 @@ PendingIntent pendingIntent <span style="color:#f92672">=</span> PendingIntent<s
 <li>
 <p><strong>Set the alarm time and sent to system</strong></p>
 <p>The best way to set the time of the alarm is by using a <code>Calendar</code> object</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.util.Calendar<span style="color:#f92672">;</span>
-
-Calendar cal <span style="color:#f92672">=</span> Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
-cal<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">HOUR_OF_DAY</span><span style="color:#f92672">,</span> hourOfDay<span style="color:#f92672">);</span>  <span style="color:#75715e">// set hour
-</span><span style="color:#75715e"></span>cal<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">MINUTE</span><span style="color:#f92672">,</span> minute<span style="color:#f92672">);</span>          <span style="color:#75715e">// set minute   
-</span><span style="color:#75715e"></span>cal<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">SECOND</span><span style="color:#f92672">,</span> 0<span style="color:#f92672">);</span>               <span style="color:#75715e">// set seconds
-</span><span style="color:#75715e"></span>
-alarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">setExactAndAllowWhileIdle</span><span style="color:#f92672">(</span>AlarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">RTC_WAKEUP</span><span style="color:#f92672">,</span>cal<span style="color:#f92672">.</span><span style="color:#a6e22e">getTimeInMillis</span><span style="color:#f92672">(),</span>pendingIntent<span style="color:#f92672">);</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.Calendar;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Calendar cal <span style="color:#f92672">=</span> Calendar.<span style="color:#a6e22e">getInstance</span>();
+</span></span><span style="display:flex;"><span>cal.<span style="color:#a6e22e">set</span>(Calendar.<span style="color:#a6e22e">HOUR_OF_DAY</span>, hourOfDay);  <span style="color:#75715e">// set hour</span>
+</span></span><span style="display:flex;"><span>cal.<span style="color:#a6e22e">set</span>(Calendar.<span style="color:#a6e22e">MINUTE</span>, minute);          <span style="color:#75715e">// set minute   </span>
+</span></span><span style="display:flex;"><span>cal.<span style="color:#a6e22e">set</span>(Calendar.<span style="color:#a6e22e">SECOND</span>, 0);               <span style="color:#75715e">// set seconds</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>alarmManager.<span style="color:#a6e22e">setExactAndAllowWhileIdle</span>(AlarmManager.<span style="color:#a6e22e">RTC_WAKEUP</span>,cal.<span style="color:#a6e22e">getTimeInMillis</span>(),pendingIntent);
+</span></span></code></pre></div></li>
 </ol>
 <p>        The simplest way to set an alarm is using <code>setExactAndAllowWhileIdle()</code> with         parameter <code>RTC_WAKEUP</code>. This would tell Android fires the alarm exactly at the         assigned time no matter the system is in doze mode (idle mode).</p>
 <p>        If you want to repeat your alarm on a particular <strong>Day of Week</strong> then: </p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">cal<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">DAY_OF_WEEK</span><span style="color:#f92672">,</span> Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">SUNDAY</span><span style="color:#f92672">);</span> 
-
-<span style="color:#66d9ef">long</span> interval <span style="color:#f92672">=</span> 7 <span style="color:#f92672">*</span> 24 <span style="color:#f92672">*</span> 60 <span style="color:#f92672">*</span> 60 <span style="color:#f92672">*</span> 1000<span style="color:#f92672">;</span>   <span style="color:#75715e">// interval of 7 days
-</span><span style="color:#75715e"></span>alarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">setRepeating</span><span style="color:#f92672">(</span>AlarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">RTC_WAKEUP</span><span style="color:#f92672">,</span> cal<span style="color:#f92672">.</span><span style="color:#a6e22e">getTimeInMillis</span><span style="color:#f92672">(),</span> interval <span style="color:#f92672">,</span> pendingIntent<span style="color:#f92672">);</span> 
-</code></pre></div><p>        Set the day of week you want repeat the alarm to <code>Calendar.DAY_OF_WEEK</code> and use         <code>setRepeating()</code> method of alarmManager.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>cal.<span style="color:#a6e22e">set</span>(Calendar.<span style="color:#a6e22e">DAY_OF_WEEK</span>, Calendar.<span style="color:#a6e22e">SUNDAY</span>); 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">long</span> interval <span style="color:#f92672">=</span> 7 <span style="color:#f92672">*</span> 24 <span style="color:#f92672">*</span> 60 <span style="color:#f92672">*</span> 60 <span style="color:#f92672">*</span> 1000;   <span style="color:#75715e">// interval of 7 days</span>
+</span></span><span style="display:flex;"><span>alarmManager.<span style="color:#a6e22e">setRepeating</span>(AlarmManager.<span style="color:#a6e22e">RTC_WAKEUP</span>, cal.<span style="color:#a6e22e">getTimeInMillis</span>(), interval , pendingIntent); 
+</span></span></code></pre></div><p>        Set the day of week you want repeat the alarm to <code>Calendar.DAY_OF_WEEK</code> and use         <code>setRepeating()</code> method of alarmManager.</p>
 <p>        <strong>Some more methods of alarmManager :</strong></p>
 <p>                1. <code>alarmManager.set()</code></p>
 <p>                2. <code>alarmManager.setExact()</code></p>
@@ -284,23 +284,23 @@ alarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">setE
 <ul>
 <li>
 <p><strong>Get <code>AlarmManager</code> instance</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">AlarmManager alarmManager <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>AlarmManager<span style="color:#f92672">)</span> getSystemService<span style="color:#f92672">(</span>Context<span style="color:#f92672">.</span><span style="color:#a6e22e">ALARM_SERVICE</span><span style="color:#f92672">);</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>AlarmManager alarmManager <span style="color:#f92672">=</span> (AlarmManager) getSystemService(Context.<span style="color:#a6e22e">ALARM_SERVICE</span>);
+</span></span></code></pre></div></li>
 <li>
 <p><strong>Prepare for the Intent</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Intent intent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> AlarmReceiver<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Intent intent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent(<span style="color:#66d9ef">this</span>, AlarmReceiver.<span style="color:#a6e22e">class</span>);
+</span></span></code></pre></div></li>
 <li>
 <p><strong>Prepare for the PendingIntent</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">PendingIntent pendingIntent <span style="color:#f92672">=</span> PendingIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">getBroadcast</span><span style="color:#f92672">(</span>getApplicationContext<span style="color:#f92672">(),</span> 0 <span style="color:#f92672">,</span> intent<span style="color:#f92672">,</span> PendingIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">FLAG_UPDATE_CURRENT</span><span style="color:#f92672">);</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>PendingIntent pendingIntent <span style="color:#f92672">=</span> PendingIntent.<span style="color:#a6e22e">getBroadcast</span>(getApplicationContext(), 0 , intent, PendingIntent.<span style="color:#a6e22e">FLAG_UPDATE_CURRENT</span>);
+</span></span></code></pre></div></li>
 </ul>
 <p>        <strong>Note :</strong> To cancel a particular scheduled alarm the <code>requestCode</code>  used in                   <code>PendingIntent</code> must be same to that which is used to register that alarm.</p>
 <ul>
 <li>
 <p><strong>Now cancel the alarm using AlarmManager instance</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">alarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">cancel</span><span style="color:#f92672">(</span>pendingIntent<span style="color:#f92672">);</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>alarmManager.<span style="color:#a6e22e">cancel</span>(pendingIntent);
+</span></span></code></pre></div></li>
 </ul>
 <hr>
 <h3 id="handling-of-an-alarm-event">Handling of an alarm event:</h3>
@@ -314,14 +314,14 @@ alarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">setE
 </li>
 </ol>
 <p>The implementation of <code>AlarmManager.OnAlarmListener</code> is similar to the one using <code>PendingIntent</code>, instead it requires a callback and its corresponding <code>Handler</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String tag <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;TAG&#34;</span><span style="color:#f92672">;</span>
-alarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">setExact</span><span style="color:#f92672">(</span>AlarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">RTC_WAKEUP</span><span style="color:#f92672">,</span> cal<span style="color:#f92672">.</span><span style="color:#a6e22e">getTimeInMillis</span><span style="color:#f92672">(),</span> tag<span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> AlarmManager<span style="color:#f92672">.</span><span style="color:#a6e22e">OnAlarmListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-     <span style="color:#a6e22e">@Override</span>
-     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onAlarm</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-         Toast<span style="color:#f92672">.</span><span style="color:#a6e22e">makeText</span><span style="color:#f92672">(</span>OwnerSettingsActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;AlarmManager.OnAlarmListener&#34;</span><span style="color:#f92672">,</span> Toast<span style="color:#f92672">.</span><span style="color:#a6e22e">LENGTH_SHORT</span><span style="color:#f92672">).</span><span style="color:#a6e22e">show</span><span style="color:#f92672">();</span>  
-     <span style="color:#f92672">}</span>
-<span style="color:#f92672">},</span><span style="color:#66d9ef">null</span><span style="color:#f92672">);</span>
-</code></pre></div><p>There is a limitation on <code>AlarmManager.OnAlarmListener</code> over <code>PendingIntent</code>. It cannot work when the corresponding <code>Activity</code> or <code>Fragment</code> is destroyed since the callback object is released at the same time. However, because <code>PendingIntent</code> is sent to the system alarm service, it can be fired even when the application is killed by user.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>String tag <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;TAG&#34;</span>;
+</span></span><span style="display:flex;"><span>alarmManager.<span style="color:#a6e22e">setExact</span>(AlarmManager.<span style="color:#a6e22e">RTC_WAKEUP</span>, cal.<span style="color:#a6e22e">getTimeInMillis</span>(), tag, <span style="color:#66d9ef">new</span> AlarmManager.<span style="color:#a6e22e">OnAlarmListener</span>() {
+</span></span><span style="display:flex;"><span>     <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onAlarm</span>() {
+</span></span><span style="display:flex;"><span>         Toast.<span style="color:#a6e22e">makeText</span>(OwnerSettingsActivity.<span style="color:#a6e22e">this</span>, <span style="color:#e6db74">&#34;AlarmManager.OnAlarmListener&#34;</span>, Toast.<span style="color:#a6e22e">LENGTH_SHORT</span>).<span style="color:#a6e22e">show</span>();  
+</span></span><span style="display:flex;"><span>     }
+</span></span><span style="display:flex;"><span>},<span style="color:#66d9ef">null</span>);
+</span></span></code></pre></div><p>There is a limitation on <code>AlarmManager.OnAlarmListener</code> over <code>PendingIntent</code>. It cannot work when the corresponding <code>Activity</code> or <code>Fragment</code> is destroyed since the callback object is released at the same time. However, because <code>PendingIntent</code> is sent to the system alarm service, it can be fired even when the application is killed by user.</p>
 <hr>
 <h2 id="summary">Summary</h2>
 <p>Android provides an alarm service to notify application at any specific time with the corresponding assigned information stored in <code>Intent</code>.</p>

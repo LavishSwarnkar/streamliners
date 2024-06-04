@@ -59,7 +59,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a href="https://thestreamliners.in" class="navbar-brand">
+    <a href="https://thestreamliners.in/" class="navbar-brand">
       <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
     </a>
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
@@ -73,32 +73,32 @@
         
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#home"
+          <a href="https://thestreamliners.in/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#service"
+          <a href="https://thestreamliners.in/#service"
             class="nav-link text-dark text-sm-center p-2 ">Services</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#portfolio"
+          <a href="https://thestreamliners.in/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#blog"
+          <a href="https://thestreamliners.in/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/contact"
+          <a href="https://thestreamliners.in//contact"
             class="nav-link text-dark text-sm-center p-2 ">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/about-us"
+          <a href="https://thestreamliners.in//about-us"
             class="nav-link text-dark text-sm-center p-2 ">About us</a>
         </li>
         
@@ -123,7 +123,7 @@
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/>Home</a></li>
             <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
           </ol>
         </nav>
@@ -393,32 +393,32 @@ Naming conventions for icons (taken from <a href="http://developer.android.com/d
 <li><strong>Don&rsquo;t ignore exceptions:</strong></li>
 </ul>
 <p>It can be tempting to write code that ignores an exception, such as:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setServerPort</span><span style="color:#f92672">(</span>String value<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-      <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
-          serverPort <span style="color:#f92672">=</span> Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">parseInt</span><span style="color:#f92672">(</span>value<span style="color:#f92672">);</span>
-      <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>NumberFormatException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#f92672">}</span>
-  <span style="color:#f92672">}</span>
-</code></pre></div><p>Don&rsquo;t do this. While you may think your code will never encounter this error condition or that it isn&rsquo;t important to handle it, ignoring this type of exception creates mines in your code for someone else to trigger some day. You must handle every exception in your code in a principled way. (<a href="https://source.android.com/source/code-style.html">Android code style guidelines</a>)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setServerPort</span>(String value) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>          serverPort <span style="color:#f92672">=</span> Integer.<span style="color:#a6e22e">parseInt</span>(value);
+</span></span><span style="display:flex;"><span>      } <span style="color:#66d9ef">catch</span> (NumberFormatException e) { }
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>Don&rsquo;t do this. While you may think your code will never encounter this error condition or that it isn&rsquo;t important to handle it, ignoring this type of exception creates mines in your code for someone else to trigger some day. You must handle every exception in your code in a principled way. (<a href="https://source.android.com/source/code-style.html">Android code style guidelines</a>)</p>
 <ul>
 <li><strong>Don&rsquo;t catch generic exception</strong></li>
 </ul>
 <p>You should not do this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
-    someComplicatedIOFunction<span style="color:#f92672">();</span>        <span style="color:#75715e">// may throw IOException
-</span><span style="color:#75715e"></span>    someComplicatedParsingFunction<span style="color:#f92672">();</span>   <span style="color:#75715e">// may throw ParsingException
-</span><span style="color:#75715e"></span>    someComplicatedSecurityFunction<span style="color:#f92672">();</span>  <span style="color:#75715e">// may throw SecurityException
-</span><span style="color:#75715e"></span><span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>Exception e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>                 <span style="color:#75715e">// I&#39;ll just catch all exceptions
-</span><span style="color:#75715e"></span>    handleError<span style="color:#f92672">();</span>                      <span style="color:#75715e">// with one generic handler!
-</span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
-</code></pre></div><p>In almost all cases, it&rsquo;s inappropriate to catch generic <code>Exception</code> or <code>Throwable</code> (preferably not <code>Throwable</code> because it includes <code>Error</code> exceptions).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>    someComplicatedIOFunction();        <span style="color:#75715e">// may throw IOException</span>
+</span></span><span style="display:flex;"><span>    someComplicatedParsingFunction();   <span style="color:#75715e">// may throw ParsingException</span>
+</span></span><span style="display:flex;"><span>    someComplicatedSecurityFunction();  <span style="color:#75715e">// may throw SecurityException</span>
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">catch</span> (Exception e) {                 <span style="color:#75715e">// I&#39;ll just catch all exceptions</span>
+</span></span><span style="display:flex;"><span>    handleError();                      <span style="color:#75715e">// with one generic handler!</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In almost all cases, it&rsquo;s inappropriate to catch generic <code>Exception</code> or <code>Throwable</code> (preferably not <code>Throwable</code> because it includes <code>Error</code> exceptions).</p>
 <p>It obscures the failure- handling properties of your code, meaning if someone adds a new type of exception in the code you&rsquo;re calling, the compiler won&rsquo;t point out that you need to handle the error differently. In most cases you shouldn&rsquo;t be handling different types of exceptions in the same way.</p>
 <p>Catch each exception separately as part of a multi-catch block, for example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
-    <span style="color:#f92672">...</span>
-<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>ClassNotFoundException <span style="color:#f92672">|</span> NoSuchMethodException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#f92672">...</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">catch</span> (ClassNotFoundException <span style="color:#f92672">|</span> NoSuchMethodException e) {
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
 <li><strong>Fully qualify imports</strong></li>
 </ul>
 <p>This is bad: <code>import foo.*;</code></p>
@@ -430,38 +430,38 @@ Naming conventions for icons (taken from <a href="http://developer.android.com/d
 <li><strong>Use Javadoc standard comments</strong></li>
 </ul>
 <p>Every file should have a copyright statement at the top, followed by package and import statements (each block separated by a blank line), and finally the class or interface declaration. In the Javadoc comments, describe what the class or interface does.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">/*
-</span><span style="color:#75715e"> * Copyright 2020 The Android Open Source Project
-</span><span style="color:#75715e"> *
-</span><span style="color:#75715e"> * Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
-</span><span style="color:#75715e"> * you may not use this file except in compliance with the License.
-</span><span style="color:#75715e"> * You may obtain a copy of the License at
-</span><span style="color:#75715e"> *
-</span><span style="color:#75715e"> *      http://www.apache.org/licenses/LICENSE-2.0
-</span><span style="color:#75715e"> *
-</span><span style="color:#75715e"> * Unless required by applicable law or agreed to in writing, software
-</span><span style="color:#75715e"> * distributed under the License is distributed on an &#34;AS IS&#34; BASIS,
-</span><span style="color:#75715e"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-</span><span style="color:#75715e"> * See the License for the specific language governing permissions and
-</span><span style="color:#75715e"> * limitations under the License.
-</span><span style="color:#75715e"> */</span>
-
-<span style="color:#f92672">package</span> com.android.internal.foo<span style="color:#f92672">;</span>
-
-<span style="color:#f92672">import</span> android.os.Blah<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> android.view.Yada<span style="color:#f92672">;</span>
-
-<span style="color:#f92672">import</span> java.sql.ResultSet<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> java.sql.SQLException<span style="color:#f92672">;</span>
-
-<span style="color:#75715e">/**
-</span><span style="color:#75715e"> * Does X and Y and provides an abstraction for Z.
-</span><span style="color:#75715e"> */</span>
-
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span> <span style="color:#f92672">{</span>
-    <span style="color:#f92672">...</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Copyright 2020 The Android Open Source Project
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * you may not use this file except in compliance with the License.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * You may obtain a copy of the License at
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *      http://www.apache.org/licenses/LICENSE-2.0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Unless required by applicable law or agreed to in writing, software
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * distributed under the License is distributed on an &#34;AS IS&#34; BASIS,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * See the License for the specific language governing permissions and
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * limitations under the License.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">package</span> com.android.internal.foo;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> android.os.Blah;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> android.view.Yada;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.sql.ResultSet;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.sql.SQLException;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Does X and Y and provides an abstraction for Z.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span> {
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
 <li><strong>Fields definition and naming</strong></li>
 </ul>
 <p>Fields should be defined at the <strong>top of the file</strong> and they should follow the naming rules listed below.</p>
@@ -472,15 +472,15 @@ Naming conventions for icons (taken from <a href="http://developer.android.com/d
 <li>Static final fields (constants) are ALL_CAPS_WITH_UNDERSCORES.</li>
 </ol>
 <p>Example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> SOME_CONSTANT <span style="color:#f92672">=</span> 42<span style="color:#f92672">;</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> publicField<span style="color:#f92672">;</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> MyClass sSingleton<span style="color:#f92672">;</span>
-    <span style="color:#66d9ef">int</span> mPackagePrivate<span style="color:#f92672">;</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> mPrivate<span style="color:#f92672">;</span>
-    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">int</span> mProtected<span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> SOME_CONSTANT <span style="color:#f92672">=</span> 42;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> publicField;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> MyClass sSingleton;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> mPackagePrivate;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> mPrivate;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">int</span> mProtected;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
 <li><strong>String constants, naming, and values</strong></li>
 </ul>
 <p>Many elements of the Android SDK such as <code>SharedPreferences</code>, <code>Bundle</code>, or <code>Intent</code>use a key-value pair approach so it&rsquo;s very likely that even for a small app you end up having to write a lot of String constants.</p>
@@ -528,17 +528,17 @@ Naming conventions for icons (taken from <a href="http://developer.android.com/d
 <li><code>Log.e(String tag, String msg)</code> (error)</li>
 </ul>
 <p>As a general rule, we use the class name as tag and we define it as a <code>static final</code> field at the top of the file. For example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String TAG <span style="color:#f92672">=</span> MyClass<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getSimpleName</span><span style="color:#f92672">();</span>
-
-    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">myMethod</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        Log<span style="color:#f92672">.</span><span style="color:#a6e22e">e</span><span style="color:#f92672">(</span>TAG<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;My error message&#34;</span><span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>VERBOSE and DEBUG logs <strong>must</strong> be disabled on release builds. It is also recommended to disable INFORMATION, WARNING and ERROR logs but you may want to keep them enabled if you think they may be useful to identify issues on release builds. If you decide to leave them enabled, you have to make sure that they are not leaking private information such as email addresses, user ids, etc.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String TAG <span style="color:#f92672">=</span> MyClass.<span style="color:#a6e22e">class</span>.<span style="color:#a6e22e">getSimpleName</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">myMethod</span>() {
+</span></span><span style="display:flex;"><span>        Log.<span style="color:#a6e22e">e</span>(TAG, <span style="color:#e6db74">&#34;My error message&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>VERBOSE and DEBUG logs <strong>must</strong> be disabled on release builds. It is also recommended to disable INFORMATION, WARNING and ERROR logs but you may want to keep them enabled if you think they may be useful to identify issues on release builds. If you decide to leave them enabled, you have to make sure that they are not leaking private information such as email addresses, user ids, etc.</p>
 <p>To only show logs on debug builds:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>BuildConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">DEBUG</span><span style="color:#f92672">)</span> Log<span style="color:#f92672">.</span><span style="color:#a6e22e">d</span><span style="color:#f92672">(</span>TAG<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;The value of x is &#34;</span> <span style="color:#f92672">+</span> x<span style="color:#f92672">);</span>
-</code></pre></div><h4 id="25-line-length-limit">2.5 Line length limit</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (BuildConfig.<span style="color:#a6e22e">DEBUG</span>) Log.<span style="color:#a6e22e">d</span>(TAG, <span style="color:#e6db74">&#34;The value of x is &#34;</span> <span style="color:#f92672">+</span> x);
+</span></span></code></pre></div><h4 id="25-line-length-limit">2.5 Line length limit</h4>
 <p>Code lines should not exceed <strong>100 characters</strong>. If the line is longer than this limit there are usually two options to reduce its length:</p>
 <ol>
 <li>Extract a local variable or method (preferable).</li>
@@ -549,21 +549,21 @@ Naming conventions for icons (taken from <a href="http://developer.android.com/d
 <li>
 <p><strong>Method chain case</strong></p>
 <p>When multiple methods are chained in the same line - for example when using Builders - every call to a method should go in its own line, breaking the line before the <code>.</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Picasso<span style="color:#f92672">.</span><span style="color:#a6e22e">with</span><span style="color:#f92672">(</span>context<span style="color:#f92672">).</span><span style="color:#a6e22e">load</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;foo.jpg&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">into</span><span style="color:#f92672">(</span>imageView<span style="color:#f92672">);</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Picasso<span style="color:#f92672">.</span><span style="color:#a6e22e">with</span><span style="color:#f92672">(</span>context<span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">load</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;foo.jpg&#34;</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">into</span><span style="color:#f92672">(</span>imageView<span style="color:#f92672">);</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Picasso.<span style="color:#a6e22e">with</span>(context).<span style="color:#a6e22e">load</span>(<span style="color:#e6db74">&#34;foo.jpg&#34;</span>).<span style="color:#a6e22e">into</span>(imageView);
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Picasso.<span style="color:#a6e22e">with</span>(context)
+</span></span><span style="display:flex;"><span>        .<span style="color:#a6e22e">load</span>(<span style="color:#e6db74">&#34;foo.jpg&#34;</span>)
+</span></span><span style="display:flex;"><span>        .<span style="color:#a6e22e">into</span>(imageView);
+</span></span></code></pre></div></li>
 <li>
 <p><strong>Long parameters case</strong></p>
 <p>When a method has many parameters or its parameters are very long, we should break the line after every comma <code>,</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">loadPicture<span style="color:#f92672">(</span>context<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;foo.jpg&#34;</span><span style="color:#f92672">,</span> mImageViewProfilePicture<span style="color:#f92672">,</span> clickListener<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Title of the picture&#34;</span><span style="color:#f92672">);</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">loadPicture<span style="color:#f92672">(</span>context<span style="color:#f92672">,</span>
-        <span style="color:#e6db74">&#34;foo.jpg&#34;</span><span style="color:#f92672">,</span>
-        mImageViewProfilePicture<span style="color:#f92672">,</span>
-        clickListener<span style="color:#f92672">,</span>
-        <span style="color:#e6db74">&#34;Title of the picture&#34;</span><span style="color:#f92672">);</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>loadPicture(context, <span style="color:#e6db74">&#34;foo.jpg&#34;</span>, mImageViewProfilePicture, clickListener, <span style="color:#e6db74">&#34;Title of the picture&#34;</span>);
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>loadPicture(context,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;foo.jpg&#34;</span>,
+</span></span><span style="display:flex;"><span>        mImageViewProfilePicture,
+</span></span><span style="display:flex;"><span>        clickListener,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Title of the picture&#34;</span>);
+</span></span></code></pre></div></li>
 </ul>
 <h4 id="26-methods-and-classes-limits">2.6 Methods and Classes limits</h4>
 <ul>

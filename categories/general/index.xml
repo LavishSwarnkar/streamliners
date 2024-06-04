@@ -4,29 +4,23 @@
     <title>General on The Streamliners</title>
     <link>https://thestreamliners.in/categories/general/</link>
     <description>Recent content in General on The Streamliners</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Jun 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Jun 2021 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://thestreamliners.in/categories/general/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mastering Markdown Essentials</title>
       <link>https://thestreamliners.in/blog/mastering-markdown-essentials/</link>
       <pubDate>Thu, 24 Jun 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/mastering-markdown-essentials/</guid>
-      <description>A language to write across web platforms.  It is a lightweight markup language for creating formatted text using a plain text editor, and also allows HTML components for styling texts.
-It is easy-to-use syntax for styling all forms of writing and widely used in blogging, instant messaging, online forums, collaborative software, documentation pages and readme files on Github and various other platforms.
-We can control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do in markdown.</description>
+      <description>A language to write across web platforms. It is a lightweight markup language for creating formatted text using a plain text editor, and also allows HTML components for styling texts.&#xA;It is easy-to-use syntax for styling all forms of writing and widely used in blogging, instant messaging, online forums, collaborative software, documentation pages and readme files on Github and various other platforms.&#xA;We can control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do in markdown.</description>
     </item>
-    
     <item>
       <title>The reality of CSE in Private colleges of India</title>
       <link>https://thestreamliners.in/blog/the-reality-of-cse-in-private-colleges-of-india/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/the-reality-of-cse-in-private-colleges-of-india/</guid>
-      <description>Introduction The technical education system of CSE in private colleges is very bad. The colleges have opened just to run a business. They are not creating actual Computer Science Engineers. Majority of students end up getting placed in Service based jobs which stops their mental growth. These students do not get jobs CSE students deserve.
-Now this problem has been prevailing since a long time now. Situation may have changed a bit but leaving it as is and hoping for better tomorrow will take a lot of time.</description>
+      <description>Introduction The technical education system of CSE in private colleges is very bad. The colleges have opened just to run a business. They are not creating actual Computer Science Engineers. Majority of students end up getting placed in Service based jobs which stops their mental growth. These students do not get jobs CSE students deserve.&#xA;Now this problem has been prevailing since a long time now. Situation may have changed a bit but leaving it as is and hoping for better tomorrow will take a lot of time.</description>
     </item>
-    
   </channel>
 </rss>

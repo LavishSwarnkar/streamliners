@@ -4,22 +4,16 @@
     <title>Recycler View on The Streamliners</title>
     <link>https://thestreamliners.in/tags/recycler-view/</link>
     <description>Recent content in Recycler View on The Streamliners</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/recycler-view/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://thestreamliners.in/tags/recycler-view/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implement RecyclerView in android with kotlin</title>
       <link>https://thestreamliners.in/blog/recycler-view-with-kotlin/</link>
       <pubDate>Sun, 08 Aug 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/recycler-view-with-kotlin/</guid>
-      <description>Do you have a large list of data to show to the users of your application?
-Want a flexible and developer and user friendly way to show the data?
-Then RecyclerView is the right choice.
-RecyclerView is an advanced version of ListView that is more powerful and flexible.
-It is a ViewGroup which is the successor of ListView and GridView including improvement on both of them.
-As the name suggests, RecyclerView recycle the views which are out of visibility of user.</description>
+      <description>Do you have a large list of data to show to the users of your application?&#xA;Want a flexible and developer and user friendly way to show the data?&#xA;Then RecyclerView is the right choice.&#xA;RecyclerView is an advanced version of ListView that is more powerful and flexible.&#xA;It is a ViewGroup which is the successor of ListView and GridView including improvement on both of them.&#xA;As the name suggests, RecyclerView recycle the views which are out of visibility of user.</description>
     </item>
-    
   </channel>
 </rss>

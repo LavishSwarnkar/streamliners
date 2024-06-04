@@ -59,7 +59,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a href="https://thestreamliners.in" class="navbar-brand">
+    <a href="https://thestreamliners.in/" class="navbar-brand">
       <img src="https://thestreamliners.in/images/site-navigation/logo.svg" alt="The Streamliners">
     </a>
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
@@ -73,32 +73,32 @@
         
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#home"
+          <a href="https://thestreamliners.in/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#service"
+          <a href="https://thestreamliners.in/#service"
             class="nav-link text-dark text-sm-center p-2 ">Services</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#portfolio"
+          <a href="https://thestreamliners.in/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in#blog"
+          <a href="https://thestreamliners.in/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blogs</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/contact"
+          <a href="https://thestreamliners.in//contact"
             class="nav-link text-dark text-sm-center p-2 ">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a href="https://thestreamliners.in/about-us"
+          <a href="https://thestreamliners.in//about-us"
             class="nav-link text-dark text-sm-center p-2 ">About us</a>
         </li>
         
@@ -123,7 +123,7 @@
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=https://thestreamliners.in>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://thestreamliners.in/>Home</a></li>
             <li class="breadcrumb-item"><a href=https://thestreamliners.in/blog>All Posts</a></li>
           </ol>
         </nav>
@@ -164,7 +164,7 @@
           <div class="col-lg-12">
               <div class="singleBlog__content">
                   <figure class="center-img"><img src="https://assets.justinmind.com/wp-content/webp-express/webp-images/uploads/2018/02/splash-screen-designs-streaming.png.webp"
-         alt="Perfect Splash" width="100%"/>
+    alt="Perfect Splash" width="100%">
 </figure>
 
 <p>A <strong>Splash Screen</strong> is a screen which appears when you open an app on your mobile device. Sometimes it’s referred to as a launch screen or startup screen and shows up when your app is loading after you&rsquo;ve just opened it.</p>
@@ -176,25 +176,25 @@
 <li>Using a Launcher Theme <strong>(The Right way)</strong></li>
 </ol>
 <p>Using timer <strong>( Our 1st Method )</strong> into your activity to display splash, we create a splash activity and create a thread in <code>onCreate()</code> for shows up for 2/3 seconds, then go to our desired activity. Here see the implementation of this easy method:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SplashScreenActivity</span> <span style="color:#66d9ef">extends</span> AppCompatActivity <span style="color:#f92672">{</span>
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onCreate</span><span style="color:#f92672">(</span>Bundle savedInstanceState<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onCreate</span><span style="color:#f92672">(</span>savedInstanceState<span style="color:#f92672">);</span>
-        setContentView<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">layout</span><span style="color:#f92672">.</span><span style="color:#a6e22e">activity_splash_screen</span><span style="color:#f92672">);</span>
-        <span style="color:#66d9ef">new</span> Handler<span style="color:#f92672">().</span><span style="color:#a6e22e">postDelayed</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Runnable<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-            <span style="color:#a6e22e">@Override</span>
-            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-                <span style="color:#75715e">// This method will be executed once the timer is over
-</span><span style="color:#75715e"></span>                <span style="color:#75715e">// Start your app main activity
-</span><span style="color:#75715e"></span>                Intent i <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent<span style="color:#f92672">(</span>SplashScreenActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">,</span> MainActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
-                startActivity<span style="color:#f92672">(</span>i<span style="color:#f92672">);</span>
-                <span style="color:#75715e">// close this activity
-</span><span style="color:#75715e"></span>                finish<span style="color:#f92672">();</span>
-            <span style="color:#f92672">}</span>
-        <span style="color:#f92672">},</span> 3000<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>The above approach isn’t the correct approach. <strong>It’ll give rise to cold starts</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SplashScreenActivity</span> <span style="color:#66d9ef">extends</span> AppCompatActivity {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onCreate</span>(Bundle savedInstanceState) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span>.<span style="color:#a6e22e">onCreate</span>(savedInstanceState);
+</span></span><span style="display:flex;"><span>        setContentView(R.<span style="color:#a6e22e">layout</span>.<span style="color:#a6e22e">activity_splash_screen</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">new</span> Handler().<span style="color:#a6e22e">postDelayed</span>(<span style="color:#66d9ef">new</span> Runnable() {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run</span>() {
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// This method will be executed once the timer is over</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// Start your app main activity</span>
+</span></span><span style="display:flex;"><span>                Intent i <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent(SplashScreenActivity.<span style="color:#a6e22e">this</span>, MainActivity.<span style="color:#a6e22e">class</span>);
+</span></span><span style="display:flex;"><span>                startActivity(i);
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// close this activity</span>
+</span></span><span style="display:flex;"><span>                finish();
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }, 3000);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The above approach isn’t the correct approach. <strong>It’ll give rise to cold starts</strong>.</p>
 <p>The purpose of a Splash Screen is to quickly display a beautiful screen while the application fetches the relevant content if any (from network calls/database).With the above approach, there’s an additional overhead that the <code>SplashActivity</code> uses to create its layout.</p>
 <p>It’ll give rise to slow starts to the application which is bad for the user experience (wherein a blank black/white screen appears).</p>
 <p>The cold start appears since the application takes time to load the layout file of the Splash Activity. So instead of creating the layout, we’ll use the power of the application theme to create our initial layout <strong>(Our 2nd Method)</strong>.</p>
@@ -204,62 +204,62 @@
 <ol>
 <li>Create Background for Splash Screen in <code>drawable/splash_background.xml</code></li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#f92672">&lt;layer-list</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;item</span>
-        <span style="color:#a6e22e">android:drawable=</span><span style="color:#e6db74">&#34;@drawable/bg_gradient&#34;</span><span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;item&gt;</span>
-        <span style="color:#f92672">&lt;bitmap</span> <span style="color:#a6e22e">android:gravity=</span><span style="color:#e6db74">&#34;center&#34;</span>
-            <span style="color:#a6e22e">android:src=</span><span style="color:#e6db74">&#34;@drawable/splash_fg&#34;</span><span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;/item&gt;</span>
-<span style="color:#f92672">&lt;/layer-list&gt;</span>
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;layer-list</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;item</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:drawable=</span><span style="color:#e6db74">&#34;@drawable/bg_gradient&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;item&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;bitmap</span> <span style="color:#a6e22e">android:gravity=</span><span style="color:#e6db74">&#34;center&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">android:src=</span><span style="color:#e6db74">&#34;@drawable/splash_fg&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/item&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/layer-list&gt;</span>
+</span></span></code></pre></div><ol start="2">
 <li>Create the gradient onto which your app logo will be placed in <code>drawable/bg_gradient.xml</code></li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#f92672">&lt;shape</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
-    <span style="color:#a6e22e">android:shape=</span><span style="color:#e6db74">&#34;rectangle&#34;</span> <span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;gradient</span>
-        <span style="color:#a6e22e">android:type=</span><span style="color:#e6db74">&#34;linear&#34;</span>
-        <span style="color:#a6e22e">android:angle=</span><span style="color:#e6db74">&#34;135&#34;</span>
-        <span style="color:#a6e22e">android:startColor=</span><span style="color:#e6db74">&#34;#ff1b49&#34;</span>
-        <span style="color:#a6e22e">android:endColor=</span><span style="color:#e6db74">&#34;#e67d20&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/shape&gt;</span>
-</code></pre></div><ol start="3">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;shape</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:shape=</span><span style="color:#e6db74">&#34;rectangle&#34;</span> <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;gradient</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:type=</span><span style="color:#e6db74">&#34;linear&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:angle=</span><span style="color:#e6db74">&#34;135&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:startColor=</span><span style="color:#e6db74">&#34;#ff1b49&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android:endColor=</span><span style="color:#e6db74">&#34;#e67d20&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/shape&gt;</span>
+</span></span></code></pre></div><ol start="3">
 <li>Create Style for Splash Screen in <code>res/values/themes.xml</code></li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#f92672">&lt;resources&gt;</span>
-    <span style="color:#f92672">&lt;style</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;SplashTheme&#34;</span> <span style="color:#a6e22e">parent=</span><span style="color:#e6db74">&#34;Theme.MaterialComponents.Light.NoActionBar&#34;</span><span style="color:#f92672">&gt;</span>
-        <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;android:windowBackground&#34;</span><span style="color:#f92672">&gt;</span>@drawable/splash_background<span style="color:#f92672">&lt;/item&gt;</span>
-        <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;colorPrimary&#34;</span><span style="color:#f92672">&gt;</span>@color/colorPrimary<span style="color:#f92672">&lt;/item&gt;</span>
-        <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;colorPrimaryDark&#34;</span><span style="color:#f92672">&gt;</span>@color/colorPrimaryDark<span style="color:#f92672">&lt;/item&gt;</span>
-        <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;colorAccent&#34;</span><span style="color:#f92672">&gt;</span>@color/colorAccent<span style="color:#f92672">&lt;/item&gt;</span>
-        <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;android:statusBarColor&#34;</span><span style="color:#f92672">&gt;</span>@color/colorAccent<span style="color:#f92672">&lt;/item&gt;</span>
-    <span style="color:#f92672">&lt;/style&gt;</span>
-<span style="color:#f92672">&lt;/resources&gt;</span>
-</code></pre></div><ol start="4">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;resources&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;style</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;SplashTheme&#34;</span> <span style="color:#a6e22e">parent=</span><span style="color:#e6db74">&#34;Theme.MaterialComponents.Light.NoActionBar&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;android:windowBackground&#34;</span><span style="color:#f92672">&gt;</span>@drawable/splash_background<span style="color:#f92672">&lt;/item&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;colorPrimary&#34;</span><span style="color:#f92672">&gt;</span>@color/colorPrimary<span style="color:#f92672">&lt;/item&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;colorPrimaryDark&#34;</span><span style="color:#f92672">&gt;</span>@color/colorPrimaryDark<span style="color:#f92672">&lt;/item&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;colorAccent&#34;</span><span style="color:#f92672">&gt;</span>@color/colorAccent<span style="color:#f92672">&lt;/item&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;android:statusBarColor&#34;</span><span style="color:#f92672">&gt;</span>@color/colorAccent<span style="color:#f92672">&lt;/item&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/style&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/resources&gt;</span>
+</span></span></code></pre></div><ol start="4">
 <li>Set the style as theme for <strong>SplashScreenActivity</strong> in <code>AndroidManifest.xml</code></li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;activity</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;.SplashScreenActivity&#34;</span>
-    <span style="color:#a6e22e">android:theme=</span><span style="color:#e6db74">&#34;@style/SplashTheme&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;intent-filter&gt;</span>
-        <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.intent.action.MAIN&#34;</span> <span style="color:#f92672">/&gt;</span>
-                <span style="color:#f92672">&lt;category</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.intent.category.LAUNCHER&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;/intent-filter&gt;</span>
-<span style="color:#f92672">&lt;/activity&gt;</span>.
-</code></pre></div><ol start="5">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;activity</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;.SplashScreenActivity&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">android:theme=</span><span style="color:#e6db74">&#34;@style/SplashTheme&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;intent-filter&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.intent.action.MAIN&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&lt;category</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.intent.category.LAUNCHER&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/intent-filter&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/activity&gt;</span>.
+</span></span></code></pre></div><ol start="5">
 <li>Setting the Intent to your <strong>MainActivity.java</strong> from <code>SplashScreenActivity.java</code></li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SplashScreenActivity</span> <span style="color:#66d9ef">extends</span> AppCompatActivity <span style="color:#f92672">{</span>
-<span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onCreate</span><span style="color:#f92672">(</span>Bundle savedInstanceState<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onCreate</span><span style="color:#f92672">(</span>savedInstanceState<span style="color:#f92672">);</span>
-                startActivity<span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Intent<span style="color:#f92672">(</span>SplashScreenActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">,</span> MainActivity<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">));</span>
-        finish<span style="color:#f92672">();</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SplashScreenActivity</span> <span style="color:#66d9ef">extends</span> AppCompatActivity {
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onCreate</span>(Bundle savedInstanceState) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span>.<span style="color:#a6e22e">onCreate</span>(savedInstanceState);
+</span></span><span style="display:flex;"><span>                startActivity(<span style="color:#66d9ef">new</span> Intent(SplashScreenActivity.<span style="color:#a6e22e">this</span>, MainActivity.<span style="color:#a6e22e">class</span>));
+</span></span><span style="display:flex;"><span>        finish();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><blockquote>
 <p>**As we are loading the splash screen them from manifest, there is no need to <code>setContentView</code>() with any **xml <strong>layout. If you want to show your splash screen for a some amount of time (like 5 secs) you can create a <code>Handler</code>.</strong></p>
 </blockquote>
 <p><strong>Using the theme and removing the layout from the <code>SplashScreenActivity</code> is the correct way to create a splash screen</strong> 🙌**.</p>
@@ -268,24 +268,24 @@
 <p>Also make sure that image resolution is not more than <code>1000x1000 pixels</code>. It can have less resolution depending upon how you want it.</p>
 <h3 id="now-there-are-different-types-of-splash-screen-which-has-multiple-logo-on-different-parts-of-screen-how-that-could-be-done">Now there are different types of splash screen which has multiple logo on different parts of screen. How that could be done?</h3>
 <figure class="center-img"><img src="https://assets.justinmind.com/wp-content/uploads/2018/02/twitter-facebook-splash-screens-examples-justinmind.png"
-         alt="Perfect Splash" width="100%"/>
+    alt="Perfect Splash" width="100%">
 </figure>
 
 <p>From above example, we implemented our method to create splash like Twitter and now to create one like Facebook we just have to make a small change to our <code>drawable/splash_background.xml</code>.</p>
 <p>Just add as many <code>item</code> to your <code>layer-list</code> you want to place in your splash screen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#f92672">&lt;layer-list</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">android:drawable=</span><span style="color:#e6db74">&#34;@drawable/bg_gradient&#34;</span><span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;item&gt;</span>
-            <span style="color:#f92672">&lt;bitmap</span> <span style="color:#a6e22e">android:gravity=</span><span style="color:#e6db74">&#34;center&#34;</span>
-                <span style="color:#a6e22e">android:src=</span><span style="color:#e6db74">&#34;@drawable/logo_art_1&#34;</span><span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;/item&gt;</span>
-    <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">android:bottom=</span><span style="color:#e6db74">&#34;50dp&#34;</span><span style="color:#f92672">&gt;</span> // setting the image from bottom
-        <span style="color:#f92672">&lt;bitmap</span> <span style="color:#a6e22e">android:gravity=</span><span style="color:#e6db74">&#34;bottom&#34;</span>
-            <span style="color:#a6e22e">android:src=</span><span style="color:#e6db74">&#34;@drawable/logo_art_2&#34;</span><span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;/item&gt;</span>
-<span style="color:#f92672">&lt;/layer-list&gt;</span>
-</code></pre></div><h3 id="splash-screen-best-practices"><strong>Splash screen best practices</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;layer-list</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">android:drawable=</span><span style="color:#e6db74">&#34;@drawable/bg_gradient&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;item&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;bitmap</span> <span style="color:#a6e22e">android:gravity=</span><span style="color:#e6db74">&#34;center&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">android:src=</span><span style="color:#e6db74">&#34;@drawable/logo_art_1&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/item&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;item</span> <span style="color:#a6e22e">android:bottom=</span><span style="color:#e6db74">&#34;50dp&#34;</span><span style="color:#f92672">&gt;</span> // setting the image from bottom
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;bitmap</span> <span style="color:#a6e22e">android:gravity=</span><span style="color:#e6db74">&#34;bottom&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">android:src=</span><span style="color:#e6db74">&#34;@drawable/logo_art_2&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/item&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/layer-list&gt;</span>
+</span></span></code></pre></div><h3 id="splash-screen-best-practices"><strong>Splash screen best practices</strong></h3>
 <p>Splash screens are simple. They’re used to enhance a brand and give users something nice to look at as they wait. In this regard, here are some best practices for when you design your own splash screen:</p>
 <ul>
 <li>Keep it free from unnecessary distraction</li>

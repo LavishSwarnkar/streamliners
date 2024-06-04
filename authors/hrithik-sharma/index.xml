@@ -4,53 +4,37 @@
     <title>Hrithik Sharma on The Streamliners</title>
     <link>https://thestreamliners.in/authors/hrithik-sharma/</link>
     <description>Recent content in Hrithik Sharma on The Streamliners</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/authors/hrithik-sharma/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://thestreamliners.in/authors/hrithik-sharma/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating custom notifications</title>
       <link>https://thestreamliners.in/blog/creating-custom-notifications/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/creating-custom-notifications/</guid>
-      <description>Notifications alert you to many things on your Android device, including incoming messages, new emails, and calendar events. Notifications work slightly differently for each app, but they&amp;rsquo;re easy to customize.
-Starting in Android 8.0 (API level 26), all notifications must be assigned to a channel. For each channel, you can set the visual and auditory behavior that is applied to all notifications in that channel. Then, users can change these settings and decide which notification channels from your app should be intrusive or visible at all.</description>
+      <description>Notifications alert you to many things on your Android device, including incoming messages, new emails, and calendar events. Notifications work slightly differently for each app, but they&amp;rsquo;re easy to customize.&#xA;Starting in Android 8.0 (API level 26), all notifications must be assigned to a channel. For each channel, you can set the visual and auditory behavior that is applied to all notifications in that channel. Then, users can change these settings and decide which notification channels from your app should be intrusive or visible at all.</description>
     </item>
-    
     <item>
       <title>Implement RecyclerView in android with kotlin</title>
       <link>https://thestreamliners.in/blog/recycler-view-with-kotlin/</link>
       <pubDate>Sun, 08 Aug 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/recycler-view-with-kotlin/</guid>
-      <description>Do you have a large list of data to show to the users of your application?
-Want a flexible and developer and user friendly way to show the data?
-Then RecyclerView is the right choice.
-RecyclerView is an advanced version of ListView that is more powerful and flexible.
-It is a ViewGroup which is the successor of ListView and GridView including improvement on both of them.
-As the name suggests, RecyclerView recycle the views which are out of visibility of user.</description>
+      <description>Do you have a large list of data to show to the users of your application?&#xA;Want a flexible and developer and user friendly way to show the data?&#xA;Then RecyclerView is the right choice.&#xA;RecyclerView is an advanced version of ListView that is more powerful and flexible.&#xA;It is a ViewGroup which is the successor of ListView and GridView including improvement on both of them.&#xA;As the name suggests, RecyclerView recycle the views which are out of visibility of user.</description>
     </item>
-    
     <item>
       <title>Organizing Android Code</title>
       <link>https://thestreamliners.in/blog/organized-code/</link>
       <pubDate>Sun, 08 Aug 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/organized-code/</guid>
-      <description>Tips to keep your android project files and code organized Overview Android applications should always be neatly organized with a clear folder structure that makes your code easy to read. In addition, proper naming conventions for code and classes are important to ensure your code is clean and maintainable.
-The importance of an organized code structure It&amp;rsquo;s all about readability. Big projects can be difficult to organize due to the amount of classes, resource files and libraries used.</description>
+      <description>Tips to keep your android project files and code organized Overview Android applications should always be neatly organized with a clear folder structure that makes your code easy to read. In addition, proper naming conventions for code and classes are important to ensure your code is clean and maintainable.&#xA;The importance of an organized code structure It&amp;rsquo;s all about readability. Big projects can be difficult to organize due to the amount of classes, resource files and libraries used.</description>
     </item>
-    
     <item>
       <title>Implementing Alarm manager</title>
       <link>https://thestreamliners.in/blog/implement-alarm-manager/</link>
       <pubDate>Sat, 03 Jul 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/implement-alarm-manager/</guid>
-      <description>How to implement an alarm in your android application using AlarmManager?  Android AlarmManager allows you to access system alarm.
-With the help of AlarmManager in android, you can schedule your application to run at a specific time in the future.
-AlarmManager is a bridge between application and Android system alarm service. It can send a broadcast to your app (which can be completely terminated by user) at a scheduled time and your app can then perform any task accordingly.</description>
+      <description>How to implement an alarm in your android application using AlarmManager? Android AlarmManager allows you to access system alarm.&#xA;With the help of AlarmManager in android, you can schedule your application to run at a specific time in the future.&#xA;AlarmManager is a bridge between application and Android system alarm service. It can send a broadcast to your app (which can be completely terminated by user) at a scheduled time and your app can then perform any task accordingly.</description>
     </item>
-    
   </channel>
 </rss>

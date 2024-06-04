@@ -4,20 +4,16 @@
     <title>Notification on The Streamliners</title>
     <link>https://thestreamliners.in/tags/notification/</link>
     <description>Recent content in Notification on The Streamliners</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://thestreamliners.in/tags/notification/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://thestreamliners.in/tags/notification/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implement Notification Count overlay inside Android App</title>
       <link>https://thestreamliners.in/blog/implement-notification-count-overlay-inside-android-app/</link>
       <pubDate>Thu, 20 May 2021 00:00:00 +0530</pubDate>
-      
       <guid>https://thestreamliners.in/blog/implement-notification-count-overlay-inside-android-app/</guid>
-      <description>Do you want to add notification count or badge like this to your app? Well everyone developer wants to add it as it improves User Experience significantly.
-Its always handy to know how many notification I have when I open my app.
-For the demo purpose we shall be creating this layout.
- Step 1 Add this custom UI implementation to app-level gradle file. We will be using this library.</description>
+      <description>Do you want to add notification count or badge like this to your app? Well everyone developer wants to add it as it improves User Experience significantly.&#xA;Its always handy to know how many notification I have when I open my app.&#xA;For the demo purpose we shall be creating this layout.&#xA;Step 1 Add this custom UI implementation to app-level gradle file. We will be using this library.</description>
     </item>
-    
   </channel>
 </rss>
