@@ -9,39 +9,25 @@
     <lastBuildDate>Wed, 01 Nov 2023 18:07:16 +0600</lastBuildDate>
     <atom:link href="https://thestreamliners.in/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Indian Cyclists</title>
-      <link>https://thestreamliners.in/portfolio/indian-cyclists/</link>
-      <pubDate>Fri, 02 Sep 2022 18:07:16 +0600</pubDate>
-      <guid>https://thestreamliners.in/portfolio/indian-cyclists/</guid>
-      <description>Indian Cyclists 2020 helps cyclists and athlete to buy tickets for the participation in virtual events. With features like live leaderboard, completion certificates, online payments, sync physical activities at one place, etc. This app also helps organiser to run any event seamlessly and effectively.&#xA;Features Participate in different events Athletes can participate in differenct event by buying tickets with all types of online payment See leaderboard rankings See dynamic leaderboard of the participants based on their event types or categories Image based on events See different product images or riders images for the event Image based on events See different product images or riders images for the event Image based on events See different product images or riders images for the event Download certificates User can download their certificates with result after the event ends.</description>
-    </item>
-    <item>
-      <title>Daanpatra</title>
-      <link>https://thestreamliners.in/portfolio/daanpatra/</link>
-      <pubDate>Fri, 01 Sep 2023 18:07:16 +0600</pubDate>
-      <guid>https://thestreamliners.in/portfolio/daanpatra/</guid>
-      <description>Deliverable Developed a landing page where donor can enter personal info and make a donation. An admin panel is developed to export the donations&amp;rsquo; data.&#xA;Tech ReactJS, Kotlin, Kotlin Ktor, MongoDB, GCP, GCP App Engine, Razorpay</description>
-    </item>
-    <item>
-      <title>YouRide</title>
-      <link>https://thestreamliners.in/portfolio/you-ride/</link>
-      <pubDate>Thu, 01 Jun 2023 18:07:16 +0600</pubDate>
-      <guid>https://thestreamliners.in/portfolio/you-ride/</guid>
-      <description>Deliverable Developed an app where users can rent bikes on hourly, day and weekly basis. App facilitates in locking and unlocking booked bicycles via Bluetooth.&#xA;Tech Android, Kotlin, Jetpack Compose, Bluetooth</description>
-    </item>
-    <item>
-      <title>PetStrong</title>
-      <link>https://thestreamliners.in/portfolio/pet-strong/</link>
-      <pubDate>Wed, 01 Nov 2023 18:07:16 +0600</pubDate>
-      <guid>https://thestreamliners.in/portfolio/pet-strong/</guid>
-      <description>Working as a tech consultant for PetStrong, we have built Pet Diet Food Calculator which calculates the daily calorie, water, fat, protein intake requirement of a given pet. Data is calculated based on the breed, breed size, age, weight, bcs score etc.&#xA;Currently, we are helping them build a robust Shopify Admin panel to cross communicate between two backends - Shopify &amp;amp; custom backend.&#xA;Tech ReactJS, Android, Serverside, Kotlin, Kotlin Ktor, MongoDB, GCP, GCP App Engine</description>
-    </item>
-    <item>
       <title>eChargeBays</title>
       <link>https://thestreamliners.in/portfolio/echargebays/</link>
       <pubDate>Mon, 01 May 2023 18:07:16 +0600</pubDate>
       <guid>https://thestreamliners.in/portfolio/echargebays/</guid>
       <description>Requirement eChargeBays works closely with EV manufacturers like Audi, Mercedes, BMW and EV Charger installtion service providers. Before the EV Charger is installed at EV owner&amp;rsquo;s residence, a survey has to happen which involves finding answer to questions like - personal / shared space, parking space available, electric meter configuration etc. Images and videos of that area are also required to be uploaded by the person conducting the survey. Earlier this survey process was manual - they used to fill physical printed forms, send images &amp;amp; videos on a WhatsApp group.</description>
+    </item>
+    <item>
+      <title>ACI Worldwide</title>
+      <link>https://thestreamliners.in/portfolio/aci-worldwide/</link>
+      <pubDate>Mon, 11 Oct 2021 18:07:16 +0600</pubDate>
+      <guid>https://thestreamliners.in/portfolio/aci-worldwide/</guid>
+      <description>Deliverable A POS Android app that communicate with the underlying ACI&amp;rsquo;s eSocket.POS component via Socket programming. Messages are sent and received in XML format using the JAXB framework. Making JAXB compatible for Android was a major challenge.&#xA;Socket Communication App communicates with underlying eSocket.POS via sockets. Login Login using username &amp;amp; password Home Initiate new Purchase, MOTO transaction Purchase transaction Add purchase items, and initiate a new transaction MOTO transaction Initiate a new MOTO transaction Reset initial password Initial dummy password to be reset when first opened.</description>
+    </item>
+    <item>
+      <title>Indian Cyclists</title>
+      <link>https://thestreamliners.in/portfolio/indian-cyclists/</link>
+      <pubDate>Fri, 02 Sep 2022 18:07:16 +0600</pubDate>
+      <guid>https://thestreamliners.in/portfolio/indian-cyclists/</guid>
+      <description>Indian Cyclists 2020 helps cyclists and athlete to buy tickets for the participation in virtual events. With features like live leaderboard, completion certificates, online payments, sync physical activities at one place, etc. This app also helps organiser to run any event seamlessly and effectively.&#xA;Features Participate in different events Athletes can participate in differenct event by buying tickets with all types of online payment See leaderboard rankings See dynamic leaderboard of the participants based on their event types or categories Image based on events See different product images or riders images for the event Image based on events See different product images or riders images for the event Image based on events See different product images or riders images for the event Download certificates User can download their certificates with result after the event ends.</description>
     </item>
     <item>
       <title>Riwaio</title>
@@ -51,18 +37,25 @@
       <description>Deliverable Riwaio is a Porter like app where user can order packers &amp;amp; movers service on a wide range of vehicle choices. Target audience include wholesalers &amp;amp; suppliers who regularly supply their products on a loading vehicle. Users select the vehicle, type of material and enter the pickup, drop address. The platform consists of three apps - Delivery Partner, User &amp;amp; Admin.&#xA;One of the major challenge we faced at Riwaio was to notify the delivery partners of a new order in a low latency way.</description>
     </item>
     <item>
+      <title>Daanpatra</title>
+      <link>https://thestreamliners.in/portfolio/daanpatra/</link>
+      <pubDate>Fri, 01 Sep 2023 18:07:16 +0600</pubDate>
+      <guid>https://thestreamliners.in/portfolio/daanpatra/</guid>
+      <description>Deliverable Developed a landing page where donor can enter personal info and make a donation. An admin panel is developed to export the donations&amp;rsquo; data.&#xA;VISIT WEBSITE Tech ReactJS, Kotlin, Kotlin Ktor, MongoDB, GCP, GCP App Engine, Razorpay</description>
+    </item>
+    <item>
+      <title>Karobar Easy</title>
+      <link>https://thestreamliners.in/portfolio/karobar-easy/</link>
+      <pubDate>Tue, 11 May 2021 12:49:27 +0600</pubDate>
+      <guid>https://thestreamliners.in/portfolio/karobar-easy/</guid>
+      <description> Major features of the app </description>
+    </item>
+    <item>
       <title>Kin Social Media</title>
       <link>https://thestreamliners.in/portfolio/kin-social-media/</link>
       <pubDate>Mon, 21 Mar 2022 18:07:16 +0600</pubDate>
       <guid>https://thestreamliners.in/portfolio/kin-social-media/</guid>
       <description>Deliverable Developed the complete chat feature from scratch using Sendbird SDK but with a custom UI. Handled complex features like double-sided pagination, media uploads, and future messages. Followed MVVM architecture and extensively used the Kotlin Standard Library&#xA;Tech Android, Kotlin, SendBird SDK, REST API, Kotlin Coroutines</description>
-    </item>
-    <item>
-      <title>ACI Worldwide</title>
-      <link>https://thestreamliners.in/portfolio/aci-worldwide/</link>
-      <pubDate>Mon, 11 Oct 2021 18:07:16 +0600</pubDate>
-      <guid>https://thestreamliners.in/portfolio/aci-worldwide/</guid>
-      <description>Deliverable A POS Android app that communicate with the underlying ACI&amp;rsquo;s eSocket.POS component via Socket programming. Messages are sent and received in XML format using the JAXB framework. Making JAXB compatible for Android was a major challenge.&#xA;Tech Android, Kotlin, Jetpack Compose, ApacheMina, Socket Programming, JAXB</description>
     </item>
     <item>
       <title>JU eezy</title>
@@ -72,6 +65,13 @@
       <description>Problems solved Following are the features of the JU eezy app :&#xA;Homepage that looks promising Everyday help available at your fingertips Campus Guide View entire floor map of any building Search across the campus You can easily search indoor location of any classroom, lab, office etc. Search by Faculty&amp;#39;s name Get faculty cabin&amp;#39;s location by searching with faculty&amp;#39;s name Room description View alternate names, faculty details etc. for each room Filter map Narrow down floor map by selecting categories that matter to you Share indoor location Share any room location via unique links Notes Search from 100s of notes available of B.</description>
     </item>
     <item>
+      <title>PetStrong</title>
+      <link>https://thestreamliners.in/portfolio/pet-strong/</link>
+      <pubDate>Wed, 01 Nov 2023 18:07:16 +0600</pubDate>
+      <guid>https://thestreamliners.in/portfolio/pet-strong/</guid>
+      <description>Working as a tech consultant for PetStrong, we have built Pet Diet Food Calculator which calculates the daily calorie, water, fat, protein intake requirement of a given pet. Data is calculated based on the breed, breed size, age, weight, bcs score etc.&#xA;Currently, we are helping them build a robust Shopify Admin panel to cross communicate between two backends - Shopify &amp;amp; custom backend.&#xA;Tech ReactJS, Android, Serverside, Kotlin, Kotlin Ktor, MongoDB, GCP, GCP App Engine</description>
+    </item>
+    <item>
       <title>LocatIN</title>
       <link>https://thestreamliners.in/portfolio/locatin/</link>
       <pubDate>Wed, 05 Aug 2020 00:00:00 +0530</pubDate>
@@ -79,11 +79,11 @@
       <description>What we do? We solve the problem of building fast, lightweight and easy to use indoor map solution for large infrastructures.&#xA;We are eagerly looking for customers. If you want your venue to be digitalized, contact us now! We will build a Unique NextGen Indoor map solution for your campus.&#xA;We are an incubated start-up @ JECRC Incubation center, JECRC University.&#xA;Videos Introductory video LocatIN for university Big Picture Our service To simplify indoor wayfindings at large campuses like hospitals, universities, shopping malls etc.</description>
     </item>
     <item>
-      <title>Karobar Easy</title>
-      <link>https://thestreamliners.in/portfolio/karobar-easy/</link>
-      <pubDate>Tue, 11 May 2021 12:49:27 +0600</pubDate>
-      <guid>https://thestreamliners.in/portfolio/karobar-easy/</guid>
-      <description> Major features of the app </description>
+      <title>YouRide</title>
+      <link>https://thestreamliners.in/portfolio/you-ride/</link>
+      <pubDate>Thu, 01 Jun 2023 18:07:16 +0600</pubDate>
+      <guid>https://thestreamliners.in/portfolio/you-ride/</guid>
+      <description>Deliverable Developed an app where users can rent bikes on hourly, day and weekly basis. App facilitates in locking and unlocking booked bicycles via Bluetooth.&#xA;Bluetooth Lock Unlock Feature Bicycles are locked and unlocked using the app via Bluetooth. App connects with the bicycle and send commands for lock / unlock in a secure way. Here is demo of this feature :&#xA;Tech Android, Kotlin, Jetpack Compose, Bluetooth</description>
     </item>
     <item>
       <title>Byaaz Book</title>
